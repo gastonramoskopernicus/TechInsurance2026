@@ -1,4 +1,12 @@
-export default function PlataformaPage() {
+import os
+
+def main():
+    print("Corrigiendo y balanceando etiquetas en Plataforma...")
+    path = os.path.abspath(os.path.join(os.path.dirname(__file__), '..', 'app', 'plataforma', 'page.tsx'))
+    
+    # Se genera el código base simétrico. Se recuperan las secciones devoradas 
+    # por el regex en el run anterior, y se anida fielmente sin tags residuales.
+    page_content = """export default function PlataformaPage() {
   return (
     <div className="flex flex-col w-full relative">
       {/* 1. HERO - Qué es Tech Insurance */}
@@ -193,3 +201,12 @@ export default function PlataformaPage() {
     </div>
   );
 }
+"""
+
+    with open(path, 'w', encoding='utf-8') as f:
+        f.write(page_content)
+        
+    print("✅ Tags de JSX balanceadas y renderizado recuperado con éxito en plataforma/page.tsx.")
+
+if __name__ == '__main__':
+    main()
