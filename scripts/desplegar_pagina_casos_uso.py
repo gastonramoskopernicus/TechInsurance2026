@@ -1,4 +1,15 @@
-import Image from "next/image";
+import os
+
+def main():
+    print("Re-factorizando visualmente la página de Casos de Uso (formato Grid-Minimalista)...")
+    
+    base_dir = os.path.abspath(os.path.join(os.path.dirname(__file__), '..', 'app'))
+    cua_dir = os.path.join(base_dir, 'casos-de-uso')
+    os.makedirs(cua_dir, exist_ok=True)
+    
+    cua_page_path = os.path.join(cua_dir, 'page.tsx')
+    
+    new_cua_page = r'''import Image from "next/image";
 
 export default function CasosDeUsoPage() {
   return (
@@ -87,3 +98,11 @@ export default function CasosDeUsoPage() {
     </div>
   );
 }
+'''
+    with open(cua_page_path, 'w', encoding='utf-8') as f:
+        f.write(new_cua_page)
+
+    print("✅ Página /casos-de-uso restilizada y regenerada.")
+
+if __name__ == '__main__':
+    main()
