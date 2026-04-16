@@ -1,0 +1,93 @@
+[
+    {
+        "orden": 1,
+        "seccion": "Hero",
+        "proposito": "Introducir la plataforma y su propuesta de valor principal de forma inmediata y clara.",
+        "contenido": {
+            "titulo": "Acelerá la evolución de tu negocio asegurador",
+            "descripcion": "Plataforma que potencia el core y habilita nuevos productos y canales en semanas."
+        }
+    },
+    {
+        "orden": 2,
+        "seccion": "Problema del mercado",
+        "proposito": "Identificar y empatizar con los dolores o cuellos de botella actuales en la industria aseguradora tradicional.",
+        "contenido": {
+            "titulo": "Agilidad bloqueada por tecnología inflexible",
+            "descripcion": "Los sistemas core tradicionales retrasan el time-to-market. El alto costo de mantenimiento, la deuda técnica y las integraciones monolíticas impiden la rapidez comercial necesaria para los ecosistemas digitales actuales."
+        }
+    },
+    {
+        "orden": 3,
+        "seccion": "Solución",
+        "proposito": "Explicar cómo Tech Insurance resuelve los problemas planteados de manera unificada.",
+        "contenido": {
+            "titulo": "Un motor comercial para tu sistema actual",
+            "descripcion": "Tech Insurance opera como un acelerador comercial por capas. Nos integramos directamente a tu core heredado, inyectando agilidad, automatización y modernas capacidades de venta digital sin requerir dolorosas migraciones."
+        }
+    },
+    {
+        "orden": 4,
+        "seccion": "Capacidades",
+        "proposito": "Listar los módulos u operaciones core del sistema.",
+        "contenido": {
+            "titulo": "Capacidades nativas para el negocio de escala",
+            "descripcion": "Gestión paramétrica del ciclo de vida de la póliza, motores de cotización en tiempo real, suscripción automatizada con reglas de negocio dinámicas y liquidación ágil de siniestros."
+        }
+    },
+    {
+        "orden": 5,
+        "seccion": "Product Studio (sección destacada)",
+        "proposito": "Resaltar específicamente la herramienta de diseño de productos, enfatizando la velocidad de comercialización.",
+        "contenido": {
+            "titulo": "Product Studio: El núcleo de la innovación",
+            "descripcion": "Diseña, empaqueta y distribuye. Nuestro Product Studio es una herramienta avanzada que permite a los equipos comerciales e IT configurar nuevos productos aseguradores o canales de distribución en cuestión de minutos. Del concepto a la venta de forma transparente y controlada."
+        }
+    },
+    {
+        "orden": 6,
+        "seccion": "Arquitectura",
+        "proposito": "Mostrar brevemente la robustez técnica, modularidad o enfoque tecnológico.",
+        "contenido": {
+            "titulo": "Arquitectura desacoplada y API-First",
+            "descripcion": "Una infraestructura tecnológica moderna construida sobre microservicios. Expone capacidades complejas a través de APIs limpias, facilitando la integración fluida con cualquier ecosistema de partners y plataformas externas con cero interrupciones transaccionales."
+        }
+    },
+    {
+        "orden": 7,
+        "seccion": "Casos de uso",
+        "proposito": "Proveer ejemplos rápidos y prácticos sobre cómo diferentes líneas de negocio pueden usar el producto.",
+        "contenido": {
+            "titulo": "Casos de uso adaptables",
+            "descripcion": "Diseñado para múltiples portafolios: desde líneas tradicionales como Automotriz, Vida y Salud, hasta innovadores Seguros Embebidos (Embedded Insurance) y micro-pólizas para la nueva economía digital."
+        }
+    },
+    {
+        "orden": 8,
+        "seccion": "Impacto en negocio",
+        "proposito": "Mostrar valor mediante métricas de ROI, mejora de la eficiencia o reducción de tiempos esperada.",
+        "contenido": {
+            "titulo": "Métricas de ROI que transforman",
+            "descripcion": "Impacto inmediato en los resultados: Reducción drástica del time-to-market (de meses a semanas), disminución de los costos operativos de emisión y un crecimiento sostenible de ingresos mediante operaciones cross-selling en ecosistemas ampliados."
+        }
+    },
+    {
+        "orden": 9,
+        "seccion": "Validación / robustez",
+        "proposito": "Generar confianza comunicando certificaciones de cumplimiento normativo, seguridad de datos y SLAs.",
+        "contenido": {
+            "titulo": "Robustez y control a escala Enterprise",
+            "descripcion": "Cumplimiento normativo estricto, infraestructura en la nube de alta disponibilidad, encriptación a nivel bancario y SLAs superiores al 99.9%. Un aliado seguro para gestionar el riesgo a gran escala."
+        }
+    },
+    {
+        "orden": 10,
+        "seccion": "CTA final",
+        "proposito": "Invitar al usuario a realizar la acción principal, ya sea iniciar una prueba, contactar a ventas o solicitar demo.",
+        "contenido": {
+            "titulo": "¿Listo para la transformación acelerada?",
+            "descripcion": "Conversa con nuestros especialistas, revisa nuestra arquitectura o solicita una demostración controlada que potenciará los resultados de tu actual core asegurador.",
+            "cta_texto": "Agendar demostración técnica"
+        }
+    }
+]

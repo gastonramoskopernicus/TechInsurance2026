@@ -1,0 +1,184 @@
+[
+    {
+        "title": "Plataforma",
+        "path": "/plataforma/",
+        "subpages": [
+            {
+                "title": "Core",
+                "path": "/plataforma/core.html"
+            },
+            {
+                "title": "Seguridad",
+                "path": "/plataforma/seguridad.html"
+            },
+            {
+                "title": "API",
+                "path": "/plataforma/api.html"
+            },
+            {
+                "title": "Integraciones",
+                "path": "/plataforma/integraciones.html"
+            }
+        ]
+    },
+    {
+        "title": "Soluciones",
+        "path": "/soluciones/",
+        "subpages": [
+            {
+                "title": "Pymes",
+                "path": "/soluciones/pymes.html"
+            },
+            {
+                "title": "Enterprises",
+                "path": "/soluciones/enterprises.html"
+            },
+            {
+                "title": "Startups",
+                "path": "/soluciones/startups.html"
+            },
+            {
+                "title": "Agencias",
+                "path": "/soluciones/agencias.html"
+            }
+        ]
+    },
+    {
+        "title": "Casos de Uso",
+        "path": "/casos-de-uso/",
+        "subpages": [
+            {
+                "title": "Seguros de Vida",
+                "path": "/casos-de-uso/seguros-de-vida.html"
+            },
+            {
+                "title": "Salud",
+                "path": "/casos-de-uso/salud.html"
+            },
+            {
+                "title": "Automotriz",
+                "path": "/casos-de-uso/automotriz.html"
+            },
+            {
+                "title": "Hogar",
+                "path": "/casos-de-uso/hogar.html"
+            }
+        ]
+    },
+    {
+        "title": "Ecosistema",
+        "path": "/ecosistema/",
+        "subpages": [
+            {
+                "title": "Desarrolladores",
+                "path": "/ecosistema/desarrolladores.html"
+            },
+            {
+                "title": "Partners",
+                "path": "/ecosistema/partners.html"
+            },
+            {
+                "title": "Comunidad",
+                "path": "/ecosistema/comunidad.html"
+            }
+        ]
+    },
+    {
+        "title": "Recursos",
+        "path": "/recursos/",
+        "subpages": [
+            {
+                "title": "Blog",
+                "path": "/recursos/blog.html"
+            },
+            {
+                "title": "Webinars",
+                "path": "/recursos/webinars.html"
+            },
+            {
+                "title": "Guias",
+                "path": "/recursos/guias.html"
+            },
+            {
+                "title": "Centro de Ayuda",
+                "path": "/recursos/centro-de-ayuda.html"
+            }
+        ]
+    },
+    {
+        "title": "Empresa",
+        "path": "/empresa/",
+        "subpages": [
+            {
+                "title": "Sobre Nosotros",
+                "path": "/empresa/sobre-nosotros.html"
+            },
+            {
+                "title": "Carreras",
+                "path": "/empresa/carreras.html"
+            },
+            {
+                "title": "Prensa",
+                "path": "/empresa/prensa.html"
+            },
+            {
+                "title": "Inversores",
+                "path": "/empresa/inversores.html"
+            }
+        ]
+    },
+    {
+        "title": "Login",
+        "path": "/login/",
+        "subpages": [
+            {
+                "title": "Recuperar Password",
+                "path": "/login/recuperar-password.html"
+            },
+            {
+                "title": "Registro",
+                "path": "/login/registro.html"
+            }
+        ]
+    },
+    {
+        "title": "Contacto",
+        "path": "/contacto/",
+        "subpages": [
+            {
+                "title": "Soporte",
+                "path": "/contacto/soporte.html"
+            },
+            {
+                "title": "Ventas",
+                "path": "/contacto/ventas.html"
+            },
+            {
+                "title": "Feedback",
+                "path": "/contacto/feedback.html"
+            }
+        ]
+    },
+    {
+        "title": "Legal",
+        "path": "/legal/",
+        "subpages": [
+            {
+                "title": "Terminos de Servicio",
+                "path": "/legal/terminos-de-servicio.html"
+            },
+            {
+                "title": "Privacidad",
+                "path": "/legal/privacidad.html"
+            },
+            {
+                "title": "Cookies",
+                "path": "/legal/cookies.html"
+            },
+            {
+                "title": "Cumplimiento",
+                "path": "/legal/cumplimiento.html"
+            }
+        ]
+    }
+]

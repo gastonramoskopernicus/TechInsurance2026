@@ -1,0 +1,103 @@
+import os
+
+def generar_recursos():
+    base_dir = "sitio_estructura"
+    rec_dir = os.path.join(base_dir, "recursos")
+    os.makedirs(rec_dir, exist_ok=True)
+    
+    file_path = os.path.join(rec_dir, "index.html")
+
+    html_content = """<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Centro de Recursos - Tech Insurance</title>
+  <link rel="stylesheet" href="../styles.css">
+  <style>
+    .rec-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 2.5rem;
+      margin-top: 3rem;
+    }
+    .library-item {
+      background: rgba(255, 255, 255, 0.03);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      padding: 2rem;
+      border-radius: 8px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Hero Section Tecnico -->
+  <section class="hero" style="padding-bottom: 5rem; text-align: left;">
+    <div class="container hero-content">
+      <div class="hero-text" style="max-width: 900px;">
+        <div class="badge">Inteligencia de Mercado</div>
+        <h1 style="font-size: 3.5rem; margin-bottom: 2rem;">Liderando el cambio con conocimiento</h1>
+        <p style="font-size: 1.25rem;">Nuestra biblioteca especializada para líderes C-Level, Arquitectos y Actuarios. Acceda a investigaciones, análisis estructurales y testimoniales donde la adopción tecnológica desafió todos los límites comerciales de la industria.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Content Library -->
+  <section style="background-color: var(--bg-surface);">
+    <div class="container">
+      
+      <div class="rec-grid">
+        <!-- Whitepapers -->
+        <div class="library-item" style="border-top: 3px solid var(--accent-color);">
+          <h3 style="color: var(--text-primary); margin-bottom: 0.5rem; font-size: 1.3rem;">📊 Whitepapers</h3>
+          <p style="font-size: 0.95rem; margin-bottom: 1.5rem;">Guías maestras orientadas a la planificación técnica y de transición estratégica.</p>
+          <ul style="color: var(--text-secondary); padding-left: 1.2rem; font-size: 0.95rem;">
+            <li style="margin-bottom: 0.5rem;"><em>La migración progresiva: Urbanizando sistemas AS/400 sin ventanas de inactividad.</em></li>
+            <li style="margin-bottom: 0.5rem;"><em>El futuro del rating: Del sistema estático a los Multiplicadores Algorítmicos.</em></li>
+          </ul>
+        </div>
+
+        <!-- Papers -->
+        <div class="library-item" style="border-top: 3px solid #3b82f6;">
+          <h3 style="color: var(--text-primary); margin-bottom: 0.5rem; font-size: 1.3rem;">🧠 Papers Actuariales</h3>
+          <p style="font-size: 0.95rem; margin-bottom: 1.5rem;">Análisis de vanguardia publicadas por ingenieros de riesgo y científicos de datos globales.</p>
+          <ul style="color: var(--text-secondary); padding-left: 1.2rem; font-size: 0.95rem;">
+            <li style="margin-bottom: 0.5rem;"><em>Validación híbrida de Seguros Paramétricos vs. Daños físicos: Deslizamientos matemáticos.</em></li>
+            <li style="margin-bottom: 0.5rem;"><em>Análisis de Telemetría e integraciones IoT para el cálculo de Primas de Retención.</em></li>
+          </ul>
+        </div>
+
+        <!-- Casos de Éxito -->
+        <div class="library-item" style="border-top: 3px solid #10b981;">
+          <h3 style="color: var(--text-primary); margin-bottom: 0.5rem; font-size: 1.3rem;">🏆 Casos de Éxito</h3>
+          <p style="font-size: 0.95rem; margin-bottom: 1.5rem;">ROI verificable y auditorías en tiempo real sobre despliegues institucionales efectuados.</p>
+          <ul style="color: var(--text-secondary); padding-left: 1.2rem; font-size: 0.95rem;">
+            <li style="margin-bottom: 0.5rem;"><strong>Bancaseguros Tier-1:</strong> Incremento del 210% en cross-selling integrando la API Headless al home banking institucional.</li>
+            <li style="margin-bottom: 0.5rem;"><strong>Aseguradora Regional:</strong> Reducción del ciclo <em>Time-To-Market</em> (TTM) automotor en 82% utilizando Product Studio.</li>
+          </ul>
+        </div>
+
+        <!-- Research -->
+        <div class="library-item" style="border-top: 3px solid #f59e0b;">
+          <h3 style="color: var(--text-primary); margin-bottom: 0.5rem; font-size: 1.3rem;">🌐 Research Institute</h3>
+          <p style="font-size: 0.95rem; margin-bottom: 1.5rem;">Investigaciones periódicas observando la tracción económica y el flujo monetario en las verticales emergentes.</p>
+          <ul style="color: var(--text-secondary); padding-left: 1.2rem; font-size: 0.95rem;">
+            <li style="margin-bottom: 0.5rem;"><em>Evolución Embedded Insurance 2026-2030 (PDF)</em></li>
+            <li style="margin-bottom: 0.5rem;"><em>Impacto porcentual del Costo Fijo frente a arquitecturas Micro-Servicio Pay-as-you-go.</em></li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+</body>
+</html>
+"""
+
+    with open(file_path, "w", encoding="utf-8") as f:
+        f.write(html_content)
+
+if __name__ == "__main__":
+    generar_recursos()
+    print("El Centro de Recursos se ha escrito con exito.")

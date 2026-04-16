@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contacto - Tech Insurance</title>
+  <link rel="stylesheet" href="../styles.css">
+  <style>
+    .form-group { margin-bottom: 1.5rem; text-align: left; }
+    .form-label { display: block; margin-bottom: 0.5rem; color: var(--text-secondary); font-size: 0.95rem; }
+    .form-input {
+      width: 100%; padding: 0.8rem 1rem; border-radius: 6px;
+      border: 1px solid rgba(255,255,255,0.1);
+      background: rgba(0,0,0,0.3); color: var(--text-primary);
+      font-family: inherit; font-size: 1rem;
+      box-sizing: border-box;
+    }
+    .form-input:focus { outline: none; border-color: var(--accent-color); }
+    .contact-layout { display: flex; flex-wrap: wrap; gap: 4rem; margin-top: 3rem; }
+    .contact-info, .contact-form { flex: 1; min-width: 300px; }
+  </style>
+</head>
+<body>
+
+  <section class="hero" style="padding-bottom: 3rem; text-align: left;">
+    <div class="container">
+      <h1 style="font-size: 3rem;">Hablemos de escala</h1>
+      <p style="font-size: 1.25rem; max-width: 700px;">Nuestros especialistas comerciales y arquitectos de soluciones están disponibles para analizar su actual infraestructura aseguradora y trazar un mapa de migración seguro.</p>
+    </div>
+  </section>
+
+  <section style="background-color: var(--bg-surface);">
+    <div class="container contact-layout">
+      
+      <div class="contact-info">
+        <h2 style="font-size: 2rem;">Asesoría Técnica Demos</h2>
+        <p>Complete el formulario y agendaremos una sesión técnica de 45 minutos (Discovery Call). En esta primera instancia nos enfocaremos en:</p>
+        <ul style="color: var(--text-secondary); font-size: 1.05rem; line-height: 1.8;">
+          <li>Validar compatibilidad con su actual Core o ERP (AS/400).</li>
+          <li>Analizar posibles flujos de automatización para brokers o asegurados.</li>
+          <li>Revisar esquemas API y requerimientos especiales de cumplimiento (Compliance) regional.</li>
+        </ul>
+      </div>
+
+      <div class="contact-form">
+        <div class="card">
+          <form onsubmit="event.preventDefault();">
+            <div class="form-group">
+              <label class="form-label">Nombre Completo</label>
+              <input type="text" class="form-input" placeholder="Ej. Ana Martínez" required>
+            </div>
+            <div class="form-group">
+              <label class="form-label">Email Corporativo</label>
+              <input type="email" class="form-input" placeholder="ana@enterprise.com" required>
+            </div>
+            <div class="form-group">
+              <label class="form-label">Empresa / Entidad</label>
+              <input type="text" class="form-input" placeholder="Compañía de Seguros S.A.">
+            </div>
+            <div class="form-group">
+              <label class="form-label">¿Cúal es su dolor principal actual?</label>
+              <textarea class="form-input" rows="4" placeholder="Breve descripción del desafío técnico u objetivo de negocio..." required></textarea>
+            </div>
+            <button type="submit" class="cta-button" style="width: 100%; border: none; cursor: pointer;">Solicitar Asesoría</button>
+          </form>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+</body>
+</html>

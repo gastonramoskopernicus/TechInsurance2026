@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang='es'>
+<head>
+  <meta charset='UTF-8'>
+  <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+  <title>Tech Insurance - Home</title>
+  <link rel='stylesheet' href='styles.css'>
+</head>
+<body>
+
+  <section class="hero" id="hero-section">
+    <div class="container hero-content">
+      <div class="hero-text">
+        <div class="badge">Acelerador Core</div>
+        <h1>Acelerá la evolución de tu negocio asegurador</h1>
+        <p>Plataforma que potencia el core y habilita nuevos productos y canales en semanas.</p>
+        <a href="#" class="cta-button">Agendar demostración técnica</a>
+      </div>
+      <div class="hero-visual">
+        <div class="cube-container">
+          <div class="cube" id="core-cube">
+            <div class="face front"></div>
+            <div class="face back"></div>
+            <div class="face right"></div>
+            <div class="face left"></div>
+            <div class="face top"></div>
+            <div class="face bottom"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+                
+
+  <section>
+    <div class="container">
+      <div class="badge">Problema del mercado</div>
+      <h2>Agilidad bloqueada por tecnología inflexible</h2>
+      <p>Los sistemas core tradicionales retrasan el time-to-market. El alto costo de mantenimiento, la deuda técnica y las integraciones monolíticas impiden la rapidez comercial necesaria para los ecosistemas digitales actuales.</p>
+    </div>
+  </section>
+                
+
+  <section>
+    <div class="container">
+      <div class="badge">Solución</div>
+      <h2>Un motor comercial para tu sistema actual</h2>
+      <p>Tech Insurance opera como un acelerador comercial por capas. Nos integramos directamente a tu core heredado, inyectando agilidad, automatización y modernas capacidades de venta digital sin requerir dolorosas migraciones.</p>
+    </div>
+  </section>
+                
+
+  <section>
+    <div class="container">
+      <div class="badge">Capacidades</div>
+      <h2>Capacidades nativas para el negocio de escala</h2>
+      <p>Gestión paramétrica del ciclo de vida de la póliza, motores de cotización en tiempo real, suscripción automatizada con reglas de negocio dinámicas y liquidación ágil de siniestros.</p>
+    </div>
+  </section>
+                
+
+  <section class="featured-section">
+    <div class="container" style="text-align: center;">
+      <div class="badge">Product Studio (sección destacada)</div>
+      <h2>Product Studio: El núcleo de la innovación</h2>
+      <p style="margin: 0 auto 3rem auto;">Diseña, empaqueta y distribuye. Nuestro Product Studio es una herramienta avanzada que permite a los equipos comerciales e IT configurar nuevos productos aseguradores o canales de distribución en cuestión de minutos. Del concepto a la venta de forma transparente y controlada.</p>
+      <div class="card" style="display:inline-block; max-width:800px; text-align:left;">
+         <div style="height:200px; background:rgba(0,0,0,0.3); border-radius:4px; border:1px solid rgba(255,255,255,0.05); display:flex; align-items:center; justify-content:center; color:var(--text-secondary)">[ UI Placeholder ]</div>
+      </div>
+    </div>
+  </section>
+                
+
+  <section>
+    <div class="container">
+      <div class="badge">Arquitectura</div>
+      <h2>Arquitectura desacoplada y API-First</h2>
+      <p>Una infraestructura tecnológica moderna construida sobre microservicios. Expone capacidades complejas a través de APIs limpias, facilitando la integración fluida con cualquier ecosistema de partners y plataformas externas con cero interrupciones transaccionales.</p>
+    </div>
+  </section>
+                
+
+  <section>
+    <div class="container">
+      <div class="badge">Casos de uso</div>
+      <h2>Casos de uso adaptables</h2>
+      <p>Diseñado para múltiples portafolios: desde líneas tradicionales como Automotriz, Vida y Salud, hasta innovadores Seguros Embebidos (Embedded Insurance) y micro-pólizas para la nueva economía digital.</p>
+    </div>
+  </section>
+                
+
+  <section>
+    <div class="container">
+      <div class="badge">Impacto en negocio</div>
+      <h2>Métricas de ROI que transforman</h2>
+      <p>Impacto inmediato en los resultados: Reducción drástica del time-to-market (de meses a semanas), disminución de los costos operativos de emisión y un crecimiento sostenible de ingresos mediante operaciones cross-selling en ecosistemas ampliados.</p>
+    </div>
+  </section>
+                
+
+  <section>
+    <div class="container">
+      <div class="badge">Validación / robustez</div>
+      <h2>Robustez y control a escala Enterprise</h2>
+      <p>Cumplimiento normativo estricto, infraestructura en la nube de alta disponibilidad, encriptación a nivel bancario y SLAs superiores al 99.9%. Un aliado seguro para gestionar el riesgo a gran escala.</p>
+    </div>
+  </section>
+                
+
+  <section style="text-align:center;">
+    <div class="container">
+      <h2>¿Listo para la transformación acelerada?</h2>
+      <p style="margin: 0 auto 2rem auto;">Conversa con nuestros especialistas, revisa nuestra arquitectura o solicita una demostración controlada que potenciará los resultados de tu actual core asegurador.</p>
+      <a href="#" class="cta-button">Agendar demostración técnica</a>
+    </div>
+  </section>
+                
+
+<!-- Scripts Interacción Hero -->
+<script>
+  document.addEventListener('scroll', () => {
+    // Normalizar scroll de 0 a 800px para evitar expansiones infinitas
+    let scrollY = window.scrollY;
+    let factor = Math.min(scrollY / 800, 1.0);
+    // Aplicar a nivel global para que CSS calc() trabaje
+    document.documentElement.style.setProperty('--scroll-factor', factor);
+    
+    // Opcional: pequeñisima rotación sobre sí mismo según scroll
+    const cube = document.getElementById('core-cube');
+    if (cube) {
+      cube.style.transform = `rotateX(${-20 - (factor * 10)}deg) rotateY(${40 + (factor * 45)}deg)`;
+    }
+  });
+</script>
+</body>
+
+</html>

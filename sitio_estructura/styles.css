@@ -1,0 +1,216 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap');
+
+:root {
+  --bg-core: #090e17; /* Fondo azul oscuro profundo */
+  --bg-surface: #101623;
+  --text-primary: #ffffff;
+  --text-secondary: #a0aec0;
+  --accent-color: #7c3aed; /* Violeta moderno SaaS */
+  --accent-hover: #6d28d9;
+  
+  --space-y-section: 8rem;
+  --space-box: 2rem;
+  --border-radius: 8px;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Inter', sans-serif;
+  background-color: var(--bg-core);
+  color: var(--text-primary);
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+section {
+  padding: var(--space-y-section) 0;
+  border-bottom: 1px solid rgba(255,255,255,0.05);
+}
+
+section:nth-child(even) {
+  background-color: var(--bg-surface);
+}
+
+h1, h2, h3 {
+  margin-top: 0;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+h1 {
+  font-size: 3.5rem;
+  letter-spacing: -0.02em;
+  margin-bottom: 1rem;
+}
+
+h2 {
+  font-size: 2.5rem;
+  letter-spacing: -0.01em;
+  margin-bottom: 1rem;
+}
+
+p {
+  font-size: 1.125rem;
+  color: var(--text-secondary);
+  max-width: 700px;
+  margin-bottom: 2rem;
+  font-weight: 300;
+}
+
+.hero {
+  padding: 10rem 0 8rem 0;
+  text-align: center;
+}
+
+.hero h1 {
+  background: linear-gradient(135deg, #ffffff 0%, #a0aec0 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.hero p {
+  margin: 0 auto 3rem auto;
+  font-size: 1.25rem;
+}
+
+.badge {
+  display: inline-block;
+  padding: 0.25rem 0.75rem;
+  background-color: rgba(124, 58, 237, 0.15);
+  color: var(--accent-color);
+  border-radius: 9999px;
+  font-size: 0.875rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.cta-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem 2rem;
+  background-color: var(--accent-color);
+  color: #fff;
+  font-weight: 600;
+  text-decoration: none;
+  border-radius: var(--border-radius);
+  transition: all 0.2s ease;
+  font-size: 1rem;
+}
+
+.cta-button:hover {
+  background-color: var(--accent-hover);
+  transform: translateY(-2px);
+  box-shadow: 0 10px 20px -10px rgba(124, 58, 237, 0.5);
+}
+
+.card {
+  background: var(--bg-surface);
+  border: 1px solid rgba(255,255,255,0.05);
+  padding: var(--space-box);
+  border-radius: var(--border-radius);
+  transition: border-color 0.3s;
+}
+.card:hover { border-color: rgba(124,58,237,0.3); }
+
+/* Destacado: Product Studio */
+.featured-section {
+  background: radial-gradient(circle at center, rgba(124,58,237,0.15) 0%, transparent 70%), var(--bg-core);
+  border-top: 1px solid rgba(124,58,237,0.2);
+  border-bottom: 1px solid rgba(124,58,237,0.2);
+}
+
+/* === NEW HERO CUBE LAYOUT === */
+.hero {
+  padding: 10rem 0 8rem 0;
+  text-align: left; /* reset from old state */
+}
+
+.hero .container.hero-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 4rem;
+}
+
+.hero-text { flex: 1; max-width: 600px; }
+.hero-visual {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  perspective: 1200px;
+  height: 480px;
+}
+
+/* Reset inner elements to left align */
+.hero-text h1, .hero-text p { text-align: left; margin-left: 0; }
+
+/* El Cubo Tecnológico Central */
+.cube-container {
+  width: 160px;
+  height: 160px;
+  position: relative;
+  transform-style: preserve-3d;
+  /* Sútil flotación para evitar estatismo */
+  animation: floatCube 8s ease-in-out infinite;
+}
+
+.cube {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  transform-style: preserve-3d;
+  transform: rotateX(-20deg) rotateY(40deg);
+  /* Rotate sutil como extra if wanted, pero con scroll es elegante limitarse al desacople */
+  transition: transform 0.1s linear;
+}
+
+.face {
+  position: absolute;
+  width: 160px;
+  height: 160px;
+  background: rgba(14, 21, 38, 0.85); /* Fondo Dark-Glass */
+  border: 1px solid rgba(124, 58, 237, 0.5); /* Violeta vibrante */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  backdrop-filter: blur(6px);
+  transition: transform 0.2s cubic-bezier(0.1, 0.7, 0.1, 1);
+}
+
+/* Efecto de luz interna dramática */
+.face::before {
+  content: '';
+  position: absolute;
+  top: 10%; left: 10%; right: 10%; bottom: 10%;
+  background: radial-gradient(circle, rgba(124, 58, 237, 0.3) 0%, transparent 60%);
+  z-index: -1;
+}
+
+/* El desacople del Core evolutivo ligado al Scroll usando la variable --scroll-factor */
+.front  { transform: translateZ(calc(80px + (var(--scroll-factor, 0) * 120px))); }
+.back   { transform: rotateY(180deg) translateZ(calc(80px + (var(--scroll-factor, 0) * 120px))); }
+.right  { transform: rotateY(90deg) translateZ(calc(80px + (var(--scroll-factor, 0) * 120px))); }
+.left   { transform: rotateY(-90deg) translateZ(calc(80px + (var(--scroll-factor, 0) * 120px))); }
+.top    { transform: rotateX(90deg) translateZ(calc(80px + (var(--scroll-factor, 0) * 120px))); }
+.bottom { 
+  transform: rotateX(-90deg) translateZ(calc(80px + (var(--scroll-factor, 0) * 120px)));
+  /* Resplandor base o iluminación dramática desde el piso del objeto */
+  box-shadow: 0 0 100px 30px rgba(124, 58, 237, 0.4); 
+}
+
+@keyframes floatCube {
+  0%   { transform: translateY(0px) rotateY(0deg); }
+  50%  { transform: translateY(-20px) rotateY(5deg); }
+  100% { transform: translateY(0px) rotateY(0deg); }
+}

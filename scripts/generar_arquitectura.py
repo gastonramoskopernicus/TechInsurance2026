@@ -1,0 +1,101 @@
+import os
+
+def generar_arquitectura():
+    base_dir = "sitio_estructura"
+    plataforma_dir = os.path.join(base_dir, "plataforma")
+    os.makedirs(plataforma_dir, exist_ok=True)
+    
+    file_path = os.path.join(plataforma_dir, "arquitectura.html")
+
+    html_content = """<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Arquitectura de Sistema - Tech Insurance</title>
+  <link rel="stylesheet" href="../styles.css">
+  <style>
+    .arch-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      gap: 2rem;
+      margin-top: 3rem;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Hero Section Tecnico -->
+  <section class="hero" style="padding-bottom: 5rem; text-align: left;">
+    <div class="container hero-content">
+      <div class="hero-text" style="max-width: 900px;">
+        <div class="badge">Technical Overview</div>
+        <h1 style="font-size: 3.5rem; margin-bottom: 2rem;">Diseñado para la resiliencia y la escalabilidad</h1>
+        <p style="font-size: 1.25rem;">Transforme la deuda técnica en su mayor activo. Tech Insurance implementa una arquitectura basada en microservicios, agnóstica de infraestructura, que envuelve a su core existente bajo un modelo de concurrencia y latencia ultra-baja.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section 1: Desacople y APIs -->
+  <section style="background-color: var(--bg-surface);">
+    <div class="container">
+      <h2>Arquitectura API-First Desacoplada</h2>
+      <div class="arch-grid">
+        <div class="card">
+          <h3 style="color: var(--text-primary); margin-bottom: 0.5rem;">Desacoplamiento Estructural</h3>
+          <p style="font-size: 1rem; margin-bottom: 0;">Separación estricta entre el frontend (Headless) y las lógicas de negocio transaccionales del backend. Permite escalar nodos de cotización o emisión de forma aislada sin comprometer los microservicios de facturación o gestión de siniestros.</p>
+        </div>
+        <div class="card">
+          <h3 style="color: var(--text-primary); margin-bottom: 0.5rem;">Orquestación vía APIs (REST / GraphQL)</h3>
+          <p style="font-size: 1rem; margin-bottom: 0;">Todo punto de contacto interno o externo es una API consumible. Garantizamos latencias de submilisegundos en transacciones comerciales pesadas gracias a arquitecturas orientadas a eventos (Kafka/RabbitMQ) para la mensajería asincrónica.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section 2: Convivencia y Legacy -->
+  <section>
+    <div class="container">
+      <h2>Convivencia Simbiótica con el Core</h2>
+      <p style="max-width: 800px; margin-bottom: 3rem;">Sabemos que sustituir sistemas AS/400 o ERPs monolíticos (como Guidewire o SAP tradicionales) representa un riesgo corporativo mayúsculo. Tech Insurance opera bajo un modelo "Over-The-Top" o estrangulador inverso.</p>
+      
+      <div class="arch-grid" style="margin-top: 0;">
+        <div>
+          <h3 style="color: var(--accent-color);">Integración sin Big Bang</h3>
+          <p style="font-size: 1rem;">Nuestras capas de integración inyectan conectores bidireccionales construidos mediante adaptadores ETL y Webhooks sobre la base de datos de su Core actual. Actuamos como un middleware de inteligencia distribuida.</p>
+        </div>
+        <div>
+          <h3 style="color: var(--accent-color);">Master Data Management</h3>
+          <p style="font-size: 1rem;">Sincronizamos la verdad del dato. Si su AS/400 es el sistema de registro (System of Record), Tech Insurance asume el rol de sistema de enganche operativo (System of Engagement), cacheando esquemas transaccionales bajo Redis para evitar la degradación del core durante picos masivos.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section 3: Despliegue -->
+  <section style="background-color: var(--bg-surface);">
+    <div class="container">
+      <h2>Agnóstico a Nivel de Infraestructura</h2>
+      <div class="arch-grid">
+        <div class="card" style="border-left: 3px solid var(--accent-color)">
+          <h3 style="color: var(--text-primary); margin-bottom: 0.5rem;">SaaS & Public Cloud (Recomendado)</h3>
+          <p style="font-size: 1rem; margin-bottom: 0;">Despliegue instanciado sobre infraestructuras multitenant en AWS, MS Azure o GCP. Implementación apalancada en Kubernetes (K8s) asegurando el auto-tensión elástica y toleración a particiones de zona (High Availability).</p>
+        </div>
+        <div class="card" style="border-left: 3px solid #3b82f6">
+          <h3 style="color: var(--text-primary); margin-bottom: 0.5rem;">On-Premise y Nubes Híbridas</h3>
+          <p style="font-size: 1rem; margin-bottom: 0;">Diseñado para reguladores estrictos (soberanía del dato). Entregamos las imágenes Docker nativas de la plataforma para ser levantadas dentro del perímetro físico y clústers del cliente o a través de despliegues segregados AWS Outposts.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</body>
+</html>
+"""
+
+    with open(file_path, "w", encoding="utf-8") as f:
+        f.write(html_content)
+
+if __name__ == "__main__":
+    generar_arquitectura()
+    print("Contenido Técnico de Arquitectura generado exitosamente.")
