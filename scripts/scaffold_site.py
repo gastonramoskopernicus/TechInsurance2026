@@ -1,4 +1,39 @@
-import Image from "next/image";
+import os
+
+def main():
+    print("Iniciando scaffolding masivo de la estructura del sitio...")
+    base_dir = os.path.abspath(os.path.join(os.path.dirname(__file__), '..', 'app'))
+    
+    # --- 1. MODIFICAR Header.tsx ---
+    header_path = os.path.join(base_dir, 'components', 'Header.tsx')
+    if os.path.exists(header_path):
+        with open(header_path, 'r', encoding='utf-8') as f:
+            header_content = f.read()
+        
+        # Reemplazar array navItems y links
+        # Buscamos la asignacion del navItems const
+        new_nav_array = """const navItems = [
+    { label: "Plataforma", href: "/plataforma" },
+    { label: "Product Studio", href: "/product-studio" },
+    { label: "Arquitectura", href: "/arquitectura" },
+    { label: "Soluciones", href: "/soluciones" },
+    { label: "Casos de Uso", href: "/casos-de-uso" },
+    { label: "Recursos", href: "/recursos" },
+    { label: "Empresa", href: "/empresa" },
+    { label: "Contacto", href: "/contacto" },
+  ];"""
+        import re
+        header_content = re.sub(r'const navItems = \[\s*\{[^\}]*\},\s*\{[^\}]*\},\s*\{[^\}]*\},\s*\{[^\}]*\},\s*\{[^\}]*\},\s*\{[^\}]*\},\s*\];', new_nav_array, header_content, flags=re.DOTALL)
+        # Update link login and demo to physical pages
+        header_content = header_content.replace('href="#login"', 'href="/login"')
+        header_content = header_content.replace('href="#demo"', 'href="/contacto"')
+        
+        with open(header_path, 'w', encoding='utf-8') as f:
+            f.write(header_content)
+        print("Header.tsx actualizado.")
+
+    # --- 2. MODIFICAR page.tsx (Home) ---
+    home_content = """import Image from "next/image";
 
 export default function Home() {
   return (
@@ -151,3 +186,119 @@ export default function Home() {
     </div>
   );
 }
+"""
+    with open(os.path.join(base_dir, 'page.tsx'), 'w', encoding='utf-8') as f:
+        f.write(home_content)
+    print("page.tsx de Home actualizado con subtítulos jerárquicos.")
+
+    # --- 3. GENERAR PÁGINAS NUEVAS ---
+    paginas_info = {
+        'plataforma': {
+            'title': 'Tech Insurance como plataforma de innovación aseguradora',
+            'sections': ['Qué es Tech Insurance', 'Qué problemas resuelve', 'Qué NO es (no reemplaza el core)', 'Concepto de urbanización del core', 'Plataforma modular y escalable', 'Integración con ecosistema']
+        },
+        'product-studio': {
+            'title': 'El núcleo de creación de productos',
+            'sections': ['Modelado de productos', 'Coberturas reutilizables', 'Reglas y parametrización', 'Fórmulas dinámicas', 'Creación de productos a partir de otros productos', 'Autonomía del negocio (No-Code)']
+        },
+        'arquitectura': {
+            'title': 'Arquitectura SaaS Enterprise',
+            'sections': ['Arquitectura desacoplada', 'API-first', 'Integración con core legacy', 'Microservicios', 'Orquestación', 'Escalabilidad', 'Multi-entorno (cloud / on-premise)']
+        },
+        'soluciones': {
+            'title': 'Soluciones por Vertical',
+            'sections': ['Embedded Insurance', 'Bancaseguros', 'Canales digitales', 'B2B / B2B2C', 'Productos on-demand', 'Seguros paramétricos']
+        },
+        'casos-de-uso': {
+            'title': 'Casos de Uso de la Plataforma',
+            'sections': ['Lanzamiento rápido de productos', 'Integraciones con partners', 'Productos temporales', 'Bundles de productos', 'Testeo de nuevos modelos', 'Nichos específicos']
+        },
+        'casos-de-exito': {
+            'title': 'Casos de Éxito',
+            'sections': ['Problema', 'Solución implementada', 'Resultado (ROI / impacto)']
+        },
+        'recursos': {
+            'title': 'Recursos y Papers',
+            'sections': ['Artículos', 'Whitepapers', 'Insights de mercado', 'Innovación en seguros']
+        },
+        'empresa': {
+            'title': 'Nuestra Empresa',
+            'sections': ['Quién es Kopernicus Tech', 'Experiencia en seguros', 'Capacidades', 'Equipo', 'Presencia regional']
+        },
+        'pricing': {
+            'title': 'Modelo Conceptual de Pricing',
+            'sections': ['Licenciamiento (IP propia)', 'SaaS (multi-tenant)', 'Por producto (PoC)', 'Acompañamiento consultivo']
+        },
+        'contacto': {
+            'title': 'Contacto Comercial',
+            'sections': ['Formulario simple', 'CTA comercial', 'Mensaje orientado a discovery']
+        },
+        'login': {
+            'title': 'Acceso a la Plataforma',
+            'sections': ['Placeholder simple para acceso futuro']
+        },
+        'legal': {
+            'title': 'Legal y Privacidad',
+            'sections': ['Términos', 'Privacidad']
+        }
+    }
+
+    base_tsx_template = """export default function {component_name}Page() {{
+  return (
+    <div className="flex flex-col w-full">
+      <section className="relative pt-32 pb-16 border-b border-border/50 bg-[#020202] px-4">
+        <div className="container mx-auto max-w-5xl">
+          <h1 className="text-4xl md:text-5xl font-extrabold tracking-tight text-white mb-6">
+            {title}
+          </h1>
+          <p className="text-xl text-muted-foreground max-w-2xl">
+            {subtitle}
+          </p>
+        </div>
+      </section>
+
+      <section className="py-20 px-4">
+        <div className="container mx-auto max-w-5xl">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
+            {sections_jsx}
+          </div>
+        </div>
+      </section>
+    </div>
+  );
+}}
+"""
+
+    for path, data in paginas_info.items():
+        page_dir = os.path.join(base_dir, path)
+        os.makedirs(page_dir, exist_ok=True)
+        
+        # Component Name from path
+        comp_name = path.replace('-', ' ').title().replace(' ', '')
+        title = data['title']
+        subtitle = "Descubra cómo nuestra plataforma acelera y potencia sus capacidades." if path != 'login' else "Inicie sesión en su portal administrativo."
+        
+        sections_jsx = ""
+        for sec in data['sections']:
+            sections_jsx += f'''
+            <div className="p-8 rounded-xl bg-background border border-border/50">
+              <h3 className="text-xl font-bold text-foreground mb-4">{sec}</h3>
+              <p className="text-muted-foreground leading-relaxed">Contenido estructural base referente a {sec.lower()}. Aquí se insertará la información específica, infografías y métricas del módulo en futuras iteraciones de diseño.</p>
+            </div>'''
+            
+        final_code = base_tsx_template.format(
+            component_name=comp_name,
+            title=title,
+            subtitle=subtitle,
+            sections_jsx=sections_jsx
+        )
+        
+        with open(os.path.join(page_dir, 'page.tsx'), 'w', encoding='utf-8') as f:
+            f.write(final_code)
+        
+        print(f"Creada página: /{path}")
+
+    print("✅ Scaffolding masivo finalizado.")
+
+if __name__ == '__main__':
+    main()
