@@ -1,4 +1,15 @@
-"use client";
+import os
+
+def main():
+    print("Desplegando el Hub de Contacto Interactivo y Segmentado...")
+    
+    base_dir = os.path.abspath(os.path.join(os.path.dirname(__file__), '..', 'app'))
+    con_dir = os.path.join(base_dir, 'contacto')
+    os.makedirs(con_dir, exist_ok=True)
+    
+    con_page_path = os.path.join(con_dir, 'page.tsx')
+    
+    new_con_page = r'''"use client";
 
 import Image from "next/image";
 import { useState } from "react";
@@ -150,3 +161,11 @@ export default function ContactoPage() {
     </div>
   );
 }
+'''
+    with open(con_page_path, 'w', encoding='utf-8') as f:
+        f.write(new_con_page)
+
+    print("✅ Página Contacto Dinámica Creada Exitosamente.")
+
+if __name__ == '__main__':
+    main()
