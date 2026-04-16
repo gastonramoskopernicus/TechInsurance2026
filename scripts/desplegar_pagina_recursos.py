@@ -1,4 +1,15 @@
-import Image from "next/image";
+import os
+
+def main():
+    print("Desplegando Hub de Conocimiento /recursos para Tech Insurance...")
+    
+    base_dir = os.path.abspath(os.path.join(os.path.dirname(__file__), '..', 'app'))
+    rec_dir = os.path.join(base_dir, 'recursos')
+    os.makedirs(rec_dir, exist_ok=True)
+    
+    rec_page_path = os.path.join(rec_dir, 'page.tsx')
+    
+    new_rec_page = r'''import Image from "next/image";
 
 export default function RecursosPage() {
   return (
@@ -230,3 +241,11 @@ export default function RecursosPage() {
     </div>
   );
 }
+'''
+    with open(rec_page_path, 'w', encoding='utf-8') as f:
+        f.write(new_rec_page)
+
+    print("✅ Página Reservorio de Recursos desplegada y taxonomizada con Branding Enterprise.")
+
+if __name__ == '__main__':
+    main()
