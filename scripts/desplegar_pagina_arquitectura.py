@@ -1,4 +1,16 @@
-import Image from "next/image";
+import os
+
+def main():
+    print("Desplegando la página de Arquitectura con el estándar Enterprise...")
+    
+    base_dir = os.path.abspath(os.path.join(os.path.dirname(__file__), '..', 'app'))
+    arq_dir = os.path.join(base_dir, 'arquitectura')
+    os.makedirs(arq_dir, exist_ok=True)
+    
+    arq_page_path = os.path.join(arq_dir, 'page.tsx')
+    
+    # --- ESCRITURA HTML UNIFICADA PARA /ARQUITECTURA/PAGE.TSX ---
+    new_arq_page = r'''import Image from "next/image";
 
 export default function ArquitecturaPage() {
   return (
@@ -232,3 +244,11 @@ export default function ArquitecturaPage() {
     </div>
   );
 }
+'''
+    with open(arq_page_path, 'w', encoding='utf-8') as f:
+        f.write(new_arq_page)
+
+    print("✅ Página Arquitectura regenerada masivamente.")
+
+if __name__ == '__main__':
+    main()
