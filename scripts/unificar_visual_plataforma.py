@@ -1,4 +1,14 @@
-import Image from "next/image";
+import os
+
+def main():
+    print("Desplegando ecosistema visual de nivel Enterprise en Plataforma...")
+    base_dir = os.path.abspath(os.path.join(os.path.dirname(__file__), '..', 'app', 'plataforma'))
+    
+    page_path = os.path.join(base_dir, 'page.tsx')
+    if os.path.exists(page_path):
+        
+        # We rewrite the entire /plataforma/page.tsx with the meticulously styled DOM keeping text 1:1
+        new_page_content = """import Image from "next/image";
 
 export default function PlataformaPage() {
   return (
@@ -282,3 +292,10 @@ export default function PlataformaPage() {
     </div>
   );
 }
+"""
+        with open(page_path, 'w', encoding='utf-8') as f:
+            f.write(new_page_content)
+        print("✅ Refinamiento de página Plataforma finalizado conservando paridad total con ecosistema Home y rutings inalterados.")
+
+if __name__ == '__main__':
+    main()
