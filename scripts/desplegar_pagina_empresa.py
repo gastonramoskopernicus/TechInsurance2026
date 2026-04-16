@@ -1,4 +1,15 @@
-import Image from "next/image";
+import os
+
+def main():
+    print("Desplegando la página corporativa /empresa para el Holding Kopernicus...")
+    
+    base_dir = os.path.abspath(os.path.join(os.path.dirname(__file__), '..', 'app'))
+    emp_dir = os.path.join(base_dir, 'empresa')
+    os.makedirs(emp_dir, exist_ok=True)
+    
+    emp_page_path = os.path.join(emp_dir, 'page.tsx')
+    
+    new_emp_page = r'''import Image from "next/image";
 
 export default function EmpresaPage() {
   return (
@@ -264,3 +275,11 @@ export default function EmpresaPage() {
     </div>
   );
 }
+'''
+    with open(emp_page_path, 'w', encoding='utf-8') as f:
+        f.write(new_emp_page)
+
+    print("✅ Página Corporativa Kopernicus regenerada exitosamente.")
+
+if __name__ == '__main__':
+    main()
