@@ -135,24 +135,30 @@ export default function RecursosPage() {
             <p className="text-xl text-zinc-400 font-light max-w-2xl mx-auto">Material visual e intervenciones públicas definiendo la pauta global insurtech en los últimos foros de mercado.</p>
           </div>
           
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 mb-12">
             {[
-              { title: 'Tech Insurance Vision Overview 2026', desc: 'Panel Oficial Internacional en Insurtech Connect, Miami.'},
-              { title: 'El Desacople del Ecosistema Product Studio', desc: 'Webinar Técnico cerrado para Gerentes de Sistemas (CTOs).'},
-              { title: 'Canales Automáticos & Bancaseguros B2B', desc: 'Mesa de discusión de rentabilidad bancaria mediante distribución embebida.'},
-              { title: 'Trazabilidad y Sandboxes Legales', desc: 'Auditoría estricta de compliance y resguardo legal para entidades de alto vuelo regulatorio.'}
+              { id: '37LdiHUi6A8', title: 'Visión Estratégica: Ecosistemas Aseguradores Abiertos', desc: 'Análisis profundo sobre el impacto del desacople y el futuro del core corporativo integrando agentes externos.'},
+              { id: '5rF4i2rLTGk', title: 'Product Studio en Práctica', desc: 'Taller de integración. Demostración práctica de cómo generar rentabilidad en banca-seguros apalancando módulos agnósticos.'}
             ].map((item, idx) => (
-              <a href="#" key={idx} className="group flex flex-col sm:flex-row items-stretch border border-white/5 bg-[#0f0e11] rounded-[2rem] hover:bg-[#16141a] hover:border-fuchsia-900/50 transition-all duration-300 overflow-hidden shadow-xl">
-                 <div className="sm:w-1/3 bg-[#0a050b] flex items-center justify-center p-8 group-hover:bg-[#110512] transition-colors relative">
-                    <div className="absolute inset-0 bg-[linear-gradient(45deg,rgba(217,70,239,0.05)_25%,transparent_25%,transparent_50%,rgba(217,70,239,0.05)_50%,rgba(217,70,239,0.05)_75%,transparent_75%,transparent_100%)] bg-[length:20px_20px]" />
-                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" className="w-16 h-16 text-zinc-700 group-hover:text-fuchsia-500 transition-all duration-500 group-hover:scale-110 relative z-10"><polygon points="5 3 19 12 5 21 5 3"/></svg>
+              <div key={idx} className="group flex flex-col bg-[#0f0e11] rounded-[2rem] hover:bg-[#16141a] border border-white/5 hover:border-fuchsia-900/50 transition-all duration-300 overflow-hidden shadow-[0_10px_30px_rgba(0,0,0,0.5)]">
+                 <div className="w-full aspect-video relative bg-black border-b border-white/5">
+                    <iframe 
+                      className="w-full h-full"
+                      src={`https://www.youtube.com/embed/${item.id}?rel=0&modestbranding=1`}
+                      title={item.title}
+                      frameBorder="0"
+                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                      allowFullScreen
+                    ></iframe>
                  </div>
-                 <div className="p-8 sm:w-2/3 flex flex-col justify-center">
-                    <h4 className="text-lg font-bold text-white mb-2 leading-snug group-hover:text-fuchsia-100">{item.title}</h4>
-                    <p className="text-zinc-500 font-light text-sm mb-4 leading-relaxed">{item.desc}</p>
-                    <span className="text-fuchsia-600/80 font-bold text-xs uppercase tracking-widest flex items-center gap-2 group-hover:text-fuchsia-400">Ver en Youtube <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" className="w-3 h-3"><polyline points="9 18 15 12 9 6"/></svg></span>
+                 <div className="p-8 flex flex-col justify-center flex-1">
+                    <h4 className="text-xl font-bold text-white mb-3 leading-snug group-hover:text-fuchsia-100">{item.title}</h4>
+                    <p className="text-zinc-500 font-light text-sm mb-6 leading-relaxed flex-1">{item.desc}</p>
+                    <a href={`https://www.youtube.com/watch?v=${item.id}`} target="_blank" rel="noopener noreferrer" className="text-fuchsia-600/80 font-bold text-xs uppercase tracking-widest flex items-center gap-2 group-hover:text-fuchsia-400 w-fit">
+                       Visualizar en Youtube <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" className="w-3 h-3"><polyline points="9 18 15 12 9 6"/></svg>
+                    </a>
                  </div>
-              </a>
+              </div>
             ))}
           </div>
 
