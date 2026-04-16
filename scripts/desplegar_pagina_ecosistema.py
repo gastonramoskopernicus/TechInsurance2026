@@ -1,4 +1,15 @@
-import Image from "next/image";
+import os
+
+def main():
+    print("Desplegando la página de Ecosistema Integrado para Tech Insurance...")
+    
+    base_dir = os.path.abspath(os.path.join(os.path.dirname(__file__), '..', 'app'))
+    eco_dir = os.path.join(base_dir, 'ecosistema')
+    os.makedirs(eco_dir, exist_ok=True)
+    
+    eco_page_path = os.path.join(eco_dir, 'page.tsx')
+    
+    new_eco_page = r'''import Image from "next/image";
 
 export default function EcosistemaPage() {
   return (
@@ -197,3 +208,11 @@ export default function EcosistemaPage() {
     </div>
   );
 }
+'''
+    with open(eco_page_path, 'w', encoding='utf-8') as f:
+        f.write(new_eco_page)
+
+    print("✅ Página Ecosistema regenerada conectivamente e inyectada con Branding Kopernicus.")
+
+if __name__ == '__main__':
+    main()
