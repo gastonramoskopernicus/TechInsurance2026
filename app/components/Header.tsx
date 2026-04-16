@@ -30,7 +30,7 @@ export default function Header() {
             <Link
               key={item.label}
               href={item.href}
-              className="text-muted-foreground transition-colors hover:text-foreground"
+              className="text-muted-foreground transition-all duration-300 hover:text-fuchsia-500 hover:scale-[1.05] inline-block"
             >
               {item.label}
             </Link>

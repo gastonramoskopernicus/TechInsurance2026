@@ -5,12 +5,18 @@ export default function Home() {
     <div className="flex flex-col w-full">
       {/* 1. Hero Section */}
       <section id="hero" className="relative min-h-[90vh] flex flex-col items-center justify-center border-b border-border/50 bg-[#020202] overflow-hidden px-4 py-24 sm:py-32">
-        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-fuchsia-900/20 rounded-full blur-[120px] pointer-events-none" />
+        {/* Cosmic Deep Space Background Overlay */}
+        <div className="absolute inset-0 z-0 opacity-[0.35]">
+           <Image src="/hero-cosmic-bg.png" alt="Cosmic Nebula Layer" fill className="object-cover" priority quality={100} />
+        </div>
+        <div className="absolute inset-0 z-0 bg-gradient-to-b from-transparent via-[#020202]/30 to-[#020202]" />
+
+        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-fuchsia-900/40 rounded-full blur-[120px] pointer-events-none z-0" />
         <div className="absolute top-1/4 right-1/4 w-[400px] h-[400px] bg-pink-600/10 rounded-full blur-[100px] pointer-events-none" />
         <div className="container mx-auto max-w-6xl text-center relative z-10 flex flex-col items-center">
-          <div className="relative w-64 h-64 sm:w-80 sm:h-80 md:w-96 md:h-96 mb-12">
+          <div className="relative w-72 h-72 sm:w-[22rem] sm:h-[22rem] md:w-[28rem] md:h-[28rem] mb-6 mix-blend-screen Supports-[mix-blend-mode]:mix-blend-plus-lighter">
             <Image 
-              src="/hero-cube.png" 
+              src="/hero-logo-premium.png" 
               alt="Tech Insurance Core Architecture" 
               fill
               className="object-contain drop-shadow-[0_0_30px_rgba(217, 70, 239,0.3)]"
