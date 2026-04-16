@@ -66,7 +66,7 @@ export default function PlataformaPage() {
       </section>
 
       {/* 4. MÓDULOS DE NEGOCIO */}
-      <section id="modulos" className="py-24 px-4 bg-[#050505] border-b border-border/50 pt-32 -mt-16">
+      <section id="modulos" className="py-24 px-4 bg-[#050505] border-b border-border/50 pt-32 -mt-16 scroll-mt-32">
         <div className="container mx-auto max-w-6xl">
           <span className="text-primary font-semibold tracking-wider text-sm uppercase mb-2 block">La Suite</span>
           <h2 className="text-3xl font-bold mb-6 text-foreground">Módulos Core</h2>
@@ -99,7 +99,7 @@ export default function PlataformaPage() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16">
             
             {/* Capacidades */}
-            <div id="capacidades" className="pt-28 -mt-28">
+            <div id="capacidades" className="pt-28 -mt-28 scroll-mt-32">
               <h2 className="text-3xl font-bold mb-8 text-foreground">Capacidades Centrales</h2>
               <ul className="space-y-4 text-muted-foreground text-lg">
                 <li className="flex gap-3"><div className="mt-2 w-2 h-2 rounded-full bg-primary flex-shrink-0"></div> Modelado de productos sin dependencia de IT</li>
@@ -111,7 +111,7 @@ export default function PlataformaPage() {
             </div>
 
             {/* Product Studio Deep Dive */}
-            <div id="product-studio" className="p-8 bg-indigo-900/10 border border-indigo-500/20 rounded-2xl relative overflow-hidden pt-12 -mt-4">
+            <div id="product-studio" className="p-8 bg-indigo-900/10 border border-indigo-500/20 rounded-2xl relative overflow-hidden pt-12 -mt-4 scroll-mt-32">
                <h2 className="text-3xl font-bold mb-6 text-white relative z-10">Product Studio</h2>
                <p className="text-lg text-indigo-200 mb-6 relative z-10 font-medium">
                  El Product Studio redefine cómo se construyen los productos de seguros.
@@ -133,7 +133,7 @@ export default function PlataformaPage() {
       </section>
 
       {/* 5. ARQUITECTURA */}
-      <section id="arquitectura" className="py-24 px-4 bg-muted/20 border-b border-border/50 pt-32 -mt-16">
+      <section id="arquitectura" className="py-24 px-4 bg-muted/20 border-b border-border/50 pt-32 -mt-16 scroll-mt-32">
         <div className="container mx-auto max-w-6xl text-center">
           <span className="text-emerald-500 font-semibold tracking-wider text-sm uppercase mb-2 block">Fundación Técnica</span>
           <h2 className="text-3xl font-bold mb-6 text-foreground">Arquitectura Desacoplada</h2>
@@ -162,28 +162,28 @@ export default function PlataformaPage() {
       </section>
 
       {/* BLOQUES PLACEHOLDERS SOLICITADOS POR ESTRUCTURA */}
-      <section id="orquestacion" className="py-20 px-4 pt-32 -mt-16 border-b border-border/50">
+      <section id="orquestacion" className="py-20 px-4 pt-32 -mt-16 border-b border-border/50 scroll-mt-32">
         <div className="container mx-auto max-w-6xl">
           <h2 className="text-3xl font-bold mb-6 text-foreground">Orquestación Comercial</h2>
           <p className="text-muted-foreground text-lg mb-8 max-w-3xl">Automatice y controle la gestión de ciclos de vida completos. Desde la cotización y campañas hasta flujos externos con partners y ecosistemas, usando reglas claras sin intervención manual continua.</p>
         </div>
       </section>
 
-      <section id="api-developer" className="py-20 px-4 pt-32 -mt-16 bg-[#050505] border-b border-border/50">
+      <section id="api-developer" className="py-20 px-4 pt-32 -mt-16 bg-[#050505] border-b border-border/50 scroll-mt-32">
         <div className="container mx-auto max-w-6xl">
           <h2 className="text-3xl font-bold mb-6 text-foreground">API & Developer Platform</h2>
           <p className="text-muted-foreground text-lg mb-8 max-w-3xl">Portal corporativo unificado de catálogos y servicios. Asegure una escalabilidad inmediata para equipos internos o desarrolladores terceros con sandboxes pre-configurados.</p>
         </div>
       </section>
 
-      <section id="seguridad" className="py-20 px-4 pt-32 -mt-16 border-b border-border/50">
+      <section id="seguridad" className="py-20 px-4 pt-32 -mt-16 border-b border-border/50 scroll-mt-32">
         <div className="container mx-auto max-w-6xl">
           <h2 className="text-3xl font-bold mb-6 text-foreground">Seguridad & Compliance</h2>
           <p className="text-muted-foreground text-lg mb-8 max-w-3xl">Cumplimiento nativo para arquitecturas financieras. Con ambientes auditables nativamente, gobierno de accesos estricto y trazabilidad criptográfica sobre cada configuración expuesta de sus pólizas.</p>
         </div>
       </section>
 
-      <section id="licenciamiento" className="py-20 px-4 pt-32 -mt-16 bg-muted/20 pb-32">
+      <section id="licenciamiento" className="py-20 px-4 pt-32 -mt-16 bg-muted/20 pb-32 scroll-mt-32">
         <div className="container mx-auto max-w-6xl">
           <h2 className="text-3xl font-bold mb-6 text-foreground">Modelos de Licenciamiento</h2>
           <p className="text-muted-foreground text-lg max-w-3xl">Ofrecemos infraestructura SaaS multi-tenant o despliegues dedicados Enterprise, brindando a las compañías libertad de acompañamiento evolutivo y seguridad de propiedad intelectual sobre el código.</p>
