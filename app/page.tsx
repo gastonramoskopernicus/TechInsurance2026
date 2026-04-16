@@ -59,7 +59,7 @@ export default function Home() {
             <span className="text-fuchsia-600 font-semibold tracking-widest text-xs uppercase mb-3 block">El Desafío</span>
             <h2 className="text-3xl md:text-5xl font-bold text-white tracking-tight mb-8">
               El problema no es tecnológico.<br/>
-              <span className="text-transparent bg-clip-text bg-gradient-to-r from-zinc-300 to-zinc-500">Es estructural.</span>
+              <span className="text-transparent bg-clip-text bg-gradient-to-r from-fuchsia-400 to-pink-400">Es estructural.</span>
             </h2>
             <p className="text-xl text-zinc-400 max-w-2xl mx-auto font-light leading-relaxed">
               Los sistemas core fueron diseñados para operar, no para innovar. Cada intento de forzar nuevas lógicas sobre ellos desencadena los mismos bloqueos:
@@ -115,7 +115,7 @@ export default function Home() {
         <div className="container mx-auto px-4 lg:px-8 max-w-7xl relative z-10">
           <div className="text-center mb-24">
             <span className="text-fuchsia-500 font-semibold tracking-widest text-xs uppercase mb-3 block">Nuestra Solución</span>
-            <h2 className="text-4xl md:text-5xl font-bold text-white tracking-tight">Tech Insurance desacopla la innovación.</h2>
+            <h2 className="text-4xl md:text-5xl font-bold text-white tracking-tight">Tech Insurance desacopla <br className="hidden md:block"/><span className="text-transparent bg-clip-text bg-gradient-to-r from-fuchsia-400 to-pink-400">la innovación.</span></h2>
           </div>
           
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-8">
@@ -156,7 +156,7 @@ export default function Home() {
         <div className="container mx-auto px-4 lg:px-8 max-w-7xl relative z-10">
           <div className="text-center mb-24">
             <span className="text-fuchsia-500 font-semibold tracking-widest text-xs uppercase mb-3 block">Core Capabilities</span>
-            <h2 className="text-4xl md:text-5xl font-bold text-white tracking-tight">Acelere productos, canales y experiencias</h2>
+            <h2 className="text-4xl md:text-5xl font-bold text-white tracking-tight">Acelere productos, canales y <span className="text-transparent bg-clip-text bg-gradient-to-r from-fuchsia-400 to-pink-400">experiencias</span></h2>
           </div>
           
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 lg:gap-10">
@@ -210,7 +210,7 @@ export default function Home() {
           </div>
 
           <span className="text-fuchsia-500 font-semibold tracking-wider text-sm uppercase mb-3 block">Innovation Hub</span>
-          <h2 className="text-4xl md:text-5xl font-bold mb-8 text-white">Product Studio: Autonomía Comercial</h2>
+          <h2 className="text-4xl md:text-5xl font-bold mb-8 text-white">Product Studio: <span className="text-transparent bg-clip-text bg-gradient-to-r from-fuchsia-400 to-pink-400">Autonomía Comercial</span></h2>
           <div className="max-w-4xl mx-auto border border-fuchsia-500/10 rounded-2xl p-10 lg:p-14 bg-black/50 backdrop-blur-md hover:border-fuchsia-500/20 transition-colors">
             <p className="text-zinc-300 text-xl font-light leading-relaxed">
               Otorgue el poder a sus equipos de negocio estratégico. Nuestro entorno de configuración No-Code permite conceptualizar, tarificar y validar seguros en el mercado a una velocidad sin precedentes, eliminando la dependencia crítica de IT.
@@ -223,7 +223,7 @@ export default function Home() {
       <section id="arquitectura" className="py-24 bg-[#0f0e11] border-b border-border/50">
         <div className="container mx-auto px-4 lg:px-8 max-w-5xl text-center">
           <span className="text-fuchsia-600 font-semibold tracking-wider text-sm uppercase mb-2 block">Infraestructura Constante</span>
-          <h2 className="text-3xl font-bold mb-6 text-white tracking-tight">Arquitectura API-First y Cloud-Native</h2>
+          <h2 className="text-3xl md:text-4xl font-bold mb-6 text-white tracking-tight">Arquitectura API-First y <span className="text-transparent bg-clip-text bg-gradient-to-r from-fuchsia-400 to-pink-400">Cloud-Native</span></h2>
           <p className="text-zinc-400 text-lg max-w-3xl mx-auto font-light leading-relaxed">
             Diseñada para escalar de manera predecible. Microservicios altamente disponibles, arquitectura event-driven y resiliencia corporativa que se integra naturalmente con ecosistemas guidewire, plataformas legacy y servicios web externos.
           </p>
@@ -234,7 +234,7 @@ export default function Home() {
       <section id="casos-de-uso" className="py-24 border-b border-white/5 bg-[#020104]">
         <div className="container mx-auto px-4 lg:px-8 text-center max-w-6xl">
           <span className="text-fuchsia-600 font-semibold tracking-wider text-sm uppercase mb-2 block">Adopción Flexible</span>
-          <h2 className="text-3xl font-bold mb-12 text-white">Impulsando Modelos de Negocio Modernos</h2>
+          <h2 className="text-3xl md:text-4xl font-bold mb-12 text-white">Impulsando Modelos de <span className="text-transparent bg-clip-text bg-gradient-to-r from-fuchsia-400 to-pink-400">Negocio Modernos</span></h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-8">
             <div className="group rounded-2xl bg-[#0f0e11] flex flex-col items-start p-10 text-left border border-white/5 hover:border-fuchsia-900/50 hover:bg-[#1a081c] transition-all duration-300">
               <h3 className="text-2xl font-bold text-white mb-3">Bancaseguros & Fintech</h3>
@@ -253,7 +253,7 @@ export default function Home() {
         <div className="container mx-auto px-4 lg:px-8 text-center max-w-7xl relative z-10">
           <div className="mb-20">
             <span className="text-fuchsia-500 font-semibold tracking-widest text-xs uppercase mb-3 block">Rendimiento Operativo</span>
-            <h2 className="text-4xl md:text-5xl font-bold text-white tracking-tight">Resultados Claros y Medibles (ROI)</h2>
+            <h2 className="text-4xl md:text-5xl font-bold text-white tracking-tight">Resultados Claros y Medibles <span className="text-transparent bg-clip-text bg-gradient-to-r from-fuchsia-400 to-pink-400">(ROI)</span></h2>
           </div>
           
            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-8">
@@ -313,7 +313,7 @@ export default function Home() {
       <section id="cta" className="py-32 relative overflow-hidden bg-fuchsia-950/10 text-center border-t border-fuchsia-900/20">
         <div className="absolute inset-0 z-0 bg-[radial-gradient(circle_at_bottom,rgba(217,70,239,0.1),transparent)] pointer-events-none" />
         <div className="container mx-auto px-4 z-10 relative max-w-3xl space-y-10">
-          <h2 className="text-4xl md:text-5xl lg:text-6xl font-extrabold tracking-tight text-white leading-tight">Libere el potencial <br/>de su negocio</h2>
+          <h2 className="text-4xl md:text-5xl lg:text-6xl font-extrabold tracking-tight text-white leading-tight">Libere el potencial <br/><span className="text-transparent bg-clip-text bg-gradient-to-r from-fuchsia-400 to-pink-400">de su negocio</span></h2>
           <p className="text-xl text-zinc-400 font-light max-w-2xl mx-auto">Escale canales, optimice operaciones y evite migraciones de core traumáticas. Agende una reunión para evaluar nuestra plataforma en su ecosistema.</p>
           <button className="h-14 px-10 rounded-xl bg-fuchsia-600 text-white font-bold text-lg hover:bg-fuchsia-500 transition-colors shadow-[0_0_30px_rgba(192,38,211,0.3)] hover:shadow-[0_0_40px_rgba(192,38,211,0.5)]">
             Agendar Discovery Call
