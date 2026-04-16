@@ -285,24 +285,77 @@ export default function Home() {
         </div>
       </section>
 
-      {/* 8.5 Empresas Adopters (Marquee) */}
-      <section className="py-24 border-b border-white/5 bg-[#020104] overflow-hidden">
-        <div className="container mx-auto px-4 text-center mb-16">
-          <p className="text-zinc-500 font-semibold tracking-widest text-xs uppercase">Empresas que ya están utilizando Tech Insurance</p>
+      {/* 8.5 Empresas Adopters (Marquee B2B Premium) */}
+      <section className="py-24 border-b border-fuchsia-900/30 bg-[#040105] overflow-hidden relative">
+        <style>{`
+          @keyframes infiniteScroll {
+            0% { transform: translateX(0); }
+            100% { transform: translateX(-50%); }
+          }
+          .animate-infinite-scroll {
+            animation: infiniteScroll 40s linear infinite;
+            display: flex;
+            width: max-content;
+          }
+          .animate-infinite-scroll:hover {
+            animation-play-state: paused;
+          }
+        `}</style>
+        
+        <div className="container mx-auto px-4 text-center mb-16 relative z-10">
+          <h2 className="text-3xl md:text-5xl font-bold text-white mb-6 tracking-tight">
+            Empresas que ya utilizan <span className="text-transparent bg-clip-text bg-gradient-to-r from-fuchsia-400 to-pink-400">Tech Insurance</span>
+          </h2>
+          <p className="text-xl text-zinc-400 font-light max-w-3xl mx-auto">
+            Una plataforma pensada para compañías, partners y ecosistemas que necesitan escalar con velocidad y flexibilidad extrema.
+          </p>
         </div>
-        <div className="relative w-full flex overflow-hidden group">
-          {/* Fading Edges */}
-          <div className="absolute left-0 top-0 bottom-0 w-32 bg-gradient-to-r from-[#020104] to-transparent z-10 pointer-events-none" />
-          <div className="absolute right-0 top-0 bottom-0 w-32 bg-gradient-to-l from-[#020104] to-transparent z-10 pointer-events-none" />
+
+        <div className="relative w-full overflow-hidden group py-10">
+          {/* Edge Masking para que el slider se difumine en los bordes */}
+          <div className="absolute left-0 top-0 bottom-0 w-32 lg:w-64 bg-gradient-to-r from-[#040105] to-transparent z-20 pointer-events-none" />
+          <div className="absolute right-0 top-0 bottom-0 w-32 lg:w-64 bg-gradient-to-l from-[#040105] to-transparent z-20 pointer-events-none" />
           
-          <div className="animate-marquee flex items-center gap-16 md:gap-32 pr-16 md:pr-32">
-            {[1,2,3,4,5,6,7,8,1,2,3,4,5,6,7,8].map((idx, i) => (
-              <div key={i} className="flex-shrink-0 w-32 h-12 flex items-center justify-center opacity-30 hover:opacity-100 invert hover:sepia hover:hue-rotate-[280deg] hover:saturate-[5] transition-all duration-300">
-                <svg viewBox="0 0 100 30" className="fill-current w-full h-full text-white">
-                  <rect x="10" y="5" width="20" height="20" rx="4" />
-                  <circle cx="45" cy="15" r="10" />
-                  <polygon points="75,25 85,5 95,25" />
-                </svg>
+          <div className="animate-infinite-scroll flex items-center">
+            {/* Duplicamos el array de logos para que el loop infinito sea fluido */}
+            {[...Array(2)].map((_, arrayIndex) => (
+              <div key={arrayIndex} className="flex items-center gap-16 md:gap-32 px-8 md:px-16">
+                 {/* 1. ASSURANT */}
+                 <div className="flex-shrink-0 flex items-center justify-center opacity-40 hover:opacity-100 hover:text-fuchsia-400 transition-all duration-300 transform hover:scale-105 filter grayscale hover:grayscale-0">
+                    <svg viewBox="0 0 200 40" className="w-[180px] h-auto fill-current text-white"><text x="10" y="30" fontFamily="Arial, sans-serif" fontWeight="900" fontSize="28" letterSpacing="2">ASSURANT</text></svg>
+                 </div>
+                 {/* 2. BARBUSS */}
+                 <div className="flex-shrink-0 flex items-center justify-center opacity-40 hover:opacity-100 hover:text-fuchsia-400 transition-all duration-300 transform hover:scale-105 filter grayscale hover:grayscale-0">
+                    <svg viewBox="0 0 200 40" className="w-[180px] h-auto fill-current text-white"><text x="10" y="30" fontFamily="Verdana, sans-serif" fontWeight="800" fontSize="26" letterSpacing="1">BARBUSS</text></svg>
+                 </div>
+                 {/* 3. SURA */}
+                 <div className="flex-shrink-0 flex items-center justify-center opacity-40 hover:opacity-100 hover:text-fuchsia-400 transition-all duration-300 transform hover:scale-105 filter grayscale hover:grayscale-0">
+                    <svg viewBox="0 0 150 40" className="w-[140px] h-auto fill-current text-white"><text x="10" y="30" fontFamily="Helvetica, sans-serif" fontWeight="900" fontSize="30" fontStyle="italic" letterSpacing="1">sura</text></svg>
+                 </div>
+                 {/* 4. VIDA SECURITY */}
+                 <div className="flex-shrink-0 flex gap-2 items-center justify-center opacity-40 hover:opacity-100 hover:text-fuchsia-400 transition-all duration-300 transform hover:scale-105 filter grayscale hover:grayscale-0">
+                    <svg viewBox="0 0 30 30" className="w-8 h-8 stroke-current text-white" fill="none" strokeWidth="2"><circle cx="15" cy="15" r="10"/><path d="M12 18l4-6H10l4-6"/></svg>
+                    <svg viewBox="0 0 220 40" className="w-[190px] h-auto fill-current text-white"><text x="0" y="30" fontFamily="Arial, sans-serif" fontWeight="700" fontSize="22">VIDA SECURITY</text></svg>
+                 </div>
+                 {/* 5. MOTOROLA */}
+                 <div className="flex-shrink-0 flex items-center justify-center opacity-40 hover:opacity-100 hover:text-fuchsia-400 transition-all duration-300 transform hover:scale-105 filter grayscale hover:grayscale-0">
+                   <svg viewBox="0 0 220 40" className="w-[190px] h-auto fill-current text-white"><text x="10" y="30" fontFamily="Trebuchet MS, sans-serif" fontWeight="800" fontSize="26" letterSpacing="3">motorola</text></svg>
+                 </div>
+                 {/* 6. VOLKSWAGEN */}
+                 <div className="flex-shrink-0 flex gap-3 items-center justify-center opacity-40 hover:opacity-100 hover:text-fuchsia-400 transition-all duration-300 transform hover:scale-105 filter grayscale hover:grayscale-0">
+                    <svg viewBox="0 0 30 30" className="w-10 h-10 stroke-current text-white" fill="none" strokeWidth="1.5"><circle cx="15" cy="15" r="12"/><polyline points="5 9 10 20 15 11 20 20 25 9"/><polyline points="10 5 15 15 20 5"/></svg>
+                    <svg viewBox="0 0 220 40" className="w-[180px] h-auto fill-current text-white"><text x="0" y="30" fontFamily="Arial, sans-serif" fontWeight="600" fontSize="22">Volkswagen</text></svg>
+                 </div>
+                 {/* 7. BANCO GALICIA */}
+                 <div className="flex-shrink-0 flex gap-2 items-center justify-center opacity-40 hover:opacity-100 hover:text-fuchsia-400 transition-all duration-300 transform hover:scale-105 filter grayscale hover:grayscale-0">
+                    <svg viewBox="0 0 30 30" className="w-8 h-8 fill-current text-white"><polygon points="15,2 28,28 2,28"/></svg>
+                    <svg viewBox="0 0 220 40" className="w-[200px] h-auto fill-current text-white"><text x="0" y="30" fontFamily="Arial, sans-serif" fontWeight="800" fontSize="24">Banco Galicia</text></svg>
+                 </div>
+                 {/* 8. EUROP ASSISTANCE */}
+                 <div className="flex-shrink-0 flex gap-2 items-center justify-center opacity-40 hover:opacity-100 hover:text-fuchsia-400 transition-all duration-300 transform hover:scale-105 filter grayscale hover:grayscale-0">
+                    <svg viewBox="0 0 30 30" className="w-8 h-8 fill-current text-white"><rect x="5" y="5" width="20" height="20" rx="4"/></svg>
+                    <svg viewBox="0 0 250 40" className="w-[230px] h-auto fill-current text-white"><text x="0" y="30" fontFamily="Georgia, serif" fontWeight="700" fontSize="20" letterSpacing="1">EUROP ASSISTANCE</text></svg>
+                 </div>
               </div>
             ))}
           </div>
