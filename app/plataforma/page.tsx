@@ -47,7 +47,7 @@ export default function PlataformaPage() {
           ].map((item) => (
             <a 
               key={item.id} 
-              href={`#${item.id}`} 
+              href={item.id === 'product-studio' ? '/product-studio' : `#${item.id}`} 
               className="group flex items-center gap-2 px-4 py-2.5 rounded-full text-[13px] text-zinc-400 font-medium hover:text-white hover:bg-white/5 focus:bg-white/10 active:bg-white/10 transition-all"
             >
               <span className="text-zinc-500 group-hover:text-fuchsia-400 transition-colors">{item.icon}</span>

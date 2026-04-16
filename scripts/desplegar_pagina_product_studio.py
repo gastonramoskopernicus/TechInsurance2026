@@ -1,4 +1,18 @@
-import Image from "next/image";
+import os
+import re
+
+def main():
+    print("Creando página dedicada de Product Studio y reemplazando con teaser en /plataforma...")
+    
+    base_dir = os.path.abspath(os.path.join(os.path.dirname(__file__), '..', 'app'))
+    ps_dir = os.path.join(base_dir, 'product-studio')
+    os.makedirs(ps_dir, exist_ok=True)
+    
+    ps_page_path = os.path.join(ps_dir, 'page.tsx')
+    plataforma_path = os.path.join(base_dir, 'plataforma', 'page.tsx')
+    
+    # --- 1. CREAR LA NUEVA PÁGINA /PRODUCT-STUDIO/PAGE.TSX ---
+    new_ps_page = r'''import Image from "next/image";
 import Link from "next/link";
 
 export default function ProductStudioPage() {
@@ -237,3 +251,56 @@ export default function ProductStudioPage() {
     </div>
   );
 }
+'''
+    with open(ps_page_path, 'w', encoding='utf-8') as f:
+        f.write(new_ps_page)
+
+    # --- 2. REEMPLAZAR PRODUCT STUDIO EN /PLATAFORMA/PAGE.TSX POR TEASER ---
+    if os.path.exists(plataforma_path):
+        with open(plataforma_path, 'r', encoding='utf-8') as f:
+            plat_content = f.read()
+
+        teaser_ps = r'''{/* 4. PRODUCT STUDIO (TEASER CTA) */}
+      <section id="product-studio" className="py-24 border-b border-white/5 relative overflow-hidden bg-[#0d040e] scroll-mt-32">
+        <div className="absolute inset-0 z-0 bg-[radial-gradient(ellipse_at_center,rgba(217,70,239,0.06),transparent)] pointer-events-none" />
+        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[400px] bg-fuchsia-900/10 rounded-[100%] blur-[100px] pointer-events-none" />
+        
+        <div className="container mx-auto px-4 lg:px-8 max-w-5xl relative z-10 text-center">
+          <div className="relative w-24 h-24 mx-auto mb-8 animate-breath opacity-90 drop-shadow-[0_0_20px_rgba(217,70,239,0.2)]">
+            <Image src="/TechInsurance.svg" alt="Product Studio Logo Component" fill className="object-contain" priority />
+          </div>
+
+          <span className="text-fuchsia-500 font-semibold tracking-wider text-sm uppercase mb-3 block">Motor Actuarial No-Code</span>
+          <h2 className="text-4xl md:text-5xl font-bold mb-8 text-white tracking-tight">
+            Product Studio: <span className="text-transparent bg-clip-text bg-gradient-to-r from-fuchsia-400 to-pink-400">Autonomía Comercial</span>
+          </h2>
+          
+          <div className="border border-fuchsia-500/20 rounded-3xl p-8 lg:p-12 bg-black/50 backdrop-blur-md shadow-2xl max-w-4xl mx-auto mb-10">
+            <p className="text-fuchsia-100/90 text-xl font-light leading-relaxed mb-8">
+              Descubra el entorno de configuración visual donde los productos dejan de ser código y pasan a ser parametrizaciones dinámicas. Construya e interaccione de manera asombrosamente rápida sin dependencias limitantes de desarrolladores IT.
+            </p>
+            <a href="/product-studio" className="inline-flex items-center justify-center gap-3 px-8 py-4 bg-fuchsia-600 text-white font-bold rounded-xl hover:bg-fuchsia-500 transition-all duration-300 shadow-[0_0_30px_rgba(217,70,239,0.3)] hover:shadow-[0_0_50px_rgba(217,70,239,0.5)]">
+               Explorar Arquitectura del Product Studio
+               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" className="w-5 h-5"><polyline points="9 18 15 12 9 6"/></svg>
+            </a>
+          </div>
+        </div>
+      </section>'''
+
+        # Cut everything between {/* 4. PRODUCT STUDIO (NÚCLEO DIFERENCIAL REUBICADO Y EXPANDIDO) */} and MÓDULOS DE NEGOCIO
+        pattern = r'\{\/\* 4\. PRODUCT STUDIO \(NÚCLEO DIFERENCIAL REUBICADO Y EXPANDIDO\) \*\/\}.*?(?=\{\/\* 5\. MÓDULOS DE NEGOCIO \(ORGANIZADO POR CAPAS - LAYERS\) \*\/\})'
+        plat_content = re.sub(pattern, teaser_ps + '\n\n      ', plat_content, flags=re.DOTALL)
+        
+        # We also need to fix the internal Navbar Link in Plataforma so it correctly navigates to the external page instead of an anchor id
+        plat_content = plat_content.replace(
+            "href={`#${item.id}`}",
+            "href={item.id === 'product-studio' ? '/product-studio' : `#${item.id}`}"
+        )
+
+        with open(plataforma_path, 'w', encoding='utf-8') as f:
+            f.write(plat_content)
+            
+    print("✅ Transformación a sub-página SPA concluida (1x Creada, 1x Teaser Refactored).")
+
+if __name__ == '__main__':
+    main()
