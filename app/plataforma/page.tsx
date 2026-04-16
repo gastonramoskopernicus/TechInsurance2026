@@ -111,9 +111,9 @@ export default function PlataformaPage() {
             </div>
 
             {/* Product Studio Deep Dive */}
-            <div id="product-studio" className="p-8 bg-indigo-900/10 border border-indigo-500/20 rounded-2xl relative overflow-hidden pt-12 -mt-4 scroll-mt-32">
+            <div id="product-studio" className="p-8 bg-pink-900/10 border border-pink-500/20 rounded-2xl relative overflow-hidden pt-12 -mt-4 scroll-mt-32">
                <h2 className="text-3xl font-bold mb-6 text-white relative z-10">Product Studio</h2>
-               <p className="text-lg text-indigo-200 mb-6 relative z-10 font-medium">
+               <p className="text-lg text-pink-200 mb-6 relative z-10 font-medium">
                  El Product Studio redefine cómo se construyen los productos de seguros.
                </p>
                <div className="mb-6 relative z-10 p-4 border border-border/50 bg-background/80 backdrop-blur-md rounded-lg">
@@ -122,9 +122,9 @@ export default function PlataformaPage() {
                </div>
                <p className="text-muted-foreground mb-4 relative z-10">Esto habilita:</p>
                <div className="flex flex-wrap gap-4 relative z-10 text-white font-semibold">
-                  <span className="px-4 py-2 bg-indigo-500/20 rounded-full text-sm">Velocidad</span>
-                  <span className="px-4 py-2 bg-indigo-500/20 rounded-full text-sm">Reutilización</span>
-                  <span className="px-4 py-2 bg-indigo-500/20 rounded-full text-sm">Consistencia</span>
+                  <span className="px-4 py-2 bg-pink-500/20 rounded-full text-sm">Velocidad</span>
+                  <span className="px-4 py-2 bg-pink-500/20 rounded-full text-sm">Reutilización</span>
+                  <span className="px-4 py-2 bg-pink-500/20 rounded-full text-sm">Consistencia</span>
                </div>
             </div>
 

@@ -18,8 +18,9 @@ export default function Header() {
       <div className="container mx-auto px-4 lg:px-8 h-16 flex items-center justify-between">
         {/* Logo */}
         <div className="flex-shrink-0">
-          <Link href="/" className="text-xl font-bold tracking-tight">
-            TECH<span className="text-primary font-medium">INSURANCE</span>
+          <Link href="/" className="flex items-center gap-3 text-xl font-bold tracking-tight">
+            <img src="/logo-icon.png" alt="Tech Insurance Logo" className="h-8 w-auto" />
+            <span>TECH<span className="text-primary font-medium">INSURANCE</span></span>
           </Link>
         </div>
 

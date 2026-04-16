@@ -5,22 +5,22 @@ export default function Home() {
     <div className="flex flex-col w-full">
       {/* 1. Hero Section */}
       <section id="hero" className="relative min-h-[90vh] flex flex-col items-center justify-center border-b border-border/50 bg-[#020202] overflow-hidden px-4 py-24 sm:py-32">
-        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-blue-900/20 rounded-full blur-[120px] pointer-events-none" />
-        <div className="absolute top-1/4 right-1/4 w-[400px] h-[400px] bg-indigo-600/10 rounded-full blur-[100px] pointer-events-none" />
+        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-fuchsia-900/20 rounded-full blur-[120px] pointer-events-none" />
+        <div className="absolute top-1/4 right-1/4 w-[400px] h-[400px] bg-pink-600/10 rounded-full blur-[100px] pointer-events-none" />
         <div className="container mx-auto max-w-6xl text-center relative z-10 flex flex-col items-center">
           <div className="relative w-64 h-64 sm:w-80 sm:h-80 md:w-96 md:h-96 mb-12">
             <Image 
               src="/hero-cube.png" 
               alt="Tech Insurance Core Architecture" 
               fill
-              className="object-contain drop-shadow-[0_0_30px_rgba(59,130,246,0.3)]"
+              className="object-contain drop-shadow-[0_0_30px_rgba(217, 70, 239,0.3)]"
               priority
             />
           </div>
           <div className="space-y-6 max-w-3xl">
             <h1 className="text-4xl sm:text-5xl md:text-7xl font-extrabold tracking-tight text-white leading-[1.1]">
               Deje de depender <br />
-              <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-indigo-400">
+              <span className="text-transparent bg-clip-text bg-gradient-to-r from-fuchsia-400 to-pink-400">
                 de su core para innovar.
               </span>
             </h1>
@@ -31,7 +31,7 @@ export default function Home() {
               Mientras el core mantiene la operación, Tech Insurance acelera la innovación.
             </p>
             <div className="flex flex-col sm:flex-row items-center justify-center gap-4 pt-8">
-              <button className="h-12 md:h-14 px-8 md:px-10 rounded-md bg-blue-600 text-white font-medium hover:bg-blue-500 transition-colors w-full sm:w-auto shadow-[0_0_20px_rgba(37,99,235,0.3)]">
+              <button className="h-12 md:h-14 px-8 md:px-10 rounded-md bg-fuchsia-600 text-white font-medium hover:bg-fuchsia-500 transition-colors w-full sm:w-auto shadow-[0_0_20px_rgba(192, 38, 211,0.3)]">
                 Solicitar demo
               </button>
               <button className="h-12 md:h-14 px-8 md:px-10 rounded-md border border-zinc-700 bg-transparent text-zinc-300 hover:bg-zinc-800 hover:text-white transition-colors w-full sm:w-auto">
@@ -107,11 +107,11 @@ export default function Home() {
       </section>
 
       {/* 5. Product Studio */}
-      <section id="product-studio" className="py-24 border-b border-border/50 bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-indigo-900/10 via-background to-background">
+      <section id="product-studio" className="py-24 border-b border-border/50 bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-pink-900/10 via-background to-background">
         <div className="container mx-auto px-4 lg:px-8 text-center max-w-5xl">
-          <span className="text-indigo-400 font-semibold tracking-wider text-sm uppercase mb-2 block">Innovation Hub</span>
+          <span className="text-pink-400 font-semibold tracking-wider text-sm uppercase mb-2 block">Innovation Hub</span>
           <h2 className="text-3xl font-bold mb-6 text-foreground">Product Studio: Autonomía Comercial</h2>
-          <div className="max-w-3xl mx-auto border border-indigo-500/20 rounded-xl p-8 bg-black/40 backdrop-blur-sm">
+          <div className="max-w-3xl mx-auto border border-pink-500/20 rounded-xl p-8 bg-black/40 backdrop-blur-sm">
             <p className="text-zinc-300 text-lg leading-relaxed">
               Otorgue el poder a sus equipos de negocio estratégico. Nuestro entorno de configuración No-Code permite conceptualizar, tarificar y validar seguros en el mercado a una velocidad sin precedentes, eliminando la dependencia crítica de IT.
             </p>
