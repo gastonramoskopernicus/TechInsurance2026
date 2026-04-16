@@ -19,13 +19,16 @@ export default function Home() {
           </div>
           <div className="space-y-6 max-w-3xl">
             <h1 className="text-4xl sm:text-5xl md:text-7xl font-extrabold tracking-tight text-white leading-[1.1]">
-              Acelere su lado comercial. <br />
+              Deje de depender <br />
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-indigo-400">
-                Potencie el Core.
+                de su core para innovar.
               </span>
             </h1>
             <p className="text-lg md:text-xl text-zinc-400 font-light max-w-2xl mx-auto">
-              Plataforma y acelerador comercial modular que empodera al sector asegurador. Desacople su core y acelere la evolución obteniendo altísimo impacto en el negocio (ROI) de forma transparente y escalable.
+              Tech Insurance permite lanzar productos, integrar canales y escalar su negocio sin rediseñar sus sistemas existentes.
+            </p>
+            <p className="text-md text-zinc-500 font-medium max-w-2xl mx-auto pt-2">
+              Mientras el core mantiene la operación, Tech Insurance acelera la innovación.
             </p>
             <div className="flex flex-col sm:flex-row items-center justify-center gap-4 pt-8">
               <button className="h-12 md:h-14 px-8 md:px-10 rounded-md bg-blue-600 text-white font-medium hover:bg-blue-500 transition-colors w-full sm:w-auto shadow-[0_0_20px_rgba(37,99,235,0.3)]">
@@ -43,10 +46,20 @@ export default function Home() {
       <section id="problema" className="py-24 bg-muted/30 border-b border-border/50">
         <div className="container mx-auto px-4 lg:px-8 max-w-5xl">
           <span className="text-primary font-semibold tracking-wider text-sm uppercase mb-2 block text-center">El Desafío</span>
-          <h2 className="text-3xl font-bold mb-6 text-foreground text-center">El dilema del Core Tradicional</h2>
-          <div className="p-8 rounded-lg border border-border/50 bg-background/50">
-            <p className="text-muted-foreground text-lg text-center leading-relaxed">
-              Los sistemas legacy operan como cuellos de botella. Lanzar nuevos productos o integrar canales digitales toma meses, consume enormes presupuestos de IT y paraliza la tracción comercial frente a un mercado que exige inmediatez.
+          <h2 className="text-3xl font-bold mb-6 text-foreground text-center">El problema no es tecnológico.<br/>Es estructural.</h2>
+          <div className="p-8 rounded-lg border border-border/50 bg-background/50 max-w-2xl mx-auto">
+            <p className="text-foreground text-lg text-center leading-relaxed font-medium mb-6">
+              Los sistemas core fueron diseñados para operar, no para innovar.
+            </p>
+            <p className="text-muted-foreground text-center mb-4">Cada cambio implica:</p>
+            <ul className="flex flex-col items-center text-muted-foreground space-y-2 mb-6">
+              <li>• Tiempos largos</li>
+              <li>• Alto costo</li>
+              <li>• Dependencia de IT</li>
+              <li>• Riesgo operativo</li>
+            </ul>
+            <p className="text-foreground text-center font-semibold text-lg">
+              Esto limita la capacidad real de competir.
             </p>
           </div>
         </div>
@@ -56,10 +69,18 @@ export default function Home() {
       <section id="solucion" className="py-24 border-b border-border/50">
         <div className="container mx-auto px-4 lg:px-8 max-w-5xl text-center">
           <span className="text-primary font-semibold tracking-wider text-sm uppercase mb-2 block">Nuestra Solución</span>
-          <h2 className="text-3xl font-bold mb-6 text-foreground">Desacople la innovación del core</h2>
-          <p className="text-muted-foreground text-lg mb-8">
-            Tech Insurance actúa como un acelerador comercial middleware. Nos conectamos a sus sistemas existentes para exponer sus capacidades. Lance productos innovadores y capture nuevos segmentos de clientes sin la fricción de intervenir el código de su sistema central.
-          </p>
+          <h2 className="text-3xl font-bold mb-6 text-foreground">Tech Insurance desacopla la innovación del core.</h2>
+          <div className="max-w-2xl mx-auto mb-8">
+             <p className="text-muted-foreground text-lg mb-6 text-center">
+               Permite:
+             </p>
+             <ul className="grid grid-cols-1 md:grid-cols-2 gap-4 text-left text-muted-foreground">
+               <li className="flex items-center gap-2"><span className="text-primary">✓</span> Lanzar productos en días</li>
+               <li className="flex items-center gap-2"><span className="text-primary">✓</span> Integrar partners sin fricción</li>
+               <li className="flex items-center gap-2"><span className="text-primary">✓</span> Testear modelos sin riesgo</li>
+               <li className="flex items-center gap-2"><span className="text-primary">✓</span> Escalar sin reescribir sistemas</li>
+             </ul>
+          </div>
         </div>
       </section>
 
@@ -131,10 +152,15 @@ export default function Home() {
       <section id="impacto" className="py-24 bg-muted/30 border-b border-border/50">
         <div className="container mx-auto px-4 lg:px-8 text-center max-w-4xl">
           <span className="text-emerald-500 font-semibold tracking-wider text-sm uppercase mb-2 block">ROI</span>
-          <h2 className="text-3xl font-bold mb-6 text-foreground">Resultados Claros y Medibles</h2>
-          <p className="text-muted-foreground text-lg">
-            Reduzca drásticamente el Time-To-Market comercial, minimice el riesgo tecnológico de la migración de sistemas y construya una unidad de negocio capaz de procesar miles de integraciones de pólizas con alta rentabilidad.
-          </p>
+          <h2 className="text-3xl font-bold mb-8 text-foreground text-center">Resultados Claros y Medibles</h2>
+          <div className="max-w-2xl mx-auto rounded-lg border border-border/50 bg-muted/20 p-8">
+            <ul className="space-y-4 text-muted-foreground text-lg text-left">
+              <li className="flex items-center gap-3"><div className="w-2 h-2 rounded-full bg-emerald-500 shadow-[0_0_10px_rgba(16,185,129,0.5)]"></div> Reducción drástica del time-to-market</li>
+              <li className="flex items-center gap-3"><div className="w-2 h-2 rounded-full bg-emerald-500 shadow-[0_0_10px_rgba(16,185,129,0.5)]"></div> Aumento de ingresos por nuevos canales</li>
+              <li className="flex items-center gap-3"><div className="w-2 h-2 rounded-full bg-emerald-500 shadow-[0_0_10px_rgba(16,185,129,0.5)]"></div> Menor dependencia tecnológica</li>
+              <li className="flex items-center gap-3"><div className="w-2 h-2 rounded-full bg-emerald-500 shadow-[0_0_10px_rgba(16,185,129,0.5)]"></div> Mayor capacidad de innovación</li>
+            </ul>
+          </div>
         </div>
       </section>
 

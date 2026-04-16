@@ -1,4 +1,11 @@
-export default function PlataformaPage() {
+import os
+
+def main():
+    print("Elevando copy de Plataforma (page.tsx) a nivel enterprise...")
+    path = os.path.abspath(os.path.join(os.path.dirname(__file__), '..', 'app', 'plataforma', 'page.tsx'))
+    
+    # Nuevo template completo manteniendo la fidelidad visual estricta.
+    page_content = """export default function PlataformaPage() {
   return (
     <div className="flex flex-col w-full">
       {/* 1. HERO - Qué es Tech Insurance */}
@@ -139,3 +146,12 @@ export default function PlataformaPage() {
     </div>
   );
 }
+"""
+
+    with open(path, 'w', encoding='utf-8') as f:
+        f.write(page_content)
+
+    print("✅ Copy optimizado y jerarquía empresarial aplicada en plataforma/page.tsx")
+
+if __name__ == '__main__':
+    main()
