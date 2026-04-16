@@ -1,4 +1,15 @@
-import Image from "next/image";
+import os
+
+def main():
+    print("Desplegando ecosistema /soluciones para múltiples actores B2B...")
+    
+    base_dir = os.path.abspath(os.path.join(os.path.dirname(__file__), '..', 'app'))
+    sol_dir = os.path.join(base_dir, 'soluciones')
+    os.makedirs(sol_dir, exist_ok=True)
+    
+    sol_page_path = os.path.join(sol_dir, 'page.tsx')
+    
+    new_sol_page = r'''import Image from "next/image";
 
 export default function SolucionesPage() {
   return (
@@ -248,3 +259,11 @@ export default function SolucionesPage() {
     </div>
   );
 }
+'''
+    with open(sol_page_path, 'w', encoding='utf-8') as f:
+        f.write(new_sol_page)
+
+    print("✅ Página /soluciones regenerada masivamente y orientada a actores B2B.")
+
+if __name__ == '__main__':
+    main()
