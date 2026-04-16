@@ -1,4 +1,44 @@
-import Image from "next/image";
+import os
+import re
+
+def main():
+    print("Unificando estilo de cards y añadiendo el Marquee corporativo...")
+    base_dir = os.path.abspath(os.path.join(os.path.dirname(__file__), '..'))
+    
+    # --- 1. AÑADIR KEYFRAMES DEL MARQUEE EN GLOBALS.CSS ---
+    css_path = os.path.join(base_dir, 'app', 'globals.css')
+    if os.path.exists(css_path):
+        with open(css_path, 'r', encoding='utf-8') as f:
+            css_content = f.read()
+        
+        if '@keyframes marquee' not in css_content:
+            css_content += """\n
+@keyframes marquee {
+  0% { transform: translateX(0%); }
+  100% { transform: translateX(-50%); }
+}
+
+.animate-marquee {
+  animation: marquee 35s linear infinite;
+  display: flex;
+  width: max-content;
+}
+
+.animate-marquee:hover {
+  animation-play-state: paused;
+}
+"""
+            with open(css_path, 'w', encoding='utf-8') as f:
+                f.write(css_content)
+            print("✅ Animación de carrusel infinito (Marquee) añadida a globals.css.")
+
+    # --- 2. REESCRIBIR PAGE.TSX CON NUEVA ARQUITECTURA UNIFICADA ---
+    page_path = os.path.join(base_dir, 'app', 'page.tsx')
+    if os.path.exists(page_path):
+        # We will use exactly the same text from the user's previously generated content, 
+        # but completely re-template the HTML blocks down from the "Problema" section.
+
+        new_page_content = """import Image from "next/image";
 
 export default function Home() {
   return (
@@ -323,3 +363,10 @@ export default function Home() {
     </div>
   );
 }
+"""
+        with open(page_path, 'w', encoding='utf-8') as f:
+            f.write(new_page_content)
+        print("✅ Rediseño arquitectónico global terminado. Marquee y SVG inyectados exitosamente (page.tsx).")
+
+if __name__ == '__main__':
+    main()
