@@ -5,14 +5,25 @@ export default function Home() {
     <div className="flex flex-col w-full">
       {/* 1. Hero Section */}
       <section id="hero" className="relative min-h-[90vh] flex flex-col items-center justify-center border-b border-border/50 bg-[#020202] overflow-hidden px-4 py-24 sm:py-32">
-        {/* Cosmic Deep Space Background Overlay */}
-        <div className="absolute inset-0 z-0 opacity-[0.35]">
-           <Image src="/hero-cosmic-bg.png" alt="Cosmic Nebula Layer" fill className="object-cover" priority quality={100} />
-        </div>
-        <div className="absolute inset-0 z-0 bg-gradient-to-b from-transparent via-[#020202]/30 to-[#020202]" />
+        {/* Deep Space Atmosphere Base */}
+        <div className="absolute inset-0 z-0 bg-[#020104]" />
+        
+        {/* Subtle CSS Starfield Parallax Layers */}
+        <div className="absolute inset-0 z-0 opacity-[0.15]" style={{ backgroundImage: 'radial-gradient(circle at 15% 50%, rgba(255, 255, 255, 0.8) 1px, transparent 1px), radial-gradient(circle at 85% 30%, rgba(255, 255, 255, 0.6) 1px, transparent 1px), radial-gradient(circle at 50% 80%, rgba(255, 255, 255, 0.9) 1px, transparent 1px), radial-gradient(circle at 20% 20%, rgba(255, 255, 255, 0.5) 1px, transparent 1px), radial-gradient(circle at 75% 75%, rgba(255, 255, 255, 0.7) 1px, transparent 1px)', backgroundSize: '120px 120px' }} />
+        <div className="absolute inset-0 z-0 opacity-10" style={{ backgroundImage: 'radial-gradient(circle at 5% 5%, rgba(255, 255, 255, 0.8) 1px, transparent 1px), radial-gradient(circle at 90% 90%, rgba(255, 255, 255, 0.6) 1px, transparent 1px)', backgroundSize: '70px 70px' }} />
 
-        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-fuchsia-900/40 rounded-full blur-[120px] pointer-events-none z-0" />
-        <div className="absolute top-1/4 right-1/4 w-[400px] h-[400px] bg-pink-600/10 rounded-full blur-[100px] pointer-events-none" />
+        {/* Cinematic Nebula Layer (Mix Blend) */}
+        <div className="absolute inset-0 z-0 opacity-40 mix-blend-screen bg-[radial-gradient(ellipse_at_center,rgba(217,70,239,0.05),transparent)]">
+           <Image src="/hero-cosmic-bg.png" alt="Cosmic Nebula Layer" fill className="object-cover object-bottom" priority quality={100} />
+        </div>
+        
+        {/* Abstract Vignette Mask */}
+        <div className="absolute inset-0 z-0 bg-gradient-to-b from-[#020104]/10 via-[#020104]/50 to-[#020104] pointer-events-none" />
+
+        {/* Foco Visual detrás del logo (Halo de luz dinámico) */}
+        <div className="absolute top-[30%] sm:top-1/4 left-1/2 -translate-x-1/2 w-[300px] h-[300px] sm:w-[450px] sm:h-[450px] bg-fuchsia-500/20 rounded-full blur-[100px] pointer-events-none z-0 animate-breath" />
+        <div className="absolute bottom-0 right-0 w-[600px] h-[600px] bg-indigo-900/10 rounded-full blur-[150px] pointer-events-none z-0 mix-blend-screen" />
+        
         <div className="container mx-auto max-w-6xl text-center relative z-10 flex flex-col items-center">
           <div className="relative flex justify-center items-center w-72 h-72 sm:w-[22rem] sm:h-[22rem] md:w-[28rem] md:h-[28rem] mb-6 z-20">
             <div className="animate-breath w-full h-full drop-shadow-[0_0_25px_rgba(217,70,239,0.2)]">
