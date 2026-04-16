@@ -16,7 +16,7 @@ export default function CasosUsoPage() {
               'Replicación de productos Legacy', 'Operación Híbrida (OnPremise+Cloud)'].map((c) => (
                <div key={c} className="p-8 border-l-2 border-primary/40 bg-muted/20 pb-12">
                   <h3 className="text-lg font-bold text-foreground mb-3">{c}</h3>
-                  <p className="text-sm text-zinc-400">Implementación de {c.lower()} habilitando una escalabilidad horizontal y midiendo conversiones de mercado, maximizando resultados y mitigando el impacto en core.</p>
+                  <p className="text-sm text-zinc-400">Implementación de {c.toLowerCase()} habilitando una escalabilidad horizontal y midiendo conversiones de mercado, maximizando resultados y mitigando el impacto en core.</p>
                </div>
             ))}
           </div>
