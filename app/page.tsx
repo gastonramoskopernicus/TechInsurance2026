@@ -14,14 +14,16 @@ export default function Home() {
         <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-fuchsia-900/40 rounded-full blur-[120px] pointer-events-none z-0" />
         <div className="absolute top-1/4 right-1/4 w-[400px] h-[400px] bg-pink-600/10 rounded-full blur-[100px] pointer-events-none" />
         <div className="container mx-auto max-w-6xl text-center relative z-10 flex flex-col items-center">
-          <div className="relative w-72 h-72 sm:w-[22rem] sm:h-[22rem] md:w-[28rem] md:h-[28rem] mb-6 mix-blend-screen Supports-[mix-blend-mode]:mix-blend-plus-lighter">
-            <Image 
-              src="/hero-logo-premium.png" 
-              alt="Tech Insurance Core Architecture" 
-              fill
-              className="object-contain drop-shadow-[0_0_30px_rgba(217, 70, 239,0.3)]"
-              priority
-            />
+          <div className="relative flex justify-center items-center w-72 h-72 sm:w-[22rem] sm:h-[22rem] md:w-[28rem] md:h-[28rem] mb-6 z-20">
+            <div className="animate-breath w-full h-full drop-shadow-[0_0_25px_rgba(217,70,239,0.2)]">
+              <Image 
+                src="/TechInsurance.svg" 
+                alt="Tech Insurance Official Geometric Logo" 
+                fill
+                className="object-contain"
+                priority
+              />
+            </div>
           </div>
           <div className="space-y-6 max-w-3xl">
             <h1 className="text-4xl sm:text-5xl md:text-7xl font-extrabold tracking-tight text-white leading-[1.1]">
