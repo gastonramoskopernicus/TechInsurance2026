@@ -25,7 +25,7 @@ export default function Home() {
               </span>
             </h1>
             <p className="text-lg md:text-xl text-zinc-400 font-light max-w-2xl mx-auto">
-              Plataforma modular que empodera al sector asegurador y financiero. Acelere la evolución de su negocio obteniendo resultados tangibles rápidamente y con bajo impacto tecnológico.
+              Plataforma y acelerador comercial modular que empodera al sector asegurador. Desacople su core y acelere la evolución obteniendo altísimo impacto en el negocio (ROI) de forma transparente y escalable.
             </p>
             <div className="flex flex-col sm:flex-row items-center justify-center gap-4 pt-8">
               <button className="h-12 md:h-14 px-8 md:px-10 rounded-md bg-blue-600 text-white font-medium hover:bg-blue-500 transition-colors w-full sm:w-auto shadow-[0_0_20px_rgba(37,99,235,0.3)]">

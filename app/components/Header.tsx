@@ -7,6 +7,7 @@ export default function Header() {
     { label: "Arquitectura", href: "/arquitectura" },
     { label: "Soluciones", href: "/soluciones" },
     { label: "Casos de Uso", href: "/casos-de-uso" },
+    { label: "Ecosistema", href: "/ecosistema" },
     { label: "Recursos", href: "/recursos" },
     { label: "Empresa", href: "/empresa" },
     { label: "Contacto", href: "/contacto" },
