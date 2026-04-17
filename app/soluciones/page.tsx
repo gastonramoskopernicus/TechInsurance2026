@@ -33,6 +33,7 @@ export default function SolucionesPage() {
       {/* STICKY NAV PREMIUM (Navegación Interna de Soluciones) */}
       <div className="sticky top-20 z-40 w-full flex justify-center px-4 pointer-events-none mt-8 mb-4">
         <nav className="pointer-events-auto flex items-center space-x-1 overflow-x-auto p-2 bg-gradient-to-r from-[#200e23]/90 via-[#0f0e11]/90 to-black/90 backdrop-blur-xl border border-fuchsia-900/20 rounded-full shadow-[0_10px_40px_rgba(217,70,239,0.1)] hide-scrollbar">
+          {[
             { id: 'aseguradoras', label: 'Aseguradoras' },
             { id: 'brokers', label: 'Productores / Corredores (PAS)' },
             { id: 'bancos', label: 'Bancos / Fintech' },
