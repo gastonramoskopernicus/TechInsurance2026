@@ -12,22 +12,34 @@ export default function PlataformaPage() {
         </div>
         <div className="absolute right-0 top-0 w-[400px] h-[400px] bg-fuchsia-900/10 rounded-full blur-[120px] pointer-events-none z-0 mix-blend-screen" />
         
-        <div className="container mx-auto max-w-6xl relative z-10">
-          <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold tracking-tight text-white mb-8">
-            Qué es <span className="text-transparent bg-clip-text bg-gradient-to-r from-fuchsia-500 to-pink-400">Tech Insurance</span>
+        <div className="container mx-auto max-w-5xl relative z-10 text-center flex flex-col items-center">
+          <div className="relative w-32 h-32 mx-auto mb-10 animate-breath opacity-90 drop-shadow-[0_0_20px_rgba(217,70,239,0.2)]">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1" className="w-full h-full text-fuchsia-500">
+               <polygon points="12 2 2 7 12 12 22 7 12 2"/><polyline points="2 17 12 22 22 17"/><polyline points="2 12 12 17 22 12"/>
+            </svg>
+          </div>
+
+          <h1 className="text-4xl md:text-5xl lg:text-7xl font-extrabold tracking-tight text-white mb-6">
+            Plataforma <span className="text-transparent bg-clip-text bg-gradient-to-r from-fuchsia-500 to-pink-400">Tech Insurance</span>
           </h1>
-          <div className="max-w-5xl space-y-8">
-            <p className="text-xl md:text-2xl text-zinc-300 font-light leading-relaxed">
+          <p className="text-2xl text-fuchsia-400 font-light mb-8">El motor para urbanizar su core asegurador.</p>
+
+          <div className="border border-fuchsia-500/20 rounded-3xl p-10 lg:p-14 bg-black/50 backdrop-blur-md shadow-2xl text-left max-w-4xl mx-auto">
+            <p className="text-white text-xl font-bold leading-relaxed mb-6">
               Tech Insurance es una plataforma de innovación aseguradora diseñada para desacoplar la evolución del negocio de las limitaciones del core.
             </p>
-            <p className="text-zinc-400 text-lg leading-relaxed font-light">
-              Respaldada por más de 20 años de experiencia de Kopernicus en el mercado, nuestra solución nace para resolver el común denominador operativo de las aseguradoras: soluciones rígidas, nula capacidad para escalar, bajísima velocidad de adaptación y la extrema dificultad para responder a nuevos perfiles, ecosistemas y canales de venta. Los sistemas core heredados simplemente no fueron pensados para la velocidad comercial transaccional que el ecosistema abierto exige hoy.
+            <p className="text-fuchsia-100/80 text-lg font-light leading-relaxed mb-8">
+              Respaldada por más de 20 años de experiencia de Kopernicus en el mercado, nuestra solución nace para resolver el común denominador operativo de las aseguradoras: <span className="text-white font-medium">soluciones rígidas, nula capacidad para escalar, bajísima velocidad de adaptación</span> y extrema dificultad para responder a ecosistemas abiertos.
             </p>
-            <p className="text-fuchsia-300 text-xl leading-relaxed font-medium">
-               El concepto estratégico no es reemplazar el core actual, sino urbanizarlo para acompañar la evolución natural del negocio con extrema velocidad, flexibilidad modular y bajo impacto.
-            </p>
+            <div className="p-6 border border-white/10 bg-zinc-900/50 rounded-xl inline-flex shadow-inner w-full">
+               <p className="text-zinc-300 font-medium text-lg leading-relaxed text-center w-full">
+                  <span className="text-fuchsia-400 font-bold block mb-1">Una capa de innovación que permite evolucionar el negocio sin reemplazar el core.</span>
+                  Acompaña la transformación natural con extrema velocidad, flexibilidad modular y bajo impacto.
+               </p>
+            </div>
+          </div>
 
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-6 pt-8">
+            <div className="w-full max-w-5xl grid grid-cols-1 md:grid-cols-3 gap-6 pt-4">
                {/* Card 1 */}
                <div className="group p-8 rounded-2xl border border-fuchsia-900/30 bg-[#0f0e11] hover:bg-[#16141a] hover:border-fuchsia-500/40 hover:shadow-[0_10px_40px_rgba(217,70,239,0.05)] transition-all text-left">
                  <div className="text-fuchsia-600 group-hover:text-fuchsia-400 mb-6 transition-colors"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" className="w-12 h-12"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg></div>
@@ -49,7 +61,6 @@ export default function PlataformaPage() {
                  <p className="text-zinc-500 group-hover:text-zinc-400 text-sm font-light leading-relaxed transition-colors">La transformación se concentra en generar nuevas utilidades de negocio al instante, evitando los riesgos técnicos del cambio.</p>
                </div>
             </div>
-          </div>
         </div>
       </section>
 
