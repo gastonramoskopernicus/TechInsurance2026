@@ -21,9 +21,9 @@ export default function Footer() {
             
             {/* Kopernicus Endorsement */}
             <div className="flex flex-col items-start pt-6 border-t border-white/5 w-full mb-6 relative">
-               <span className="text-xs uppercase tracking-widest text-zinc-500 font-medium mb-4">Powered by</span>
-               <div className="relative h-10 w-48 sm:h-12 sm:w-56 opacity-80 hover:opacity-100 transition-opacity">
-                 <Image src="/kopernicus-logo.png" alt="Kopernicus Tech" fill className="object-contain object-left brightness-0 invert" sizes="250px" />
+               <span className="text-[10px] uppercase tracking-widest text-zinc-500 font-medium mb-3">Powered by</span>
+               <div className="relative h-6 w-32 sm:h-8 sm:w-40 opacity-70 hover:opacity-100 transition-opacity">
+                 <Image src="/kopernicus-logo.png" alt="Kopernicus Tech" fill className="object-contain object-left brightness-0 invert" sizes="200px" />
                </div>
             </div>
             

@@ -49,7 +49,7 @@ export default function Home() {
           </div>
 
           <div className="mt-20 pt-10 border-t border-white/5 flex flex-col items-center w-full max-w-md mx-auto relative z-20">
-            <span className="text-xs uppercase tracking-widest text-zinc-500 font-medium mb-6">Powered by</span>
+            <span className="text-xs uppercase tracking-widest text-zinc-500 font-medium mb-2">Powered by</span>
             <div className="flex items-center justify-center relative w-56 h-12 sm:w-72 sm:h-14 opacity-80 hover:opacity-100 transition-opacity duration-500 cursor-default">
                <Image src="/kopernicus-logo.png" alt="Kopernicus Tech" fill className="object-contain brightness-0 invert" sizes="(max-width: 768px) 250px, 350px" priority />
             </div>
