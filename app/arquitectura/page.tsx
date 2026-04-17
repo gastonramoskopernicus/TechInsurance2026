@@ -113,25 +113,30 @@ export default function ArquitecturaPage() {
                <span className="text-fuchsia-400 text-xs uppercase tracking-widest font-bold mb-2 block">Capa Cero · Frontend</span>
                <h3 className="text-2xl font-bold text-white mb-3">Canales y Experiencia B2X</h3>
                <p className="text-zinc-400 font-light leading-relaxed">
-                 Las aplicaciones móviles, los portales transaccionales de agentes y los portales corporativos de bancos interactúan sin conocer nuestra existencia interna; solo consumen experiencias de usuario blindadas e inmediatas mediante tokens simples.
+                 Esta capa concentra las experiencias de front-end e interacción, ya sea mediante landings, aplicaciones móviles, catálogos de servicios, agentes o implementaciones orientadas a terceros como brokers, PAS, bancos o incluso el cliente final.
                </p>
             </div>
 
             {/* Capa 2 (Tech Insurance) */}
-            <div className="group p-10 md:p-12 border border-fuchsia-500/40 bg-[#250b28] rounded-[2.5rem] hover:border-fuchsia-400/60 shadow-[0_0_50px_rgba(217,70,239,0.05)] transition-all relative z-10 md:-ml-6 md:-mr-6">
-               <span className="text-fuchsia-300 text-xs uppercase tracking-widest font-bold mb-2 block animate-pulse">Capa Central · Tech Insurance Platform</span>
-               <h3 className="text-3xl font-extrabold text-white mb-4">La Capa Intermedia Inteligente</h3>
-               <p className="text-fuchsia-100/80 font-light text-lg leading-relaxed mb-6">
-                 Este es el escudo protector y comercial (Motor Actuarial, Reglas, Product Studio, Billing, Eventos). Recibe las sobrecargas, define las métricas de negocio, cobra y dictamina riesgo bajo su propia matriz, desacoplando cualquier castigo al sistema central.
-               </p>
+            <div className="group p-10 md:p-12 border border-fuchsia-500/40 bg-[#250b28] rounded-[2.5rem] hover:border-fuchsia-400/60 shadow-[0_0_50px_rgba(217,70,239,0.05)] transition-all relative z-10 md:-ml-6 md:-mr-6 flex flex-col md:flex-row items-start md:items-center gap-8 lg:gap-12">
+               <div className="flex-1">
+                 <span className="text-fuchsia-300 text-xs uppercase tracking-widest font-bold mb-2 block animate-pulse">Capa Central · Tech Insurance Platform</span>
+                 <h3 className="text-3xl font-extrabold text-white mb-4">La Capa Intermedia Inteligente</h3>
+                 <p className="text-fuchsia-100/80 font-light text-lg leading-relaxed mb-6 md:mb-0">
+                   Tech Insurance absorbe la lógica de front-end, la configuración comercial y gran parte de la experiencia del producto, interrelacionándose con el core asegurador de forma simple y controlada.
+                 </p>
+               </div>
+               <div className="w-24 h-24 lg:w-32 lg:h-32 shrink-0 bg-[#310c36] border border-fuchsia-700/50 rounded-[2rem] flex items-center justify-center shadow-2xl relative">
+                  <Image src="/TechInsurance.svg" alt="Tech Insurance" width={64} height={64} className="opacity-90 drop-shadow-[0_0_15px_rgba(217,70,239,0.5)]" />
+               </div>
             </div>
 
             {/* Capa 3 */}
-            <div className="group p-8 md:p-10 border border-white/5 bg-black/50 backdrop-blur-md rounded-3xl hover:border-zinc-800/80 transition-all relative z-10 opacity-70">
-               <span className="text-zinc-500 text-xs uppercase tracking-widest font-bold mb-2 block">Capa Profunda · Legacy</span>
+            <div className="group p-8 md:p-10 border border-white/5 bg-[#1a1a24]/40 backdrop-blur-md rounded-3xl hover:border-fuchsia-500/20 hover:bg-[#1f1a29]/60 transition-all relative z-10 opacity-70">
+               <span className="text-zinc-500 text-xs uppercase tracking-widest font-bold mb-2 block">Capa Profunda · Core Legacy</span>
                <h3 className="text-xl font-bold text-zinc-300 mb-3">El Core Transaccional Resguardado</h3>
                <p className="text-zinc-500 font-light leading-relaxed">
-                 Las estructuras del core legacy o de sistemas core existentes permanecen 100% puras y seguras, abocadas estrictamente al mantenimiento general, administración a largo plazo y contabilidad, sin intervenirse directamente con las demandas de los canales digitales de innovación masiva.
+                 El core legacy continúa funcionando de la misma manera que lo viene haciendo hasta ahora, sin verse afectado. Tech Insurance puede integrarse para gestionar nuevos productos, administración y postventa desde su propia capa, o bien trasladar primas y siniestros al core. Estas integraciones se diseñan de forma simple y sin impactos operativos relevantes.
                </p>
             </div>
           </div>
@@ -141,9 +146,12 @@ export default function ArquitecturaPage() {
       {/* INTEGRACION */}
       <section id="integracion" className="py-24 px-4 bg-[#050106] border-b border-white/5 scroll-mt-32">
         <div className="container mx-auto max-w-6xl">
-          <h2 className="text-3xl md:text-4xl font-bold text-white mb-16 text-center">
+          <h2 className="text-3xl md:text-4xl font-bold text-white mb-6 text-center">
             Matriz de <span className="text-transparent bg-clip-text bg-gradient-to-r from-fuchsia-500 to-pink-400">Integración</span>
           </h2>
+          <p className="text-xl text-zinc-400 font-light max-w-4xl mx-auto text-center mb-16 leading-relaxed">
+            Tech Insurance ha sido desarrollado y preparado para ser implementado mediante experiencias estándar, customizables a través del UX/UI requerido, o mediante implementaciones a medida utilizando APIs, conectores y otras capacidades de integración.
+          </p>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
             {[
               { title: 'APIs Estándar', desc: 'Arquitectura REST/GraphQL blindando comunicación inmediata.', icon: '<rect x="4" y="4" width="16" height="16" rx="2" ry="2"/><rect x="9" y="9" width="6" height="6"/>' },
@@ -173,17 +181,17 @@ export default function ArquitecturaPage() {
             <div className="p-10 border border-white/5 bg-[#0f0e11] rounded-[2rem] hover:border-fuchsia-800 transition-colors">
               <div className="text-fuchsia-500 mb-6"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" className="w-12 h-12"><polyline points="23 6 13.5 15.5 8.5 10.5 1 18"/><polyline points="17 6 23 6 23 12"/></svg></div>
               <h3 className="text-2xl font-bold text-white mb-4">Crecimiento sin Fricción</h3>
-              <p className="text-zinc-400 font-light leading-relaxed">Multiplicar por mil sus ventas no ralentizará sus cuotas; nuestra micro-arquitectura auto-abastece rendimiento de procesamiento.</p>
+              <p className="text-zinc-400 font-light leading-relaxed">La solución ha sido desarrollada para crecer sin límite y puede ser hosteada y operar sobre una arquitectura distribuida cuando el negocio así lo requiera.</p>
             </div>
             <div className="p-10 border border-white/5 bg-[#0f0e11] rounded-[2rem] hover:border-fuchsia-800 transition-colors">
               <div className="text-fuchsia-500 mb-6"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" className="w-12 h-12"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg></div>
               <h3 className="text-2xl font-bold text-white mb-4">Despliegue a Nuevos Canales</h3>
-              <p className="text-zinc-400 font-light leading-relaxed">Ya no es necesario programar apps para cada broker, integre su endpoint en ecosistemas bancarios, retail o marketplaces el mismo día.</p>
+              <p className="text-zinc-400 font-light leading-relaxed">Tech Insurance permite asignar productos a diferentes canales, modificar condiciones por canal, crear productos especiales para cada uno y combinar estas capacidades de forma simple.</p>
             </div>
             <div className="p-10 border border-white/5 bg-[#0f0e11] rounded-[2rem] hover:border-fuchsia-800 transition-colors">
               <div className="text-fuchsia-500 mb-6"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" className="w-12 h-12"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"/><line x1="3" y1="9" x2="21" y2="9"/><line x1="9" y1="21" x2="9" y2="9"/></svg></div>
-              <h3 className="text-2xl font-bold text-white mb-4">Inventiva de Nuevos Productos</h3>
-              <p className="text-zinc-400 font-light leading-relaxed">No importa que su core no sepa qué es un "microseguro de mascotas"; la plataforma lo orquesta y le traduce los datos al legacy para cobro.</p>
+              <h3 className="text-2xl font-bold text-white mb-4">Nuevos Seguros / Innovación</h3>
+              <p className="text-zinc-400 font-light leading-relaxed">Permite crear nuevos productos, construirlos a partir de productos existentes del core, mejorar su alcance y testearlos antes de incorporarlos definitivamente al core.</p>
             </div>
           </div>
         </div>
@@ -192,8 +200,7 @@ export default function ArquitecturaPage() {
       {/* SEGURIDAD */}
       <section id="seguridad" className="py-24 px-4 bg-[#050106] border-b border-fuchsia-900/40 scroll-mt-32">
         <div className="container mx-auto max-w-6xl text-center">
-          <span className="text-fuchsia-500 font-semibold tracking-wider text-sm uppercase mb-3 block">Estándar Financiero</span>
-          <h2 className="text-3xl md:text-5xl font-bold text-white mb-16 tracking-tight">
+          <h2 className="text-3xl md:text-5xl font-bold text-white mb-16 tracking-tight mt-6">
             Seguridad y <span className="text-transparent bg-clip-text bg-gradient-to-r from-fuchsia-500 to-pink-400">Compliance Nativo</span>
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-8 max-w-4xl mx-auto">
@@ -207,8 +214,8 @@ export default function ArquitecturaPage() {
             <div className="flex gap-6 items-start text-left p-8 bg-[#0f0e11] border border-white/5 rounded-3xl hover:border-fuchsia-800 transition-colors">
                <div className="text-fuchsia-600 shrink-0"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" className="w-12 h-12"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg></div>
                <div>
-                 <h4 className="text-xl font-bold text-white mb-2">Auditoría Inviolable</h4>
-                 <p className="text-zinc-500 font-light">Un log cronológico criptográfico de cada parametrización configurada. Sepa cuándo y quién varió una regla de siniestro y deshaga los cambios inmediatamente.</p>
+                 <h4 className="text-xl font-bold text-white mb-2">Auditoría Constante</h4>
+                 <p className="text-zinc-500 font-light">Un registro cronológico claro, trazable y estructurado. Sepa exactamente quién, cómo y cuándo se varió cada parámetro del sistema.</p>
                </div>
             </div>
             <div className="flex gap-6 items-start text-left p-8 bg-[#0f0e11] border border-white/5 rounded-3xl hover:border-fuchsia-800 transition-colors">
@@ -225,6 +232,17 @@ export default function ArquitecturaPage() {
                  <p className="text-zinc-500 font-light">Aísla los flujos de testeo (Sandboxes lógicos) que los partners exploran y los compila transparentemente en Producción una vez visados.</p>
                </div>
             </div>
+          </div>
+          
+          <div className="flex justify-center items-center gap-6 mt-16 flex-wrap opacity-80">
+             <div className="flex items-center gap-3 px-6 py-3 rounded-full border border-fuchsia-900/30 bg-[#0f0e11]">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" className="w-5 h-5 text-fuchsia-500"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+                <span className="text-zinc-300 font-medium text-xs tracking-widest uppercase">PCI Compliance Reference</span>
+             </div>
+             <div className="flex items-center gap-3 px-6 py-3 rounded-full border border-fuchsia-900/30 bg-[#0f0e11]">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" className="w-5 h-5 text-fuchsia-500"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+                <span className="text-zinc-300 font-medium text-xs tracking-widest uppercase">Data Security Practice</span>
+             </div>
           </div>
         </div>
       </section>
