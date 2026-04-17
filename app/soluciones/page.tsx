@@ -22,9 +22,12 @@ export default function SolucionesPage() {
             Soluciones diseñadas para <br className="hidden md:block"/> <span className="text-transparent bg-clip-text bg-gradient-to-r from-fuchsia-500 to-pink-400">escalar su negocio</span>
           </h1>
           
-          <div className="border border-fuchsia-500/20 rounded-3xl p-10 lg:p-12 bg-black/50 backdrop-blur-md shadow-2xl mt-8">
-            <p className="text-fuchsia-100/90 text-xl font-light leading-relaxed">
-              Usted aporta la visión y la necesidad de productos. Nosotros la estructura, la innovación y la velocidad.
+          <div className="border border-fuchsia-500/20 rounded-3xl p-10 lg:p-14 bg-black/50 backdrop-blur-md shadow-2xl mt-8">
+            <p className="text-fuchsia-100/90 text-xl font-light leading-relaxed mb-6">
+              Las compañías o las aseguradoras aportan la visión y la necesidad del producto. Nosotros la estructura, la innovación y la velocidad.
+            </p>
+            <p className="text-zinc-400 text-lg font-light leading-relaxed">
+              Tech Insurance ha sido desarrollado como una solución innovadora, alineada a las necesidades de las compañías y a los desafíos que presentan los core con limitaciones. Las compañías necesitan crear nuevos productos y adaptarse cada vez más al mercado, y Tech Insurance provee esa capacidad.
             </p>
           </div>
         </div>
@@ -98,7 +101,7 @@ export default function SolucionesPage() {
                </div>
                <div className="group p-8 border border-white/5 bg-[#1b081e]/30 rounded-2xl hover:bg-[#1b081e]/80 hover:border-fuchsia-800 transition-colors">
                  <div className="text-zinc-500 mb-4 group-hover:text-fuchsia-400 transition-colors"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" className="w-12 h-12"><path d="M12 20V10"/><path d="M18 20V4"/><path d="M6 20v-4"/></svg></div>
-                 <h4 className="text-xl font-bold text-white mb-2">Multicotización</h4>
+                 <h4 className="text-xl font-bold text-white mb-2">Cotizadores</h4>
                  <p className="text-sm font-light text-zinc-500">Agregadores paramétricos para cotizar entre múltiples ramas comerciales.</p>
                </div>
                <div className="group p-8 border border-white/5 bg-[#1b081e]/30 rounded-2xl hover:bg-[#1b081e]/80 hover:border-fuchsia-800 transition-colors md:col-span-2">
@@ -113,7 +116,7 @@ export default function SolucionesPage() {
               <h2 className="text-3xl md:text-5xl font-bold text-white mb-6 tracking-tight">
                 Para <span className="text-transparent bg-clip-text bg-gradient-to-r from-fuchsia-500 to-pink-400">Productores / Corredores (PAS)</span>
               </h2>
-              <p className="text-zinc-400 font-light text-xl leading-relaxed mb-8">Tech Insurance ofrece a productores, corredores (PAS) herramientas para generar más negocios, acceder a nuevos productos y soluciones, contar con un multicotizador de productos y gestionar su operación mediante un CRM comercial 360.</p>
+              <p className="text-zinc-400 font-light text-xl leading-relaxed mb-8">Los canales comerciales acceden a los cotizadores de nuevos productos de manera simple. Estas capacidades pueden ser embebidas dentro de los sistemas de los PAS, corredores o productores, así como también en los sistemas de gestión de las compañías.</p>
             </div>
 
           </div>
@@ -129,22 +132,14 @@ export default function SolucionesPage() {
               <h2 className="text-3xl md:text-5xl font-bold text-white mb-6 tracking-tight">
                 Bancos / <span className="text-transparent bg-clip-text bg-gradient-to-r from-fuchsia-500 to-pink-400">Fintechs</span>
               </h2>
-              <p className="text-zinc-400 font-light text-xl leading-relaxed mb-8">La solución permite a bancos y fintech incorporar seguros de forma simple, ya sea mediante experiencias embebidas o integraciones vía APIs, generando un valor agregado directo a sus clientes.<br/><br/>El modelo de white labeling permite a estas entidades utilizar y customizar la solución, incluso para ofrecerla a terceros.</p>
+              <p className="text-zinc-400 font-light text-xl leading-relaxed mb-8">La solución permite unificar la venta y ofrecer servicios de seguros a los clientes, ya sea a través de la figura de un intermediario o agente institorio, o bien mediante un broker de seguros.</p>
             </div>
             
-            <div className="lg:col-span-7 grid grid-cols-1 md:grid-cols-2 gap-6">
-               <div className="group p-8 border border-white/5 bg-[#0f0e11] rounded-2xl hover:bg-[#16141a] hover:border-fuchsia-800 transition-colors md:col-span-2">
-                 <div className="text-fuchsia-600 mb-4 group-hover:text-fuchsia-400 transition-colors"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" className="w-12 h-12"><line x1="12" y1="2" x2="12" y2="22"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg></div>
-                 <h4 className="text-xl font-bold text-white mb-2">Cross-Selling Bancario y Embebido</h4>
-                 <p className="text-sm font-light text-zinc-500">Unifique la venta de Seguros de Vida o Desempleo atado 1:1 a la originación de un Préstamo Personal en sus Apps Fintech nativas, sin redirigir al usuario.</p>
-               </div>
+            <div className="lg:col-span-7 grid grid-cols-1 md:grid-cols-1 gap-6">
                <div className="group p-8 border border-white/5 bg-[#0f0e11] rounded-2xl hover:bg-[#16141a] hover:border-fuchsia-800 transition-colors">
-                 <h4 className="text-lg font-bold text-white mb-2 text-fuchsia-100">✔ Aumento de ARPU</h4>
-                 <p className="text-sm font-light text-zinc-500">Nuevas líneas de comisiones por fee pasivo.</p>
-               </div>
-               <div className="group p-8 border border-white/5 bg-[#0f0e11] rounded-2xl hover:bg-[#16141a] hover:border-fuchsia-800 transition-colors">
-                 <h4 className="text-lg font-bold text-white mb-2 text-fuchsia-100">✔ Integración Silenciosa</h4>
-                 <p className="text-sm font-light text-zinc-500">APIs invisibles atadas a la UI de su Wallet.</p>
+                 <div className="text-fuchsia-600 mb-4 group-hover:text-fuchsia-400 transition-colors"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" className="w-12 h-12"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg></div>
+                 <h4 className="text-xl font-bold text-white mb-2">Integración</h4>
+                 <p className="text-sm font-light text-zinc-500">Tech Insurance cuenta con experiencia en integración con bancos regionales, habiendo cumplido con certificaciones, restricciones y requerimientos de seguridad informática propios de este tipo de instituciones.</p>
                </div>
             </div>
           </div>
