@@ -15,9 +15,22 @@ export default function Footer() {
               </div>
             </Link>
             <h3 className="text-xl font-bold text-white mb-4 tracking-tight">Tech Insurance</h3>
-            <p className="text-sm text-zinc-500 font-light mb-6">
+            <p className="text-sm text-zinc-500 font-light mb-8">
               La plataforma enterprise definitiva para acelerar y transformar el mercado asegurador con tecnología de punta evitando dependencias rígidas de los cores legacy.
             </p>
+            
+            {/* Kopernicus Endorsement */}
+            <div className="flex flex-col items-start pt-6 border-t border-white/5 w-full mb-6">
+               <span className="text-[10px] uppercase tracking-widest text-zinc-600 font-medium mb-3">Solución desarrollada por</span>
+               <div className="flex items-center gap-2 text-zinc-400 opacity-80 hover:opacity-100 transition-opacity">
+                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" className="w-4 h-4">
+                    <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z" />
+                    <circle cx="12" cy="12" r="10" />
+                    <path d="M2 12h20" />
+                 </svg>
+                 <span className="text-sm font-bold tracking-tight">KOPERNICUS <span className="font-light">TECH</span></span>
+               </div>
+            </div>
             
             {/* Redes Sociales */}
             <div className="flex gap-4 mb-8">

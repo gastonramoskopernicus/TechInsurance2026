@@ -43,8 +43,8 @@ export default function RootLayout({
           aria-label="Contactar a Tech Insurance"
         >
           <div className="absolute inset-0 rounded-full bg-[radial-gradient(ellipse_at_center,rgba(217,70,239,0.2),transparent)] opacity-0 group-hover:opacity-100 transition-opacity pointer-events-none" />
-          <div className="relative w-7 h-7 flex items-center justify-center drop-shadow-[0_0_10px_rgba(217,70,239,0.5)] group-hover:drop-shadow-[0_0_15px_rgba(217,70,239,0.8)] transition-all">
-            <img src="/logo-icon.png" alt="Tech Insurance Logo" className="object-contain w-full h-full filter saturate-200" />
+          <div className="relative w-8 h-8 flex items-center justify-center drop-shadow-[0_0_10px_rgba(217,70,239,0.5)] group-hover:drop-shadow-[0_0_15px_rgba(217,70,239,0.8)] transition-all">
+            <img src="/TechInsurance.svg" alt="Tech Insurance Logo" className="object-contain w-full h-full filter saturate-200" />
           </div>
         </a>
       </body>
