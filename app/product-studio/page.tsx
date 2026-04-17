@@ -74,11 +74,11 @@ export default function ProductStudioPage() {
           
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-4">
             {[
-              { step: '01', title: 'Armado del producto, alcance, beneficios y exclusiones', desc: '', icon: '<rect x="3" y="3" width="18" height="18" rx="2" ry="2"/><line x1="3" y1="9" x2="21" y2="9"/><line x1="9" y1="21" x2="9" y2="9"/>' },
-              { step: '02', title: 'Validación, políticas de suscripción, scoring u otros', desc: '', icon: '<path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10"/>' },
-              { step: '03', title: 'Incorporación de variables internas, externas o servicios externos', desc: '', icon: '<path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/>' },
-              { step: '04', title: 'Armado del precio del producto', desc: '', icon: '<circle cx="12" cy="12" r="9"/><path d="M12 3v9"/><path d="M12 12l4.24 4.24"/>' },
-              { step: '05', title: 'Publicación', desc: 'Disponibilidad en APIs, landings o experiencias de usuario', icon: '<path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/>' },
+              { step: '01', title: 'Producto', desc: 'Definición del alcance, coberturas, beneficios y exclusiones.', icon: '<rect x="3" y="3" width="18" height="18" rx="2" ry="2"/><line x1="3" y1="9" x2="21" y2="9"/><line x1="9" y1="21" x2="9" y2="9"/>' },
+              { step: '02', title: 'Reglas', desc: 'Validación, políticas de suscripción, scoring y lógica de negocio.', icon: '<path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10"/>' },
+              { step: '03', title: 'Variables', desc: 'Incorporación de variables internas, externas y servicios externos.', icon: '<path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/>' },
+              { step: '04', title: 'Pricing', desc: 'Definición y armado del precio del producto.', icon: '<circle cx="12" cy="12" r="9"/><path d="M12 3v9"/><path d="M12 12l4.24 4.24"/>' },
+              { step: '05', title: 'Publicación', desc: 'Disponibilidad en APIs, landings o experiencias de usuario.', icon: '<path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/>' },
             ].map((item, idx) => (
               <div key={idx} className="group p-6 border border-white/5 bg-[#0f0e11] rounded-2xl hover:bg-[#1b081e] hover:border-fuchsia-900/50 transition-all duration-300 flex flex-col relative h-full">
                  <div className="absolute -top-3 -right-3 text-7xl font-black text-white/5 group-hover:text-fuchsia-500/10 transition-colors pointer-events-none">{item.step}</div>
@@ -86,7 +86,7 @@ export default function ProductStudioPage() {
                     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" className="w-12 h-12" dangerouslySetInnerHTML={{ __html: item.icon }}></svg>
                  </div>
                  <h4 className="text-lg font-bold text-white mb-2 relative z-10">{item.title}</h4>
-                 <p className="text-sm text-zinc-500 font-light group-hover:text-zinc-400 relative z-10 leading-relaxed">{item.desc}</p>
+                 <p className="text-sm text-zinc-500 font-light group-hover:text-zinc-400 relative z-10 leading-relaxed flex-1">{item.desc}</p>
               </div>
             ))}
           </div>
@@ -176,36 +176,36 @@ export default function ProductStudioPage() {
                {/* Línea conectora trasera (solo desktop) */}
                <div className="hidden lg:block absolute top-1/2 left-12 right-12 h-1 bg-gradient-to-r from-zinc-800 via-fuchsia-900/50 to-fuchsia-500/50 -translate-y-1/2 z-0" />
                
-               <div className="relative z-10 flex flex-col items-center flex-1">
-                 <div className="w-24 h-24 rounded-3xl bg-zinc-900 border border-zinc-700 flex items-center justify-center text-zinc-400 mb-6 shadow-xl shrink-0">
-                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" className="w-12 h-12"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+               <div className="relative z-10 flex flex-col items-center flex-1 h-full justify-start">
+                 <div className="w-28 h-28 lg:w-32 lg:h-32 rounded-3xl bg-zinc-900 border border-zinc-700 flex items-center justify-center text-zinc-400 mb-8 shadow-xl shrink-0">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" className="w-12 h-12 lg:w-14 lg:h-14"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
                  </div>
-                 <div className="text-center px-4">
-                   <p className="text-white font-bold text-lg mb-2">Equipo de Negocio</p>
+                 <div className="text-center px-2 flex-1 flex flex-col justify-start w-full">
+                   <p className="text-white font-bold text-xl mb-3">Equipo de Negocio</p>
                    <p className="text-zinc-500 text-sm leading-relaxed">Define el producto, las coberturas, arma el pricing y establece el comportamiento del producto.</p>
                  </div>
                </div>
 
-               <div className="text-zinc-700 hidden lg:block relative z-10"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" className="w-8 h-8"><polyline points="9 18 15 12 9 6"/></svg></div>
+               <div className="text-zinc-700 hidden lg:block relative z-10 -mt-32"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" className="w-8 h-8"><polyline points="9 18 15 12 9 6"/></svg></div>
                
-               <div className="relative z-10 flex flex-col items-center flex-1">
-                 <div className="w-28 h-28 lg:w-32 lg:h-32 rounded-[2rem] bg-[#1b081e] border-2 border-fuchsia-800 flex items-center justify-center mb-6 shadow-[0_0_40px_rgba(217,70,239,0.3)] shrink-0 animate-breath relative">
+               <div className="relative z-10 flex flex-col items-center flex-1 h-full justify-start">
+                 <div className="w-28 h-28 lg:w-32 lg:h-32 rounded-[2rem] bg-[#1b081e] border-2 border-fuchsia-800 flex items-center justify-center mb-8 shadow-[0_0_40px_rgba(217,70,239,0.3)] shrink-0 animate-breath relative">
                     <Image src="/TechInsurance.svg" alt="Tech Insurance Isotipo" width={56} height={56} className="object-contain" />
                  </div>
-                 <div className="text-center px-4">
-                   <p className="text-fuchsia-300 font-bold text-xl mb-2">Product Studio</p>
+                 <div className="text-center px-2 flex-1 flex flex-col justify-start w-full">
+                   <p className="text-fuchsia-300 font-bold text-xl mb-3">Product Studio</p>
                    <p className="text-zinc-400 text-sm leading-relaxed">La configuración se realiza a través de simples pasos y en minutos se puede crear el producto.</p>
                  </div>
                </div>
 
-               <div className="text-fuchsia-900 hidden lg:block relative z-10"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" className="w-8 h-8"><polyline points="9 18 15 12 9 6"/></svg></div>
+               <div className="text-fuchsia-900 hidden lg:block relative z-10 -mt-32"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" className="w-8 h-8"><polyline points="9 18 15 12 9 6"/></svg></div>
                
-               <div className="relative z-10 flex flex-col items-center flex-1">
-                 <div className="w-24 h-24 rounded-3xl bg-zinc-100 border border-white flex items-center justify-center text-black mb-6 shadow-[0_0_40px_rgba(255,255,255,0.2)] shrink-0">
-                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" className="w-12 h-12"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+               <div className="relative z-10 flex flex-col items-center flex-1 h-full justify-start">
+                 <div className="w-28 h-28 lg:w-32 lg:h-32 rounded-3xl bg-zinc-100 border border-white flex items-center justify-center text-black mb-8 shadow-[0_0_40px_rgba(255,255,255,0.2)] shrink-0">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" className="w-12 h-12 lg:w-14 lg:h-14"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
                  </div>
-                 <div className="text-center px-4">
-                   <p className="text-white font-bold text-lg mb-2">Publicación</p>
+                 <div className="text-center px-2 flex-1 flex flex-col justify-start w-full">
+                   <p className="text-white font-bold text-xl mb-3">Publicación</p>
                    <p className="text-zinc-500 text-sm leading-relaxed">Se define el diseño, la experiencia o el layout del producto para que pueda ser embebido o utilizado en diferentes canales.</p>
                  </div>
                </div>
