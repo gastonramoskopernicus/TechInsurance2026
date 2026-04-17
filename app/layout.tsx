@@ -17,6 +17,9 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "Tech Insurance | Enterprise Platform",
   description: "La plataforma enterprise definitiva para acelerar y transformar el mercado asegurador con tecnología de punta.",
+  icons: {
+    icon: '/favicon.svg',
+  },
 };
 
 export default function RootLayout({
