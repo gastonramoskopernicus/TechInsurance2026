@@ -23,14 +23,17 @@ export default function ProductStudioPage() {
           </h1>
           <p className="text-2xl text-fuchsia-400 font-light mb-8">El corazón de la innovación aseguradora.</p>
 
-          <div className="border border-fuchsia-500/20 rounded-3xl p-10 lg:p-14 bg-black/50 backdrop-blur-md shadow-2xl">
-            <p className="text-fuchsia-100/90 text-xl font-light leading-relaxed mb-8">
-              Otorgue el poder a sus equipos estratégicos. Nuestro entorno de configuración visual le permite abstraer los productos de seguros del código duro, independizando la ambición comercial de las restricciones técnicas de IT.
+          <div className="border border-fuchsia-500/20 rounded-3xl p-10 lg:p-14 bg-black/50 backdrop-blur-md shadow-2xl text-left max-w-4xl mx-auto">
+            <p className="text-white text-xl font-bold leading-relaxed mb-6">
+              Product Studio es el corazón de Tech Insurance y su principal diferencial frente a soluciones del mercado.
             </p>
-            <div className="p-6 border border-white/10 bg-zinc-900/50 rounded-xl inline-flex shadow-inner">
-               <p className="text-zinc-300 text-center font-medium text-lg leading-relaxed">
-                  Los productos dejan de ser código.<br/>
-                  <span className="text-white font-bold">Pasan a ser parametrizaciones dinámicas.</span>
+            <p className="text-fuchsia-100/80 text-lg font-light leading-relaxed mb-8">
+              A diferencia de los productos tradicionales —mayormente estáticos, poco reutilizables y con baja integración—, Product Studio permite la <span className="text-white font-medium">reutilización de lógica, integración extendida y el modelado dinámico</span> de negocios.
+            </p>
+            <div className="p-6 border border-white/10 bg-zinc-900/50 rounded-xl inline-flex shadow-inner w-full">
+               <p className="text-zinc-300 font-medium text-lg leading-relaxed text-center w-full">
+                  Fomentamos la autonomía comercial para perfiles no técnicos.<br/>
+                  <span className="text-fuchsia-400 font-bold">Sin depender de tiempos de desarrollo ni cuellos de botella de IT.</span>
                </p>
             </div>
           </div>
@@ -74,8 +77,8 @@ export default function ProductStudioPage() {
               { step: '01', title: 'Definición de coberturas', desc: 'Ensamblado de beneficios y exclusiones', icon: '<rect x="3" y="3" width="18" height="18" rx="2" ry="2"/><line x1="3" y1="9" x2="21" y2="9"/><line x1="9" y1="21" x2="9" y2="9"/>' },
               { step: '02', title: 'Configuración de reglas', desc: 'Validación, suscripción y scoring', icon: '<path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10"/>' },
               { step: '03', title: 'Parametrización', desc: 'Asignación de pricing y deducibles', icon: '<path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/>' },
-              { step: '04', title: 'Versionado', desc: 'Control de cambios sin apagar pólizas', icon: '<circle cx="12" cy="12" r="9"/><path d="M12 3v9"/><path d="M12 12l4.24 4.24"/>' },
-              { step: '05', title: 'Publicación', desc: 'Distribución API instantánea unificada', icon: '<path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/>' },
+              { step: '04', title: 'Fórmulas / Pricing', desc: 'Control de cambios sin apagar pólizas', icon: '<circle cx="12" cy="12" r="9"/><path d="M12 3v9"/><path d="M12 12l4.24 4.24"/>' },
+              { step: '05', title: 'Publicación', desc: 'Disponibilidad en APIs, landings o experiencias de usuario', icon: '<path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/>' },
             ].map((item, idx) => (
               <div key={idx} className="group p-6 border border-white/5 bg-[#0f0e11] rounded-2xl hover:bg-[#1b081e] hover:border-fuchsia-900/50 transition-all duration-300 flex flex-col relative h-full">
                  <div className="absolute -top-3 -right-3 text-7xl font-black text-white/5 group-hover:text-fuchsia-500/10 transition-colors pointer-events-none">{item.step}</div>
@@ -101,15 +104,17 @@ export default function ProductStudioPage() {
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
             {[
-              { title: 'Modelado Modular', desc: 'Cree plantillas y master-products desacoplados donde coberturas base funcionan como legos totalmente independientes.' },
-              { title: 'Reutilización Funcional', desc: 'Transfiera y herede lógicas preexistentes para lanzar nuevas iteraciones iterativas con mínima intervención humana.' },
-              { title: 'Productos Compuestos', desc: 'Empaquete capas múltiples (Ej: Vida + Riesgos Especiales) en una experiencia de subscripción y cobeneficio B2C unificada.' },
-              { title: 'Variables Dinámicas', desc: 'Parametrice condiciones extremas, micro-tarifas y descuentos in-surance basándose en metadatos y perfilado al vuelo.' },
-              { title: 'Integración Extendida', desc: 'Inyecte telemetría externa (vuelos cancelados, sensores IoT, geolocalización) al motor actuarial para coberturas invisibles paramétricas.' }
+              { icon: '<rect x="3" y="3" width="18" height="18" rx="2" ry="2"/><line x1="3" y1="9" x2="21" y2="9"/><line x1="9" y1="21" x2="9" y2="9"/>', title: 'Modelado Modular', desc: 'Cree plantillas y master-products desacoplados donde coberturas base funcionan como legos totalmente independientes.' },
+              { icon: '<path d="M21 2v6h-6"/><path d="M21 13a9 9 0 1 1-3-7.7L21 8"/>', title: 'Reutilización Funcional', desc: 'Transfiera y herede lógicas preexistentes para lanzar nuevas iteraciones iterativas con mínima intervención humana.' },
+              { icon: '<polygon points="12 2 2 7 12 12 22 7 12 2"/><polyline points="2 17 12 22 22 17"/><polyline points="2 12 12 17 22 12"/>', title: 'Productos Compuestos', desc: 'Empaquete capas múltiples (Ej: Vida + Riesgos Especiales) en una experiencia de subscripción unificada.' },
+              { icon: '<circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"/>', title: 'Variables Dinámicas', desc: 'Parametrice condiciones extremas, micro-tarifas y descuentos in-surance basándose en metadatos al vuelo.' },
+              { icon: '<path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/>', title: 'Integración Extendida', desc: 'Inyecte telemetría externa (sensores IoT, geolocalización) al motor actuarial para coberturas paramétricas.' }
             ].map((item, idx) => (
               <div key={idx} className="group p-10 border border-white/5 bg-[#0f0e11] rounded-3xl hover:bg-[#200e23] hover:border-fuchsia-800/40 transition-all duration-300">
-                 <h4 className="text-2xl font-bold text-white mb-4 flex items-center gap-4">
-                   <span className="w-3 h-3 rounded-full bg-fuchsia-500 group-hover:animate-pulse"></span>
+                 <div className="mb-6 text-fuchsia-800 group-hover:text-fuchsia-500 transition-colors duration-300">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" className="w-12 h-12" dangerouslySetInnerHTML={{ __html: item.icon }}></svg>
+                 </div>
+                 <h4 className="text-2xl font-bold text-white mb-4">
                    {item.title}
                  </h4>
                  <p className="text-zinc-500 text-lg font-light leading-relaxed group-hover:text-zinc-400">{item.desc}</p>
@@ -149,7 +154,7 @@ export default function ProductStudioPage() {
                <ul className="space-y-8 flex-1 relative z-10">
                  <li className="flex gap-4 items-start"><span className="text-fuchsia-500 font-bold mt-1 text-xl">✓</span> <p className="text-fuchsia-100/90 font-medium text-lg leading-relaxed">Configuración puramente visual e intuitiva mediante lógicas ya pre-validadas por el sistema.</p></li>
                  <li className="flex gap-4 items-start"><span className="text-fuchsia-500 font-bold mt-1 text-xl">✓</span> <p className="text-fuchsia-100/90 font-medium text-lg leading-relaxed">Empoderamiento directo: Equipos Comerciales, Pricing y Actuariales asumen total autonomía para innovar.</p></li>
-                 <li className="flex gap-4 items-start"><span className="text-fuchsia-500 font-bold mt-1 text-xl">✓</span> <p className="text-white font-bold leading-relaxed bg-[#0f0e11] hover:bg-[#16141a] hover:border-fuchsia-900/50 transition-all duration-300 px-4 py-2 rounded-xl text-lg block border border-fuchsia-900/30">Lanzamientos al unísono: Días o semanas para lograr Go-to-Market de altísimo impacto y volumen.</p></li>
+                 <li className="flex gap-4 items-start"><span className="text-fuchsia-500 font-bold mt-1 text-xl">✓</span> <p className="text-fuchsia-100/90 font-medium text-lg leading-relaxed">Días o semanas para lograr un GTM (Go-to-Market) de alto impacto y volumen en multicanal.</p></li>
                </ul>
             </div>
           </div>
@@ -184,8 +189,8 @@ export default function ProductStudioPage() {
                <div className="text-zinc-700 hidden lg:block relative z-10"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" className="w-8 h-8"><polyline points="9 18 15 12 9 6"/></svg></div>
                
                <div className="relative z-10 flex flex-col items-center flex-1">
-                 <div className="w-28 h-28 lg:w-32 lg:h-32 rounded-[2rem] bg-[#1b081e] border-2 border-fuchsia-800 flex items-center justify-center text-fuchsia-500 mb-6 shadow-[0_0_40px_rgba(217,70,239,0.3)] shrink-0 animate-breath">
-                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" className="w-12 h-12"><path d="m18 16 4-4-4-4"/><path d="m6 8-4 4 4 4"/><path d="m14.5 4-5 16"/></svg>
+                 <div className="w-28 h-28 lg:w-32 lg:h-32 rounded-[2rem] bg-[#1b081e] border-2 border-fuchsia-800 flex items-center justify-center mb-6 shadow-[0_0_40px_rgba(217,70,239,0.3)] shrink-0 animate-breath relative">
+                    <Image src="/TechInsurance.svg" alt="Tech Insurance Isotipo" width={56} height={56} className="object-contain" />
                  </div>
                  <div className="text-center px-4">
                    <p className="text-fuchsia-300 font-bold text-xl mb-2">Product Studio</p>
