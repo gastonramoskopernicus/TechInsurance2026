@@ -20,10 +20,10 @@ export default function Footer() {
             </p>
             
             {/* Kopernicus Endorsement */}
-            <div className="flex flex-col items-start pt-6 border-t border-white/5 w-full mb-6 relative">
-               <span className="text-xs uppercase tracking-widest text-zinc-500 font-medium mb-4">Powered by</span>
-               <div className="relative h-12 w-56 sm:h-14 sm:w-64 opacity-80 hover:opacity-100 transition-opacity">
-                 <Image src="/kopernicus-logo.png" alt="Kopernicus Tech" fill className="object-contain object-left brightness-0 invert" sizes="300px" />
+            <div className="flex flex-col items-start pt-8 border-t border-white/5 w-full mb-8 relative">
+               <span className="text-sm uppercase tracking-widest text-zinc-500 font-medium mb-4">Powered by</span>
+               <div className="relative h-20 w-80 sm:h-[80px] sm:w-[320px] opacity-80 hover:opacity-100 transition-opacity">
+                 <Image src="/kopernicus-logo.png" alt="Kopernicus Tech" fill className="object-contain object-left brightness-0 invert" sizes="400px" />
                </div>
             </div>
             
