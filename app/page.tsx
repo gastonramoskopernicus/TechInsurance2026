@@ -14,7 +14,7 @@ export default function Home() {
 
         {/* Cinematic Nebula Layer (Mix Blend) */}
         <div className="absolute inset-0 z-0 opacity-40 mix-blend-screen bg-[radial-gradient(ellipse_at_center,rgba(217,70,239,0.05),transparent)]">
-           <Image src="/hero-cosmic-bg.png" alt="Cosmic Nebula Layer" fill className="object-cover object-bottom" priority quality={100} />
+           <Image src="/hero-cosmic-bg.png" alt="Cosmic Nebula Layer" fill className="object-cover object-bottom animate-cosmic-drift" priority quality={100} />
         </div>
         
         {/* Abstract Vignette Mask */}
