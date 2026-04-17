@@ -74,10 +74,10 @@ export default function ProductStudioPage() {
           
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-4">
             {[
-              { step: '01', title: 'Definición de coberturas', desc: 'Ensamblado de beneficios y exclusiones', icon: '<rect x="3" y="3" width="18" height="18" rx="2" ry="2"/><line x1="3" y1="9" x2="21" y2="9"/><line x1="9" y1="21" x2="9" y2="9"/>' },
-              { step: '02', title: 'Configuración de reglas', desc: 'Validación, suscripción y scoring', icon: '<path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10"/>' },
-              { step: '03', title: 'Parametrización', desc: 'Asignación de pricing y deducibles', icon: '<path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/>' },
-              { step: '04', title: 'Fórmulas / Pricing', desc: 'Control de cambios sin apagar pólizas', icon: '<circle cx="12" cy="12" r="9"/><path d="M12 3v9"/><path d="M12 12l4.24 4.24"/>' },
+              { step: '01', title: 'Armado del producto, alcance, beneficios y exclusiones', desc: '', icon: '<rect x="3" y="3" width="18" height="18" rx="2" ry="2"/><line x1="3" y1="9" x2="21" y2="9"/><line x1="9" y1="21" x2="9" y2="9"/>' },
+              { step: '02', title: 'Validación, políticas de suscripción, scoring u otros', desc: '', icon: '<path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10"/>' },
+              { step: '03', title: 'Incorporación de variables internas, externas o servicios externos', desc: '', icon: '<path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/>' },
+              { step: '04', title: 'Armado del precio del producto', desc: '', icon: '<circle cx="12" cy="12" r="9"/><path d="M12 3v9"/><path d="M12 12l4.24 4.24"/>' },
               { step: '05', title: 'Publicación', desc: 'Disponibilidad en APIs, landings o experiencias de usuario', icon: '<path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/>' },
             ].map((item, idx) => (
               <div key={idx} className="group p-6 border border-white/5 bg-[#0f0e11] rounded-2xl hover:bg-[#1b081e] hover:border-fuchsia-900/50 transition-all duration-300 flex flex-col relative h-full">
@@ -148,8 +148,8 @@ export default function ProductStudioPage() {
             <div className="p-10 lg:p-14 border border-fuchsia-500/40 bg-[#1b081e] rounded-[2rem] shadow-[0_0_60px_rgba(217,70,239,0.08)] flex flex-col relative overflow-hidden">
                <div className="absolute top-0 right-0 w-64 h-64 bg-fuchsia-600/10 rounded-full blur-[60px] pointer-events-none" />
                <div className="flex items-center gap-4 mb-10 text-fuchsia-400 relative z-10">
-                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" className="w-12 h-12"><polyline points="20 6 9 17 4 12"/></svg>
-                  <h4 className="text-2xl font-bold uppercase tracking-widest text-white">Ahora (Tech Insurance)</h4>
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" className="w-12 h-12"><path d="M12 2L2 22l10-4 10 4L12 2z" strokeLinejoin="round"/></svg>
+                  <h4 className="text-2xl font-bold uppercase tracking-widest text-white">Ahora</h4>
                </div>
                <ul className="space-y-8 flex-1 relative z-10">
                  <li className="flex gap-4 items-start"><span className="text-fuchsia-500 font-bold mt-1 text-xl">✓</span> <p className="text-fuchsia-100/90 font-medium text-lg leading-relaxed">Configuración puramente visual e intuitiva mediante lógicas ya pre-validadas por el sistema.</p></li>
@@ -165,11 +165,11 @@ export default function ProductStudioPage() {
       <section id="ejemplo" className="py-32 px-4 bg-[#020104] border-b border-white/5 scroll-mt-32">
         <div className="container mx-auto max-w-6xl">
           <h2 className="text-3xl md:text-4xl font-bold text-white mb-16 text-center">
-            Caso Práctico: <span className="text-transparent bg-clip-text bg-gradient-to-r from-fuchsia-500 to-pink-400">Seguro Embebido E-Commerce</span>
+            Caso Práctico: <span className="text-transparent bg-clip-text bg-gradient-to-r from-fuchsia-500 to-pink-400">Seguro de garantía extendida</span>
           </h2>
           <div className="p-12 lg:p-16 border border-white/5 bg-[#08040a] rounded-[2.5rem] relative shadow-2xl">
             <p className="text-center text-zinc-400 font-light text-xl mb-20 max-w-2xl mx-auto">
-              Visualice la fluidez de ensamblaje. Product Studio orquesta la creación técnica integral de una garantía extendida activada durante el checkout final.
+              Visualice la fluidez de armado. Product Studio orquesta la creación técnica integral de un seguro de garantía extendida y todo su proceso de cotización, pago y checkout u obtención de póliza.
             </p>
             
             <div className="flex flex-col lg:flex-row items-center justify-between gap-10 lg:gap-6 relative">
@@ -178,11 +178,11 @@ export default function ProductStudioPage() {
                
                <div className="relative z-10 flex flex-col items-center flex-1">
                  <div className="w-24 h-24 rounded-3xl bg-zinc-900 border border-zinc-700 flex items-center justify-center text-zinc-400 mb-6 shadow-xl shrink-0">
-                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" className="w-12 h-12"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"/></svg>
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" className="w-12 h-12"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
                  </div>
                  <div className="text-center px-4">
                    <p className="text-white font-bold text-lg mb-2">Equipo de Negocio</p>
-                   <p className="text-zinc-500 text-sm leading-relaxed">Selecciona Cobertura Robo. Aplica Tasa Dinámica del 5% del valor consumido.</p>
+                   <p className="text-zinc-500 text-sm leading-relaxed">Define el producto, las coberturas, arma el pricing y establece el comportamiento del producto.</p>
                  </div>
                </div>
 
@@ -194,7 +194,7 @@ export default function ProductStudioPage() {
                  </div>
                  <div className="text-center px-4">
                    <p className="text-fuchsia-300 font-bold text-xl mb-2">Product Studio</p>
-                   <p className="text-zinc-400 text-sm leading-relaxed">Valida configuración actuarial, genera tarifas y expone el recurso en 1 click como Endpoint.</p>
+                   <p className="text-zinc-400 text-sm leading-relaxed">La configuración se realiza a través de simples pasos y en minutos se puede crear el producto.</p>
                  </div>
                </div>
 
@@ -202,11 +202,11 @@ export default function ProductStudioPage() {
                
                <div className="relative z-10 flex flex-col items-center flex-1">
                  <div className="w-24 h-24 rounded-3xl bg-zinc-100 border border-white flex items-center justify-center text-black mb-6 shadow-[0_0_40px_rgba(255,255,255,0.2)] shrink-0">
-                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" className="w-12 h-12"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/></svg>
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" className="w-12 h-12"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
                  </div>
                  <div className="text-center px-4">
-                   <p className="text-white font-bold text-lg mb-2">Checkout E-Commerce</p>
-                   <p className="text-zinc-500 text-sm leading-relaxed">Consume la nueva API instantáneamente. La garantía se embebe sin despliegues técnicos.</p>
+                   <p className="text-white font-bold text-lg mb-2">Publicación</p>
+                   <p className="text-zinc-500 text-sm leading-relaxed">Se define el diseño, la experiencia o el layout del producto para que pueda ser embebido o utilizado en diferentes canales.</p>
                  </div>
                </div>
             </div>
@@ -222,10 +222,10 @@ export default function ProductStudioPage() {
           </h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-8">
             {[
-              { title: 'Velocidad GTM', desc: 'Semanas frente a múltiples trimestres de proyectos IT.', icon: '<circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/>' },
-              { title: 'Libertad Creativa', desc: 'Abstracción de códigos habilitando pruebas A/B a volumen masivo.', icon: '<path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path>' },
-              { title: 'Autonomía de Área', desc: 'Departamentos comerciales liberados del cuello de botella dev.', icon: '<path d="M16 21v-2a4 4 0 0 0-4-4H5c-1.1 0-2 .9-2 2v2"/><circle cx="8.5" cy="7" r="4"/><path d="M23 11l-6 6-4-4"/>' },
-              { title: 'Escalabilidad Multicanal', desc: 'Productos desplegados que exponen API endpoints instantáneamente.', icon: '<path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/>' },
+              { title: 'Velocidad', desc: 'Nunca una solución fue tan rápida para desplegar nuevos productos.', icon: '<circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/>' },
+              { title: 'Libertad Creativa', desc: 'Una herramienta que permite crear, testear y monitorear el desarrollo de productos sin necesidad de conocimiento técnico.', icon: '<path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path>' },
+              { title: 'Autonomía del Área', desc: 'Departamentos comerciales liberados del cuello de botella y la dependencia del área de IT.', icon: '<path d="M16 21v-2a4 4 0 0 0-4-4H5c-1.1 0-2 .9-2 2v2"/><circle cx="8.5" cy="7" r="4"/><path d="M23 11l-6 6-4-4"/>' },
+              { title: 'Escalabilidad Multicanal', desc: 'Desde landings, APIs y experiencias ya definidas, permitiendo escalar productos en múltiples canales.', icon: '<path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/>' },
             ].map((item, idx) => (
               <div key={idx} className="p-10 bg-[#200523] border border-fuchsia-800/40 rounded-[2rem] text-center shadow-[0_10px_30px_rgba(217,70,239,0.08)] hover:bg-[#310c36] hover:border-fuchsia-500/80 hover:-translate-y-2 transition-all duration-300">
                  <div className="mx-auto mb-6 text-fuchsia-400 w-fit p-4 rounded-full bg-fuchsia-950/40 border border-fuchsia-900/30">
