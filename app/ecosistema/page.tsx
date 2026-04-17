@@ -178,19 +178,23 @@ export default function EcosistemaPage() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
             <div className="p-10 lg:p-14 bg-[#1b081e]/80 backdrop-blur border border-fuchsia-800/40 rounded-[2.5rem] hover:bg-[#210924] hover:border-fuchsia-500/60 transition-all shadow-[0_0_50px_rgba(217,70,239,0.05)] hover:shadow-[0_0_60px_rgba(217,70,239,0.15)] flex flex-col">
                <h3 className="text-3xl lg:text-4xl font-black text-white tracking-widest mb-2 border-b border-white/10 pb-6 uppercase">Inspe<span className="text-fuchsia-500 text-[1.2em] -ml-[1px] inline-block transform translate-y-[2px]">X</span>iona</h3>
-               <p className="text-fuchsia-100/70 mb-8 font-light text-lg mt-4 leading-relaxed">Plataforma inteligente de telemática y recabación de datos periciales en terreno, conectada instantáneamente a Tech Insurance para auditar siniestros.</p>
-               <ul className="space-y-4 text-base text-zinc-300 font-medium mt-auto">
-                 <li className="flex gap-4 items-center"><span className="text-fuchsia-500 text-xl font-bold">✓</span> Acelera resolución y pago de reclamos de calle.</li>
-                 <li className="flex gap-4 items-center"><span className="text-fuchsia-500 text-xl font-bold">✓</span> Nutre las variables paramétricas de Tech Insurance en vivo.</li>
+               <div className="flex flex-col gap-4 mb-8 font-light text-lg mt-4 leading-relaxed text-fuchsia-100/70">
+                 <p>InspeXiona es una plataforma de inspecciones previas y de siniestros diseñada para la industria aseguradora. A través de una aplicación mobile (Android e iOS), permite ejecutar flujos guiados tipo wizard para la captura de información, imágenes y validaciones en tiempo real.</p>
+                 <p>La solución convierte al dispositivo en los ojos de la compañía, permitiendo que clientes, intermediarios o inspectores puedan relevar información de manera estructurada, confiable y alineada a los procesos de negocio.</p>
+               </div>
+               <ul className="space-y-4 text-base text-zinc-300 font-medium mt-auto pt-6 border-t border-fuchsia-900/30">
+                 <li className="flex gap-4 items-start"><span className="text-fuchsia-500 text-xl font-bold mt-1 leading-none">✓</span> Transforma cualquier dispositivo en un punto de inspección inteligente.</li>
                </ul>
             </div>
             
             <div className="p-10 lg:p-14 bg-[#1b081e]/80 backdrop-blur border border-fuchsia-800/40 rounded-[2.5rem] hover:bg-[#210924] hover:border-fuchsia-500/60 transition-all shadow-[0_0_50px_rgba(217,70,239,0.05)] hover:shadow-[0_0_60px_rgba(217,70,239,0.15)] flex flex-col">
                <h3 className="text-3xl lg:text-4xl font-black text-white tracking-widest mb-2 border-b border-white/10 pb-6 uppercase"><span className="text-fuchsia-500 text-[1.2em] -mr-[1px] inline-block transform translate-y-[2px]">X</span>plorer</h3>
-               <p className="text-fuchsia-100/70 mb-8 font-light text-lg mt-4 leading-relaxed">Ecosistema nativo multicanal de portales front-end plug-and-play diseñados para la fuerza de venta (Brokers), clientes B2C y Management Corporativo.</p>
-               <ul className="space-y-4 text-base text-zinc-300 font-medium mt-auto">
-                 <li className="flex gap-4 items-center"><span className="text-fuchsia-500 text-xl font-bold">✓</span> Entornos transaccionales 100% Whitelabel customizables.</li>
-                 <li className="flex gap-4 items-center"><span className="text-fuchsia-500 text-xl font-bold">✓</span> Consume APIs nativas liberadas por el Product Studio internamente.</li>
+               <div className="flex flex-col gap-4 mb-8 font-light text-lg mt-4 leading-relaxed text-fuchsia-100/70">
+                 <p>Xplorer es una solución orientada a agentes comerciales, productores e intermediarios de seguros, que permite gestionar la operación diaria y potenciar el relacionamiento con los clientes.</p>
+                 <p>La herramienta centraliza la información comercial, facilita la gestión de oportunidades, el seguimiento de clientes y la administración de la cartera, permitiendo maximizar la performance comercial y mejorar la experiencia en cada interacción.</p>
+               </div>
+               <ul className="space-y-4 text-base text-zinc-300 font-medium mt-auto pt-6 border-t border-fuchsia-900/30">
+                 <li className="flex gap-4 items-start"><span className="text-fuchsia-500 text-xl font-bold mt-1 leading-none">✓</span> Potencia la gestión comercial con foco en productividad y relación con el cliente.</li>
                </ul>
             </div>
           </div>
