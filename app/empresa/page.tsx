@@ -14,12 +14,12 @@ export default function EmpresaPage() {
         
         <div className="container mx-auto max-w-5xl relative z-10 text-center flex flex-col items-center">
           <div className="relative w-28 h-28 mx-auto mb-10 text-fuchsia-500 animate-breath opacity-90 drop-shadow-[0_0_20px_rgba(217,70,239,0.2)]">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1" className="w-full h-full"><polygon points="12 2 2 22 22 22 12 2"/><path d="M12 22V10"/><path d="M8 15h8"/></svg>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" className="w-full h-full"><polygon points="12 2 2 22 22 22 12 2"/><path d="M12 22V10"/><path d="M8 15h8"/></svg>
           </div>
 
           <span className="text-fuchsia-500 font-semibold tracking-wider text-sm uppercase mb-4 block">El Holding Detrás de la Plataforma</span>
           <h1 className="text-4xl md:text-5xl lg:text-7xl font-extrabold tracking-tight text-white mb-6">
-            Experiencia real en <br className="hidden md:block"/> <span className="text-transparent bg-clip-text bg-gradient-to-r from-fuchsia-400 to-pink-400">transformación aseguradora</span>
+            Experiencia real en <br className="hidden md:block"/> <span className="text-transparent bg-clip-text bg-gradient-to-r from-fuchsia-500 to-pink-400">transformación aseguradora</span>
           </h1>
           
           <div className="border border-fuchsia-500/20 rounded-3xl p-10 lg:p-14 bg-black/50 backdrop-blur-md shadow-2xl mt-8">
@@ -58,7 +58,7 @@ export default function EmpresaPage() {
         <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-white/[0.02] font-black text-[500px] leading-none pointer-events-none z-0">K</div>
         <div className="container mx-auto max-w-6xl text-center relative z-10">
           <h2 className="text-3xl md:text-5xl font-bold text-white mb-8 tracking-tight">
-            Consultora Especializada en <br className="hidden md:block"/> <span className="text-transparent bg-clip-text bg-gradient-to-r from-fuchsia-400 to-pink-400">Seguros y Servicios Financieros</span>
+            Consultora Especializada en <br className="hidden md:block"/> <span className="text-transparent bg-clip-text bg-gradient-to-r from-fuchsia-500 to-pink-400">Seguros y Servicios Financieros</span>
           </h2>
           <div className="max-w-4xl mx-auto p-12 bg-[#1b081e]/80 border border-fuchsia-800/40 backdrop-blur rounded-3xl shadow-2xl">
             <h3 className="text-2xl font-bold text-white mb-6 uppercase tracking-widest text-fuchsia-300">No solo diseñamos soluciones. Las llevamos a producción.</h3>
@@ -77,7 +77,7 @@ export default function EmpresaPage() {
         <div className="container mx-auto max-w-7xl">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-5xl font-bold text-white mb-6">
-              Nuestra Propuesta de <span className="text-transparent bg-clip-text bg-gradient-to-r from-fuchsia-400 to-pink-400">Valor</span>
+              Nuestra Propuesta de <span className="text-transparent bg-clip-text bg-gradient-to-r from-fuchsia-500 to-pink-400">Valor</span>
             </h2>
             <p className="text-xl text-zinc-400 font-light max-w-3xl mx-auto">ADN corporativo fusionado con agilidad pura de startup.</p>
           </div>
@@ -92,7 +92,7 @@ export default function EmpresaPage() {
             ].map((item, idx) => (
               <div key={idx} className={`group p-10 border border-fuchsia-900/40 bg-[#0f0e11] rounded-[2rem] hover:bg-[#16141a] hover:border-fuchsia-500/70 hover:-translate-y-2 transition-all duration-300 shadow-[0_10px_30px_rgba(0,0,0,0.5)] flex flex-col items-center text-center ${idx === 4 ? 'lg:col-span-2' : ''}`}>
                  <div className="mb-6 text-fuchsia-600 group-hover:text-fuchsia-400 transition-colors duration-300 w-16 h-16 p-3 bg-fuchsia-950/30 rounded-2xl flex items-center justify-center">
-                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" className="w-10 h-10" dangerouslySetInnerHTML={{ __html: item.icon }}></svg>
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" className="w-12 h-12" dangerouslySetInnerHTML={{ __html: item.icon }}></svg>
                  </div>
                  <h4 className="text-xl font-bold text-white leading-snug">{item.title}</h4>
               </div>
@@ -108,7 +108,7 @@ export default function EmpresaPage() {
             <div className="md:col-span-7">
                <span className="text-fuchsia-500 font-semibold tracking-wider text-sm uppercase mb-3 block">Garantía Sistémica</span>
                <h2 className="text-3xl md:text-5xl font-bold text-white mb-6 tracking-tight">
-                 Experiencia Masiva en <span className="text-transparent bg-clip-text bg-gradient-to-r from-fuchsia-400 to-pink-400">Core Systems</span>
+                 Experiencia Masiva en <span className="text-transparent bg-clip-text bg-gradient-to-r from-fuchsia-500 to-pink-400">Core Systems</span>
                </h2>
                <p className="text-zinc-400 font-light text-xl leading-relaxed mb-8">
                  No actuamos desde afuera. Kopernicus participa en todo el ciclo de vida del Core Legacy de manera end-to-end: orquestamos la evaluación, la selección, la implementación silenciosa y su subsecuente evolución integrando negocios con tecnología dura.
@@ -116,15 +116,15 @@ export default function EmpresaPage() {
                
                <div className="space-y-6 mt-10">
                  <div className="flex gap-4 items-start">
-                    <div className="p-2 bg-fuchsia-600/20 text-fuchsia-500 rounded-lg shrink-0 mt-1"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" className="w-5 h-5"><polyline points="20 6 9 17 4 12"/></svg></div>
+                    <div className="p-2 bg-fuchsia-600/20 text-fuchsia-500 rounded-lg shrink-0 mt-1"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" className="w-5 h-5"><polyline points="20 6 9 17 4 12"/></svg></div>
                     <p className="text-zinc-200 text-lg">Reestructuración corporativa de <strong className="text-white">Programas de Transformación Fallidos</strong> (Rescue Missions).</p>
                  </div>
                  <div className="flex gap-4 items-start">
-                    <div className="p-2 bg-fuchsia-600/20 text-fuchsia-500 rounded-lg shrink-0 mt-1"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" className="w-5 h-5"><polyline points="20 6 9 17 4 12"/></svg></div>
+                    <div className="p-2 bg-fuchsia-600/20 text-fuchsia-500 rounded-lg shrink-0 mt-1"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" className="w-5 h-5"><polyline points="20 6 9 17 4 12"/></svg></div>
                     <p className="text-zinc-200 text-lg">Metodología clínica para <strong className="text-white">Salidas Progresivas a Producción</strong> minimizando cualquier daño colateral o inactividad.</p>
                  </div>
                  <div className="flex gap-4 items-start">
-                    <div className="p-2 bg-fuchsia-600/20 text-fuchsia-500 rounded-lg shrink-0 mt-1"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" className="w-5 h-5"><polyline points="20 6 9 17 4 12"/></svg></div>
+                    <div className="p-2 bg-fuchsia-600/20 text-fuchsia-500 rounded-lg shrink-0 mt-1"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" className="w-5 h-5"><polyline points="20 6 9 17 4 12"/></svg></div>
                     <p className="text-zinc-200 text-lg">Diseño de arquitecturas middleware para <strong className="text-white">Integración Inmediata con Ecosistemas</strong> API-First modernos.</p>
                  </div>
                </div>
@@ -135,7 +135,7 @@ export default function EmpresaPage() {
                <div className="relative z-10 w-64 h-64 border-4 border-fuchsia-800/50 rounded-full flex items-center justify-center animate-[spin_30s_linear_infinite]">
                  <div className="w-48 h-48 border border-fuchsia-500/30 rounded-full flex items-center justify-center animate-[spin_20s_linear_infinite_reverse]">
                    <div className="w-32 h-32 bg-[#1b081e] border-2 border-fuchsia-500 rounded-full shadow-[0_0_50px_rgba(217,70,239,0.4)] flex items-center justify-center">
-                     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1" className="w-16 h-16 text-fuchsia-400 rotate-90"><path d="M4 22h14a2 2 0 0 0 2-2V7.5L14.5 2H6a2 2 0 0 0-2 2v4"/><polyline points="14 2 14 8 20 8"/><path d="M3 15h6"/><path d="M3 18h6"/></svg>
+                     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" className="w-12 h-12 text-fuchsia-400 rotate-90"><path d="M4 22h14a2 2 0 0 0 2-2V7.5L14.5 2H6a2 2 0 0 0-2 2v4"/><polyline points="14 2 14 8 20 8"/><path d="M3 15h6"/><path d="M3 18h6"/></svg>
                    </div>
                  </div>
                </div>
@@ -151,7 +151,7 @@ export default function EmpresaPage() {
       <section id="presencia" className="py-24 px-4 bg-[#050106] border-b border-white/5 scroll-mt-32">
         <div className="container mx-auto max-w-6xl text-center">
           <h2 className="text-3xl md:text-5xl font-bold text-white mb-6">
-            Presencia <span className="text-transparent bg-clip-text bg-gradient-to-r from-fuchsia-400 to-pink-400">Global</span>
+            Presencia <span className="text-transparent bg-clip-text bg-gradient-to-r from-fuchsia-500 to-pink-400">Global</span>
           </h2>
           <p className="text-xl text-zinc-400 font-light max-w-3xl mx-auto mb-16">
             Despliegue de operaciones e ingeniería de software sin fronteras: Desde el sur del mundo hacia Latinoamérica entera y Europa Central.
@@ -165,7 +165,7 @@ export default function EmpresaPage() {
               { hub: 'España', continent: 'EUROPA', active: true }
             ].map((item, idx) => (
               <div key={idx} className="p-8 border border-white/5 bg-[#0a050b] rounded-3xl hover:bg-[#16141a] hover:border-fuchsia-900/50 transition-all flex flex-col items-center">
-                <div className="w-16 h-16 bg-[#1b081e] border border-fuchsia-900/30 rounded-full flex flex-col items-center justify-center text-fuchsia-500 mb-6 drop-shadow-[0_0_15px_rgba(217,70,239,0.2)]">
+                <div className="w-12 h-12 bg-[#1b081e] border border-fuchsia-900/30 rounded-full flex flex-col items-center justify-center text-fuchsia-500 mb-6 drop-shadow-[0_0_15px_rgba(217,70,239,0.2)]">
                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" className="w-8 h-8"><circle cx="12" cy="10" r="3"/><path d="M12 21.7C17.3 17 20 13 20 10a8 8 0 1 0-16 0c0 3 2.7 7 8 11.7z"/></svg>
                 </div>
                 <h4 className="text-2xl font-bold text-white mb-1">{item.hub}</h4>
@@ -185,7 +185,7 @@ export default function EmpresaPage() {
              <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center relative z-10">
                <div className="lg:col-span-5 text-left">
                   <h2 className="text-3xl md:text-5xl font-bold text-white mb-6">
-                    Modelo de <span className="text-transparent bg-clip-text bg-gradient-to-r from-fuchsia-400 to-pink-400">Trabajo Agile</span>
+                    Modelo de <span className="text-transparent bg-clip-text bg-gradient-to-r from-fuchsia-500 to-pink-400">Trabajo Agile</span>
                   </h2>
                   <p className="text-zinc-400 text-lg mb-6 leading-relaxed">
                     Construimos software bajo un framework de <strong className="text-white">Flexibilidad y Especialización Radical</strong>. Organizamos el ingenio mediante enfoques ultra eficientes rompiendo la burocracia de las corporaciones tradicionales.
@@ -193,15 +193,15 @@ export default function EmpresaPage() {
                </div>
                <div className="lg:col-span-7 grid grid-cols-1 sm:grid-cols-2 gap-4">
                   <div className="bg-[#0f0e11] border border-white/5 p-6 rounded-2xl flex items-center gap-4">
-                    <span className="text-fuchsia-500"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" className="w-8 h-8"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg></span>
+                    <span className="text-fuchsia-500"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" className="w-8 h-8"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg></span>
                     <h4 className="text-lg font-bold text-white">Squads Autónomos</h4>
                   </div>
                   <div className="bg-[#0f0e11] border border-white/5 p-6 rounded-2xl flex items-center gap-4">
-                    <span className="text-fuchsia-500"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" className="w-8 h-8"><path d="M17 21v-2a4 4 0 0 0-4-4H5c-1.1 0-2 .9-2 2v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg></span>
+                    <span className="text-fuchsia-500"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" className="w-8 h-8"><path d="M17 21v-2a4 4 0 0 0-4-4H5c-1.1 0-2 .9-2 2v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg></span>
                     <h4 className="text-lg font-bold text-white">Comunidades de Práctica</h4>
                   </div>
                   <div className="bg-[#0f0e11] border border-white/5 p-6 rounded-2xl flex items-center gap-4 sm:col-span-2">
-                    <span className="text-fuchsia-500"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" className="w-8 h-8"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg></span>
+                    <span className="text-fuchsia-500"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" className="w-8 h-8"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg></span>
                     <h4 className="text-lg font-bold text-white">Equipos Multidisciplinarios IT+Negocio</h4>
                   </div>
                </div>
@@ -214,7 +214,7 @@ export default function EmpresaPage() {
       <section id="equipo" className="py-24 px-4 bg-[#050106] border-b border-fuchsia-900/30 scroll-mt-32">
         <div className="container mx-auto max-w-6xl text-center">
           <h2 className="text-3xl md:text-5xl font-bold text-white mb-6">
-            Mentes <span className="text-transparent bg-clip-text bg-gradient-to-r from-fuchsia-400 to-pink-400">Ejecutoras</span>
+            Mentes <span className="text-transparent bg-clip-text bg-gradient-to-r from-fuchsia-500 to-pink-400">Ejecutoras</span>
           </h2>
           <p className="text-xl text-zinc-400 font-light max-w-3xl mx-auto mb-16">
             Un management board compuesto por expertos reales sin títulos adornados. Maestría comprobada en Core, Actuarial y Desarrollo Cloud.
@@ -222,17 +222,17 @@ export default function EmpresaPage() {
           
           <div className="flex flex-col md:flex-row justify-center gap-8">
              <div className="bg-[#0f0e11] border border-white/5 p-10 rounded-3xl w-full md:w-1/3 hover:border-fuchsia-500/50 transition-colors">
-                <div className="w-16 h-16 mx-auto bg-[#1b081e] rounded-full border border-fuchsia-800 text-fuchsia-500 flex items-center justify-center mb-6"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" className="w-8 h-8"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg></div>
+                <div className="w-12 h-12 mx-auto bg-[#1b081e] rounded-full border border-fuchsia-800 text-fuchsia-500 flex items-center justify-center mb-6"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" className="w-8 h-8"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg></div>
                 <h4 className="text-xl font-bold text-white mb-2">Arquitectura Core</h4>
                 <p className="text-zinc-500 font-light text-sm">Más de 20 años comandando rescates y migraciones AS400 e implementaciones críticas on-premise.</p>
              </div>
              <div className="bg-[#0f0e11] border border-white/5 p-10 rounded-3xl w-full md:w-1/3 hover:border-fuchsia-500/50 transition-colors">
-                <div className="w-16 h-16 mx-auto bg-[#1b081e] rounded-full border border-fuchsia-800 text-fuchsia-500 flex items-center justify-center mb-6"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" className="w-8 h-8"><polygon points="12 2 2 7 12 12 22 7 12 2"/><polyline points="2 17 12 22 22 17"/><polyline points="2 12 12 17 22 12"/></svg></div>
+                <div className="w-12 h-12 mx-auto bg-[#1b081e] rounded-full border border-fuchsia-800 text-fuchsia-500 flex items-center justify-center mb-6"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" className="w-8 h-8"><polygon points="12 2 2 7 12 12 22 7 12 2"/><polyline points="2 17 12 22 22 17"/><polyline points="2 12 12 17 22 12"/></svg></div>
                 <h4 className="text-xl font-bold text-white mb-2">Visionarios Product Studio</h4>
                 <p className="text-zinc-500 font-light text-sm">Directores actuariales y gerentes de producto redefiniendo el motor de pricing y el desacople perimetral.</p>
              </div>
              <div className="bg-[#0f0e11] border border-white/5 p-10 rounded-3xl w-full md:w-1/3 hover:border-fuchsia-500/50 transition-colors">
-                <div className="w-16 h-16 mx-auto bg-[#1b081e] rounded-full border border-fuchsia-800 text-fuchsia-500 flex items-center justify-center mb-6"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" className="w-8 h-8"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"/><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"/></svg></div>
+                <div className="w-12 h-12 mx-auto bg-[#1b081e] rounded-full border border-fuchsia-800 text-fuchsia-500 flex items-center justify-center mb-6"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" className="w-8 h-8"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"/><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"/></svg></div>
                 <h4 className="text-xl font-bold text-white mb-2">Ingeniería Cloud</h4>
                 <p className="text-zinc-500 font-light text-sm">Gurús del despliegue serverless operando bases relacionales multi-regionales de altísima concurrencia y seguridad.</p>
              </div>
@@ -245,14 +245,14 @@ export default function EmpresaPage() {
         <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[400px] bg-fuchsia-900/20 rounded-[100%] blur-[120px] pointer-events-none" />
         <div className="container mx-auto max-w-4xl relative z-10 text-center">
           <h2 className="text-4xl md:text-6xl font-bold text-white mb-8 tracking-tight">
-            ¿Listo para orquestar la <br className="hidden md:block"/><span className="text-transparent bg-clip-text bg-gradient-to-r from-fuchsia-400 to-pink-400">transformación total?</span>
+            ¿Listo para orquestar la <br className="hidden md:block"/><span className="text-transparent bg-clip-text bg-gradient-to-r from-fuchsia-500 to-pink-400">transformación total?</span>
           </h2>
           <p className="text-xl text-fuchsia-100/70 font-light mx-auto mb-12">
             Hablemos hoy con un arquitecto comercial. Le demostraremos la flexibilidad absoluta de Tech Insurance mapeada a su propio Core.
           </p>
           <div className="flex flex-col sm:flex-row justify-center gap-6">
              <a href="#" className="inline-flex items-center justify-center gap-3 px-10 py-5 bg-fuchsia-600 text-white font-bold rounded-2xl hover:bg-fuchsia-500 transition-all shadow-[0_0_40px_rgba(217,70,239,0.4)] hover:shadow-[0_0_60px_rgba(217,70,239,0.6)] text-lg">
-                Agendar Demostración Técnica <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" className="w-5 h-5"><polyline points="9 18 15 12 9 6"/></svg>
+                Agendar Demostración Técnica <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" className="w-5 h-5"><polyline points="9 18 15 12 9 6"/></svg>
              </a>
              <a href="#" className="inline-flex items-center justify-center gap-3 px-10 py-5 bg-transparent border border-fuchsia-800 text-fuchsia-400 font-bold rounded-2xl hover:bg-fuchsia-900/30 transition-all text-lg">
                 Contactar a un Especialista

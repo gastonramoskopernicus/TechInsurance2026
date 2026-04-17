@@ -19,7 +19,7 @@ export default function ProductStudioPage() {
           </div>
 
           <h1 className="text-4xl md:text-5xl lg:text-7xl font-extrabold tracking-tight text-white mb-6">
-            Product <span className="text-transparent bg-clip-text bg-gradient-to-r from-fuchsia-400 to-pink-400">Studio</span>
+            Product <span className="text-transparent bg-clip-text bg-gradient-to-r from-fuchsia-500 to-pink-400">Studio</span>
           </h1>
           <p className="text-2xl text-fuchsia-400 font-light mb-8">El corazón de la innovación aseguradora.</p>
 
@@ -64,7 +64,7 @@ export default function ProductStudioPage() {
         <div className="container mx-auto max-w-7xl">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold text-white mb-6 tracking-tight">
-              Flujo Dinámico en <span className="text-transparent bg-clip-text bg-gradient-to-r from-fuchsia-400 to-pink-400">5 Pasos</span>
+              Flujo Dinámico en <span className="text-transparent bg-clip-text bg-gradient-to-r from-fuchsia-500 to-pink-400">5 Pasos</span>
             </h2>
             <p className="text-xl text-zinc-400 font-light max-w-3xl mx-auto">Mapeo del ciclo de vida end-to-end, puramente guiado por parámetros comerciales.</p>
           </div>
@@ -95,7 +95,7 @@ export default function ProductStudioPage() {
         <div className="container mx-auto max-w-7xl">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold text-white mb-6">
-              Capacidades <span className="text-transparent bg-clip-text bg-gradient-to-r from-fuchsia-400 to-pink-400">Core</span>
+              Capacidades <span className="text-transparent bg-clip-text bg-gradient-to-r from-fuchsia-500 to-pink-400">Core</span>
             </h2>
             <p className="text-xl text-zinc-400 font-light">Armamento completo para el diseño de seguros modernos.</p>
           </div>
@@ -107,7 +107,7 @@ export default function ProductStudioPage() {
               { title: 'Variables Dinámicas', desc: 'Parametrice condiciones extremas, micro-tarifas y descuentos in-surance basándose en metadatos y perfilado al vuelo.' },
               { title: 'Integración Extendida', desc: 'Inyecte telemetría externa (vuelos cancelados, sensores IoT, geolocalización) al motor actuarial para coberturas invisibles paramétricas.' }
             ].map((item, idx) => (
-              <div key={idx} className="group p-10 border border-white/5 bg-[#130a16] rounded-3xl hover:bg-[#200e23] hover:border-fuchsia-800/40 transition-all duration-300">
+              <div key={idx} className="group p-10 border border-white/5 bg-[#0f0e11] rounded-3xl hover:bg-[#200e23] hover:border-fuchsia-800/40 transition-all duration-300">
                  <h4 className="text-2xl font-bold text-white mb-4 flex items-center gap-4">
                    <span className="w-3 h-3 rounded-full bg-fuchsia-500 group-hover:animate-pulse"></span>
                    {item.title}
@@ -123,13 +123,13 @@ export default function ProductStudioPage() {
       <section id="modelo" className="py-32 px-4 bg-[#050106] border-b border-white/5 scroll-mt-32">
         <div className="container mx-auto max-w-6xl">
           <h2 className="text-3xl md:text-4xl font-bold text-white mb-16 text-center">
-            Cambio Absoluto de <span className="text-transparent bg-clip-text bg-gradient-to-r from-fuchsia-400 to-pink-400">Paradigma</span>
+            Cambio Absoluto de <span className="text-transparent bg-clip-text bg-gradient-to-r from-fuchsia-500 to-pink-400">Paradigma</span>
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-12">
             {/* ANTES */}
             <div className="p-10 lg:p-14 border border-white/5 bg-[#0a0505] rounded-[2rem] flex flex-col opacity-80 backdrop-grayscale">
                <div className="flex items-center gap-4 mb-10 text-zinc-600">
-                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" className="w-10 h-10"><circle cx="12" cy="12" r="10"/><line x1="15" y1="9" x2="9" y2="15"/><line x1="9" y1="9" x2="15" y2="15"/></svg>
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" className="w-12 h-12"><circle cx="12" cy="12" r="10"/><line x1="15" y1="9" x2="9" y2="15"/><line x1="9" y1="9" x2="15" y2="15"/></svg>
                   <h4 className="text-2xl font-bold uppercase tracking-widest text-zinc-500">Antes</h4>
                </div>
                <ul className="space-y-8 flex-1">
@@ -143,13 +143,13 @@ export default function ProductStudioPage() {
             <div className="p-10 lg:p-14 border border-fuchsia-500/40 bg-[#1b081e] rounded-[2rem] shadow-[0_0_60px_rgba(217,70,239,0.08)] flex flex-col relative overflow-hidden">
                <div className="absolute top-0 right-0 w-64 h-64 bg-fuchsia-600/10 rounded-full blur-[60px] pointer-events-none" />
                <div className="flex items-center gap-4 mb-10 text-fuchsia-400 relative z-10">
-                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" className="w-10 h-10"><polyline points="20 6 9 17 4 12"/></svg>
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" className="w-12 h-12"><polyline points="20 6 9 17 4 12"/></svg>
                   <h4 className="text-2xl font-bold uppercase tracking-widest text-white">Ahora (Tech Insurance)</h4>
                </div>
                <ul className="space-y-8 flex-1 relative z-10">
                  <li className="flex gap-4 items-start"><span className="text-fuchsia-500 font-bold mt-1 text-xl">✓</span> <p className="text-fuchsia-100/90 font-medium text-lg leading-relaxed">Configuración puramente visual e intuitiva mediante lógicas ya pre-validadas por el sistema.</p></li>
                  <li className="flex gap-4 items-start"><span className="text-fuchsia-500 font-bold mt-1 text-xl">✓</span> <p className="text-fuchsia-100/90 font-medium text-lg leading-relaxed">Empoderamiento directo: Equipos Comerciales, Pricing y Actuariales asumen total autonomía para innovar.</p></li>
-                 <li className="flex gap-4 items-start"><span className="text-fuchsia-500 font-bold mt-1 text-xl">✓</span> <p className="text-white font-bold leading-relaxed bg-black/40 px-4 py-2 rounded-xl text-lg block border border-fuchsia-900/30">Lanzamientos al unísono: Días o semanas para lograr Go-to-Market de altísimo impacto y volumen.</p></li>
+                 <li className="flex gap-4 items-start"><span className="text-fuchsia-500 font-bold mt-1 text-xl">✓</span> <p className="text-white font-bold leading-relaxed bg-[#0f0e11] hover:bg-[#16141a] hover:border-fuchsia-900/50 transition-all duration-300 px-4 py-2 rounded-xl text-lg block border border-fuchsia-900/30">Lanzamientos al unísono: Días o semanas para lograr Go-to-Market de altísimo impacto y volumen.</p></li>
                </ul>
             </div>
           </div>
@@ -160,7 +160,7 @@ export default function ProductStudioPage() {
       <section id="ejemplo" className="py-32 px-4 bg-[#020104] border-b border-white/5 scroll-mt-32">
         <div className="container mx-auto max-w-6xl">
           <h2 className="text-3xl md:text-4xl font-bold text-white mb-16 text-center">
-            Caso Práctico: <span className="text-transparent bg-clip-text bg-gradient-to-r from-fuchsia-400 to-pink-400">Seguro Embebido E-Commerce</span>
+            Caso Práctico: <span className="text-transparent bg-clip-text bg-gradient-to-r from-fuchsia-500 to-pink-400">Seguro Embebido E-Commerce</span>
           </h2>
           <div className="p-12 lg:p-16 border border-white/5 bg-[#08040a] rounded-[2.5rem] relative shadow-2xl">
             <p className="text-center text-zinc-400 font-light text-xl mb-20 max-w-2xl mx-auto">
@@ -173,7 +173,7 @@ export default function ProductStudioPage() {
                
                <div className="relative z-10 flex flex-col items-center flex-1">
                  <div className="w-24 h-24 rounded-3xl bg-zinc-900 border border-zinc-700 flex items-center justify-center text-zinc-400 mb-6 shadow-xl shrink-0">
-                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" className="w-10 h-10"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"/></svg>
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" className="w-12 h-12"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"/></svg>
                  </div>
                  <div className="text-center px-4">
                    <p className="text-white font-bold text-lg mb-2">Equipo de Negocio</p>
@@ -181,7 +181,7 @@ export default function ProductStudioPage() {
                  </div>
                </div>
 
-               <div className="text-zinc-700 hidden lg:block relative z-10"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" className="w-8 h-8"><polyline points="9 18 15 12 9 6"/></svg></div>
+               <div className="text-zinc-700 hidden lg:block relative z-10"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" className="w-8 h-8"><polyline points="9 18 15 12 9 6"/></svg></div>
                
                <div className="relative z-10 flex flex-col items-center flex-1">
                  <div className="w-28 h-28 lg:w-32 lg:h-32 rounded-[2rem] bg-[#1b081e] border-2 border-fuchsia-800 flex items-center justify-center text-fuchsia-500 mb-6 shadow-[0_0_40px_rgba(217,70,239,0.3)] shrink-0 animate-breath">
@@ -193,11 +193,11 @@ export default function ProductStudioPage() {
                  </div>
                </div>
 
-               <div className="text-fuchsia-900 hidden lg:block relative z-10"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" className="w-8 h-8"><polyline points="9 18 15 12 9 6"/></svg></div>
+               <div className="text-fuchsia-900 hidden lg:block relative z-10"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" className="w-8 h-8"><polyline points="9 18 15 12 9 6"/></svg></div>
                
                <div className="relative z-10 flex flex-col items-center flex-1">
                  <div className="w-24 h-24 rounded-3xl bg-zinc-100 border border-white flex items-center justify-center text-black mb-6 shadow-[0_0_40px_rgba(255,255,255,0.2)] shrink-0">
-                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" className="w-10 h-10"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/></svg>
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" className="w-12 h-12"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/></svg>
                  </div>
                  <div className="text-center px-4">
                    <p className="text-white font-bold text-lg mb-2">Checkout E-Commerce</p>
@@ -213,7 +213,7 @@ export default function ProductStudioPage() {
       <section id="impacto" className="py-32 px-4 bg-[#050106] border-b border-fuchsia-900/30 scroll-mt-32">
         <div className="container mx-auto max-w-7xl">
           <h2 className="text-3xl md:text-5xl font-bold text-white mb-16 text-center">
-            Impacto <span className="text-transparent bg-clip-text bg-gradient-to-r from-fuchsia-400 to-pink-400">Estratégico</span>
+            Impacto <span className="text-transparent bg-clip-text bg-gradient-to-r from-fuchsia-500 to-pink-400">Estratégico</span>
           </h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-8">
             {[
@@ -224,7 +224,7 @@ export default function ProductStudioPage() {
             ].map((item, idx) => (
               <div key={idx} className="p-10 bg-[#200523] border border-fuchsia-800/40 rounded-[2rem] text-center shadow-[0_10px_30px_rgba(217,70,239,0.08)] hover:bg-[#310c36] hover:border-fuchsia-500/80 hover:-translate-y-2 transition-all duration-300">
                  <div className="mx-auto mb-6 text-fuchsia-400 w-fit p-4 rounded-full bg-fuchsia-950/40 border border-fuchsia-900/30">
-                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" className="w-10 h-10" dangerouslySetInnerHTML={{ __html: item.icon }}></svg>
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" className="w-12 h-12" dangerouslySetInnerHTML={{ __html: item.icon }}></svg>
                  </div>
                  <h4 className="text-xl font-bold text-white mb-3">{item.title}</h4>
                  <p className="text-fuchsia-200/70 font-light">{item.desc}</p>

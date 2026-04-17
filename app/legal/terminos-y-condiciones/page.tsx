@@ -10,7 +10,7 @@ export default function TerminosCondicionesPage() {
         <div className="container mx-auto max-w-4xl relative z-10">
           <span className="text-fuchsia-500 font-semibold tracking-widest text-xs uppercase mb-3 block">Documentación Legal</span>
           <h1 className="text-3xl md:text-5xl font-extrabold tracking-tight text-white mb-6">
-            Términos y <span className="text-transparent bg-clip-text bg-gradient-to-r from-fuchsia-400 to-pink-400">Condiciones</span>
+            Términos y <span className="text-transparent bg-clip-text bg-gradient-to-r from-fuchsia-500 to-pink-400">Condiciones</span>
           </h1>
           <p className="text-zinc-500 font-light text-sm mb-12">Última actualización: Noviembre 2026</p>
           

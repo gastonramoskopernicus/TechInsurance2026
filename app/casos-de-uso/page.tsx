@@ -14,11 +14,11 @@ export default function CasosDeUsoPage() {
         
         <div className="container mx-auto max-w-4xl relative z-10 text-center flex flex-col items-center">
           <div className="relative w-20 h-20 mx-auto mb-8 text-fuchsia-500 animate-breath opacity-90 drop-shadow-[0_0_20px_rgba(217,70,239,0.2)]">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1" className="w-full h-full"><path d="M22 17H2a3 3 0 0 0 3-3V9a7 7 0 0 1 14 0v5a3 3 0 0 0 3 3zm-8.27 4a2 2 0 0 1-3.46 0"/></svg>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" className="w-full h-full"><path d="M22 17H2a3 3 0 0 0 3-3V9a7 7 0 0 1 14 0v5a3 3 0 0 0 3 3zm-8.27 4a2 2 0 0 1-3.46 0"/></svg>
           </div>
 
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold tracking-tight text-white mb-6">
-            Aplicaciones <span className="text-transparent bg-clip-text bg-gradient-to-r from-fuchsia-400 to-pink-400">Estratégicas</span>
+            Aplicaciones <span className="text-transparent bg-clip-text bg-gradient-to-r from-fuchsia-500 to-pink-400">Estratégicas</span>
           </h1>
           <p className="text-xl text-zinc-400 font-light max-w-2xl mx-auto leading-relaxed">
             Ejecución inmediata. Transforme cualquier intención comercial, desde canales de bancos locales hasta alianzas globales de retail, en un producto de mercado.

@@ -14,12 +14,12 @@ export default function EcosistemaPage() {
         
         <div className="container mx-auto max-w-5xl relative z-10 text-center flex flex-col items-center">
           <div className="relative w-28 h-28 mx-auto mb-10 text-fuchsia-500 animate-breath opacity-90 drop-shadow-[0_0_20px_rgba(217,70,239,0.2)]">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1" className="w-full h-full"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" className="w-full h-full"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
           </div>
 
           <span className="text-fuchsia-500 font-semibold tracking-wider text-sm uppercase mb-4 block">Abstracción Conectiva</span>
           <h1 className="text-4xl md:text-5xl lg:text-7xl font-extrabold tracking-tight text-white mb-6">
-            Diseñado para <br className="hidden md:block"/> <span className="text-transparent bg-clip-text bg-gradient-to-r from-fuchsia-400 to-pink-400">integrarse sin límites</span>
+            Diseñado para <br className="hidden md:block"/> <span className="text-transparent bg-clip-text bg-gradient-to-r from-fuchsia-500 to-pink-400">integrarse sin límites</span>
           </h1>
           
           <div className="border border-fuchsia-500/20 rounded-3xl p-10 lg:p-14 bg-black/50 backdrop-blur-md shadow-2xl mt-8">
@@ -55,10 +55,10 @@ export default function EcosistemaPage() {
       <section id="vision" className="py-24 px-4 bg-[#050106] border-b border-white/5 pt-28 -mt-20 scroll-mt-32">
         <div className="container mx-auto max-w-6xl text-center">
           <h2 className="text-3xl md:text-5xl font-bold text-white mb-10 tracking-tight">
-            Plataforma 100% <span className="text-transparent bg-clip-text bg-gradient-to-r from-fuchsia-400 to-pink-400">Abierta</span>
+            Plataforma 100% <span className="text-transparent bg-clip-text bg-gradient-to-r from-fuchsia-500 to-pink-400">Abierta</span>
           </h2>
           <div className="max-w-4xl mx-auto p-12 lg:p-16 bg-[#0f0e11] border border-white/5 rounded-[2rem] shadow-2xl hover:border-fuchsia-900/50 transition-colors">
-            <div className="text-fuchsia-500 mb-8 mx-auto w-fit"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" className="w-14 h-14"><rect x="4" y="4" width="16" height="16" rx="2" ry="2"/><rect x="9" y="9" width="6" height="6"/></svg></div>
+            <div className="text-fuchsia-500 mb-8 mx-auto w-fit"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" className="w-12 h-12"><rect x="4" y="4" width="16" height="16" rx="2" ry="2"/><rect x="9" y="9" width="6" height="6"/></svg></div>
             <h3 className="text-2xl font-bold text-white mb-6">No reemplaza sistemas, los eleva al siguiente nivel.</h3>
             <p className="text-zinc-400 text-lg font-light leading-relaxed">
               La integración es la fundación tecnológica base de Tech Insurance. En lugar de actuar como un silo más, funciona como un Hub inteligente capaz de unificar todos los dominios dispersos de una empresa. Es la capa maestra de desacople y comunicación entre la innovación perimetral y el Legacy profundo.
@@ -72,7 +72,7 @@ export default function EcosistemaPage() {
         <div className="container mx-auto max-w-7xl relative z-10">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold text-white mb-6">
-              Integraciones de <span className="text-transparent bg-clip-text bg-gradient-to-r from-fuchsia-400 to-pink-400">Valor</span>
+              Integraciones de <span className="text-transparent bg-clip-text bg-gradient-to-r from-fuchsia-500 to-pink-400">Valor</span>
             </h2>
             <p className="text-xl text-zinc-400 font-light max-w-3xl mx-auto">Tuberías ya pavimentadas que inyectan funcionalidades críticas a su negocio asegurador inmediatamente.</p>
           </div>
@@ -110,8 +110,8 @@ export default function EcosistemaPage() {
                    CORE LEGACY
                  </div>
                  <div className="flex flex-col text-fuchsia-500 animate-pulse">
-                   <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" className="w-8 h-8"><polyline points="9 18 15 12 9 6"/></svg>
-                   <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" className="w-8 h-8 transform rotate-180"><polyline points="9 18 15 12 9 6"/></svg>
+                   <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" className="w-8 h-8"><polyline points="9 18 15 12 9 6"/></svg>
+                   <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" className="w-8 h-8 transform rotate-180"><polyline points="9 18 15 12 9 6"/></svg>
                  </div>
                  <div className="p-4 bg-fuchsia-950 border border-fuchsia-500 text-white rounded-xl shadow-[0_0_30px_rgba(217,70,239,0.3)] font-bold flex flex-col items-center">
                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" className="w-8 h-8 mb-2"><polygon points="12 2 2 7 12 12 22 7 12 2"/><polyline points="2 17 12 22 22 17"/><polyline points="2 12 12 17 22 12"/></svg>
@@ -121,7 +121,7 @@ export default function EcosistemaPage() {
             </div>
             <div>
               <h2 className="text-3xl md:text-5xl font-bold text-white mb-6 tracking-tight">
-                Urbanizando <span className="text-transparent bg-clip-text bg-gradient-to-r from-fuchsia-400 to-pink-400">Core Systems</span>
+                Urbanizando <span className="text-transparent bg-clip-text bg-gradient-to-r from-fuchsia-500 to-pink-400">Core Systems</span>
               </h2>
               <p className="text-zinc-400 font-light text-xl leading-relaxed mb-8">
                 Incluso las plataformas troncales más herméticas y obsoletas son asimiladas. Tech Insurance no interfiere con los cálculos financieros profundos; simplemente los recubre, transformando cualquier respuesta legacy estática en un hub transaccional en tiempo real, urbanizándolos sin riesgo de reemplazo crudo.
@@ -135,21 +135,21 @@ export default function EcosistemaPage() {
       <section id="partners" className="py-24 px-4 bg-[#050106] border-b border-white/5 scroll-mt-32">
         <div className="container mx-auto max-w-6xl text-center">
           <h2 className="text-3xl md:text-4xl font-bold text-white mb-6">
-            Ecosistema de <span className="text-transparent bg-clip-text bg-gradient-to-r from-fuchsia-400 to-pink-400">Partners</span>
+            Ecosistema de <span className="text-transparent bg-clip-text bg-gradient-to-r from-fuchsia-500 to-pink-400">Partners</span>
           </h2>
           <p className="text-xl text-zinc-400 font-light max-w-3xl mx-auto mb-16">
             Construimos puentes estandarizados hacia la distribución global masiva.
           </p>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             <div className="p-10 bg-[#0f0e11] border border-white/5 rounded-[2rem] hover:bg-[#16141a] transition-all flex flex-col sm:flex-row gap-6 items-center text-left">
-              <div className="text-zinc-600"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" className="w-14 h-14"><circle cx="10" cy="10" r="7"/><line x1="15" y1="15" x2="21" y2="21"/></svg></div>
+              <div className="text-zinc-600"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" className="w-12 h-12"><circle cx="10" cy="10" r="7"/><line x1="15" y1="15" x2="21" y2="21"/></svg></div>
               <div>
                 <h4 className="text-xl font-bold text-white mb-2">Redes de Distribución Multi-Actor</h4>
                 <p className="text-zinc-500 font-light text-sm">Empoderando Agencias Comerciales y Hubs Multicotizadores B2B2C bajo esquemas integrados.</p>
               </div>
             </div>
             <div className="p-10 bg-[#0f0e11] border border-white/5 rounded-[2rem] hover:bg-[#16141a] transition-all flex flex-col sm:flex-row gap-6 items-center text-left">
-              <div className="text-zinc-600"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" className="w-14 h-14"><rect width="8" height="8" x="2" y="2" rx="2" ry="2"/><rect width="8" height="8" x="14" y="2" rx="2" ry="2"/><rect width="8" height="8" x="8" y="14" rx="2" ry="2"/></svg></div>
+              <div className="text-zinc-600"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" className="w-12 h-12"><rect width="8" height="8" x="2" y="2" rx="2" ry="2"/><rect width="8" height="8" x="14" y="2" rx="2" ry="2"/><rect width="8" height="8" x="8" y="14" rx="2" ry="2"/></svg></div>
               <div>
                 <h4 className="text-xl font-bold text-white mb-2">Proveedores Tecnológicos de Nicho</h4>
                 <p className="text-zinc-500 font-light text-sm">Plataformas RPA, sistemas de automatización OCR e I.A. integrados de manera holística.</p>
@@ -167,7 +167,7 @@ export default function EcosistemaPage() {
         <div className="container mx-auto max-w-6xl relative z-10">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-5xl font-bold text-white mb-4">
-              Aceleradores <span className="text-transparent bg-clip-text bg-gradient-to-r from-fuchsia-400 to-pink-400">Kopernicus</span>
+              Aceleradores <span className="text-transparent bg-clip-text bg-gradient-to-r from-fuchsia-500 to-pink-400">Kopernicus</span>
             </h2>
             <p className="text-xl text-fuchsia-200/50 font-light max-w-3xl mx-auto">Potencia de ignición nativa con nuestras herramientas insignia del mercado Insurtech.</p>
           </div>

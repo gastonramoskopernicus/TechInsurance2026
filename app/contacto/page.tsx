@@ -57,11 +57,11 @@ export default function ContactoPage() {
         
         <div className="container mx-auto max-w-5xl relative z-10 text-center flex flex-col items-center">
           <div className="relative w-24 h-24 mx-auto mb-10 text-fuchsia-500 animate-breath opacity-90 drop-shadow-[0_0_20px_rgba(217,70,239,0.2)]">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1" className="w-full h-full"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" className="w-full h-full"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
           </div>
 
           <h1 className="text-4xl md:text-5xl lg:text-7xl font-extrabold tracking-tight text-white mb-6">
-            Hablemos según <br className="hidden md:block"/> <span className="text-transparent bg-clip-text bg-gradient-to-r from-fuchsia-400 to-pink-400">lo que necesitás</span>
+            Hablemos según <br className="hidden md:block"/> <span className="text-transparent bg-clip-text bg-gradient-to-r from-fuchsia-500 to-pink-400">lo que necesitás</span>
           </h1>
           <p className="text-xl text-zinc-400 font-light max-w-2xl mx-auto leading-relaxed">
             Seleccioná el motivo principal de contacto y enrutaremos internamente tu requerimiento al equipo corporativo exacto de Kopernicus.
@@ -101,7 +101,7 @@ export default function ContactoPage() {
              {enviado ? (
                 <div className="flex flex-col items-center justify-center h-full min-h-[400px] text-center animate-in fade-in zoom-in duration-500">
                    <div className="w-20 h-20 bg-[#1b081e] border border-fuchsia-500 text-fuchsia-400 rounded-full flex items-center justify-center mb-6 shadow-[0_0_30px_rgba(217,70,239,0.2)]">
-                      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" className="w-10 h-10"><polyline points="20 6 9 17 4 12"/></svg>
+                      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" className="w-12 h-12"><polyline points="20 6 9 17 4 12"/></svg>
                    </div>
                    <h3 className="text-3xl font-bold text-white mb-2">Mensaje Recibido</h3>
                    <p className="text-zinc-400 max-w-md mx-auto">Gracias por contactarte. Nuestro equipo <strong className="text-white">({opcionActiva?.label})</strong> procesará la información y se pondrá en contacto a la brevedad.</p>
@@ -139,7 +139,7 @@ export default function ContactoPage() {
                   </div>
 
                   <button type="submit" className="mt-4 w-full md:w-auto self-end bg-fuchsia-600 hover:bg-fuchsia-500 text-white font-bold text-lg px-12 py-5 rounded-2xl transition-all shadow-[0_0_30px_rgba(217,70,239,0.3)] hover:shadow-[0_0_50px_rgba(217,70,239,0.5)] flex items-center gap-3">
-                    Enviar Consulta <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" className="w-5 h-5"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+                    Enviar Consulta <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" className="w-5 h-5"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
                   </button>
                 </form>
              )}

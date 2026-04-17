@@ -14,12 +14,12 @@ export default function RecursosPage() {
         
         <div className="container mx-auto max-w-5xl relative z-10 text-center flex flex-col items-center">
           <div className="relative w-24 h-24 mx-auto mb-10 text-fuchsia-500 animate-breath opacity-90 drop-shadow-[0_0_20px_rgba(217,70,239,0.2)]">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1" className="w-full h-full"><path d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H20v20H6.5a2.5 2.5 0 0 1 0-5H20"/></svg>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" className="w-full h-full"><path d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H20v20H6.5a2.5 2.5 0 0 1 0-5H20"/></svg>
           </div>
 
           <span className="text-fuchsia-500 font-semibold tracking-wider text-sm uppercase mb-4 block">Knowledge Hub</span>
           <h1 className="text-4xl md:text-5xl lg:text-7xl font-extrabold tracking-tight text-white mb-6">
-            Recursos para entender <br className="hidden md:block"/> la <span className="text-transparent bg-clip-text bg-gradient-to-r from-fuchsia-400 to-pink-400">evolución del seguro</span>
+            Recursos para entender <br className="hidden md:block"/> la <span className="text-transparent bg-clip-text bg-gradient-to-r from-fuchsia-500 to-pink-400">evolución del seguro</span>
           </h1>
           
           <div className="border border-fuchsia-500/20 rounded-3xl p-10 lg:p-14 bg-black/50 backdrop-blur-md shadow-2xl mt-8">
@@ -56,7 +56,7 @@ export default function RecursosPage() {
         <div className="container mx-auto max-w-7xl">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-5xl font-bold text-white mb-6 tracking-tight">
-              Curaduría <span className="text-transparent bg-clip-text bg-gradient-to-r from-fuchsia-400 to-pink-400">Destacada</span>
+              Curaduría <span className="text-transparent bg-clip-text bg-gradient-to-r from-fuchsia-500 to-pink-400">Destacada</span>
             </h2>
             <p className="text-xl text-zinc-400 font-light max-w-2xl mx-auto">Selección editorial del material más influyente emitido por nuestros equipos y partners tecnológicos.</p>
           </div>
@@ -71,7 +71,7 @@ export default function RecursosPage() {
                  <span className="inline-block px-3 py-1 bg-fuchsia-500/20 text-fuchsia-300 font-bold text-xs uppercase tracking-widest rounded-full border border-fuchsia-500/30 mb-6">Whitepaper Premium</span>
                  <h3 className="text-3xl font-bold text-white mb-4 drop-shadow-md">La Urbanización del Core Asegurador</h3>
                  <p className="text-zinc-400 font-light text-lg mb-8 leading-relaxed">Descubra en 40 páginas cómo proteger su AS400 mientras compite frente a insurtechs de nueva generación.</p>
-                 <span className="text-fuchsia-400 font-bold flex items-center gap-2 group-hover:translate-x-2 transition-transform">Descargar PDF <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" className="w-5 h-5"><polyline points="9 18 15 12 9 6"/></svg></span>
+                 <span className="text-fuchsia-400 font-bold flex items-center gap-2 group-hover:translate-x-2 transition-transform">Descargar PDF <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" className="w-5 h-5"><polyline points="9 18 15 12 9 6"/></svg></span>
                </div>
             </a>
             
@@ -83,7 +83,7 @@ export default function RecursosPage() {
                  <span className="inline-block px-3 py-1 bg-white/5 text-zinc-300 font-bold text-xs uppercase tracking-widest rounded-full border border-white/10 mb-6 group-hover:border-fuchsia-500/30 group-hover:text-fuchsia-300 transition-colors">Masterclass</span>
                  <h3 className="text-3xl font-bold text-white mb-4 drop-shadow-md">Demostración Comercial (Product Studio)</h3>
                  <p className="text-zinc-500 font-light text-lg mb-8 leading-relaxed">Vea en tiempo real cómo nuestros ingenieros estructuran un seguro embebido de bicicletas en menos de 15 minutos.</p>
-                 <span className="text-fuchsia-400 font-bold flex items-center gap-2 group-hover:translate-x-2 transition-transform">Ver en HD <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" className="w-5 h-5"><polygon points="5 3 19 12 5 21 5 3"/></svg></span>
+                 <span className="text-fuchsia-400 font-bold flex items-center gap-2 group-hover:translate-x-2 transition-transform">Ver en HD <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" className="w-5 h-5"><polygon points="5 3 19 12 5 21 5 3"/></svg></span>
                </div>
             </a>
           </div>
@@ -96,7 +96,7 @@ export default function RecursosPage() {
           <div className="flex flex-col md:flex-row md:items-end justify-between mb-16 gap-6">
              <div>
                 <h2 className="text-3xl md:text-5xl font-bold text-white mb-4 tracking-tight">
-                  Librería Técnica y <span className="text-transparent bg-clip-text bg-gradient-to-r from-fuchsia-400 to-pink-400">Whitepapers</span>
+                  Librería Técnica y <span className="text-transparent bg-clip-text bg-gradient-to-r from-fuchsia-500 to-pink-400">Whitepapers</span>
                 </h2>
                 <p className="text-xl text-zinc-400 font-light max-w-2xl">Profundice en los cimientos del desacople arquitectónico y la orquestación comercial.</p>
              </div>
@@ -111,12 +111,12 @@ export default function RecursosPage() {
             ].map((item, idx) => (
               <a href="#" key={idx} className="group p-8 border border-white/5 bg-[#0f0e11] rounded-3xl hover:bg-[#16141a] hover:border-fuchsia-900/50 transition-all duration-300 flex flex-col hover:-translate-y-2 shadow-[0_10px_30px_rgba(0,0,0,0.5)]">
                  <div className="mb-8 text-zinc-600 group-hover:text-fuchsia-500 transition-colors duration-300">
-                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" className="w-10 h-10" dangerouslySetInnerHTML={{ __html: item.icon }}></svg>
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" className="w-12 h-12" dangerouslySetInnerHTML={{ __html: item.icon }}></svg>
                  </div>
                  <h4 className="text-xl font-bold text-white mb-3 leading-snug">{item.title}</h4>
                  <p className="text-zinc-500 font-light group-hover:text-zinc-400 transition-colors leading-relaxed mb-6">{item.desc}</p>
                  <div className="mt-auto border-t border-white/5 pt-6 flex justify-between items-center text-sm font-bold text-fuchsia-500/70 group-hover:text-fuchsia-400">
-                    Descargar Doc (PDF) <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" className="w-4 h-4"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+                    Descargar Doc (PDF) <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" className="w-4 h-4"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
                  </div>
               </a>
             ))}
@@ -130,7 +130,7 @@ export default function RecursosPage() {
           <div className="text-center mb-16">
             <span className="text-fuchsia-500 font-semibold tracking-wider text-sm uppercase mb-4 block">Ecosistema Audiovisual Kopernicus</span>
             <h2 className="text-3xl md:text-5xl font-bold text-white mb-6 tracking-tight">
-              Masterclass y <span className="text-transparent bg-clip-text bg-gradient-to-r from-fuchsia-400 to-pink-400">Videos</span>
+              Masterclass y <span className="text-transparent bg-clip-text bg-gradient-to-r from-fuchsia-500 to-pink-400">Videos</span>
             </h2>
             <p className="text-xl text-zinc-400 font-light max-w-2xl mx-auto">Material visual e intervenciones públicas definiendo la pauta global insurtech en los últimos foros de mercado.</p>
           </div>
@@ -155,7 +155,7 @@ export default function RecursosPage() {
                     <h4 className="text-xl font-bold text-white mb-3 leading-snug group-hover:text-fuchsia-100">{item.title}</h4>
                     <p className="text-zinc-500 font-light text-sm mb-6 leading-relaxed flex-1">{item.desc}</p>
                     <a href={`https://www.youtube.com/watch?v=${item.id}`} target="_blank" rel="noopener noreferrer" className="text-fuchsia-600/80 font-bold text-xs uppercase tracking-widest flex items-center gap-2 group-hover:text-fuchsia-400 w-fit">
-                       Visualizar en Youtube <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" className="w-3 h-3"><polyline points="9 18 15 12 9 6"/></svg>
+                       Visualizar en Youtube <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" className="w-3 h-3"><polyline points="9 18 15 12 9 6"/></svg>
                     </a>
                  </div>
               </div>
@@ -165,7 +165,7 @@ export default function RecursosPage() {
           <div className="flex justify-center">
              <a href="#" className="inline-flex items-center gap-3 px-8 py-4 bg-transparent border border-fuchsia-800 text-fuchsia-400 font-bold rounded-xl hover:bg-fuchsia-900/30 transition-all duration-300">
                 Suscribirse al canal Oficial
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" className="w-5 h-5"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33 2.78 2.78 0 0 0 1.94 2c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.33 29 29 0 0 0-.46-5.33z"/><polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02"/></svg>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" className="w-5 h-5"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33 2.78 2.78 0 0 0 1.94 2c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.33 29 29 0 0 0-.46-5.33z"/><polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02"/></svg>
              </a>
           </div>
         </div>
@@ -177,7 +177,7 @@ export default function RecursosPage() {
           <div className="flex flex-col md:flex-row md:items-end justify-between mb-16 gap-6">
              <div>
                 <h2 className="text-3xl md:text-5xl font-bold text-white mb-4 tracking-tight">
-                  Artículos y <span className="text-transparent bg-clip-text bg-gradient-to-r from-fuchsia-400 to-pink-400">Publicaciones</span>
+                  Artículos y <span className="text-transparent bg-clip-text bg-gradient-to-r from-fuchsia-500 to-pink-400">Publicaciones</span>
                 </h2>
                 <p className="text-xl text-zinc-400 font-light max-w-2xl">Mantenetimiento evolutivo: manténgase al día con las corrientes mundiales del universo startup y finanzas.</p>
              </div>
@@ -196,7 +196,7 @@ export default function RecursosPage() {
                  </div>
                  <h4 className="text-lg font-bold text-white mb-6 leading-relaxed group-hover:text-fuchsia-100">{item.title}</h4>
                  <div className="mt-auto pt-4 flex items-center text-sm font-bold text-zinc-500 group-hover:text-fuchsia-400 transition-colors">
-                    Leer Nota <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" className="w-4 h-4 ml-2"><polyline points="9 18 15 12 9 6"/></svg>
+                    Leer Nota <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" className="w-4 h-4 ml-2"><polyline points="9 18 15 12 9 6"/></svg>
                  </div>
               </a>
             ))}
@@ -207,9 +207,9 @@ export default function RecursosPage() {
       {/* BROCHURES INSTITUCIONALES */}
       <section id="brochures" className="py-24 px-4 bg-[#050106] border-b border-fuchsia-900/40 scroll-mt-32">
         <div className="container mx-auto max-w-6xl text-center">
-          <div className="text-fuchsia-500 mx-auto mb-6 w-fit"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" className="w-16 h-16"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"/></svg></div>
+          <div className="text-fuchsia-500 mx-auto mb-6 w-fit"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" className="w-12 h-12"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"/></svg></div>
           <h2 className="text-3xl md:text-5xl font-bold text-white mb-6 tracking-tight">
-            Folletos <span className="text-transparent bg-clip-text bg-gradient-to-r from-fuchsia-400 to-pink-400">Corporativos</span>
+            Folletos <span className="text-transparent bg-clip-text bg-gradient-to-r from-fuchsia-500 to-pink-400">Corporativos</span>
           </h2>
           <p className="text-xl text-zinc-400 font-light max-w-2xl mx-auto mb-16">
             Lleve nuestro modelo de negocio directo a su próxima junta de directorio (Board). Los resúmenes ejecutivos que el Level-C necesita.

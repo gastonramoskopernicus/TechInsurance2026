@@ -39,7 +39,7 @@ export default function Home() {
           <div className="space-y-6 max-w-3xl">
             <h1 className="text-4xl sm:text-5xl md:text-7xl font-extrabold tracking-tight text-white leading-[1.1]">
               Deje de depender <br />
-              <span className="text-transparent bg-clip-text bg-gradient-to-r from-fuchsia-400 to-pink-400">
+              <span className="text-transparent bg-clip-text bg-gradient-to-r from-fuchsia-500 to-pink-400">
                 de su core para innovar.
               </span>
             </h1>
@@ -59,7 +59,7 @@ export default function Home() {
             <span className="text-fuchsia-600 font-semibold tracking-widest text-xs uppercase mb-3 block">El Desafío</span>
             <h2 className="text-4xl md:text-6xl lg:text-7xl font-extrabold text-white tracking-tight mb-8">
               El problema no es tecnológico.<br/>
-              <span className="text-transparent bg-clip-text bg-gradient-to-r from-fuchsia-400 to-pink-400">Es estructural.</span>
+              <span className="text-transparent bg-clip-text bg-gradient-to-r from-fuchsia-500 to-pink-400">Es estructural.</span>
             </h2>
             <p className="text-xl text-zinc-400 max-w-2xl mx-auto font-light leading-relaxed">
               Los sistemas core fueron diseñados para operar, no para innovar. Cada intento de forzar nuevas lógicas sobre ellos desencadena los mismos bloqueos:
@@ -69,7 +69,7 @@ export default function Home() {
           <div className="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8">
             <div className="group relative rounded-2xl bg-[#0f0e11] border border-fuchsia-950 p-10 hover:border-fuchsia-800 hover:bg-[#16141a] transition-all duration-500 flex flex-col items-center text-center overflow-hidden h-full">
               <div className="mb-6 relative z-10 text-fuchsia-600 group-hover:text-fuchsia-500 group-hover:scale-110 transition-transform duration-500">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1" className="w-16 h-16"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" className="w-12 h-12"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
               </div>
               <h4 className="text-2xl font-bold text-white mb-4 relative z-10">Tiempos largos</h4>
               <p className="text-zinc-500 group-hover:text-zinc-400 text-lg leading-relaxed font-light relative z-10 transition-colors">
@@ -79,7 +79,7 @@ export default function Home() {
             
             <div className="group relative rounded-2xl bg-[#0f0e11] border border-fuchsia-950 p-10 hover:border-fuchsia-800 hover:bg-[#16141a] transition-all duration-500 flex flex-col items-center text-center overflow-hidden h-full">
               <div className="mb-6 relative z-10 text-fuchsia-600 group-hover:text-fuchsia-500 group-hover:scale-110 transition-transform duration-500">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1" className="w-16 h-16"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" className="w-12 h-12"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
               </div>
               <h4 className="text-2xl font-bold text-white mb-4 relative z-10">Alto costo</h4>
               <p className="text-zinc-500 group-hover:text-zinc-400 text-lg leading-relaxed font-light relative z-10 transition-colors">
@@ -89,7 +89,7 @@ export default function Home() {
 
             <div className="group relative rounded-2xl bg-[#0f0e11] border border-fuchsia-950 p-10 hover:border-fuchsia-800 hover:bg-[#16141a] transition-all duration-500 flex flex-col items-center text-center overflow-hidden h-full">
               <div className="mb-6 relative z-10 text-fuchsia-600 group-hover:text-fuchsia-500 group-hover:scale-110 transition-transform duration-500">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1" className="w-16 h-16"><path d="M16 21v-2a4 4 0 0 0-4-4H5c-1.1 0-2 .9-2 2v2"/><circle cx="8.5" cy="7" r="4"/><line x1="20" y1="8" x2="20" y2="14"/><line x1="23" y1="11" x2="17" y2="11"/></svg>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" className="w-12 h-12"><path d="M16 21v-2a4 4 0 0 0-4-4H5c-1.1 0-2 .9-2 2v2"/><circle cx="8.5" cy="7" r="4"/><line x1="20" y1="8" x2="20" y2="14"/><line x1="23" y1="11" x2="17" y2="11"/></svg>
               </div>
               <h4 className="text-2xl font-bold text-white mb-4 relative z-10">Dependencia de IT</h4>
               <p className="text-zinc-500 group-hover:text-zinc-400 text-lg leading-relaxed font-light relative z-10 transition-colors">
@@ -99,7 +99,7 @@ export default function Home() {
 
             <div className="group relative rounded-2xl bg-[#0f0e11] border border-fuchsia-950 p-10 hover:border-fuchsia-800 hover:bg-[#16141a] transition-all duration-500 flex flex-col items-center text-center overflow-hidden h-full">
               <div className="mb-6 relative z-10 text-fuchsia-600 group-hover:text-fuchsia-500 group-hover:scale-110 transition-transform duration-500">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1" className="w-16 h-16"><path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"/><line x1="12" y1="9" x2="12" y2="13"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" className="w-12 h-12"><path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"/><line x1="12" y1="9" x2="12" y2="13"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
               </div>
               <h4 className="text-2xl font-bold text-white mb-4 relative z-10">Riesgo operativo</h4>
               <p className="text-zinc-500 group-hover:text-zinc-400 text-lg leading-relaxed font-light relative z-10 transition-colors">
@@ -115,34 +115,34 @@ export default function Home() {
         <div className="container mx-auto px-4 lg:px-8 max-w-7xl relative z-10">
           <div className="text-center mb-24">
             <span className="text-fuchsia-500 font-semibold tracking-widest text-xs uppercase mb-3 block">Nuestra Solución</span>
-            <h2 className="text-4xl md:text-5xl font-bold text-white tracking-tight">Tech Insurance desacopla <br className="hidden md:block"/><span className="text-transparent bg-clip-text bg-gradient-to-r from-fuchsia-400 to-pink-400">la innovación.</span></h2>
+            <h2 className="text-4xl md:text-5xl font-bold text-white tracking-tight">Tech Insurance desacopla <br className="hidden md:block"/><span className="text-transparent bg-clip-text bg-gradient-to-r from-fuchsia-500 to-pink-400">la innovación.</span></h2>
           </div>
           
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-8">
-             <div className="group relative rounded-2xl bg-[#130a16] border border-fuchsia-900/30 p-8 hover:border-fuchsia-500/40 hover:bg-[#200e23] transition-all duration-500 flex flex-col items-center text-center overflow-hidden h-full">
+             <div className="group relative rounded-2xl bg-[#0f0e11] border border-fuchsia-900/30 p-8 hover:border-fuchsia-500/40 hover:bg-[#200e23] transition-all duration-500 flex flex-col items-center text-center overflow-hidden h-full">
                 <div className="mb-6 relative z-10 text-zinc-500 group-hover:text-fuchsia-400 group-hover:scale-110 transition-transform duration-500">
-                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1" className="w-16 h-16"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" className="w-12 h-12"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>
                 </div>
                 <h4 className="text-xl font-bold text-white leading-tight">Lanzar productos <br/> en días</h4>
              </div>
              
-             <div className="group relative rounded-2xl bg-[#130a16] border border-fuchsia-900/30 p-8 hover:border-fuchsia-500/40 hover:bg-[#200e23] transition-all duration-500 flex flex-col items-center text-center overflow-hidden h-full">
+             <div className="group relative rounded-2xl bg-[#0f0e11] border border-fuchsia-900/30 p-8 hover:border-fuchsia-500/40 hover:bg-[#200e23] transition-all duration-500 flex flex-col items-center text-center overflow-hidden h-full">
                 <div className="mb-6 relative z-10 text-zinc-500 group-hover:text-fuchsia-400 group-hover:scale-110 transition-transform duration-500">
-                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1" className="w-16 h-16"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" className="w-12 h-12"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
                 </div>
                 <h4 className="text-xl font-bold text-white leading-tight">Testear modelos <br/> sin riesgo</h4>
              </div>
              
-             <div className="group relative rounded-2xl bg-[#130a16] border border-fuchsia-900/30 p-8 hover:border-fuchsia-500/40 hover:bg-[#200e23] transition-all duration-500 flex flex-col items-center text-center overflow-hidden h-full">
+             <div className="group relative rounded-2xl bg-[#0f0e11] border border-fuchsia-900/30 p-8 hover:border-fuchsia-500/40 hover:bg-[#200e23] transition-all duration-500 flex flex-col items-center text-center overflow-hidden h-full">
                 <div className="mb-6 relative z-10 text-zinc-500 group-hover:text-fuchsia-400 group-hover:scale-110 transition-transform duration-500">
-                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1" className="w-16 h-16"><rect x="3" y="3" width="7" height="7"></rect><rect x="14" y="3" width="7" height="7"></rect><rect x="14" y="14" width="7" height="7"></rect><rect x="3" y="14" width="7" height="7"></rect></svg>
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" className="w-12 h-12"><rect x="3" y="3" width="7" height="7"></rect><rect x="14" y="3" width="7" height="7"></rect><rect x="14" y="14" width="7" height="7"></rect><rect x="3" y="14" width="7" height="7"></rect></svg>
                 </div>
                 <h4 className="text-xl font-bold text-white leading-tight">Integrar partners <br/> sin fricción</h4>
              </div>
              
-             <div className="group relative rounded-2xl bg-[#130a16] border border-fuchsia-900/30 p-8 hover:border-fuchsia-500/40 hover:bg-[#200e23] transition-all duration-500 flex flex-col items-center text-center overflow-hidden h-full">
+             <div className="group relative rounded-2xl bg-[#0f0e11] border border-fuchsia-900/30 p-8 hover:border-fuchsia-500/40 hover:bg-[#200e23] transition-all duration-500 flex flex-col items-center text-center overflow-hidden h-full">
                 <div className="mb-6 relative z-10 text-zinc-500 group-hover:text-fuchsia-400 group-hover:scale-110 transition-transform duration-500">
-                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1" className="w-16 h-16"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path><polyline points="3.27 6.96 12 12.01 20.73 6.96"></polyline><line x1="12" y1="22.08" x2="12" y2="12"></line></svg>
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" className="w-12 h-12"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path><polyline points="3.27 6.96 12 12.01 20.73 6.96"></polyline><line x1="12" y1="22.08" x2="12" y2="12"></line></svg>
                 </div>
                 <h4 className="text-xl font-bold text-white leading-tight">Escalar sin <br/> reescribir sistemas</h4>
              </div>
@@ -156,7 +156,7 @@ export default function Home() {
         <div className="container mx-auto px-4 lg:px-8 max-w-7xl relative z-10">
           <div className="text-center mb-24">
             <span className="text-fuchsia-500 font-semibold tracking-widest text-xs uppercase mb-3 block">Core Capabilities</span>
-            <h2 className="text-4xl md:text-5xl font-bold text-white tracking-tight">Acelere productos, canales y <span className="text-transparent bg-clip-text bg-gradient-to-r from-fuchsia-400 to-pink-400">experiencias</span></h2>
+            <h2 className="text-4xl md:text-5xl font-bold text-white tracking-tight">Acelere productos, canales y <span className="text-transparent bg-clip-text bg-gradient-to-r from-fuchsia-500 to-pink-400">experiencias</span></h2>
           </div>
           
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 lg:gap-10">
@@ -165,7 +165,7 @@ export default function Home() {
             <div className="group relative rounded-2xl bg-[#311030] border border-fuchsia-800/20 p-12 hover:border-fuchsia-600/40 hover:bg-[#3d143c] transition-all duration-500 flex flex-col items-center text-center overflow-hidden h-full shadow-lg shadow-fuchsia-900/10">
               <div className="absolute inset-0 bg-[radial-gradient(circle_at_top,rgba(255,255,255,0.05),transparent)] opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
               <div className="mb-10 relative z-10 text-fuchsia-300 group-hover:text-fuchsia-200 group-hover:scale-110 transition-transform duration-500">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="0.8" className="w-24 h-24"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path><polyline points="3.27 6.96 12 12.01 20.73 6.96"></polyline><line x1="12" y1="22.08" x2="12" y2="12"></line></svg>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" className="w-24 h-24"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path><polyline points="3.27 6.96 12 12.01 20.73 6.96"></polyline><line x1="12" y1="22.08" x2="12" y2="12"></line></svg>
               </div>
               <h3 className="text-2xl font-bold text-white mb-4 relative z-10">Diseño Modular</h3>
               <p className="text-fuchsia-100/70 text-lg leading-relaxed font-light relative z-10">
@@ -176,7 +176,7 @@ export default function Home() {
             {/* Card 2: Magenta Degradé */}
             <div className="group relative rounded-2xl bg-gradient-to-br from-[#3b0b3d] to-[#120516] border border-fuchsia-900/30 p-12 hover:border-fuchsia-500/40 hover:from-[#490d4c] hover:to-[#1a081c] transition-all duration-500 flex flex-col items-center text-center overflow-hidden h-full shadow-[0_0_40px_rgba(217,70,239,0.05)] hover:shadow-[0_0_40px_rgba(217,70,239,0.12)]">
               <div className="mb-10 relative z-10 text-fuchsia-400 group-hover:text-fuchsia-300 group-hover:scale-110 transition-transform duration-500">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="0.8" className="w-24 h-24"><circle cx="12" cy="12" r="3"></circle><path d="M12 2v7"></path><path d="M12 15v7"></path><path d="M22 12h-7"></path><path d="M9 12H2"></path><path d="m19.07 4.93-4.95 4.95"></path><path d="M9.88 14.12 4.93 19.07"></path><path d="m4.93 4.93 4.95 4.95"></path><path d="m19.07 19.07-4.95-4.95"></path></svg>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" className="w-24 h-24"><circle cx="12" cy="12" r="3"></circle><path d="M12 2v7"></path><path d="M12 15v7"></path><path d="M22 12h-7"></path><path d="M9 12H2"></path><path d="m19.07 4.93-4.95 4.95"></path><path d="M9.88 14.12 4.93 19.07"></path><path d="m4.93 4.93 4.95 4.95"></path><path d="m19.07 19.07-4.95-4.95"></path></svg>
               </div>
               <h3 className="text-2xl font-bold text-white mb-4 relative z-10">Distribución Omnicanal</h3>
               <p className="text-fuchsia-100/60 text-lg leading-relaxed font-light relative z-10">
@@ -188,7 +188,7 @@ export default function Home() {
             <div className="group relative rounded-2xl bg-[#311030] border border-fuchsia-800/20 p-12 hover:border-fuchsia-600/40 hover:bg-[#3d143c] transition-all duration-500 flex flex-col items-center text-center overflow-hidden h-full shadow-lg shadow-fuchsia-900/10">
               <div className="absolute inset-0 bg-[radial-gradient(circle_at_top,rgba(255,255,255,0.05),transparent)] opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
               <div className="mb-10 relative z-10 text-fuchsia-300 group-hover:text-fuchsia-200 group-hover:scale-110 transition-transform duration-500">
-                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="0.8" className="w-24 h-24"><path d="M21 12a9 9 0 1 1-9-9c2.52 0 4.93 1 6.74 2.74L21 8"></path><path d="M21 3v5h-5"></path></svg>
+                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" className="w-24 h-24"><path d="M21 12a9 9 0 1 1-9-9c2.52 0 4.93 1 6.74 2.74L21 8"></path><path d="M21 3v5h-5"></path></svg>
               </div>
               <h3 className="text-2xl font-bold text-white mb-4 relative z-10">Orquestación Continua</h3>
               <p className="text-fuchsia-100/70 text-lg leading-relaxed font-light relative z-10 transition-colors">
@@ -210,7 +210,7 @@ export default function Home() {
           </div>
 
           <span className="text-fuchsia-500 font-semibold tracking-wider text-sm uppercase mb-3 block">Innovation Hub</span>
-          <h2 className="text-4xl md:text-5xl font-bold mb-8 text-white">Product Studio: <span className="text-transparent bg-clip-text bg-gradient-to-r from-fuchsia-400 to-pink-400">Autonomía Comercial</span></h2>
+          <h2 className="text-4xl md:text-5xl font-bold mb-8 text-white">Product Studio: <span className="text-transparent bg-clip-text bg-gradient-to-r from-fuchsia-500 to-pink-400">Autonomía Comercial</span></h2>
           <div className="max-w-4xl mx-auto border border-fuchsia-500/10 rounded-2xl p-10 lg:p-14 bg-black/50 backdrop-blur-md hover:border-fuchsia-500/20 transition-colors">
             <p className="text-zinc-300 text-xl font-light leading-relaxed">
               Otorgue el poder a sus equipos de negocio estratégico. Nuestro entorno de configuración No-Code permite conceptualizar, tarificar y validar seguros en el mercado a una velocidad sin precedentes, eliminando la dependencia crítica de IT.
@@ -223,7 +223,7 @@ export default function Home() {
       <section id="arquitectura" className="py-24 bg-[#0f0e11] border-b border-border/50">
         <div className="container mx-auto px-4 lg:px-8 max-w-5xl text-center">
           <span className="text-fuchsia-600 font-semibold tracking-wider text-sm uppercase mb-2 block">Infraestructura Constante</span>
-          <h2 className="text-3xl md:text-4xl font-bold mb-6 text-white tracking-tight">Arquitectura API-First y <span className="text-transparent bg-clip-text bg-gradient-to-r from-fuchsia-400 to-pink-400">Cloud-Native</span></h2>
+          <h2 className="text-3xl md:text-4xl font-bold mb-6 text-white tracking-tight">Arquitectura API-First y <span className="text-transparent bg-clip-text bg-gradient-to-r from-fuchsia-500 to-pink-400">Cloud-Native</span></h2>
           <p className="text-zinc-400 text-lg max-w-3xl mx-auto font-light leading-relaxed">
             Diseñada para escalar de manera predecible. Microservicios altamente disponibles, arquitectura event-driven y resiliencia corporativa que se integra naturalmente con ecosistemas guidewire, plataformas legacy y servicios web externos.
           </p>
@@ -234,7 +234,7 @@ export default function Home() {
       <section id="casos-de-uso" className="py-24 border-b border-white/5 bg-[#020104]">
         <div className="container mx-auto px-4 lg:px-8 text-center max-w-6xl">
           <span className="text-fuchsia-600 font-semibold tracking-wider text-sm uppercase mb-2 block">Adopción Flexible</span>
-          <h2 className="text-3xl md:text-4xl font-bold mb-12 text-white">Impulsando Modelos de <span className="text-transparent bg-clip-text bg-gradient-to-r from-fuchsia-400 to-pink-400">Negocio Modernos</span></h2>
+          <h2 className="text-3xl md:text-4xl font-bold mb-12 text-white">Impulsando Modelos de <span className="text-transparent bg-clip-text bg-gradient-to-r from-fuchsia-500 to-pink-400">Negocio Modernos</span></h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-8">
             <div className="group rounded-2xl bg-[#0f0e11] flex flex-col items-start p-10 text-left border border-white/5 hover:border-fuchsia-900/50 hover:bg-[#1a081c] transition-all duration-300">
               <h3 className="text-2xl font-bold text-white mb-3">Bancaseguros & Fintech</h3>
@@ -253,31 +253,31 @@ export default function Home() {
         <div className="container mx-auto px-4 lg:px-8 text-center max-w-7xl relative z-10">
           <div className="mb-20">
             <span className="text-fuchsia-500 font-semibold tracking-widest text-xs uppercase mb-3 block">Rendimiento Operativo</span>
-            <h2 className="text-4xl md:text-5xl font-bold text-white tracking-tight">Resultados Claros y Medibles <span className="text-transparent bg-clip-text bg-gradient-to-r from-fuchsia-400 to-pink-400">(ROI)</span></h2>
+            <h2 className="text-4xl md:text-5xl font-bold text-white tracking-tight">Resultados Claros y Medibles <span className="text-transparent bg-clip-text bg-gradient-to-r from-fuchsia-500 to-pink-400">(ROI)</span></h2>
           </div>
           
            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-8">
              <div className="group relative rounded-2xl bg-[#0f0e11] border border-fuchsia-950 p-8 hover:border-fuchsia-800 hover:bg-[#16141a] transition-all duration-500 flex flex-col items-center text-center overflow-hidden h-full">
                 <div className="mb-6 relative z-10 text-zinc-500 group-hover:text-fuchsia-500 group-hover:scale-110 transition-transform duration-500">
-                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1" className="w-16 h-16"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 16"/><line x1="16" y1="12" x2="16.01" y2="12"/></svg>
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" className="w-12 h-12"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 16"/><line x1="16" y1="12" x2="16.01" y2="12"/></svg>
                 </div>
                 <h4 className="text-xl font-bold text-white leading-tight">Reducción del <br/>time-to-market</h4>
              </div>
              <div className="group relative rounded-2xl bg-[#0f0e11] border border-fuchsia-950 p-8 hover:border-fuchsia-800 hover:bg-[#16141a] transition-all duration-500 flex flex-col items-center text-center overflow-hidden h-full">
                 <div className="mb-6 relative z-10 text-zinc-500 group-hover:text-fuchsia-500 group-hover:scale-110 transition-transform duration-500">
-                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1" className="w-16 h-16"><polyline points="23 6 13.5 15.5 8.5 10.5 1 18"/><polyline points="17 6 23 6 23 12"/></svg>
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" className="w-12 h-12"><polyline points="23 6 13.5 15.5 8.5 10.5 1 18"/><polyline points="17 6 23 6 23 12"/></svg>
                 </div>
                 <h4 className="text-xl font-bold text-white leading-tight">Aumento de ingresos <br/>por canales</h4>
              </div>
              <div className="group relative rounded-2xl bg-[#0f0e11] border border-fuchsia-950 p-8 hover:border-fuchsia-800 hover:bg-[#16141a] transition-all duration-500 flex flex-col items-center text-center overflow-hidden h-full">
                 <div className="mb-6 relative z-10 text-zinc-500 group-hover:text-fuchsia-500 group-hover:scale-110 transition-transform duration-500">
-                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1" className="w-16 h-16"><path d="M2 12h4l3-9 5 18 3-9h5"/></svg>
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" className="w-12 h-12"><path d="M2 12h4l3-9 5 18 3-9h5"/></svg>
                 </div>
                 <h4 className="text-xl font-bold text-white leading-tight">Menor dependencia <br/>tecnológica</h4>
              </div>
              <div className="group relative rounded-2xl bg-[#0f0e11] border border-fuchsia-950 p-8 hover:border-fuchsia-800 hover:bg-[#16141a] transition-all duration-500 flex flex-col items-center text-center overflow-hidden h-full">
                 <div className="mb-6 relative z-10 text-zinc-500 group-hover:text-fuchsia-500 group-hover:scale-110 transition-transform duration-500">
-                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1" className="w-16 h-16"><path d="M12 2v2"/><path d="M12 20v2"/><path d="m4.93 4.93 1.41 1.41"/><path d="m17.66 17.66 1.41 1.41"/><path d="M2 12h2"/><path d="M20 12h2"/><path d="m6.34 17.66-1.41 1.41"/><path d="m19.07 4.93-1.41 1.41"/></svg>
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" className="w-12 h-12"><path d="M12 2v2"/><path d="M12 20v2"/><path d="m4.93 4.93 1.41 1.41"/><path d="m17.66 17.66 1.41 1.41"/><path d="M2 12h2"/><path d="M20 12h2"/><path d="m6.34 17.66-1.41 1.41"/><path d="m19.07 4.93-1.41 1.41"/></svg>
                 </div>
                 <h4 className="text-xl font-bold text-white leading-tight">Mayor capacidad <br/>de innovación</h4>
              </div>
@@ -304,7 +304,7 @@ export default function Home() {
         
         <div className="container mx-auto px-4 text-center mb-16 relative z-10">
           <h2 className="text-3xl md:text-5xl font-bold text-white mb-6 tracking-tight">
-            Empresas que ya utilizan <span className="text-transparent bg-clip-text bg-gradient-to-r from-fuchsia-400 to-pink-400">Tech Insurance</span>
+            Empresas que ya utilizan <span className="text-transparent bg-clip-text bg-gradient-to-r from-fuchsia-500 to-pink-400">Tech Insurance</span>
           </h2>
           <p className="text-xl text-zinc-400 font-light max-w-3xl mx-auto">
             Una plataforma pensada para compañías, partners y ecosistemas que necesitan escalar con velocidad y flexibilidad extrema.
@@ -334,7 +334,7 @@ export default function Home() {
                  </div>
                  {/* 4. VIDA SECURITY */}
                  <div className="flex-shrink-0 flex gap-2 items-center justify-center opacity-40 hover:opacity-100 hover:text-fuchsia-400 transition-all duration-300 transform hover:scale-105 filter grayscale hover:grayscale-0">
-                    <svg viewBox="0 0 30 30" className="w-8 h-8 stroke-current text-white" fill="none" strokeWidth="2"><circle cx="15" cy="15" r="10"/><path d="M12 18l4-6H10l4-6"/></svg>
+                    <svg viewBox="0 0 30 30" className="w-8 h-8 stroke-current text-white" fill="none" strokeWidth="1.5"><circle cx="15" cy="15" r="10"/><path d="M12 18l4-6H10l4-6"/></svg>
                     <svg viewBox="0 0 220 40" className="w-[190px] h-auto fill-current text-white"><text x="0" y="30" fontFamily="Arial, sans-serif" fontWeight="700" fontSize="22">VIDA SECURITY</text></svg>
                  </div>
                  {/* 5. MOTOROLA */}
@@ -343,7 +343,7 @@ export default function Home() {
                  </div>
                  {/* 6. VOLKSWAGEN */}
                  <div className="flex-shrink-0 flex gap-3 items-center justify-center opacity-40 hover:opacity-100 hover:text-fuchsia-400 transition-all duration-300 transform hover:scale-105 filter grayscale hover:grayscale-0">
-                    <svg viewBox="0 0 30 30" className="w-10 h-10 stroke-current text-white" fill="none" strokeWidth="1.5"><circle cx="15" cy="15" r="12"/><polyline points="5 9 10 20 15 11 20 20 25 9"/><polyline points="10 5 15 15 20 5"/></svg>
+                    <svg viewBox="0 0 30 30" className="w-12 h-12 stroke-current text-white" fill="none" strokeWidth="1.5"><circle cx="15" cy="15" r="12"/><polyline points="5 9 10 20 15 11 20 20 25 9"/><polyline points="10 5 15 15 20 5"/></svg>
                     <svg viewBox="0 0 220 40" className="w-[180px] h-auto fill-current text-white"><text x="0" y="30" fontFamily="Arial, sans-serif" fontWeight="600" fontSize="22">Volkswagen</text></svg>
                  </div>
                  {/* 7. BANCO GALICIA */}
@@ -366,7 +366,7 @@ export default function Home() {
       <section id="cta" className="py-32 relative overflow-hidden bg-fuchsia-950/10 text-center border-t border-fuchsia-900/20">
         <div className="absolute inset-0 z-0 bg-[radial-gradient(circle_at_bottom,rgba(217,70,239,0.1),transparent)] pointer-events-none" />
         <div className="container mx-auto px-4 z-10 relative max-w-3xl space-y-10">
-          <h2 className="text-4xl md:text-5xl lg:text-6xl font-extrabold tracking-tight text-white leading-tight">Libere el potencial <br/><span className="text-transparent bg-clip-text bg-gradient-to-r from-fuchsia-400 to-pink-400">de su negocio</span></h2>
+          <h2 className="text-4xl md:text-5xl lg:text-6xl font-extrabold tracking-tight text-white leading-tight">Libere el potencial <br/><span className="text-transparent bg-clip-text bg-gradient-to-r from-fuchsia-500 to-pink-400">de su negocio</span></h2>
           <p className="text-xl text-zinc-400 font-light max-w-2xl mx-auto">Escale canales, optimice operaciones y evite migraciones de core traumáticas. Agende una reunión para evaluar nuestra plataforma en su ecosistema.</p>
           <button className="h-14 px-10 rounded-xl bg-fuchsia-600 text-white font-bold text-lg hover:bg-fuchsia-500 transition-colors shadow-[0_0_30px_rgba(192,38,211,0.3)] hover:shadow-[0_0_40px_rgba(192,38,211,0.5)]">
             Agendar Discovery Call

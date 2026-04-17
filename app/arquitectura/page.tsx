@@ -14,12 +14,12 @@ export default function ArquitecturaPage() {
         
         <div className="container mx-auto max-w-5xl relative z-10 text-center flex flex-col items-center">
           <div className="relative w-28 h-28 mx-auto mb-10 text-fuchsia-500 animate-breath opacity-90 drop-shadow-[0_0_20px_rgba(217,70,239,0.2)]">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1" className="w-full h-full"><path d="M3 21h18"/><path d="M9 8h1"/><path d="M9 12h1"/><path d="M9 16h1"/><path d="M14 8h1"/><path d="M14 12h1"/><path d="M14 16h1"/><path d="M5 21V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2v16"/></svg>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" className="w-full h-full"><path d="M3 21h18"/><path d="M9 8h1"/><path d="M9 12h1"/><path d="M9 16h1"/><path d="M14 8h1"/><path d="M14 12h1"/><path d="M14 16h1"/><path d="M5 21V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2v16"/></svg>
           </div>
 
           <span className="text-fuchsia-500 font-semibold tracking-wider text-sm uppercase mb-4 block">Flexibilidad y Robustez</span>
           <h1 className="text-4xl md:text-5xl lg:text-7xl font-extrabold tracking-tight text-white mb-6">
-            Arquitectura diseñada para <br className="hidden md:block"/> <span className="text-transparent bg-clip-text bg-gradient-to-r from-fuchsia-400 to-pink-400">evolucionar sin fricción</span>
+            Arquitectura diseñada para <br className="hidden md:block"/> <span className="text-transparent bg-clip-text bg-gradient-to-r from-fuchsia-500 to-pink-400">evolucionar sin fricción</span>
           </h1>
           
           <div className="border border-fuchsia-500/20 rounded-3xl p-10 lg:p-14 bg-black/50 backdrop-blur-md shadow-2xl mt-8">
@@ -56,7 +56,7 @@ export default function ArquitecturaPage() {
       <section id="vision" className="py-24 px-4 bg-[#050106] border-b border-white/5 pt-28 -mt-20 scroll-mt-32">
         <div className="container mx-auto max-w-6xl text-center">
           <h2 className="text-3xl md:text-5xl font-bold text-white mb-8 tracking-tight">
-            Nuestra Visión: <span className="text-transparent bg-clip-text bg-gradient-to-r from-fuchsia-400 to-pink-400">API-First Modular</span>
+            Nuestra Visión: <span className="text-transparent bg-clip-text bg-gradient-to-r from-fuchsia-500 to-pink-400">API-First Modular</span>
           </h2>
           <div className="max-w-4xl mx-auto p-12 bg-[#0f0e11] border border-white/5 rounded-3xl relative overflow-hidden shadow-2xl hover:border-fuchsia-900/50 transition-colors">
             <div className="absolute top-0 right-0 w-64 h-64 bg-fuchsia-600/5 rounded-full blur-[80px]" />
@@ -72,7 +72,7 @@ export default function ArquitecturaPage() {
         <div className="container mx-auto max-w-7xl">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold text-white mb-6">
-              Principios de <span className="text-transparent bg-clip-text bg-gradient-to-r from-fuchsia-400 to-pink-400">Diseño</span>
+              Principios de <span className="text-transparent bg-clip-text bg-gradient-to-r from-fuchsia-500 to-pink-400">Diseño</span>
             </h2>
             <p className="text-xl text-zinc-400 font-light max-w-3xl mx-auto">Reglas fundamentales que garantizan un sistema robusto, rápido y perpetuo.</p>
           </div>
@@ -101,7 +101,7 @@ export default function ArquitecturaPage() {
       <section id="capas" className="py-24 px-4 bg-[#0d040e] border-b border-white/5 scroll-mt-32">
         <div className="container mx-auto max-w-5xl">
           <h2 className="text-3xl md:text-4xl font-bold text-white mb-16 text-center">
-            Pila Tecnológica por <span className="text-transparent bg-clip-text bg-gradient-to-r from-fuchsia-400 to-pink-400">Capas</span>
+            Pila Tecnológica por <span className="text-transparent bg-clip-text bg-gradient-to-r from-fuchsia-500 to-pink-400">Capas</span>
           </h2>
           
           <div className="flex flex-col gap-6 relative">
@@ -142,7 +142,7 @@ export default function ArquitecturaPage() {
       <section id="integracion" className="py-24 px-4 bg-[#050106] border-b border-white/5 scroll-mt-32">
         <div className="container mx-auto max-w-6xl">
           <h2 className="text-3xl md:text-4xl font-bold text-white mb-16 text-center">
-            Matriz de <span className="text-transparent bg-clip-text bg-gradient-to-r from-fuchsia-400 to-pink-400">Integración</span>
+            Matriz de <span className="text-transparent bg-clip-text bg-gradient-to-r from-fuchsia-500 to-pink-400">Integración</span>
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
             {[
@@ -167,21 +167,21 @@ export default function ArquitecturaPage() {
       <section id="escalabilidad" className="py-24 px-4 bg-[#020104] border-b border-white/5 scroll-mt-32">
         <div className="container mx-auto max-w-6xl">
           <h2 className="text-3xl md:text-4xl font-bold text-white mb-16 text-center">
-            Poder de <span className="text-transparent bg-clip-text bg-gradient-to-r from-fuchsia-400 to-pink-400">Escalabilidad</span>
+            Poder de <span className="text-transparent bg-clip-text bg-gradient-to-r from-fuchsia-500 to-pink-400">Escalabilidad</span>
           </h2>
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
             <div className="p-10 border border-white/5 bg-[#0f0e11] rounded-[2rem] hover:border-fuchsia-800 transition-colors">
-              <div className="text-fuchsia-500 mb-6"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" className="w-14 h-14"><polyline points="23 6 13.5 15.5 8.5 10.5 1 18"/><polyline points="17 6 23 6 23 12"/></svg></div>
+              <div className="text-fuchsia-500 mb-6"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" className="w-12 h-12"><polyline points="23 6 13.5 15.5 8.5 10.5 1 18"/><polyline points="17 6 23 6 23 12"/></svg></div>
               <h3 className="text-2xl font-bold text-white mb-4">Crecimiento sin Fricción</h3>
               <p className="text-zinc-400 font-light leading-relaxed">Multiplicar por mil sus ventas no ralentizará sus cuotas; nuestra micro-arquitectura auto-abastece rendimiento de procesamiento.</p>
             </div>
             <div className="p-10 border border-white/5 bg-[#0f0e11] rounded-[2rem] hover:border-fuchsia-800 transition-colors">
-              <div className="text-fuchsia-500 mb-6"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" className="w-14 h-14"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg></div>
+              <div className="text-fuchsia-500 mb-6"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" className="w-12 h-12"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg></div>
               <h3 className="text-2xl font-bold text-white mb-4">Despliegue a Nuevos Canales</h3>
               <p className="text-zinc-400 font-light leading-relaxed">Ya no es necesario programar apps para cada broker, integre su endpoint en ecosistemas bancarios, retail o marketplaces el mismo día.</p>
             </div>
             <div className="p-10 border border-white/5 bg-[#0f0e11] rounded-[2rem] hover:border-fuchsia-800 transition-colors">
-              <div className="text-fuchsia-500 mb-6"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" className="w-14 h-14"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"/><line x1="3" y1="9" x2="21" y2="9"/><line x1="9" y1="21" x2="9" y2="9"/></svg></div>
+              <div className="text-fuchsia-500 mb-6"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" className="w-12 h-12"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"/><line x1="3" y1="9" x2="21" y2="9"/><line x1="9" y1="21" x2="9" y2="9"/></svg></div>
               <h3 className="text-2xl font-bold text-white mb-4">Inventiva de Nuevos Productos</h3>
               <p className="text-zinc-400 font-light leading-relaxed">No importa que su core no sepa qué es un "microseguro de mascotas"; la plataforma lo orquesta y le traduce los datos al legacy para cobro.</p>
             </div>
@@ -194,32 +194,32 @@ export default function ArquitecturaPage() {
         <div className="container mx-auto max-w-6xl text-center">
           <span className="text-fuchsia-500 font-semibold tracking-wider text-sm uppercase mb-3 block">Estándar Financiero</span>
           <h2 className="text-3xl md:text-5xl font-bold text-white mb-16 tracking-tight">
-            Seguridad y <span className="text-transparent bg-clip-text bg-gradient-to-r from-fuchsia-400 to-pink-400">Compliance Nativo</span>
+            Seguridad y <span className="text-transparent bg-clip-text bg-gradient-to-r from-fuchsia-500 to-pink-400">Compliance Nativo</span>
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-8 max-w-4xl mx-auto">
             <div className="flex gap-6 items-start text-left p-8 bg-[#0f0e11] border border-white/5 rounded-3xl hover:border-fuchsia-800 transition-colors">
-               <div className="text-fuchsia-600 shrink-0"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" className="w-10 h-10"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg></div>
+               <div className="text-fuchsia-600 shrink-0"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" className="w-12 h-12"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg></div>
                <div>
                  <h4 className="text-xl font-bold text-white mb-2">Control de Accesos (RBAC)</h4>
                  <p className="text-zinc-500 font-light">Autenticaciones multifactor y permisos híper-granulados por área y responsabilidades comerciales, restringiendo qué campos toca cada analista.</p>
                </div>
             </div>
             <div className="flex gap-6 items-start text-left p-8 bg-[#0f0e11] border border-white/5 rounded-3xl hover:border-fuchsia-800 transition-colors">
-               <div className="text-fuchsia-600 shrink-0"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" className="w-10 h-10"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg></div>
+               <div className="text-fuchsia-600 shrink-0"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" className="w-12 h-12"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg></div>
                <div>
                  <h4 className="text-xl font-bold text-white mb-2">Auditoría Inviolable</h4>
                  <p className="text-zinc-500 font-light">Un log cronológico criptográfico de cada parametrización configurada. Sepa cuándo y quién varió una regla de siniestro y deshaga los cambios inmediatamente.</p>
                </div>
             </div>
             <div className="flex gap-6 items-start text-left p-8 bg-[#0f0e11] border border-white/5 rounded-3xl hover:border-fuchsia-800 transition-colors">
-               <div className="text-fuchsia-600 shrink-0"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" className="w-10 h-10"><path d="M22 17H2a3 3 0 0 0 3-3V9a7 7 0 0 1 14 0v5a3 3 0 0 0 3 3zm-8.27 4a2 2 0 0 1-3.46 0"/></svg></div>
+               <div className="text-fuchsia-600 shrink-0"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" className="w-12 h-12"><path d="M22 17H2a3 3 0 0 0 3-3V9a7 7 0 0 1 14 0v5a3 3 0 0 0 3 3zm-8.27 4a2 2 0 0 1-3.46 0"/></svg></div>
                <div>
                  <h4 className="text-xl font-bold text-white mb-2">Trazabilidad Total de Logs</h4>
                  <p className="text-zinc-500 font-light">Todas las peticiones asíncronas se monitorizan vía observabilidad en tiempo real identificando demoras o rebotes hacia el core tradicional.</p>
                </div>
             </div>
             <div className="flex gap-6 items-start text-left p-8 bg-[#0f0e11] border border-white/5 rounded-3xl hover:border-fuchsia-800 transition-colors">
-               <div className="text-fuchsia-600 shrink-0"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" className="w-10 h-10"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path><polyline points="3.27 6.96 12 12.01 20.73 6.96"></polyline><line x1="12" y1="22.08" x2="12" y2="12"></line></svg></div>
+               <div className="text-fuchsia-600 shrink-0"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" className="w-12 h-12"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path><polyline points="3.27 6.96 12 12.01 20.73 6.96"></polyline><line x1="12" y1="22.08" x2="12" y2="12"></line></svg></div>
                <div>
                  <h4 className="text-xl font-bold text-white mb-2">Gestión de Ambientes</h4>
                  <p className="text-zinc-500 font-light">Aísla los flujos de testeo (Sandboxes lógicos) que los partners exploran y los compila transparentemente en Producción una vez visados.</p>
