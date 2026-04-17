@@ -14,12 +14,14 @@ export default function EcosistemaPage() {
         
         <div className="container mx-auto max-w-5xl relative z-10 text-center flex flex-col items-center">
           <div className="relative w-28 h-28 mx-auto mb-10 text-fuchsia-500 animate-breath opacity-90 drop-shadow-[0_0_20px_rgba(217,70,239,0.2)]">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" className="w-full h-full"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" className="w-full h-full">
+              <circle cx="18" cy="5" r="3"/><circle cx="6" cy="5" r="3"/><circle cx="12" cy="12" r="3"/><circle cx="12" cy="19" r="3"/><path d="M18 5L12 12"/><path d="M6 5L12 12"/><path d="M12 12L12 19"/>
+            </svg>
           </div>
 
           <span className="text-fuchsia-500 font-semibold tracking-wider text-sm uppercase mb-4 block">Abstracción Conectiva</span>
           <h1 className="text-4xl md:text-5xl lg:text-7xl font-extrabold tracking-tight text-white mb-6">
-            Diseñado para <br className="hidden md:block"/> <span className="text-transparent bg-clip-text bg-gradient-to-r from-fuchsia-500 to-pink-400">integrarse sin límites</span>
+            Ecosistema diseñado para <br className="hidden md:block"/> <span className="text-transparent bg-clip-text bg-gradient-to-r from-fuchsia-500 to-pink-400">integrarse sin límites</span>
           </h1>
           
           <div className="border border-fuchsia-500/20 rounded-3xl p-10 lg:p-14 bg-black/50 backdrop-blur-md shadow-2xl mt-8">
@@ -83,7 +85,7 @@ export default function EcosistemaPage() {
               { title: 'CRM Omnicanal', desc: 'Sincronice Salesforce, Hubspot o D365 para que eventos paramétricos viajen y levanten tickets en la bandeja de su equipo de ventas.', icon: '<path d="M16 21v-2a4 4 0 0 0-4-4H5c-1.1 0-2 .9-2 2v2"/><circle cx="8.5" cy="7" r="4"/><line x1="20" y1="8" x2="20" y2="14"/><line x1="23" y1="11" x2="17" y2="11"/>' },
               { title: 'ERP Contable', desc: 'Oracle, SAP. Los comprobantes por emisión y siniestro cruzan en tiempo real, garantizando la integridad fiscal corporativa.', icon: '<rect width="18" height="18" x="3" y="3" rx="2" ry="2"/><line x1="3" y1="9" x2="21" y2="9"/><line x1="9" y1="21" x2="9" y2="9"/>' },
               { title: 'Plataformas Digitales', desc: 'Conectividad a portales web institucionales, e-commerce ajenos y apps móviles B2C a través de gateways seguros.', icon: '<rect width="14" height="20" x="5" y="2" rx="2" ry="2"/><line x1="12" y1="18" x2="12.01" y2="18"/>' },
-              { title: 'Oráculos Externos', desc: 'Clima, Bureaus de Crédito, Tráfico aéreo, IoT o RUNT integrados para habilitar flujos puramente paramétricos.', icon: '<path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/>' }
+              { title: 'Servicios y agentes', desc: 'Tech Insurance trabaja con tecnologías en tiempo real para brindar soluciones innovadoras.', icon: '<path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/>' }
             ].map((item, idx) => (
               <div key={idx} className={`group p-8 border border-white/5 bg-[#0f0e11] rounded-[2rem] hover:bg-[#16141a] hover:border-fuchsia-900/50 transition-all duration-300 flex flex-col ${idx === 4 ? 'lg:col-start-2' : ''}`}>
                  <div className="mb-6 text-zinc-600 group-hover:text-fuchsia-500 transition-colors duration-300">
@@ -121,7 +123,7 @@ export default function EcosistemaPage() {
             </div>
             <div>
               <h2 className="text-3xl md:text-5xl font-bold text-white mb-6 tracking-tight">
-                Urbanizando <span className="text-transparent bg-clip-text bg-gradient-to-r from-fuchsia-500 to-pink-400">Core Systems</span>
+                Urbanizando <span className="text-transparent bg-clip-text bg-gradient-to-r from-fuchsia-500 to-pink-400">los sistemas core</span>
               </h2>
               <p className="text-zinc-400 font-light text-xl leading-relaxed mb-8">
                 Incluso las plataformas troncales más herméticas y obsoletas son asimiladas. Tech Insurance no interfiere con los cálculos financieros profundos; simplemente los recubre, transformando cualquier respuesta legacy estática en un hub transaccional en tiempo real, urbanizándolos sin riesgo de reemplazo crudo.
@@ -162,10 +164,11 @@ export default function EcosistemaPage() {
       {/* SOLUCIONES KOPERNICUS (NODO CLAVE) */}
       <section id="kopernicus" className="py-32 px-4 bg-[#0d040e] border-b border-fuchsia-900/50 scroll-mt-32 relative overflow-hidden">
         {/* Subtle X background Watermark */}
-        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-white/[0.015] font-black text-[300px] md:text-[600px] leading-none pointer-events-none z-0 tracking-tighter">X</div>
+        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-white/[0.04] font-black text-[300px] md:text-[600px] leading-none pointer-events-none z-0 tracking-tighter mix-blend-screen">X</div>
         
         <div className="container mx-auto max-w-6xl relative z-10">
-          <div className="text-center mb-16">
+          <div className="text-center mb-16 flex flex-col items-center">
+            <Image src="/kopernicus-logo.png" alt="Kopernicus Logo" width={220} height={40} className="object-contain mb-10 opacity-90 drop-shadow-[0_0_15px_rgba(255,255,255,0.1)]" />
             <h2 className="text-3xl md:text-5xl font-bold text-white mb-4">
               Aceleradores <span className="text-transparent bg-clip-text bg-gradient-to-r from-fuchsia-500 to-pink-400">Kopernicus</span>
             </h2>
