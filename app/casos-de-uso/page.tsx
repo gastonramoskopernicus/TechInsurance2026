@@ -21,7 +21,7 @@ export default function CasosDeUsoPage() {
             Casos de <span className="text-transparent bg-clip-text bg-gradient-to-r from-fuchsia-500 to-pink-400">Uso</span>
           </h1>
           <p className="text-xl text-zinc-400 font-light max-w-2xl mx-auto leading-relaxed">
-            Ejecución inmediata. Transforme cualquier intención comercial, desde canales de bancos locales hasta alianzas globales de retail, en un producto de mercado.
+            Logre de manera inmediata y con una velocidad nunca vista nuevas soluciones, nuevos productos y nuevas oportunidades de negocio, con todo el potencial que la arquitectura y la funcionalidad de Tech Insurance puede lograr.
           </p>
         </div>
       </section>
@@ -32,44 +32,39 @@ export default function CasosDeUsoPage() {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-8">
             {[
               {
-                title: 'Lanzamiento de Productos',
-                desc: 'Lance nuevas coberturas en cuestión de días, anulando la dependencia burocrática del core IT.',
+                title: 'Lanzamiento de productos',
+                desc: 'Modele, testee, desarrolle y lance productos de forma ágil y controlada.',
                 icon: '<path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/>'
               },
               {
                 title: 'Embedded Insurance',
-                desc: 'Incruste garantías dinámicas silenciosamente en el punto de venta digital de sus socios e-commerce.',
+                desc: 'Obtenga una plataforma que permite embeber seguros en cualquier experiencia digital.',
                 icon: '<rect x="3" y="3" width="18" height="18" rx="2" ry="2"/><line x1="3" y1="9" x2="21" y2="9"/><line x1="9" y1="21" x2="9" y2="9"/>'
               },
               {
-                title: 'Nuevos Canales Digitales',
-                desc: 'Abra redes de distribución globales (Fintechs, Hubs, Plataformas) desplegando APIs públicas al instante.',
+                title: 'Nuevos canales digitales',
+                desc: 'La herramienta permite desarrollar diferentes tipos de conexiones y funcionalidades para abrir nuevos canales de distribución.',
                 icon: '<circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/>'
               },
               {
-                title: 'Modelo B2B / B2B2C',
-                desc: 'Empodere a sus corredores y agencias comerciales con oficinas transaccionales propias en marca blanca.',
+                title: 'Modelo B2B',
+                desc: 'Modelo orientado a productores, corredores, PAS y brokers, facilitando la comercialización tradicional de seguros.',
                 icon: '<rect width="16" height="20" x="4" y="2" rx="2" ry="2"/><path d="M9 22v-4h6v4"/><path d="M8 6h.01"/><path d="M16 6h.01"/><path d="M12 6h.01"/><path d="M12 10h.01"/><path d="M12 14h.01"/><path d="M16 10h.01"/><path d="M16 14h.01"/><path d="M8 10h.01"/><path d="M8 14h.01"/>'
               },
               {
-                title: 'Testeo de Modelos',
-                desc: 'Despliegue un segmento A/B experimental en calle sin contaminar bases o lógicas del AS400.',
+                title: 'Modelo B2B2C',
+                desc: 'Permite brindar a intermediarios y socios herramientas para que desarrollen la venta de seguros con terceros.',
+                icon: '<circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><line x1="8.59" y1="13.51" x2="15.42" y2="17.49"/><line x1="15.41" y1="6.51" x2="8.59" y2="10.49"/>'
+              },
+              {
+                title: 'Testeo de modelos',
+                desc: 'La herramienta permite testear modelos de suscripción y pricing de forma controlada.',
                 icon: '<path d="M10 2v7.31"/><path d="M14 9.3V1.99"/><path d="M8.5 2h7"/><path d="M14 9.3a6.5 6.5 0 1 1-4 0"/><circle cx="12" cy="16" r="1.5"/>'
               },
               {
-                title: 'Experiencias 100% Cloud',
-                desc: 'Transforme interacciones burocráticas pesadas en cotizaciones y firmas electrónicas móviles inmediatas.',
-                icon: '<rect width="14" height="20" x="5" y="2" rx="2" ry="2"/><line x1="12" y1="18" x2="12.01" y2="18"/>'
-              },
-              {
-                title: 'Replicación Molecular',
-                desc: 'Clone pólizas exitosas y altere exclusivamente sus variables tácticas (Pricing) con 2 clicks.',
-                icon: '<path d="M21 2l-2 2m-7.61 7.61a5.5 5.5 0 1 1-7.778 7.778 5.5 5.5 0 0 1 7.777-7.777zm0 0L15.5 7.5m0 0l3 3L22 7l-3-3m-3.5 3.5L19 4"/>'
-              },
-              {
-                title: 'Operación Híbrida',
-                desc: 'Cierre la venta instantánea en la app front-end y sincronice la cobranza maestra de manera diferida al ERP.',
-                icon: '<circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"/>'
+                title: 'Modelo B2C',
+                desc: 'Permite desarrollar productos simples, de bajo primaje, sin necesidad de asesoramiento, para su comercialización directa.',
+                icon: '<path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/>'
               }
             ].map((item, idx) => (
               <div key={idx} className="group p-8 md:p-10 border border-white/5 bg-[#0f0e11] rounded-3xl hover:bg-[#16141a] hover:border-fuchsia-800 hover:-translate-y-2 transition-all duration-300 shadow-[0_10px_30px_rgba(0,0,0,0.5)] hover:shadow-[0_15px_40px_rgba(217,70,239,0.08)] flex flex-col h-full">
