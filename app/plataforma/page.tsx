@@ -111,9 +111,9 @@ export default function PlataformaPage() {
             </div>
 
             {/* Imagen Conceptual */}
-            <div className="relative w-full min-h-[400px] h-full rounded-2xl overflow-hidden border border-fuchsia-900/20 shadow-[0_0_50px_rgba(217,70,239,0.05)] bg-[#0f0e11] group">
-               <div className="absolute inset-0 bg-gradient-to-tr from-[#200e23]/60 via-transparent to-transparent z-10 mix-blend-overlay opacity-60 group-hover:opacity-100 transition-opacity duration-700" />
-               <Image src="/tech-urbanization-core.png" alt="Concepto de Evolución del Core Tecnológico" fill className="object-cover transition-transform duration-1000 group-hover:scale-105 opacity-90 group-hover:opacity-100" />
+            <div className="relative w-full min-h-[400px] h-full rounded-2xl overflow-hidden border border-fuchsia-900/20 shadow-[0_0_50px_rgba(217,70,239,0.05)] bg-[#0A0A0A] group flex items-center justify-center p-6">
+               <div className="absolute inset-0 bg-gradient-to-tr from-[#200e23]/30 via-transparent to-transparent z-10 mix-blend-overlay opacity-60 group-hover:opacity-100 transition-opacity duration-700 pointer-events-none" />
+               <Image src="/urbanization-diagram.svg" alt="Concepto de Evolución del Core Tecnológico" fill className="object-contain transition-transform duration-1000 group-hover:scale-105 opacity-90 group-hover:opacity-100 p-8" />
             </div>
           </div>
         </div>

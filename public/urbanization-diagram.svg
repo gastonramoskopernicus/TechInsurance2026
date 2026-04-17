@@ -1,0 +1,94 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 800">
+  <defs>
+    <linearGradient id="magenta-glow" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f472b6" stop-opacity="1 "/>
+      <stop offset="100%" stop-color="#c026d3" stop-opacity="1" />
+    </linearGradient>
+    <linearGradient id="zinc-fade" x1="0%" y1="100%" x2="0%" y2="0%">
+      <stop offset="0%" stop-color="#27272a" stop-opacity="0.8" />
+      <stop offset="100%" stop-color="#3f3f46" stop-opacity="0.2" />
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="6" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- Background (Optional if transparent, but defining a space) -->
+  <rect width="800" height="800" fill="#050106"/>
+
+  <g transform="translate(400, 550) scale(1)">
+    <!-- CORE LEGACY BASE -->
+    <path d="M 0,100 L 250,5 " fill="url(#zinc-fade)" stroke="#3f3f46" stroke-width="1.5" />
+    <path d="M 0,100 L -250,5 " fill="url(#zinc-fade)" stroke="#3f3f46" stroke-width="1.5" />
+    <path d="M 0,30 L 250,-65 " fill="url(#zinc-fade)" stroke="#52525b" stroke-width="1.5" />
+    <path d="M 0,30 L -250,-65 " fill="url(#zinc-fade)" stroke="#52525b" stroke-width="1.5" />
+    <path d="M -250,-65 L 0,-160 L 250,-65" fill="#18181b" stroke="#52525b" stroke-width="1.5" />
+    
+    <!-- GRID ON CORE -->
+    <path d="M -150,-103 L 100,-7" stroke="#3f3f46" stroke-width="1" fill="none" opacity="0.5"/>
+    <path d="M -50,-141 L 200,-45" stroke="#3f3f46" stroke-width="1" fill="none" opacity="0.5"/>
+    <path d="M 150,-103 L -100,-7" stroke="#3f3f46" stroke-width="1" fill="none" opacity="0.5"/>
+    <path d="M 50,-141 L -200,-45" stroke="#3f3f46" stroke-width="1" fill="none" opacity="0.5"/>
+
+    <!-- INTERNAL CORE MODULES -->
+    <path d="M -100,-50 L 0,-10 L 100,-50 L 0,-90 Z" fill="#27272a" stroke="#71717a" stroke-width="1"/>
+    
+    <!-- CONNECTING LINES (Core to Middleware) -->
+    <path d="M -80,-65 L -80,-150" stroke="#f472b6" stroke-width="1" stroke-dasharray="4,4" opacity="0.6"/>
+    <path d="M 0,-30 L 0,-200" stroke="#c026d3" stroke-width="1.5" stroke-dasharray="4,4" opacity="0.8"/>
+    <path d="M 80,-65 L 80,-150" stroke="#f472b6" stroke-width="1" stroke-dasharray="4,4" opacity="0.6"/>
+  </g>
+
+  <g transform="translate(400, 350) scale(1)">
+    <!-- MIDDLEWARE LAYER (Tech Insurance Platform) -->
+    <path d="M 0,60 L 280,-46" fill="rgba(192, 38, 211, 0.05)" stroke="url(#magenta-glow)" stroke-width="2" />
+    <path d="M 0,60 L -280,-46" fill="rgba(192, 38, 211, 0.05)" stroke="url(#magenta-glow)" stroke-width="2" />
+    <path d="M -280,-46 L 0,-152 L 280,-46" fill="rgba(192, 38, 211, 0.03)" stroke="url(#magenta-glow)" stroke-width="2" />
+    
+    <!-- GLOWING MODULES IN MIDDLEWARE -->
+    <path d="M -140,-46 L -70,-20 L 0,-46 L -70,-72 Z" fill="#c026d3" stroke="#f472b6" stroke-width="1.5" filter="url(#glow)" opacity="0.8"/>
+    <path d="M 140,-46 L 70,-20 L 0,-46 L 70,-72 Z" fill="#c026d3" stroke="#f472b6" stroke-width="1.5" filter="url(#glow)" opacity="0.8"/>
+    <path d="M 0,10 L 70,-16 L 0,-42 L -70,-16 Z" fill="#c026d3" stroke="#f472b6" stroke-width="1.5" filter="url(#glow)" opacity="0.8"/>
+    <path d="M 0,-102 L 70,-76 L 0,-50 L -70,-76 Z" fill="#c026d3" stroke="#f472b6" stroke-width="1.5" filter="url(#glow)" opacity="0.8"/>
+
+    <!-- CONNECTING VECTORS UPWARDS -->
+    <path d="M -105,-46 L -105,-180" stroke="#f472b6" stroke-width="2" opacity="0.9" filter="url(#glow)"/>
+    <path d="M 0,-16 L 0,-150" stroke="#c026d3" stroke-width="2" opacity="0.9" filter="url(#glow)"/>
+    <path d="M 105,-46 L 105,-180" stroke="#f472b6" stroke-width="2" opacity="0.9" filter="url(#glow)"/>
+  </g>
+
+  <g transform="translate(400, 150) scale(1)">
+    <!-- FRONTEND / OMNICHANNEL LAYER -->
+    <!-- Network of nodes -->
+    <!-- Center Hub -->
+    <circle cx="0" cy="-20" r="10" fill="#f472b6" filter="url(#glow)"/>
+    <circle cx="-105" cy="-50" r="8" fill="#c026d3" filter="url(#glow)"/>
+    <circle cx="105" cy="-50" r="8" fill="#c026d3" filter="url(#glow)"/>
+    
+    <circle cx="-180" cy="-100" r="6" fill="none" stroke="#f472b6" stroke-width="2" filter="url(#glow)"/>
+    <circle cx="-60" cy="-120" r="6" fill="none" stroke="#f472b6" stroke-width="2" filter="url(#glow)"/>
+    <circle cx="60" cy="-120" r="6" fill="none" stroke="#f472b6" stroke-width="2" filter="url(#glow)"/>
+    <circle cx="180" cy="-100" r="6" fill="none" stroke="#f472b6" stroke-width="2" filter="url(#glow)"/>
+
+    <!-- Constellation Lines -->
+    <path d="M -105,-50 L 0,-20 L 105,-50" stroke="#f472b6" stroke-width="1.5" opacity="0.7"/>
+    <path d="M -105,-50 L -180,-100" stroke="#c026d3" stroke-width="1" opacity="0.5"/>
+    <path d="M -105,-50 L -60,-120" stroke="#c026d3" stroke-width="1" opacity="0.5"/>
+    <path d="M 0,-20 L -60,-120" stroke="#c026d3" stroke-width="1" opacity="0.5"/>
+    <path d="M 0,-20 L 60,-120" stroke="#c026d3" stroke-width="1" opacity="0.5"/>
+    <path d="M 105,-50 L 60,-120" stroke="#c026d3" stroke-width="1" opacity="0.5"/>
+    <path d="M 105,-50 L 180,-100" stroke="#c026d3" stroke-width="1" opacity="0.5"/>
+    <path d="M -60,-120 L 60,-120" stroke="#c026d3" stroke-width="0.5" stroke-dasharray="2,2" opacity="0.3"/>
+    
+    <!-- Geometric framing to show structure bounds -->
+    <path d="M -250,5 L 0,100 L 250,5 L 0,-90 Z" fill="none" stroke="#f472b6" stroke-width="0.5" opacity="0.2"/>
+  </g>
+
+  <!-- Orbits / Halos -->
+  <circle cx="400" cy="130" r="300" fill="none" stroke="url(#magenta-glow)" stroke-width="1" stroke-dasharray="8,8" opacity="0.1"/>
+  <circle cx="400" cy="130" r="250" fill="none" stroke="url(#zinc-fade)" stroke-width="1" opacity="0.3"/>
+</svg>
