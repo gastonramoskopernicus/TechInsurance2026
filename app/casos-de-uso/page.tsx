@@ -207,31 +207,33 @@ export default function CasosDeUsoPage() {
             </p>
             <div className="p-12 lg:p-16 border border-white/5 bg-[#08040a] rounded-[2.5rem] relative shadow-2xl">
               <p className="text-center text-zinc-400 font-light text-lg mb-20 max-w-3xl mx-auto">
-                Tech Insurance permite articular modelos B2B2C, conectando aseguradoras, partners y clientes finales en un mismo flujo, habilitando la comercialización de productos de seguros a través de terceros.
+                Una compañía aseguradora utiliza Tech Insurance para desarrollar y estructurar productos que luego son distribuidos a través de una red de partners, quienes los comercializan directamente al cliente final dentro de sus propias experiencias.
               </p>
               
               <div className="flex flex-col lg:flex-row items-center justify-between gap-10 lg:gap-6 relative">
                  <div className="hidden lg:block absolute top-1/2 left-12 right-12 h-1 bg-gradient-to-r from-zinc-800 via-fuchsia-900/50 to-fuchsia-500/50 -translate-y-1/2 z-0" />
                  
                  <div className="relative z-10 flex flex-col items-center flex-1 h-full justify-start">
-                   <div className="w-28 h-28 lg:w-32 lg:h-32 rounded-3xl bg-zinc-900 border border-zinc-700 flex items-center justify-center text-fuchsia-500 mb-8 shadow-xl shrink-0">
-                      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" className="w-12 h-12 lg:w-14 lg:h-14"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+                   <div className="w-28 h-28 lg:w-32 lg:h-32 rounded-[2rem] bg-[#1b081e] border-2 border-fuchsia-800 flex items-center justify-center mb-8 shadow-[0_0_40px_rgba(217,70,239,0.3)] shrink-0 animate-breath relative text-fuchsia-500">
+                      <Image src="/TechInsurance.svg" alt="Tech Insurance Isotipo" width={56} height={56} className="object-contain" />
                    </div>
                    <div className="text-center px-2 flex-1 flex flex-col justify-start w-full">
-                     <p className="text-white font-bold text-xl mb-3">Equipo de negocio</p>
-                     <p className="text-zinc-500 text-sm leading-relaxed">Define el modelo comercial, los actores involucrados y la lógica del producto dentro del esquema B2B2C.</p>
+                     <p className="text-white font-bold text-xl mb-3">Tech Insurance</p>
+                     <p className="text-zinc-500 text-sm leading-relaxed">La aseguradora utiliza Tech Insurance para desarrollar productos, definir coberturas, pricing, comisiones y modelar la experiencia completa end-to-end.</p>
                    </div>
                  </div>
 
                  <div className="text-zinc-700 hidden lg:block relative z-10 -mt-32"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" className="w-8 h-8"><polyline points="9 18 15 12 9 6"/></svg></div>
                  
                  <div className="relative z-10 flex flex-col items-center flex-1 h-full justify-start">
-                   <div className="w-28 h-28 lg:w-32 lg:h-32 rounded-[2rem] bg-[#1b081e] border-2 border-fuchsia-800 flex items-center justify-center mb-8 shadow-[0_0_40px_rgba(217,70,239,0.3)] shrink-0 animate-breath relative">
-                      <Image src="/TechInsurance.svg" alt="Tech Insurance Isotipo" width={56} height={56} className="object-contain" />
+                   <div className="w-28 h-28 lg:w-32 lg:h-32 rounded-3xl bg-zinc-900 border border-zinc-700 flex items-center justify-center text-fuchsia-500 mb-8 shadow-xl shrink-0">
+                      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" className="w-12 h-12 lg:w-14 lg:h-14">
+                        <circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><line x1="8.59" y1="13.51" x2="15.42" y2="17.49"/><line x1="15.41" y1="6.51" x2="8.59" y2="10.49"/>
+                      </svg>
                    </div>
                    <div className="text-center px-2 flex-1 flex flex-col justify-start w-full">
-                     <p className="text-fuchsia-300 font-bold text-xl mb-3">Product Studio</p>
-                     <p className="text-zinc-400 text-sm leading-relaxed">Permite configurar el producto, sus reglas y comportamiento para operar dentro de un esquema multi-actor.</p>
+                     <p className="text-fuchsia-300 font-bold text-xl mb-3">Partners</p>
+                     <p className="text-zinc-400 text-sm leading-relaxed">La solución es provista a terceros que embeben o comercializan los productos. Estos pueden acceder a funcionalidades acotadas y realizar ajustes de UX/UI según su canal.</p>
                    </div>
                  </div>
 
@@ -239,11 +241,13 @@ export default function CasosDeUsoPage() {
                  
                  <div className="relative z-10 flex flex-col items-center flex-1 h-full justify-start">
                    <div className="w-28 h-28 lg:w-32 lg:h-32 rounded-3xl bg-zinc-900 border border-zinc-700 flex items-center justify-center text-fuchsia-500 mb-8 shadow-xl shrink-0">
-                      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" className="w-12 h-12 lg:w-14 lg:h-14"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+                      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" className="w-12 h-12 lg:w-14 lg:h-14">
+                        <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/>
+                      </svg>
                    </div>
                    <div className="text-center px-2 flex-1 flex flex-col justify-start w-full">
-                     <p className="text-white font-bold text-xl mb-3">Publicación</p>
-                     <p className="text-zinc-500 text-sm leading-relaxed">Se define la experiencia y los canales en los cuales el producto será distribuido, integrándose con terceros.</p>
+                     <p className="text-white font-bold text-xl mb-3">Cliente final</p>
+                     <p className="text-zinc-500 text-sm leading-relaxed">El cliente accede al producto dentro de la experiencia del partner, donde se realiza la venta de forma directa.</p>
                    </div>
                  </div>
               </div>
