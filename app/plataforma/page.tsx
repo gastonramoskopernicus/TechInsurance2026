@@ -425,50 +425,7 @@ export default function PlataformaPage() {
         </div>
       </section>
 
-      {/* BLOQUES RESTANTES CON JERARQUÍA UNIFICADA EN GRID */}
-      <section className="py-24 px-4 bg-[#020104] border-b border-white/5 relative z-10">
-        <div className="container mx-auto max-w-7xl">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-10">
-            
-            {/* Orquestación */}
-            <div id="orquestacion" className="group p-12 border border-white/5 rounded-3xl bg-[#0f0e11] hover:bg-[#130a16] hover:border-fuchsia-900/40 transition-all duration-500 scroll-mt-32 flex flex-col justify-center">
-              <div className="mb-8 text-zinc-600 group-hover:text-fuchsia-500 transition-colors"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1" className="w-16 h-16"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg></div>
-              <h2 className="text-3xl font-bold mb-4 text-white">
-                Orquestación <span className="text-transparent bg-clip-text bg-gradient-to-r from-fuchsia-400 to-pink-400">Comercial</span>
-              </h2>
-              <p className="text-zinc-500 font-light text-lg leading-relaxed group-hover:text-zinc-400 transition-colors">Automatice y controle la gestión de ciclos de vida completos. Desde la cotización y campañas hasta flujos externos con partners y ecosistemas, usando reglas claras sin intervención manual continua.</p>
-            </div>
-            
-            {/* API Developer */}
-            <div id="api-developer" className="group p-12 border border-white/5 rounded-3xl bg-[#0f0e11] hover:bg-[#130a16] hover:border-fuchsia-900/40 transition-all duration-500 scroll-mt-32 flex flex-col justify-center">
-              <div className="mb-8 text-zinc-600 group-hover:text-fuchsia-500 transition-colors"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1" className="w-16 h-16"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"/><path d="M9 18c-4.51 2-5-2-7-2"/></svg></div>
-              <h2 className="text-3xl font-bold mb-4 text-white">
-                API & Developer <span className="text-transparent bg-clip-text bg-gradient-to-r from-fuchsia-400 to-pink-400">Platform</span>
-              </h2>
-              <p className="text-zinc-500 font-light text-lg leading-relaxed group-hover:text-zinc-400 transition-colors">Portal corporativo unificado de catálogos y servicios. Asegure una escalabilidad inmediata para equipos internos o desarrolladores terceros con sandboxes pre-configurados agilizando el flujo B2B.</p>
-            </div>
-            
-            {/* Seguridad */}
-            <div id="seguridad" className="group p-12 border border-white/5 rounded-3xl bg-[#0f0e11] hover:bg-[#130a16] hover:border-fuchsia-900/40 transition-all duration-500 scroll-mt-32 flex flex-col justify-center">
-              <div className="mb-8 text-zinc-600 group-hover:text-fuchsia-500 transition-colors"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1" className="w-16 h-16"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10"/></svg></div>
-              <h2 className="text-3xl font-bold mb-4 text-white">
-                Seguridad & <span className="text-transparent bg-clip-text bg-gradient-to-r from-fuchsia-400 to-pink-400">Compliance</span>
-              </h2>
-              <p className="text-zinc-500 font-light text-lg leading-relaxed group-hover:text-zinc-400 transition-colors">Cumplimiento nativo para arquitecturas financieras. Con ambientes auditables nativamente, gobierno de accesos estricto y trazabilidad criptográfica sobre cada configuración expuesta de sus pólizas.</p>
-            </div>
-            
-            {/* Licenciamiento */}
-            <div id="licenciamiento" className="group p-12 border border-white/5 rounded-3xl bg-[#0f0e11] hover:bg-[#130a16] hover:border-fuchsia-900/40 transition-all duration-500 scroll-mt-32 flex flex-col justify-center">
-              <div className="mb-8 text-zinc-600 group-hover:text-fuchsia-500 transition-colors"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1" className="w-16 h-16"><rect width="20" height="14" x="2" y="5" rx="2"/><line x1="2" x2="22" y1="10" y2="10"/></svg></div>
-              <h2 className="text-3xl font-bold mb-4 text-white">
-                Modelos de <span className="text-transparent bg-clip-text bg-gradient-to-r from-fuchsia-400 to-pink-400">Licenciamiento</span>
-              </h2>
-              <p className="text-zinc-500 font-light text-lg leading-relaxed group-hover:text-zinc-400 transition-colors">Ofrecemos infraestructura SaaS multi-tenant o despliegues dedicados Enterprise, brindando a las compañías libertad de acompañamiento evolutivo y absoluta seguridad de propiedad intelectual sobre su capa core operativa.</p>
-            </div>
 
-          </div>
-        </div>
-      </section>
 
     </div>
   );
