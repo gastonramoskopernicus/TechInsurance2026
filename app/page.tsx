@@ -48,10 +48,10 @@ export default function Home() {
             </p>
           </div>
 
-          <div className="mt-20 pt-10 border-t border-white/5 flex flex-col items-center w-full max-w-lg mx-auto relative z-20">
-            <span className="text-xs uppercase tracking-widest text-zinc-500 font-medium mb-6">Powered by</span>
-            <div className="flex items-center justify-center relative w-80 h-16 sm:w-96 sm:h-20 opacity-80 hover:opacity-100 transition-opacity duration-500 cursor-default">
-               <Image src="/kopernicus-logo.png" alt="Kopernicus Tech" fill className="object-contain brightness-0 invert" sizes="(max-width: 768px) 320px, 400px" priority />
+          <div className="mt-32 pt-16 pb-12 border-t border-white/5 flex flex-col items-center w-full max-w-xl mx-auto relative z-20">
+            <span className="text-xs uppercase tracking-widest text-zinc-500 font-medium mb-12">Powered by</span>
+            <div className="flex items-center justify-center relative w-full h-24 sm:h-32 opacity-80 hover:opacity-100 transition-opacity duration-500 cursor-default px-8">
+               <Image src="/kopernicus-logo.png" alt="Kopernicus Tech" fill className="object-contain brightness-0 invert" sizes="(max-width: 768px) 300px, 500px" priority />
             </div>
           </div>
 
