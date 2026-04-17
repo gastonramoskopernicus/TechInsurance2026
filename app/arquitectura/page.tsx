@@ -26,6 +26,9 @@ export default function ArquitecturaPage() {
             <p className="text-fuchsia-100/90 text-xl font-light leading-relaxed mb-6">
               Tech Insurance desacopla la innovación del core legacy, permitiendo además la velocidad necesaria para el desarrollo y despliegue de nuevos productos y soluciones.
             </p>
+            <p className="text-zinc-400 text-lg font-light leading-relaxed">
+              Nuestra experiencia en la industria aseguradora nos ha permitido desarrollar una solución de rápido acoplamiento e implementación, diseñada para responder con agilidad a las necesidades comerciales y acelerar la evolución del negocio.
+            </p>
           </div>
         </div>
       </section>
@@ -60,8 +63,11 @@ export default function ArquitecturaPage() {
           </h2>
           <div className="max-w-4xl mx-auto p-12 bg-[#0f0e11] border border-white/5 rounded-3xl relative overflow-hidden shadow-2xl hover:border-fuchsia-900/50 transition-colors">
             <div className="absolute top-0 right-0 w-64 h-64 bg-fuchsia-600/5 rounded-full blur-[80px]" />
-            <p className="text-zinc-400 text-xl font-light leading-relaxed relative z-10">
+            <p className="text-zinc-400 text-xl font-light leading-relaxed relative z-10 mb-6">
               Nuestra visión es urbanizar el core asegurador, permitiendo que evolucione progresivamente mediante capas desacopladas que acompañan la innovación del negocio. Complementando la estrategia API-first, evitamos que necesite reescribir sus sistemas centrales para lanzar productos modernos o expandirse digitalmente.
+            </p>
+            <p className="text-zinc-400 text-xl font-light leading-relaxed relative z-10">
+              La estrategia no solo se basa en un enfoque API-first, sino también en un modelo modular que permite reutilizar capacidades ya desarrolladas dentro de la plataforma, acelerando la implementación y reduciendo la dependencia tecnológica.
             </p>
           </div>
         </div>
@@ -111,7 +117,7 @@ export default function ArquitecturaPage() {
             {/* Capa 1 */}
             <div className="group p-8 md:p-10 border border-white/5 bg-[#1a1a24]/40 backdrop-blur-md rounded-3xl hover:border-fuchsia-500/20 hover:bg-[#1f1a29]/60 transition-all relative z-10">
                <span className="text-fuchsia-400 text-xs uppercase tracking-widest font-bold mb-2 block">Capa Cero · Frontend</span>
-               <h3 className="text-2xl font-bold text-white mb-3">Canales y Experiencia B2X</h3>
+               <h3 className="text-2xl font-bold text-white mb-3">Canales y Experiencia B2C, B2B2C, B2B</h3>
                <p className="text-zinc-400 font-light leading-relaxed">
                  Esta capa concentra las experiencias de front-end e interacción, ya sea mediante landings, aplicaciones móviles, catálogos de servicios, agentes o implementaciones orientadas a terceros como brokers, PAS, bancos o incluso el cliente final.
                </p>
@@ -123,7 +129,7 @@ export default function ArquitecturaPage() {
                  <span className="text-fuchsia-300 text-xs uppercase tracking-widest font-bold mb-2 block animate-pulse">Capa Central · Tech Insurance Platform</span>
                  <h3 className="text-3xl font-extrabold text-white mb-4">La Capa Intermedia Inteligente</h3>
                  <p className="text-fuchsia-100/80 font-light text-lg leading-relaxed mb-6 md:mb-0">
-                   Tech Insurance absorbe la lógica de front-end, la configuración comercial y gran parte de la experiencia del producto, interrelacionándose con el core asegurador de forma simple y controlada.
+                   Tech Insurance se encarga de orquestar la interacción con el core asegurador y las nuevas experiencias o productos creados, pudiendo intermediar o incluso reemplazar ciertas funcionalidades del core según la necesidad del negocio.
                  </p>
                </div>
                <div className="w-24 h-24 lg:w-32 lg:h-32 shrink-0 bg-[#310c36] border border-fuchsia-700/50 rounded-[2rem] flex items-center justify-center shadow-2xl relative">
@@ -232,17 +238,6 @@ export default function ArquitecturaPage() {
                  <p className="text-zinc-500 font-light">Aísla los flujos de testeo (Sandboxes lógicos) que los partners exploran y los compila transparentemente en Producción una vez visados.</p>
                </div>
             </div>
-          </div>
-          
-          <div className="flex justify-center items-center gap-6 mt-16 flex-wrap opacity-80">
-             <div className="flex items-center gap-3 px-6 py-3 rounded-full border border-fuchsia-900/30 bg-[#0f0e11]">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" className="w-5 h-5 text-fuchsia-500"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
-                <span className="text-zinc-300 font-medium text-xs tracking-widest uppercase">PCI Compliance Reference</span>
-             </div>
-             <div className="flex items-center gap-3 px-6 py-3 rounded-full border border-fuchsia-900/30 bg-[#0f0e11]">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" className="w-5 h-5 text-fuchsia-500"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
-                <span className="text-zinc-300 font-medium text-xs tracking-widest uppercase">Data Security Practice</span>
-             </div>
           </div>
         </div>
       </section>
