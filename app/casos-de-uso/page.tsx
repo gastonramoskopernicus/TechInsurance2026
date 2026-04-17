@@ -82,6 +82,67 @@ export default function CasosDeUsoPage() {
       {/* CASO PRÁCTICO */}
       <section id="caso-practico" className="py-32 px-4 bg-[#020104] border-b border-white/5 scroll-mt-32">
         <div className="container mx-auto max-w-6xl">
+
+          {/* CASO 0: BANCA REGIONAL (NUEVO) */}
+          <div className="mb-32">
+            <h2 className="text-3xl md:text-4xl font-bold text-white mb-6 text-center">
+              <span className="text-transparent bg-clip-text bg-gradient-to-r from-fuchsia-500 to-pink-400">Desarrollo canal banca</span>
+            </h2>
+            <p className="text-center text-zinc-400 font-light text-xl mb-16 max-w-2xl mx-auto">
+              Unificación y orquestación de productos aseguradores en múltiples países
+            </p>
+            <div className="p-12 lg:p-16 border border-white/5 bg-[#08040a] rounded-[2.5rem] relative shadow-2xl">
+              <p className="text-center text-zinc-400 font-light text-lg mb-20 max-w-4xl mx-auto">
+                Un banco regional incorporó Tech Insurance para modelar productos de cobertura como combinado familiar, hogar y vida. Dada la complejidad de operar en distintos países, donde las aseguradoras pueden variar según la regulación local, se requería una herramienta intermedia que permitiera desarrollar y gestionar productos de forma independiente de la compañía aseguradora en cada mercado.
+              </p>
+              
+              <div className="flex flex-col lg:flex-row items-center justify-between gap-10 lg:gap-6 relative">
+                 {/* Línea conectora trasera (solo desktop) */}
+                 <div className="hidden lg:block absolute top-1/2 left-12 right-12 h-1 bg-gradient-to-r from-zinc-800 via-fuchsia-900/50 to-fuchsia-500/50 -translate-y-1/2 z-0" />
+                 
+                 <div className="relative z-10 flex flex-col items-center flex-1 h-full justify-start">
+                   <div className="w-28 h-28 lg:w-32 lg:h-32 rounded-3xl bg-zinc-900 border border-zinc-700 flex items-center justify-center text-fuchsia-500 mb-8 shadow-xl shrink-0">
+                      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" className="w-12 h-12 lg:w-14 lg:h-14 overflow-visible">
+                        <path d="M6 22V4a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v18Z"/><path d="M10 6h4"/><path d="M10 10h4"/><path d="M10 14h4"/><path d="M10 18h4"/>
+                        <circle cx="21" cy="3" r="5" fill="#18181b" stroke="currentColor" strokeWidth="1.5" />
+                        <path d="M19.5 2C19.5 0.5 22.5 0.5 22.5 2C22.5 3 21 3.5 21 4.5" />
+                        <circle cx="21" cy="6" r="0.8" fill="currentColor" stroke="none" />
+                      </svg>
+                   </div>
+                   <div className="text-center px-2 flex-1 flex flex-col justify-start w-full">
+                     <p className="text-white font-bold text-xl mb-3">Compañía aseguradora variable según país</p>
+                   </div>
+                 </div>
+
+                 <div className="text-zinc-700 hidden lg:block relative z-10 -mt-32"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" className="w-8 h-8"><polyline points="9 18 15 12 9 6"/></svg></div>
+                 
+                 <div className="relative z-10 flex flex-col items-center flex-1 h-full justify-start">
+                   <div className="w-28 h-28 lg:w-32 lg:h-32 rounded-[2rem] bg-[#1b081e] border-2 border-fuchsia-800 flex items-center justify-center mb-8 shadow-[0_0_40px_rgba(217,70,239,0.3)] shrink-0 animate-breath relative">
+                      <Image src="/TechInsurance.svg" alt="Tech Insurance Isotipo" width={56} height={56} className="object-contain" />
+                   </div>
+                   <div className="text-center px-2 flex-1 flex flex-col justify-start w-full">
+                     <p className="text-fuchsia-300 font-bold text-xl mb-3">Tech Insurance</p>
+                     <p className="text-zinc-400 text-sm leading-relaxed">Tech Insurance actúa como hub intermedio, desacoplando el producto de la aseguradora.</p>
+                   </div>
+                 </div>
+
+                 <div className="text-fuchsia-900 hidden lg:block relative z-10 -mt-32"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" className="w-8 h-8"><polyline points="9 18 15 12 9 6"/></svg></div>
+                 
+                 <div className="relative z-10 flex flex-col items-center flex-1 h-full justify-start">
+                   <div className="w-28 h-28 lg:w-32 lg:h-32 rounded-3xl bg-zinc-900 border border-zinc-700 flex items-center justify-center text-fuchsia-500 mb-8 shadow-xl shrink-0">
+                      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" className="w-12 h-12 lg:w-14 lg:h-14">
+                        <circle cx="12" cy="12" r="10"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/><path d="M2.5 9h19M2.5 15h19"/>
+                      </svg>
+                   </div>
+                   <div className="text-center px-2 flex-1 flex flex-col justify-start w-full">
+                     <p className="text-white font-bold text-xl mb-3">Distribución del producto</p>
+                     <p className="text-zinc-500 text-sm leading-relaxed">Distribución en múltiples países, adaptándose a cada contexto local.</p>
+                   </div>
+                 </div>
+              </div>
+            </div>
+          </div>
+
           {/* CASO 1: GARANTÍA EXTENDIDA */}
           <div className="mb-32">
             <h2 className="text-3xl md:text-4xl font-bold text-white mb-6 text-center">
