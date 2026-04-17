@@ -168,7 +168,7 @@ export default function EcosistemaPage() {
         
         <div className="container mx-auto max-w-6xl relative z-10">
           <div className="text-center mb-16 flex flex-col items-center">
-            <Image src="/kopernicus-logo.png" alt="Kopernicus Logo" width={220} height={40} className="object-contain mb-10 opacity-90 drop-shadow-[0_0_15px_rgba(255,255,255,0.1)]" />
+            <Image src="/kopernicus-logo.png" alt="Kopernicus Logo" width={200} height={36} className="object-contain mb-10 brightness-0 invert opacity-80 hover:opacity-100 transition-opacity" />
             <h2 className="text-3xl md:text-5xl font-bold text-white mb-4">
               Aceleradores <span className="text-transparent bg-clip-text bg-gradient-to-r from-fuchsia-500 to-pink-400">Kopernicus</span>
             </h2>
@@ -177,7 +177,7 @@ export default function EcosistemaPage() {
           
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
             <div className="p-10 lg:p-14 bg-[#1b081e]/80 backdrop-blur border border-fuchsia-800/40 rounded-[2.5rem] hover:bg-[#210924] hover:border-fuchsia-500/60 transition-all shadow-[0_0_50px_rgba(217,70,239,0.05)] hover:shadow-[0_0_60px_rgba(217,70,239,0.15)] flex flex-col">
-               <h3 className="text-3xl lg:text-4xl font-black text-white tracking-widest mb-2 border-b border-white/10 pb-6 uppercase">Inspe<span className="text-fuchsia-500">X</span>iona</h3>
+               <h3 className="text-3xl lg:text-4xl font-black text-white tracking-widest mb-2 border-b border-white/10 pb-6 uppercase">Inspe<span className="text-fuchsia-500 text-[1.2em] -ml-[1px] inline-block transform translate-y-[2px]">X</span>iona</h3>
                <p className="text-fuchsia-100/70 mb-8 font-light text-lg mt-4 leading-relaxed">Plataforma inteligente de telemática y recabación de datos periciales en terreno, conectada instantáneamente a Tech Insurance para auditar siniestros.</p>
                <ul className="space-y-4 text-base text-zinc-300 font-medium mt-auto">
                  <li className="flex gap-4 items-center"><span className="text-fuchsia-500 text-xl font-bold">✓</span> Acelera resolución y pago de reclamos de calle.</li>
@@ -186,7 +186,7 @@ export default function EcosistemaPage() {
             </div>
             
             <div className="p-10 lg:p-14 bg-[#1b081e]/80 backdrop-blur border border-fuchsia-800/40 rounded-[2.5rem] hover:bg-[#210924] hover:border-fuchsia-500/60 transition-all shadow-[0_0_50px_rgba(217,70,239,0.05)] hover:shadow-[0_0_60px_rgba(217,70,239,0.15)] flex flex-col">
-               <h3 className="text-3xl lg:text-4xl font-black text-white tracking-widest mb-2 border-b border-white/10 pb-6 uppercase"><span className="text-fuchsia-500">X</span>plorer</h3>
+               <h3 className="text-3xl lg:text-4xl font-black text-white tracking-widest mb-2 border-b border-white/10 pb-6 uppercase"><span className="text-fuchsia-500 text-[1.2em] -mr-[1px] inline-block transform translate-y-[2px]">X</span>plorer</h3>
                <p className="text-fuchsia-100/70 mb-8 font-light text-lg mt-4 leading-relaxed">Ecosistema nativo multicanal de portales front-end plug-and-play diseñados para la fuerza de venta (Brokers), clientes B2C y Management Corporativo.</p>
                <ul className="space-y-4 text-base text-zinc-300 font-medium mt-auto">
                  <li className="flex gap-4 items-center"><span className="text-fuchsia-500 text-xl font-bold">✓</span> Entornos transaccionales 100% Whitelabel customizables.</li>
