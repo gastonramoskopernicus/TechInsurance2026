@@ -216,19 +216,19 @@ export default function PlataformaPage() {
                       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1" className="w-14 h-14"><path d="m18 16 4-4-4-4"/><path d="m6 8-4 4 4 4"/><path d="m14.5 4-5 16"/></svg>
                    </div>
                    <h4 className="text-2xl font-bold text-white mb-3">Product Studio (Núcleo)</h4>
-                   <p className="text-fuchsia-100/70 font-light group-hover:text-fuchsia-100/90 transition-colors text-lg leading-relaxed">Entorno visual No-Code donde los equipos comerciales crean, modelan y versionan seguros listos para la calle sin pedir permiso ni escribir código.</p>
+                   <p className="text-fuchsia-100/70 font-light group-hover:text-fuchsia-100/90 transition-colors text-lg leading-relaxed">Los equipos comerciales crean, modelan y versionan productos de seguros con un rápido despliegue, sin requerir intermediación de perfiles técnicos ni necesidad de escribir código.</p>
                 </div>
                 
                 {/* Otros Módulos Layer 1 */}
                 <div className="group p-8 border border-white/5 bg-[#0f0e11] rounded-2xl hover:bg-[#16141a] hover:border-fuchsia-900/50 transition-all duration-300 flex flex-col">
                    <div className="mb-6 text-zinc-600 group-hover:text-fuchsia-500 transition-colors duration-300"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1" className="w-12 h-12"><path d="M12 2l8 4.6v9.2L12 20.4l-8-4.6V6.6z"/><path d="M12 2v20"/><path d="M12 11.2l-8-4.6"/><path d="M12 11.2l8-4.6"/></svg></div>
                    <h4 className="text-xl font-bold text-white mb-2">Gestión de Coberturas</h4>
-                   <p className="text-zinc-500 font-light group-hover:text-zinc-400 transition-colors">Diseño granular de garantías y exclusiones adaptables por segmento.</p>
+                   <p className="text-zinc-500 font-light group-hover:text-zinc-400 transition-colors">Permite administrar coberturas entre productos, configurar prestaciones, agruparlas y reutilizarlas de forma eficiente.</p>
                 </div>
                 <div className="group p-8 border border-white/5 bg-[#0f0e11] rounded-2xl hover:bg-[#16141a] hover:border-fuchsia-900/50 transition-all duration-300 flex flex-col">
                    <div className="mb-6 text-zinc-600 group-hover:text-fuchsia-500 transition-colors duration-300"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1" className="w-12 h-12"><circle cx="12" cy="12" r="10"/><path d="M12 8v8"/><path d="M8 12h8"/></svg></div>
                    <h4 className="text-xl font-bold text-white mb-2">Pricing Engine</h4>
-                   <p className="text-zinc-500 font-light group-hover:text-zinc-400 transition-colors">Motor de tarificación dinámica parametrizable en tiempo real.</p>
+                   <p className="text-zinc-500 font-light group-hover:text-zinc-400 transition-colors">Cuenta con un potente motor de cálculo basado en variables internas y externas, con posibilidad de integración mediante APIs.</p>
                 </div>
                 <div className="group p-8 border border-white/5 bg-[#0f0e11] rounded-2xl hover:bg-[#16141a] hover:border-fuchsia-900/50 transition-all duration-300 flex flex-col">
                    <div className="mb-6 text-zinc-600 group-hover:text-fuchsia-500 transition-colors duration-300"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1" className="w-12 h-12"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg></div>
@@ -240,6 +240,11 @@ export default function PlataformaPage() {
                    <h4 className="text-xl font-bold text-white mb-2">Gestión de Ciclo de Vida</h4>
                    <p className="text-zinc-500 font-light group-hover:text-zinc-400 transition-colors">Automatización de endosos, renovaciones y cancelaciones orquestadas.</p>
                 </div>
+                <div className="group p-8 border border-white/5 bg-[#0f0e11] rounded-2xl hover:bg-[#16141a] hover:border-fuchsia-900/50 transition-all duration-300 flex flex-col">
+                   <div className="mb-6 text-zinc-600 group-hover:text-fuchsia-500 transition-colors duration-300"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1" className="w-12 h-12"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg></div>
+                   <h4 className="text-xl font-bold text-white mb-2">Dashboard & KPIs</h4>
+                   <p className="text-zinc-500 font-light group-hover:text-zinc-400 transition-colors">La plataforma cuenta con indicadores y KPIs que permiten monitorear el estado de los productos, su performance y evolución.</p>
+                </div>
               </div>
             </div>
 
@@ -249,35 +254,35 @@ export default function PlataformaPage() {
                 <span className="text-zinc-600 mr-4 font-light text-xl">02</span> Commercial <span className="text-transparent bg-clip-text bg-gradient-to-r from-fuchsia-400 to-pink-400 ml-2">Layer</span>
               </h3>
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-                <div className="group p-8 border border-white/5 bg-[#0f0e11] rounded-2xl hover:bg-[#16141a] hover:border-fuchsia-900/50 transition-all duration-300 flex flex-col">
+                 <div className="group p-8 border border-white/5 bg-[#0f0e11] rounded-2xl hover:bg-[#16141a] hover:border-fuchsia-900/50 transition-all duration-300 flex flex-col">
                    <div className="mb-6 text-zinc-600 group-hover:text-fuchsia-500 transition-colors duration-300"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1" className="w-12 h-12"><path d="M16 21v-2a4 4 0 0 0-4-4H5c-1.1 0-2 .9-2 2v2"/><circle cx="8.5" cy="7" r="4"/><polyline points="17 11 19 13 23 9"/></svg></div>
                    <h4 className="text-xl font-bold text-white mb-2">Gestión de Canales</h4>
-                   <p className="text-zinc-500 font-light group-hover:text-zinc-400 transition-colors">Omnicanalidad nativa. Controle la red de agentes, brókers y referidos en una sola visión.</p>
+                   <p className="text-zinc-500 font-light group-hover:text-zinc-400 transition-colors">Permite administrar la red comercial bajo un modelo omnicanal, incluyendo la gestión de comisiones y beneficios para agentes, brokers y referidos.</p>
                 </div>
                 <div className="group p-8 border border-white/5 bg-[#0f0e11] rounded-2xl hover:bg-[#16141a] hover:border-fuchsia-900/50 transition-all duration-300 flex flex-col">
                    <div className="mb-6 text-zinc-600 group-hover:text-fuchsia-500 transition-colors duration-300"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1" className="w-12 h-12"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="17 8 12 3 7 8"/><line x1="12" y1="3" x2="12" y2="15"/></svg></div>
                    <h4 className="text-xl font-bold text-white mb-2">Gestión de Campañas</h4>
-                   <p className="text-zinc-500 font-light group-hover:text-zinc-400 transition-colors">Despliegue ultra-veloz de esquemas promocionales y cross-selling parametrizado.</p>
+                   <p className="text-zinc-500 font-light group-hover:text-zinc-400 transition-colors">Permite administrar productos con vigencia temporal, asociados a iniciativas específicas o configurados mediante criterios parametrizables.</p>
                 </div>
                 <div className="group p-8 border border-white/5 bg-[#0f0e11] rounded-2xl hover:bg-[#16141a] hover:border-fuchsia-900/50 transition-all duration-300 flex flex-col">
                    <div className="mb-6 text-zinc-600 group-hover:text-fuchsia-500 transition-colors duration-300"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1" className="w-12 h-12"><polygon points="12 2 2 7 12 12 22 7 12 2"/><polyline points="2 17 12 22 22 17"/><polyline points="2 12 12 17 22 12"/></svg></div>
                    <h4 className="text-xl font-bold text-white mb-2">Embedded Insurance</h4>
-                   <p className="text-zinc-500 font-light group-hover:text-zinc-400 transition-colors">Venta en sitio (Affinity). Incruste garantías e hiper-seguros en el punto digital exacto de sus partners.</p>
+                   <p className="text-zinc-500 font-light group-hover:text-zinc-400 transition-colors">Tech Insurance fue concebido como una solución embebida, diseñada para integrarse de forma simple en experiencias digitales de terceros.</p>
                 </div>
                 <div className="group p-8 border border-white/5 bg-[#0f0e11] rounded-2xl hover:bg-[#16141a] hover:border-fuchsia-900/50 transition-all duration-300 flex flex-col">
                    <div className="mb-6 text-zinc-600 group-hover:text-fuchsia-500 transition-colors duration-300"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1" className="w-12 h-12"><path d="M12 22a10 10 0 1 0 0-20 10 10 0 0 0 0 20z"/><path d="M12 8v4l3 3"/></svg></div>
                    <h4 className="text-xl font-bold text-white mb-2">Customer Journey</h4>
-                   <p className="text-zinc-500 font-light group-hover:text-zinc-400 transition-colors">Mapeo total de la experiencia del prospecto con touchpoints comerciales controlados.</p>
+                   <p className="text-zinc-500 font-light group-hover:text-zinc-400 transition-colors">Permite monitorear y trazar la interacción del cliente con la plataforma para identificar oportunidades de mejora y optimizar la experiencia.</p>
                 </div>
                 <div className="group p-8 border border-white/5 bg-[#0f0e11] rounded-2xl hover:bg-[#16141a] hover:border-fuchsia-900/50 transition-all duration-300 flex flex-col">
                    <div className="mb-6 text-zinc-600 group-hover:text-fuchsia-500 transition-colors duration-300"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1" className="w-12 h-12"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"/><line x1="9" y1="3" x2="9" y2="21"/></svg></div>
-                   <h4 className="text-xl font-bold text-white mb-2">Portales B2B / B2B2C</h4>
-                   <p className="text-zinc-500 font-light group-hover:text-zinc-400 transition-colors">Oficinas virtuales seguras (Multi-tenant) para la red comercial escalada al instante.</p>
+                   <h4 className="text-xl font-bold text-white mb-2">Portales B2B / B2B2C / B2C</h4>
+                   <p className="text-zinc-500 font-light group-hover:text-zinc-400 transition-colors">La plataforma está preparada para operar en diferentes esquemas comerciales, ya sea a través de intermediarios o con foco directo en el cliente final.</p>
                 </div>
                 <div className="group p-8 border border-white/5 bg-[#0f0e11] rounded-2xl hover:bg-[#16141a] hover:border-fuchsia-900/50 transition-all duration-300 flex flex-col">
                    <div className="mb-6 text-zinc-600 group-hover:text-fuchsia-500 transition-colors duration-300"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1" className="w-12 h-12"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/></svg></div>
                    <h4 className="text-xl font-bold text-white mb-2">E-commerce de Seguros</h4>
-                   <p className="text-zinc-500 font-light group-hover:text-zinc-400 transition-colors">Venta directa tipo retail con experiencias de consumo modernas y efectivas.</p>
+                   <p className="text-zinc-500 font-light group-hover:text-zinc-400 transition-colors">Permite construir marketplaces de seguros, tanto para productos simples como complejos, dentro de un mismo entorno.</p>
                 </div>
               </div>
             </div>
@@ -291,22 +296,17 @@ export default function PlataformaPage() {
                 <div className="group p-8 border border-white/5 bg-[#0f0e11] rounded-2xl hover:bg-[#16141a] hover:border-fuchsia-900/50 transition-all duration-300 flex flex-col">
                    <div className="mb-6 text-zinc-600 group-hover:text-fuchsia-500 transition-colors duration-300"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1" className="w-12 h-12"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg></div>
                    <h4 className="text-xl font-bold text-white mb-2">Onboarding Digital</h4>
-                   <p className="text-zinc-500 font-light group-hover:text-zinc-400 transition-colors">Fricción cero en altas. Firmas electrónicas y biometría.</p>
-                </div>
-                <div className="group p-8 border border-white/5 bg-[#0f0e11] rounded-2xl hover:bg-[#16141a] hover:border-fuchsia-900/50 transition-all duration-300 flex flex-col">
-                   <div className="mb-6 text-zinc-600 group-hover:text-fuchsia-500 transition-colors duration-300"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1" className="w-12 h-12"><path d="M17 21v-2a4 4 0 0 0-4-4H5c-1.1 0-2 .9-2 2v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg></div>
-                   <h4 className="text-xl font-bold text-white mb-2">Portal de Clientes</h4>
-                   <p className="text-zinc-500 font-light group-hover:text-zinc-400 transition-colors">Espacio consolidado y brandeado para cartera con visión 360°.</p>
+                   <p className="text-zinc-500 font-light group-hover:text-zinc-400 transition-colors">La plataforma ha sido diseñada para permitir una interacción 100% digital con el cliente desde el inicio.</p>
                 </div>
                 <div className="group p-8 border border-white/5 bg-[#0f0e11] rounded-2xl hover:bg-[#16141a] hover:border-fuchsia-900/50 transition-all duration-300 flex flex-col">
                    <div className="mb-6 text-zinc-600 group-hover:text-fuchsia-500 transition-colors duration-300"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1" className="w-12 h-12"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg></div>
                    <h4 className="text-xl font-bold text-white mb-2">Autogestión</h4>
-                   <p className="text-zinc-500 font-light group-hover:text-zinc-400 transition-colors">Desvío de llamadas: el cliente gestiona sus reclamos y certificados solo.</p>
+                   <p className="text-zinc-500 font-light group-hover:text-zinc-400 transition-colors">Permite a los clientes gestionar sus pólizas, incluyendo denuncias de siniestros, bajas y otras operaciones clave.</p>
                 </div>
                 <div className="group p-8 border border-white/5 bg-[#0f0e11] rounded-2xl hover:bg-[#16141a] hover:border-fuchsia-900/50 transition-all duration-300 flex flex-col">
                    <div className="mb-6 text-zinc-600 group-hover:text-fuchsia-500 transition-colors duration-300"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1" className="w-12 h-12"><path d="M22 17H2a3 3 0 0 0 3-3V9a7 7 0 0 1 14 0v5a3 3 0 0 0 3 3zm-8.27 4a2 2 0 0 1-3.46 0"/></svg></div>
                    <h4 className="text-xl font-bold text-white mb-2">Notificaciones</h4>
-                   <p className="text-zinc-500 font-light group-hover:text-zinc-400 transition-colors">Motor multicanal proactivo vía SMS, Email y Push.</p>
+                   <p className="text-zinc-500 font-light group-hover:text-zinc-400 transition-colors">Tech Insurance cuenta con múltiples modalidades de contacto con el cliente, incluyendo email, SMS y landings interactivas.</p>
                 </div>
               </div>
             </div>
@@ -317,21 +317,17 @@ export default function PlataformaPage() {
                 <span className="text-zinc-600 mr-4 font-light text-xl">04</span> Integration <span className="text-transparent bg-clip-text bg-gradient-to-r from-fuchsia-400 to-pink-400 ml-2">Layer</span>
               </h3>
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-6">
-                <div className="group p-6 border border-white/5 bg-[#0f0e11] rounded-2xl hover:bg-[#16141a] hover:border-fuchsia-900/50 transition-all duration-300 flex flex-col">
-                   <h4 className="text-lg font-bold text-white mb-2">API Gateway</h4>
-                   <p className="text-sm text-zinc-500 font-light group-hover:text-zinc-400">Control de exposición, rate limit y seguridad.</p>
-                </div>
-                <div className="group p-6 border border-white/5 bg-[#0f0e11] rounded-2xl hover:bg-[#16141a] hover:border-fuchsia-900/50 transition-all duration-300 flex flex-col">
-                   <h4 className="text-lg font-bold text-white mb-2">Catálogo APIs</h4>
-                   <p className="text-sm text-zinc-500 font-light group-hover:text-zinc-400">Documentación viva (Swagger/OpenAPI) estándar.</p>
+                 <div className="group p-6 border border-white/5 bg-[#0f0e11] rounded-2xl hover:bg-[#16141a] hover:border-fuchsia-900/50 transition-all duration-300 flex flex-col">
+                   <h4 className="text-lg font-bold text-white mb-2">Catálogo de Servicios</h4>
+                   <p className="text-sm text-zinc-500 font-light group-hover:text-zinc-400">Tech Insurance cuenta con más de 300 servicios listos para integrar la solución con cores de seguros y otras plataformas.</p>
                 </div>
                 <div className="group p-6 border border-white/5 bg-[#0f0e11] rounded-2xl hover:bg-[#16141a] hover:border-fuchsia-900/50 transition-all duration-300 flex flex-col">
                    <h4 className="text-lg font-bold text-white mb-2">Conectores</h4>
-                   <p className="text-sm text-zinc-500 font-light group-hover:text-zinc-400">Wrappers asíncronos para convivir con el Core Legacy.</p>
+                   <p className="text-sm text-zinc-500 font-light group-hover:text-zinc-400">Interfaces estándar ya implementadas con los principales cores de seguros y pasarelas de pago.</p>
                 </div>
                 <div className="group p-6 border border-white/5 bg-[#0f0e11] rounded-2xl hover:bg-[#16141a] hover:border-fuchsia-900/50 transition-all duration-300 flex flex-col">
                    <h4 className="text-lg font-bold text-white mb-2">Orquestador</h4>
-                   <p className="text-sm text-zinc-500 font-light group-hover:text-zinc-400">BPM y flujos integrados con sistemas 3ros (buro).</p>
+                   <p className="text-sm text-zinc-500 font-light group-hover:text-zinc-400">Servicios de la capa activa donde se validan y ejecutan múltiples funcionalidades del sistema.</p>
                 </div>
                 <div className="group p-6 border border-white/5 bg-[#0f0e11] rounded-2xl hover:bg-[#16141a] hover:border-fuchsia-900/50 transition-all duration-300 flex flex-col">
                    <h4 className="text-lg font-bold text-white mb-2">Webhooks</h4>
@@ -348,19 +344,15 @@ export default function PlataformaPage() {
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
                  <div className="group p-8 border border-white/5 bg-[#0f0e11] rounded-2xl hover:bg-[#16141a] hover:border-fuchsia-900/50 transition-all duration-300">
                     <h4 className="text-lg font-bold text-white mb-2">Motor de Datos</h4>
-                    <p className="text-sm text-zinc-500 font-light group-hover:text-zinc-400">Lagos de información unificados para reportería limpia.</p>
+                    <p className="text-sm text-zinc-500 font-light group-hover:text-zinc-400">Tech Insurance posee una estructura de datos relacional potente que permite aplicar Data Mining, análisis de datos y Business Intelligence.</p>
                  </div>
                  <div className="group p-8 border border-white/5 bg-[#0f0e11] rounded-2xl hover:bg-[#16141a] hover:border-fuchsia-900/50 transition-all duration-300">
-                    <h4 className="text-lg font-bold text-white mb-2">Decisiones Predictivas</h4>
-                    <p className="text-sm text-zinc-500 font-light group-hover:text-zinc-400">IA para recomendación comercial y scoring ágil.</p>
+                    <h4 className="text-lg font-bold text-white mb-2">Motor de Decisiones / IA</h4>
+                    <p className="text-sm text-zinc-500 font-light group-hover:text-zinc-400">Incorpora capacidades de inteligencia artificial para análisis predictivo, mejora de productos y soporte a la toma de decisiones.</p>
                  </div>
                  <div className="group p-8 border border-white/5 bg-[#0f0e11] rounded-2xl hover:bg-[#16141a] hover:border-fuchsia-900/50 transition-all duration-300">
-                    <h4 className="text-lg font-bold text-white mb-2">Dashboards & KPIs</h4>
-                    <p className="text-sm text-zinc-500 font-light group-hover:text-zinc-400">Analítica operativa accionable sin depender de analistas.</p>
-                 </div>
-                 <div className="group p-8 border border-white/5 bg-[#0f0e11] rounded-2xl hover:bg-[#16141a] hover:border-fuchsia-900/50 transition-all duration-300">
-                    <h4 className="text-lg font-bold text-white mb-2">Segmentación</h4>
-                    <p className="text-sm text-zinc-500 font-light group-hover:text-zinc-400">Clustering dinámico para productos híper-pesonalizados.</p>
+                    <h4 className="text-lg font-bold text-white mb-2">Dashboard & KPIs</h4>
+                    <p className="text-sm text-zinc-500 font-light group-hover:text-zinc-400">La solución cuenta con indicadores de gestión que permiten monitorear productos y campañas comerciales.</p>
                  </div>
               </div>
             </div>
@@ -372,10 +364,9 @@ export default function PlataformaPage() {
                     <span className="text-zinc-600 mr-4 font-light text-xl">06</span> GRC <span className="text-transparent bg-clip-text bg-gradient-to-r from-fuchsia-400 to-pink-400 ml-2">Layer</span>
                   </h3>
                   <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                     <div className="p-6 border border-white/5 bg-black/40 rounded-xl"><p className="text-white font-medium text-sm">Gestión de Usuarios Multi-empresa</p></div>
+                     <div className="p-6 border border-white/5 bg-black/40 rounded-xl"><p className="text-white font-medium text-sm">Gestión de Usuarios</p></div>
                      <div className="p-6 border border-white/5 bg-black/40 rounded-xl"><p className="text-white font-medium text-sm">Roles y Permisos Granulares</p></div>
                      <div className="p-6 border border-white/5 bg-black/40 rounded-xl"><p className="text-white font-medium text-sm">Auditoría y Trazabilidad Compliance</p></div>
-                     <div className="p-6 border border-white/5 bg-black/40 rounded-xl"><p className="text-white font-medium text-sm">Gestión de Versiones de Pólizas</p></div>
                   </div>
                </div>
                <div>
@@ -385,11 +376,11 @@ export default function PlataformaPage() {
                   <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                     <div className="p-6 border border-white/5 bg-[#130a16] border-fuchsia-900/20 rounded-xl h-full flex flex-col justify-center">
                        <h4 className="text-lg font-bold text-white mb-2">Gestión de Primas</h4>
-                       <p className="text-sm text-zinc-500 font-light">Cuotas, recibos y conciliación.</p>
+                       <p className="text-sm text-zinc-500 font-light">Permite administrar cuotas, pagos y realizar conciliación de cobranzas, entre otras funcionalidades.</p>
                     </div>
                     <div className="p-6 border border-white/5 bg-[#130a16] border-fuchsia-900/20 rounded-xl h-full flex flex-col justify-center">
                        <h4 className="text-lg font-bold text-white mb-2">Pasarelas Digitales</h4>
-                       <p className="text-sm text-zinc-500 font-light">Stripe, Mercadopago y Open Banking integrations.</p>
+                       <p className="text-sm text-zinc-500 font-light">Stripe, Mercadopago, Bambú, Wallets digitales y Open Banking integrations.</p>
                     </div>
                   </div>
                </div>
