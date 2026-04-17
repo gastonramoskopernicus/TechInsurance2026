@@ -84,6 +84,62 @@ export default function CasosDeUsoPage() {
         </div>
       </section>
 
+      {/* CASO PRÁCTICO */}
+      <section id="caso-practico" className="py-32 px-4 bg-[#020104] border-b border-white/5 scroll-mt-32">
+        <div className="container mx-auto max-w-6xl">
+          <h2 className="text-3xl md:text-4xl font-bold text-white mb-6 text-center">
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-fuchsia-500 to-pink-400">Seguro de garantía extendida</span>
+          </h2>
+          <p className="text-center text-zinc-400 font-light text-xl mb-16 max-w-2xl mx-auto">
+            Creación, configuración y despliegue de un producto completo en minutos
+          </p>
+          <div className="p-12 lg:p-16 border border-white/5 bg-[#08040a] rounded-[2.5rem] relative shadow-2xl">
+            <p className="text-center text-zinc-400 font-light text-lg mb-20 max-w-3xl mx-auto">
+              Tech Insurance permite orquestar de forma integral la creación de un seguro de garantía extendida, incluyendo su configuración técnica, lógica comercial, cotización, pago y emisión de póliza, todo dentro de un flujo continuo.
+            </p>
+            
+            <div className="flex flex-col lg:flex-row items-center justify-between gap-10 lg:gap-6 relative">
+               {/* Línea conectora trasera (solo desktop) */}
+               <div className="hidden lg:block absolute top-1/2 left-12 right-12 h-1 bg-gradient-to-r from-zinc-800 via-fuchsia-900/50 to-fuchsia-500/50 -translate-y-1/2 z-0" />
+               
+               <div className="relative z-10 flex flex-col items-center flex-1 h-full justify-start">
+                 <div className="w-28 h-28 lg:w-32 lg:h-32 rounded-3xl bg-zinc-900 border border-zinc-700 flex items-center justify-center text-fuchsia-500 mb-8 shadow-xl shrink-0">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" className="w-12 h-12 lg:w-14 lg:h-14"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+                 </div>
+                 <div className="text-center px-2 flex-1 flex flex-col justify-start w-full">
+                   <p className="text-white font-bold text-xl mb-3">Equipo de negocio</p>
+                   <p className="text-zinc-500 text-sm leading-relaxed">Define el producto, las coberturas, arma el pricing y establece el comportamiento del producto.</p>
+                 </div>
+               </div>
+
+               <div className="text-zinc-700 hidden lg:block relative z-10 -mt-32"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" className="w-8 h-8"><polyline points="9 18 15 12 9 6"/></svg></div>
+               
+               <div className="relative z-10 flex flex-col items-center flex-1 h-full justify-start">
+                 <div className="w-28 h-28 lg:w-32 lg:h-32 rounded-[2rem] bg-[#1b081e] border-2 border-fuchsia-800 flex items-center justify-center text-fuchsia-500 mb-8 shadow-[0_0_40px_rgba(217,70,239,0.3)] shrink-0 animate-breath relative">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" className="w-12 h-12 lg:w-14 lg:h-14"><path d="M12 15a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"/></svg>
+                 </div>
+                 <div className="text-center px-2 flex-1 flex flex-col justify-start w-full">
+                   <p className="text-fuchsia-300 font-bold text-xl mb-3">Product Studio</p>
+                   <p className="text-zinc-400 text-sm leading-relaxed">La configuración se realiza a través de simples pasos, permitiendo crear el producto en minutos sin necesidad de desarrollo técnico.</p>
+                 </div>
+               </div>
+
+               <div className="text-fuchsia-900 hidden lg:block relative z-10 -mt-32"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" className="w-8 h-8"><polyline points="9 18 15 12 9 6"/></svg></div>
+               
+               <div className="relative z-10 flex flex-col items-center flex-1 h-full justify-start">
+                 <div className="w-28 h-28 lg:w-32 lg:h-32 rounded-3xl bg-zinc-100 border border-white flex items-center justify-center text-fuchsia-600 mb-8 shadow-[0_0_40px_rgba(255,255,255,0.2)] shrink-0">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" className="w-12 h-12 lg:w-14 lg:h-14"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+                 </div>
+                 <div className="text-center px-2 flex-1 flex flex-col justify-start w-full">
+                   <p className="text-white font-bold text-xl mb-3">Publicación</p>
+                   <p className="text-zinc-500 text-sm leading-relaxed">Se define el diseño, la experiencia o el layout del producto para ser embebido o utilizado en distintos canales.</p>
+                 </div>
+               </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
     </div>
   );
 }
