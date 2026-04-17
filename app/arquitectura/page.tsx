@@ -14,7 +14,7 @@ export default function ArquitecturaPage() {
         
         <div className="container mx-auto max-w-5xl relative z-10 text-center flex flex-col items-center">
           <div className="relative w-28 h-28 mx-auto mb-10 text-fuchsia-500 animate-breath opacity-90 drop-shadow-[0_0_20px_rgba(217,70,239,0.2)]">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" className="w-full h-full"><path d="M3 21h18"/><path d="M9 8h1"/><path d="M9 12h1"/><path d="M9 16h1"/><path d="M14 8h1"/><path d="M14 12h1"/><path d="M14 16h1"/><path d="M5 21V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2v16"/></svg>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" className="w-full h-full"><rect x="3" y="3" width="6" height="6" rx="1"/><rect x="15" y="3" width="6" height="6" rx="1"/><rect x="9" y="15" width="6" height="6" rx="1"/><path d="M6 9v2c0 1.1.9 2 2 2h8a2 2 0 0 0 2-2V9"/><line x1="12" y1="13" x2="12" y2="15"/></svg>
           </div>
 
           <span className="text-fuchsia-500 font-semibold tracking-wider text-sm uppercase mb-4 block">Flexibilidad y Robustez</span>
@@ -24,7 +24,7 @@ export default function ArquitecturaPage() {
           
           <div className="border border-fuchsia-500/20 rounded-3xl p-10 lg:p-14 bg-black/50 backdrop-blur-md shadow-2xl mt-8">
             <p className="text-fuchsia-100/90 text-xl font-light leading-relaxed mb-6">
-              Tech Insurance desacopla la innovación de su core legacy. Nuestra promesa no es técnica, es de negocio: asegurar una integración orgánica y una escalabilidad infinita que nunca comprometa sus niveles de servicio operativos.
+              Tech Insurance desacopla la innovación del core legacy, permitiendo además la velocidad necesaria para el desarrollo y despliegue de nuevos productos y soluciones.
             </p>
           </div>
         </div>
@@ -56,12 +56,12 @@ export default function ArquitecturaPage() {
       <section id="vision" className="py-24 px-4 bg-[#050106] border-b border-white/5 pt-28 -mt-20 scroll-mt-32">
         <div className="container mx-auto max-w-6xl text-center">
           <h2 className="text-3xl md:text-5xl font-bold text-white mb-8 tracking-tight">
-            Nuestra Visión: <span className="text-transparent bg-clip-text bg-gradient-to-r from-fuchsia-500 to-pink-400">API-First Modular</span>
+            Nuestra Visión: <span className="text-transparent bg-clip-text bg-gradient-to-r from-fuchsia-500 to-pink-400">Urbanización del Core</span>
           </h2>
           <div className="max-w-4xl mx-auto p-12 bg-[#0f0e11] border border-white/5 rounded-3xl relative overflow-hidden shadow-2xl hover:border-fuchsia-900/50 transition-colors">
             <div className="absolute top-0 right-0 w-64 h-64 bg-fuchsia-600/5 rounded-full blur-[80px]" />
             <p className="text-zinc-400 text-xl font-light leading-relaxed relative z-10">
-              Usted no necesita reescribir su sistema central para competir hoy. Creemos firmemente en el <strong>enfoque modular y de abstracción operativa</strong>; rodeamos sus capacidades actuales con capas de exposición modernas, transformando un ecosistema rígido en un entorno abierto, seguro y preparado para el futuro.
+              Nuestra visión es urbanizar el core asegurador, permitiendo que evolucione progresivamente mediante capas desacopladas que acompañan la innovación del negocio. Complementando la estrategia API-first, evitamos que necesite reescribir sus sistemas centrales para lanzar productos modernos o expandirse digitalmente.
             </p>
           </div>
         </div>
@@ -86,7 +86,7 @@ export default function ArquitecturaPage() {
               { title: 'Integración Abierta', desc: 'Comportamiento de hub. Enlazamos con ecosistemas CRM modernos y canales de chat sin pesados desarrollos middlewares on-premise.', icon: '<circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/>' }
             ].map((item, idx) => (
               <div key={idx} className={`group p-8 border border-white/5 bg-[#0f0e11] rounded-2xl hover:bg-[#16141a] hover:border-fuchsia-900/50 transition-all duration-300 flex flex-col ${idx === 4 ? 'lg:col-span-2 xl:col-span-1' : ''}`}>
-                 <div className="mb-6 text-zinc-600 group-hover:text-fuchsia-500 transition-colors duration-300">
+                 <div className="mb-6 text-fuchsia-500 group-hover:text-fuchsia-400 transition-colors duration-300">
                     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" className="w-12 h-12" dangerouslySetInnerHTML={{ __html: item.icon }}></svg>
                  </div>
                  <h4 className="text-xl font-bold text-white mb-3">{item.title}</h4>
@@ -101,7 +101,7 @@ export default function ArquitecturaPage() {
       <section id="capas" className="py-24 px-4 bg-[#0d040e] border-b border-white/5 scroll-mt-32">
         <div className="container mx-auto max-w-5xl">
           <h2 className="text-3xl md:text-4xl font-bold text-white mb-16 text-center">
-            Pila Tecnológica por <span className="text-transparent bg-clip-text bg-gradient-to-r from-fuchsia-500 to-pink-400">Capas</span>
+            Stack Tecnológico por <span className="text-transparent bg-clip-text bg-gradient-to-r from-fuchsia-500 to-pink-400">Capas</span>
           </h2>
           
           <div className="flex flex-col gap-6 relative">
@@ -131,7 +131,7 @@ export default function ArquitecturaPage() {
                <span className="text-zinc-500 text-xs uppercase tracking-widest font-bold mb-2 block">Capa Profunda · Legacy</span>
                <h3 className="text-xl font-bold text-zinc-300 mb-3">El Core Transaccional Resguardado</h3>
                <p className="text-zinc-500 font-light leading-relaxed">
-                 El AS400 o ERP central original permanece 100% puro y seguro, abocado estrictamente al mantenimiento general, pólizas estáticas a largo plazo y contabilidad, sin intervenirse con cada lanzamiento comercial efímero y exigente.
+                 Las estructuras del core legacy o de sistemas core existentes permanecen 100% puras y seguras, abocadas estrictamente al mantenimiento general, administración a largo plazo y contabilidad, sin intervenirse directamente con las demandas de los canales digitales de innovación masiva.
                </p>
             </div>
           </div>
