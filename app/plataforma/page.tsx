@@ -16,18 +16,39 @@ export default function PlataformaPage() {
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold tracking-tight text-white mb-8">
             Qué es <span className="text-transparent bg-clip-text bg-gradient-to-r from-fuchsia-400 to-pink-400">Tech Insurance</span>
           </h1>
-          <div className="max-w-3xl space-y-6">
+          <div className="max-w-5xl space-y-8">
             <p className="text-xl md:text-2xl text-zinc-300 font-light leading-relaxed">
               Tech Insurance es una plataforma de innovación aseguradora diseñada para desacoplar la evolución del negocio de las limitaciones del core.
             </p>
-            <div className="p-6 rounded-xl border border-fuchsia-500/10 bg-fuchsia-950/20 backdrop-blur-sm inline-block">
-               <p className="text-lg md:text-xl text-fuchsia-100 font-medium tracking-wide">
-                 <span className="font-bold text-white">No reemplaza el core.</span> Lo potencia.
-               </p>
-            </div>
-            <p className="text-zinc-500 text-lg leading-relaxed font-light">
-              Mientras el core mantiene la operación, Tech Insurance permite construir, lanzar y escalar nuevas capacidades comerciales sin fricción.
+            <p className="text-zinc-400 text-lg leading-relaxed font-light">
+              Respaldada por más de 20 años de experiencia de Kopernicus en el mercado, nuestra solución nace para resolver el común denominador operativo de las aseguradoras: soluciones rígidas, nula capacidad para escalar, bajísima velocidad de adaptación y la extrema dificultad para responder a nuevos perfiles, ecosistemas y canales de venta. Los sistemas core heredados simplemente no fueron pensados para la velocidad comercial transaccional que el ecosistema abierto exige hoy.
             </p>
+            <p className="text-fuchsia-300 text-xl leading-relaxed font-medium">
+               El concepto estratégico no es reemplazar el core actual, sino urbanizarlo para acompañar la evolución natural del negocio con extrema velocidad, flexibilidad modular y bajo impacto.
+            </p>
+
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6 pt-8">
+               {/* Card 1 */}
+               <div className="group p-8 rounded-2xl border border-fuchsia-900/30 bg-[#0f0e11] hover:bg-[#16141a] hover:border-fuchsia-500/40 hover:shadow-[0_10px_40px_rgba(217,70,239,0.05)] transition-all text-left">
+                 <div className="text-fuchsia-600 group-hover:text-fuchsia-400 mb-6 transition-colors"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" className="w-10 h-10"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg></div>
+                 <h4 className="text-white font-bold text-lg mb-3 leading-snug">No reemplaza el core,<br/>lo potencia</h4>
+                 <p className="text-zinc-500 group-hover:text-zinc-400 text-sm font-light leading-relaxed transition-colors">Despliega de manera inmediata herramientas frontales e integraciones que el sistema legacy tardaría años o millones en desarrollar.</p>
+               </div>
+               
+               {/* Card 2 */}
+               <div className="group p-8 rounded-2xl border border-fuchsia-900/30 bg-[#0f0e11] hover:bg-[#16141a] hover:border-fuchsia-500/40 hover:shadow-[0_10px_40px_rgba(217,70,239,0.05)] transition-all text-left">
+                 <div className="text-fuchsia-600 group-hover:text-fuchsia-400 mb-6 transition-colors"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" className="w-10 h-10"><rect x="2" y="2" width="20" height="20" rx="2"/><path d="M12 16v-4"/><path d="M12 8h.01"/></svg></div>
+                 <h4 className="text-white font-bold text-lg mb-3 leading-snug">Extiende la longevidad<br/>del legacy</h4>
+                 <p className="text-zinc-500 group-hover:text-zinc-400 text-sm font-light leading-relaxed transition-colors">Permite que el core actual continúe operando vitalmente mientras se incorporan nuevas capacidades digitales sin necesidad de reescritura.</p>
+               </div>
+
+               {/* Card 3 */}
+               <div className="group p-8 rounded-2xl border border-fuchsia-900/30 bg-[#0f0e11] hover:bg-[#16141a] hover:border-fuchsia-500/40 hover:shadow-[0_10px_40px_rgba(217,70,239,0.05)] transition-all text-left">
+                 <div className="text-fuchsia-600 group-hover:text-fuchsia-400 mb-6 transition-colors"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" className="w-10 h-10"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg></div>
+                 <h4 className="text-white font-bold text-lg mb-3 leading-snug">Rigor comercial,<br/>no operativo</h4>
+                 <p className="text-zinc-500 group-hover:text-zinc-400 text-sm font-light leading-relaxed transition-colors">La transformación se concentra en generar nuevas utilidades de negocio al instante, evitando los riesgos técnicos del cambio.</p>
+               </div>
+            </div>
           </div>
         </div>
       </section>
@@ -130,36 +151,27 @@ export default function PlataformaPage() {
         </div>
       </section>
 
-      {/* 4. PRODUCT STUDIO (NÚCLEO DIFERENCIAL REUBICADO) */}
-      <section id="product-studio" className="py-32 border-b border-border/50 relative overflow-hidden bg-[#0d040e] scroll-mt-32">
+      {/* 4. PRODUCT STUDIO (TEASER VINCULADO) */}
+      <section id="product-studio" className="py-24 border-b border-border/50 relative overflow-hidden bg-[#0d040e] scroll-mt-32">
         <div className="absolute inset-0 z-0 bg-[radial-gradient(ellipse_at_center,rgba(217,70,239,0.06),transparent)] pointer-events-none" />
-        <div className="container mx-auto px-4 lg:px-8 text-center max-w-5xl relative z-10">
+        <div className="container mx-auto px-4 lg:px-8 text-center max-w-4xl relative z-10">
           
-          <div className="relative w-32 h-32 mx-auto mb-10 animate-breath opacity-90 drop-shadow-[0_0_20px_rgba(217,70,239,0.2)]">
+          <div className="relative w-24 h-24 mx-auto mb-8 animate-breath opacity-90 drop-shadow-[0_0_20px_rgba(217,70,239,0.2)]">
             <Image src="/TechInsurance.svg" alt="Product Studio Logo Component" fill className="object-contain" priority />
           </div>
 
           <span className="text-fuchsia-500 font-semibold tracking-wider text-sm uppercase mb-3 block">El Corazón de la Innovación</span>
-          <h2 className="text-4xl md:text-6xl font-bold mb-10 text-white tracking-tight">
+          <h2 className="text-4xl md:text-5xl font-bold mb-6 text-white tracking-tight">
             Product Studio: <span className="text-transparent bg-clip-text bg-gradient-to-r from-fuchsia-400 to-pink-400">Autonomía Comercial</span>
           </h2>
-          <div className="max-w-4xl mx-auto border border-fuchsia-500/20 rounded-3xl p-10 lg:p-16 bg-black/50 backdrop-blur-md hover:border-fuchsia-500/40 hover:bg-black/70 transition-all duration-500 shadow-2xl">
-            <p className="text-fuchsia-100/90 text-xl font-light leading-relaxed mb-10">
-              El Product Studio redefine cómo se construyen los productos de seguros. Otorgue el poder a sus equipos de negocio estratégico. Nuestro entorno de configuración No-Code permite conceptualizar, tarificar y validar seguros en el mercado a una velocidad sin precedentes, eliminando la dependencia crítica de IT.
-            </p>
-            <div className="mb-10 p-6 border border-white/10 bg-zinc-900/50 rounded-xl max-w-2xl mx-auto">
-               <p className="text-zinc-300 text-center font-medium text-lg leading-relaxed">
-                  Los productos dejan de ser código.<br/>
-                  <span className="text-white font-bold">Pasan a ser configuraciones dinámicas.</span>
-               </p>
-            </div>
-            <p className="text-zinc-500 mb-6 uppercase tracking-widest text-xs font-semibold">Esto habilita:</p>
-            <div className="flex flex-wrap justify-center gap-4 text-white font-medium">
-               <span className="px-6 py-3 bg-fuchsia-950/40 border border-fuchsia-900/50 rounded-full text-sm">Hiper Velocidad</span>
-               <span className="px-6 py-3 bg-fuchsia-950/40 border border-fuchsia-900/50 rounded-full text-sm">Reutilización Modular</span>
-               <span className="px-6 py-3 bg-fuchsia-950/40 border border-fuchsia-900/50 rounded-full text-sm">Consistencia Sistémica</span>
-            </div>
-          </div>
+          <p className="text-zinc-400 text-xl font-light leading-relaxed mb-10 max-w-3xl mx-auto">
+            Otorgue el poder de configuración absoluta a sus áreas de negocio. Nuestro motor No-Code permite conceptualizar, tarificar y disparar seguros sin depender del roadmap tecnológico.
+          </p>
+          
+          <a href="/product-studio" className="inline-flex h-14 items-center justify-center rounded-xl bg-fuchsia-600 px-8 text-base font-bold text-white shadow-[0_0_30px_rgba(192,38,211,0.3)] hover:shadow-[0_0_40px_rgba(192,38,211,0.5)] hover:bg-fuchsia-500 transition-all gap-3 group">
+             Explorar Product Studio
+             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" className="w-5 h-5 group-hover:translate-x-1 transition-transform"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+          </a>
         </div>
       </section>
 
