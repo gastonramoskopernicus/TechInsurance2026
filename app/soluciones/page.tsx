@@ -24,7 +24,7 @@ export default function SolucionesPage() {
           
           <div className="border border-fuchsia-500/20 rounded-3xl p-10 lg:p-12 bg-black/50 backdrop-blur-md shadow-2xl mt-8">
             <p className="text-fuchsia-100/90 text-xl font-light leading-relaxed">
-              Descubra por qué Tech Insurance es el catalizador comercial definitivo para Aseguradoras, Corredores, y cualquier Retail o Ecosistema Financiero preparándose para la próxima era B2X. Usted aporta la visión; nosotros la estructura modular.
+              Usted aporta la visión y la necesidad de productos. Nosotros la estructura, la innovación y la velocidad.
             </p>
           </div>
         </div>
@@ -33,13 +33,11 @@ export default function SolucionesPage() {
       {/* STICKY NAV PREMIUM (Navegación Interna de Soluciones) */}
       <div className="sticky top-20 z-40 w-full flex justify-center px-4 pointer-events-none mt-8 mb-4">
         <nav className="pointer-events-auto flex items-center space-x-1 overflow-x-auto p-2 bg-gradient-to-r from-[#200e23]/90 via-[#0f0e11]/90 to-black/90 backdrop-blur-xl border border-fuchsia-900/20 rounded-full shadow-[0_10px_40px_rgba(217,70,239,0.1)] hide-scrollbar">
-          {[
             { id: 'aseguradoras', label: 'Aseguradoras' },
-            { id: 'brokers', label: 'Brokers / PAS' },
+            { id: 'brokers', label: 'Productores / Corredores (PAS)' },
             { id: 'bancos', label: 'Bancos / Fintech' },
             { id: 'partners', label: 'Partners' },
             { id: 'embedded', label: 'Embedded Insurance' },
-            { id: 'canales', label: 'Canales Digitales' },
           ].map((item) => (
             <a 
               key={item.id} 
@@ -62,24 +60,24 @@ export default function SolucionesPage() {
               <h2 className="text-3xl md:text-5xl font-bold text-white mb-6 tracking-tight">
                 Para <span className="text-transparent bg-clip-text bg-gradient-to-r from-fuchsia-500 to-pink-400">Aseguradoras</span>
               </h2>
-              <p className="text-zinc-400 font-light text-xl leading-relaxed mb-8">Evolucione sin cambiar piezas en vuelo. Mantenga su Mainframe legacy a salvo mientras lanza productos disruptivos con nuestra capa intermedia visual.</p>
+              <p className="text-zinc-400 font-light text-xl leading-relaxed mb-8">Tech Insurance brinda a las aseguradoras una herramienta para potenciar su canal comercial, mejorar productos existentes, crear nuevos productos y desarrollar nuevos canales de distribución.</p>
             </div>
             
             <div className="lg:col-span-7 grid grid-cols-1 md:grid-cols-2 gap-6">
                <div className="group p-8 border border-white/5 bg-[#0f0e11] rounded-2xl hover:bg-[#16141a] hover:border-fuchsia-800 transition-colors">
                  <div className="text-fuchsia-600 mb-4 group-hover:text-fuchsia-400 transition-colors"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" className="w-12 h-12"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg></div>
                  <h4 className="text-xl font-bold text-white mb-2">Modernización sin reemplazo</h4>
-                 <p className="text-sm font-light text-zinc-500">Urbanizamos su AS400; consuma y emita APIs al mundo en minutos.</p>
+                 <p className="text-sm font-light text-zinc-500">Sin impactar en el core, ofrecemos funcionalidad 100% orientada a usuarios internos no técnicos de las compañías.</p>
                </div>
                <div className="group p-8 border border-white/5 bg-[#0f0e11] rounded-2xl hover:bg-[#16141a] hover:border-fuchsia-800 transition-colors">
                  <div className="text-fuchsia-600 mb-4 group-hover:text-fuchsia-400 transition-colors"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" className="w-12 h-12"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg></div>
-                 <h4 className="text-xl font-bold text-white mb-2">Lanzamiento fulminante</h4>
-                 <p className="text-sm font-light text-zinc-500">Tenga su producto diseñado y tarifado hoy, y generando primas mañana.</p>
+                 <h4 className="text-xl font-bold text-white mb-2">Lanzamientos rápidos</h4>
+                 <p className="text-sm font-light text-zinc-500">La solución permite a las compañías desarrollar y lanzar productos con una velocidad alineada a las necesidades del negocio.</p>
                </div>
                <div className="group p-8 border border-white/5 bg-[#0f0e11] rounded-2xl hover:bg-[#16141a] hover:border-fuchsia-800 transition-colors md:col-span-2">
                  <div className="text-fuchsia-600 mb-4 group-hover:text-fuchsia-400 transition-colors"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" className="w-12 h-12"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path><polyline points="3.27 6.96 12 12.01 20.73 6.96"></polyline><line x1="12" y1="22.08" x2="12" y2="12"></line></svg></div>
                  <h4 className="text-xl font-bold text-white mb-2">Expansión Multi-Canal Nativa</h4>
-                 <p className="text-sm font-light text-zinc-500">Distribuya el mismo producto master a 10 corredores B2B a través de 10 endpoints separados al instante.</p>
+                 <p className="text-sm font-light text-zinc-500">Permite a una compañía ofrecer los mismos productos en diferentes canales con experiencias adaptadas, o bien crear productos específicos por canal, habilitando múltiples combinaciones comerciales.</p>
                </div>
             </div>
           </div>
@@ -112,9 +110,9 @@ export default function SolucionesPage() {
             <div className="lg:col-span-5 order-1 lg:order-2">
               <div className="w-12 h-12 rounded-2xl bg-fuchsia-900/20 border border-fuchsia-800 flex items-center justify-center text-fuchsia-400 mb-8"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" className="w-8 h-8"><path d="M17 21v-2a4 4 0 0 0-4-4H5c-1.1 0-2 .9-2 2v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg></div>
               <h2 className="text-3xl md:text-5xl font-bold text-white mb-6 tracking-tight">
-                Para <span className="text-transparent bg-clip-text bg-gradient-to-r from-fuchsia-500 to-pink-400">Brokers / PAS</span>
+                Para <span className="text-transparent bg-clip-text bg-gradient-to-r from-fuchsia-500 to-pink-400">Productores / Corredores (PAS)</span>
               </h2>
-              <p className="text-zinc-400 font-light text-xl leading-relaxed mb-8">Convierta a su red de Productores en una red autónoma, capaz de cruzar data comercial y generar carteras autogestionadas altamente rentables.</p>
+              <p className="text-zinc-400 font-light text-xl leading-relaxed mb-8">Tech Insurance ofrece a productores, corredores (PAS) herramientas para generar más negocios, acceder a nuevos productos y soluciones, contar con un multicotizador de productos y gestionar su operación mediante un CRM comercial 360.</p>
             </div>
 
           </div>
@@ -130,7 +128,7 @@ export default function SolucionesPage() {
               <h2 className="text-3xl md:text-5xl font-bold text-white mb-6 tracking-tight">
                 Bancos / <span className="text-transparent bg-clip-text bg-gradient-to-r from-fuchsia-500 to-pink-400">Fintechs</span>
               </h2>
-              <p className="text-zinc-400 font-light text-xl leading-relaxed mb-8">El Bancaseguros del futuro. Inyecte líneas de seguro automatizadas vinculadas al saldo deudor de sus tarjetas financieras bajo modelos transparentes.</p>
+              <p className="text-zinc-400 font-light text-xl leading-relaxed mb-8">La solución permite a bancos y fintech incorporar seguros de forma simple, ya sea mediante experiencias embebidas o integraciones vía APIs, generando un valor agregado directo a sus clientes.<br/><br/>El modelo de white labeling permite a estas entidades utilizar y customizar la solución, incluso para ofrecerla a terceros.</p>
             </div>
             
             <div className="lg:col-span-7 grid grid-cols-1 md:grid-cols-2 gap-6">
@@ -165,8 +163,8 @@ export default function SolucionesPage() {
                </div>
                <div className="group p-8 border border-white/5 bg-[#1b081e]/30 rounded-2xl hover:bg-[#16141a] hover:border-fuchsia-800 transition-colors">
                  <div className="text-zinc-600 mb-4 group-hover:text-fuchsia-400 transition-colors"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" className="w-12 h-12"><rect width="7" height="7" x="14" y="3" rx="1"/><rect width="7" height="7" x="3" y="14" rx="1"/><path d="M10 17.5h4"/><path d="M17.5 10v4"/></svg></div>
-                 <h4 className="text-xl font-bold text-white mb-2">Ecosistemas B2B2C Abiertos</h4>
-                 <p className="text-sm font-light text-zinc-500">Un concesionario vende el auto, Tech Insurance valida la placa, emite al cliente final y reparte comisiones automáticamente.</p>
+                 <h4 className="text-xl font-bold text-white mb-2">Ecosistemas abiertos</h4>
+                 <p className="text-sm font-light text-zinc-500">Proveemos una solución que permite desarrollar y operar negocios en la industria aseguradora, articulando a los distintos jugadores del ecosistema.</p>
                </div>
             </div>
 
@@ -175,7 +173,8 @@ export default function SolucionesPage() {
               <h2 className="text-3xl md:text-5xl font-bold text-white mb-6 tracking-tight">
                 Alianzas y <span className="text-transparent bg-clip-text bg-gradient-to-r from-fuchsia-500 to-pink-400">Partners</span>
               </h2>
-              <p className="text-zinc-400 font-light text-xl leading-relaxed mb-8">Active esquemas de afinidad y *Sponsorship* comercial integrando sus productos a la base cautiva de afiliados y clientes B2B de terceros formales.</p>
+              <p className="text-zinc-400 font-light text-xl leading-relaxed mb-6">Tech Insurance es también utilizado por terceros que buscan articular la relación entre aseguradoras y canales comerciales, permitiendo integrar compañías de seguros con actores como agentes institorios u otros distribuidores.</p>
+              <p className="text-zinc-500 font-light text-xl leading-relaxed mb-8">Tech Insurance es una herramienta utilizada también por actores ajenos a la industria aseguradora que requieren integrar procesos de seguros dentro de sus negocios.</p>
             </div>
 
           </div>
@@ -191,56 +190,21 @@ export default function SolucionesPage() {
               <h2 className="text-3xl md:text-5xl font-bold text-white mb-6 tracking-tight">
                 Embedded <span className="text-transparent bg-clip-text bg-gradient-to-r from-fuchsia-500 to-pink-400">Insurance</span>
               </h2>
-              <p className="text-zinc-400 font-light text-xl leading-relaxed mb-8">El futuro del riesgo es invisible. Venda garantías de rotura de pantalla justo en la canasta de compras del Retailer de forma automática.</p>
+              <p className="text-zinc-400 font-light text-xl leading-relaxed mb-8">Tech Insurance está diseñado para permitir embeber productos y soluciones de seguros de forma simple, gestionando de punta a punta todo el proceso dentro de experiencias de terceros.</p>
             </div>
             
             <div className="lg:col-span-7 grid grid-cols-1 md:grid-cols-2 gap-6">
                <div className="group p-8 border border-white/5 bg-[#0f0e11] rounded-2xl hover:bg-[#16141a] hover:border-fuchsia-800 transition-colors">
                  <div className="text-fuchsia-600 mb-4 group-hover:text-fuchsia-400 transition-colors"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" className="w-12 h-12"><path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 0 1-8 0"/></svg></div>
-                 <h4 className="text-xl font-bold text-white mb-2">E-Commerce Seamless</h4>
-                 <p className="text-sm font-light text-zinc-500">El seguro se añade como un ítem más al carrito (SKU), procesado junto a la compra física.</p>
+                 <h4 className="text-xl font-bold text-white mb-2">Plantillas estándar</h4>
+                 <p className="text-sm font-light text-zinc-500">Utilizan configuraciones predefinidas del inventario de Tech Insurance para acelerar la implementación.</p>
                </div>
                <div className="group p-8 border border-white/5 bg-[#0f0e11] rounded-2xl hover:bg-[#16141a] hover:border-fuchsia-800 transition-colors">
                  <div className="text-fuchsia-600 mb-4 group-hover:text-fuchsia-400 transition-colors"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" className="w-12 h-12"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg></div>
-                 <h4 className="text-xl font-bold text-white mb-2">Oferta Estrictamente Contextual</h4>
-                 <p className="text-sm font-light text-zinc-500">Se evalúa la intención de compra y el producto (Ej: Pasaje aéreo) para dictaminar viabilidad instantánea.</p>
+                 <h4 className="text-xl font-bold text-white mb-2">Plantillas customizadas</h4>
+                 <p className="text-sm font-light text-zinc-500">Permiten adaptar la experiencia mediante CSS o desarrollos específicos según la necesidad del negocio.</p>
                </div>
             </div>
-          </div>
-        </div>
-      </section>
-
-      {/* CANALES DIGITALES */}
-      <section id="canales" className="py-32 px-4 bg-[#0d040e] border-b border-fuchsia-900/40 scroll-mt-32">
-        <div className="container mx-auto max-w-7xl">
-          <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center flex-row-reverse lg:flex-row">
-            
-            <div className="lg:col-span-8 grid grid-cols-1 md:grid-cols-3 gap-6 order-2 lg:order-1 relative z-10">
-               <div className="group p-8 border border-white/5 bg-[#1b081e]/30 rounded-[2rem] hover:bg-[#16141a] hover:-translate-y-2 hover:border-fuchsia-800 transition-all shadow-[0_10px_30px_rgba(217,70,239,0.02)]">
-                 <div className="text-zinc-600 mb-6 group-hover:text-fuchsia-400 transition-colors"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" className="w-12 h-12"><path d="M22 17H2a3 3 0 0 0 3-3V9a7 7 0 0 1 14 0v5a3 3 0 0 0 3 3zm-8.27 4a2 2 0 0 1-3.46 0"/></svg></div>
-                 <h4 className="text-lg font-bold text-white mb-2">Venta Directa D2C</h4>
-                 <p className="text-sm font-light text-zinc-500">Embudos y landing pages online altísimamente conversivos de cara a consumidor.</p>
-               </div>
-               <div className="group p-8 border border-white/5 bg-[#1b081e]/30 rounded-[2rem] hover:bg-[#16141a] hover:-translate-y-2 hover:border-fuchsia-800 transition-all shadow-[0_10px_30px_rgba(217,70,239,0.02)]">
-                 <div className="text-zinc-600 mb-6 group-hover:text-fuchsia-400 transition-colors"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" className="w-12 h-12"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg></div>
-                 <h4 className="text-lg font-bold text-white mb-2">Onboarding Seamless</h4>
-                 <p className="text-sm font-light text-zinc-500">Recolección de firmas, KYC y carga de imágenes fluidas para una suscripción en el acto.</p>
-               </div>
-               <div className="group p-8 border border-white/5 bg-[#1b081e]/30 rounded-[2rem] hover:bg-[#16141a] hover:-translate-y-2 hover:border-fuchsia-800 transition-all shadow-[0_10px_30px_rgba(217,70,239,0.02)]">
-                 <div className="text-zinc-600 mb-6 group-hover:text-fuchsia-400 transition-colors"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" className="w-12 h-12"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg></div>
-                 <h4 className="text-lg font-bold text-white mb-2">Autogestión App</h4>
-                 <p className="text-sm font-light text-zinc-500">Póliza, endosos y descargas de certificados controlados por el usuario, vaciando el embudo telefónico.</p>
-               </div>
-            </div>
-
-            <div className="lg:col-span-4 order-1 lg:order-2">
-              <div className="w-20 h-20 rounded-3xl bg-fuchsia-900/20 border border-fuchsia-800 flex items-center justify-center text-fuchsia-400 mb-8"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" className="w-12 h-12"><rect x="5" y="2" width="14" height="20" rx="2" ry="2"/><line x1="12" y1="18" x2="12.01" y2="18"/></svg></div>
-              <h2 className="text-3xl md:text-5xl font-bold text-white mb-6 tracking-tight">
-                Canales Digitales <span className="text-transparent bg-clip-text bg-gradient-to-r from-fuchsia-500 to-pink-400">CX</span>
-              </h2>
-              <p className="text-zinc-400 font-light text-lg leading-relaxed mb-8">Lleve la experiencia de Seguros al estándar de Uber o Netflix. Digitalice todo punto de contacto físico entre su asegurado y sus backoffices operativos.</p>
-            </div>
-
           </div>
         </div>
       </section>
