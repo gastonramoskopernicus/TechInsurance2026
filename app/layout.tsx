@@ -43,8 +43,12 @@ export default function RootLayout({
           aria-label="Contactar a Tech Insurance"
         >
           <div className="absolute inset-0 rounded-full bg-[radial-gradient(ellipse_at_center,rgba(217,70,239,0.2),transparent)] opacity-0 group-hover:opacity-100 transition-opacity pointer-events-none" />
-          <div className="relative w-8 h-8 flex items-center justify-center drop-shadow-[0_0_10px_rgba(217,70,239,0.5)] group-hover:drop-shadow-[0_0_15px_rgba(217,70,239,0.8)] transition-all">
-            <img src="/TechInsurance.svg" alt="Tech Insurance Logo" className="object-contain w-full h-full filter saturate-200" />
+          <div className="relative w-7 h-7 flex items-center justify-center drop-shadow-[0_0_10px_rgba(217,70,239,0.4)] group-hover:drop-shadow-[0_0_15px_rgba(217,70,239,0.8)] transition-all">
+            <svg viewBox="0 0 24 24" fill="none" strokeWidth="1.5" className="w-full h-full text-fuchsia-500 transition-colors duration-300">
+               <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z" fill="#200e23" stroke="currentColor" strokeLinejoin="round"/>
+               <polyline points="3.27 6.96 12 12.01 20.73 6.96" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round"/>
+               <line x1="12" y1="22.08" x2="12" y2="12" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round"/>
+            </svg>
           </div>
         </a>
       </body>

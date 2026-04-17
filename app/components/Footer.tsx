@@ -21,14 +21,9 @@ export default function Footer() {
             
             {/* Kopernicus Endorsement */}
             <div className="flex flex-col items-start pt-6 border-t border-white/5 w-full mb-6">
-               <span className="text-[10px] uppercase tracking-widest text-zinc-600 font-medium mb-3">Solución desarrollada por</span>
-               <div className="flex items-center gap-2 text-zinc-400 opacity-80 hover:opacity-100 transition-opacity">
-                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" className="w-4 h-4">
-                    <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z" />
-                    <circle cx="12" cy="12" r="10" />
-                    <path d="M2 12h20" />
-                 </svg>
-                 <span className="text-sm font-bold tracking-tight">KOPERNICUS <span className="font-light">TECH</span></span>
+               <span className="text-[10px] uppercase tracking-widest text-zinc-600 font-medium mb-4">Powered by</span>
+               <div className="relative h-6 w-36 opacity-75 hover:opacity-100 transition-opacity">
+                 <Image src="/kopernicus-logo.png" alt="Kopernicus Tech" fill className="object-contain object-left brightness-0 invert" sizes="150px" />
                </div>
             </div>
             
