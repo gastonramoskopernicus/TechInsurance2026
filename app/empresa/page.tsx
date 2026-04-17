@@ -13,18 +13,19 @@ export default function EmpresaPage() {
         <div className="absolute right-0 top-1/4 w-[400px] h-[400px] bg-fuchsia-900/10 rounded-full blur-[140px] pointer-events-none z-0 mix-blend-screen" />
         
         <div className="container mx-auto max-w-5xl relative z-10 text-center flex flex-col items-center">
-          <div className="relative w-28 h-28 mx-auto mb-10 text-fuchsia-500 animate-breath opacity-90 drop-shadow-[0_0_20px_rgba(217,70,239,0.2)]">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" className="w-full h-full"><polygon points="12 2 2 22 22 22 12 2"/><path d="M12 22V10"/><path d="M8 15h8"/></svg>
+          <div className="relative mx-auto mb-8 flex justify-center opacity-90 drop-shadow-[0_0_15px_rgba(255,255,255,0.1)]">
+             <Image src="/kopernicus-logo.png" alt="Kopernicus Logo" width={280} height={50} className="object-contain brightness-0 invert" />
           </div>
-
-          <span className="text-fuchsia-500 font-semibold tracking-wider text-sm uppercase mb-4 block">El Holding Detrás de la Plataforma</span>
           <h1 className="text-4xl md:text-5xl lg:text-7xl font-extrabold tracking-tight text-white mb-6">
             Experiencia real en <br className="hidden md:block"/> <span className="text-transparent bg-clip-text bg-gradient-to-r from-fuchsia-500 to-pink-400">transformación aseguradora</span>
           </h1>
           
           <div className="border border-fuchsia-500/20 rounded-3xl p-10 lg:p-14 bg-black/50 backdrop-blur-md shadow-2xl mt-8">
-            <p className="text-fuchsia-100/90 text-xl font-light leading-relaxed">
-              Kopernicus combina genio estratégico, vanguardia tecnológica y rigor operativo para transformar el negocio del seguro y la banca transaccional en toda la región. Nosotros inventamos Tech Insurance.
+            <p className="text-fuchsia-100/90 text-xl font-light leading-relaxed mb-6">
+              Más de 20 años de experiencia integrando estrategia, tecnología y ejecución en América Latina. Somos especialistas en seguros y servicios financieros, enfocados en la optimización operativa, la innovación de la experiencia del cliente y la competitividad.
+            </p>
+            <p className="text-fuchsia-100/90 text-lg font-bold leading-relaxed">
+              Combinamos un profundo conocimiento del negocio y la regulación del mercado asegurador con amplias capacidades de transformación digital.
             </p>
           </div>
         </div>
@@ -72,29 +73,31 @@ export default function EmpresaPage() {
         </div>
       </section>
 
-      {/* PROPUESTA DE VALOR */}
+      {/* LÍNEAS DE SERVICIO */}
       <section id="valor" className="py-24 px-4 bg-[#020104] border-b border-white/5 scroll-mt-32">
         <div className="container mx-auto max-w-7xl">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-5xl font-bold text-white mb-6">
-              Nuestra Propuesta de <span className="text-transparent bg-clip-text bg-gradient-to-r from-fuchsia-500 to-pink-400">Valor</span>
+              Líneas de <span className="text-transparent bg-clip-text bg-gradient-to-r from-fuchsia-500 to-pink-400">Servicio</span>
             </h2>
-            <p className="text-xl text-zinc-400 font-light max-w-3xl mx-auto">ADN corporativo fusionado con agilidad pura de startup.</p>
+            <p className="text-xl text-zinc-400 font-light max-w-3xl mx-auto">Soluciones de alto nivel apoyadas en nuestra experiencia corporativa real.</p>
           </div>
           
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8 justify-center">
             {[
-              { title: 'Convertimos visión en resultados', icon: '<path d="M22 12h-4l-3 9L9 3l-3 9H2"/>' },
-              { title: 'Dominamos sectores complejos', icon: '<rect width="18" height="18" x="3" y="3" rx="2" ry="2"/><path d="M9 3v18"/><path d="M15 3v18"/>' },
-              { title: 'Potenciamos lo existente', icon: '<path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path><polyline points="3.27 6.96 12 12.01 20.73 6.96"></polyline><line x1="12" y1="22.08" x2="12" y2="12"></line>' },
-              { title: 'Velocidad y calidad radical', icon: '<path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/>' },
-              { title: 'Involucramiento en la ejecución', icon: '<path d="M16 21v-2a4 4 0 0 0-4-4H5c-1.1 0-2 .9-2 2v2"/><circle cx="8.5" cy="7" r="4"/><line x1="20" y1="8" x2="20" y2="14"/><line x1="23" y1="11" x2="17" y2="11"/>' }
+              { title: 'Consulting', desc: 'Estrategia, transformación, roadmap de sistemas y alineación tecnológica al cumplimiento de objetivos de negocio.', icon: '<path d="M22 12h-4l-3 9L9 3l-3 9H2"/>' },
+              { title: 'Factory', desc: 'Desarrollo moderno de software y productos digitales nativos para el dinámico core operativo del seguro.', icon: '<path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/>' },
+              { title: 'Space Cloud', desc: 'Infraestructura, madurez cloud y operación tecnológica continua orientada a la altísima disponibilidad.', icon: '<path d="M17.5 19H9a7 7 0 1 1 6.71-9h1.79a4.5 4.5 0 1 1 0 9Z"/>' },
+              { title: 'Sourcing', desc: 'Provisión inmediata de talento especializado IT y células ágiles para acelerar el time-to-market crítico.', icon: '<path d="M17 21v-2a4 4 0 0 0-4-4H5c-1.1 0-2 .9-2 2v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/>' },
+              { title: 'Seguridad', desc: 'Protección de datos sensitivos, resguardo de privacidad y estricta ciberseguridad sobre la información financiera.', icon: '<rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/>' },
+              { title: 'RPA', desc: 'Automatización inteligente de procesos internos de backoffice masivos e integración robótica al negocio.', icon: '<rect x="4" y="4" width="16" height="16" rx="2" ry="2"/><path d="M9 9h6v6H9z"/>' }
             ].map((item, idx) => (
-              <div key={idx} className={`group p-10 border border-fuchsia-900/40 bg-[#0f0e11] rounded-[2rem] hover:bg-[#16141a] hover:border-fuchsia-500/70 hover:-translate-y-2 transition-all duration-300 shadow-[0_10px_30px_rgba(0,0,0,0.5)] flex flex-col items-center text-center ${idx === 4 ? 'lg:col-span-2' : ''}`}>
+              <div key={idx} className="group p-8 md:p-10 border border-fuchsia-900/40 bg-[#0f0e11] rounded-[2rem] hover:bg-[#16141a] hover:border-fuchsia-500/70 hover:-translate-y-2 transition-all duration-300 shadow-[0_10px_30px_rgba(0,0,0,0.5)] flex flex-col items-start text-left">
                  <div className="mb-6 text-fuchsia-600 group-hover:text-fuchsia-400 transition-colors duration-300 w-16 h-16 p-3 bg-fuchsia-950/30 rounded-2xl flex items-center justify-center">
-                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" className="w-12 h-12" dangerouslySetInnerHTML={{ __html: item.icon }}></svg>
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" className="w-10 h-10" dangerouslySetInnerHTML={{ __html: item.icon }}></svg>
                  </div>
-                 <h4 className="text-xl font-bold text-white leading-snug">{item.title}</h4>
+                 <h4 className="text-xl font-bold text-white leading-snug mb-3">{item.title}</h4>
+                 <p className="text-zinc-500 font-light text-sm leading-relaxed">{item.desc}</p>
               </div>
             ))}
           </div>
