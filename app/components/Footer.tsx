@@ -43,8 +43,9 @@ export default function Footer() {
         </div>
         
         <div className="pt-8 border-t border-border/50 flex flex-col md:flex-row justify-between items-center gap-4">
-          <p className="text-xs text-muted-foreground">
-            &copy; {new Date().getFullYear()} Tech Insurance. Todos los derechos reservados.
+          <p className="text-xs text-muted-foreground flex flex-col gap-1 items-center md:items-start">
+            <span>&copy; {new Date().getFullYear()} Tech Insurance. Todos los derechos reservados.</span>
+            <span className="font-medium text-fuchsia-100/30">Tech Insurance es una marca registrada de Kopernicus Tech.</span>
           </p>
           <div className="flex gap-4 text-xs text-muted-foreground">
             <Link href="#privacidad" className="hover:text-foreground transition-colors">Privacidad</Link>

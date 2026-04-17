@@ -1,6 +1,11 @@
+"use client";
+
 import Link from "next/link";
+import { useState } from "react";
 
 export default function Header() {
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+
   const navItems = [
     { label: "Plataforma", href: "/plataforma" },
     { label: "Product Studio", href: "/product-studio" },
@@ -25,7 +30,7 @@ export default function Header() {
         </div>
 
         {/* Main Navigation (Desktop) */}
-        <nav className="hidden md:flex flex-1 items-center justify-center space-x-6 text-sm font-medium">
+        <nav className="hidden xl:flex flex-1 items-center justify-center space-x-6 text-sm font-medium">
           {navItems.map((item) => (
             <Link
               key={item.label}
@@ -37,7 +42,7 @@ export default function Header() {
           ))}
         </nav>
 
-        {/* Right Actions */}
+        {/* Right Actions & Mobile Toggle */}
         <div className="flex items-center space-x-4">
           <Link
             href="/login"
@@ -47,12 +52,47 @@ export default function Header() {
           </Link>
           <Link
             href="/contacto"
-            className="inline-flex h-9 items-center justify-center rounded-md bg-primary px-4 py-2 text-sm font-medium text-primary-foreground shadow transition-colors hover:bg-primary/90 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50"
+            className="hidden sm:inline-flex h-9 items-center justify-center rounded-md bg-primary px-4 py-2 text-sm font-medium text-primary-foreground shadow transition-colors hover:bg-primary/90 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring"
           >
             Solicitar demo
           </Link>
+          
+          <button
+            className="xl:hidden ml-2 text-zinc-300 p-2 hover:text-fuchsia-500 transition-colors"
+            onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+          >
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" className="w-6 h-6">
+              {isMobileMenuOpen ? (
+                <path strokeLinecap="round" strokeLinejoin="round" d="M6 18L18 6M6 6l12 12" />
+              ) : (
+                <path strokeLinecap="round" strokeLinejoin="round" d="M4 6h16M4 12h16M4 18h16" />
+              )}
+            </svg>
+          </button>
         </div>
       </div>
+      
+      {/* Mobile Nav */}
+      {isMobileMenuOpen && (
+        <div className="xl:hidden bg-[#0d040e]/95 backdrop-blur-lg border-t border-fuchsia-900/30 absolute w-full shadow-2xl">
+          <nav className="flex flex-col space-y-2 px-6 py-8 text-lg font-medium">
+            {navItems.map((item) => (
+              <Link
+                key={item.label}
+                href={item.href}
+                onClick={() => setIsMobileMenuOpen(false)}
+                className="text-zinc-300 hover:text-fuchsia-500 block py-3 border-b border-white/5 transition-colors"
+              >
+                {item.label}
+              </Link>
+            ))}
+            <div className="pt-6 flex flex-col gap-4 sm:hidden">
+              <Link href="/login" onClick={() => setIsMobileMenuOpen(false)} className="text-zinc-300 py-2">Login</Link>
+              <Link href="/contacto" onClick={() => setIsMobileMenuOpen(false)} className="bg-fuchsia-600 text-white py-3 px-4 rounded-xl text-center shadow-lg font-bold">Solicitar demo</Link>
+            </div>
+          </nav>
+        </div>
+      )}
     </header>
   );
 }
