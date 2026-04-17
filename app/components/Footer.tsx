@@ -48,8 +48,8 @@ export default function Footer() {
             <span className="font-medium text-fuchsia-100/30">Tech Insurance es una marca registrada de Kopernicus Tech.</span>
           </p>
           <div className="flex gap-4 text-xs text-muted-foreground">
-            <Link href="#privacidad" className="hover:text-foreground transition-colors">Privacidad</Link>
-            <Link href="#terminos" className="hover:text-foreground transition-colors">Términos</Link>
+            <Link href="/legal/politica-de-privacidad" className="hover:text-foreground transition-colors">Privacidad</Link>
+            <Link href="/legal/terminos-y-condiciones" className="hover:text-foreground transition-colors">Términos</Link>
           </div>
         </div>
       </div>
