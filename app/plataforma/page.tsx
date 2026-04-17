@@ -32,20 +32,20 @@ export default function PlataformaPage() {
                <div className="group p-8 rounded-2xl border border-fuchsia-900/30 bg-[#0f0e11] hover:bg-[#16141a] hover:border-fuchsia-500/40 hover:shadow-[0_10px_40px_rgba(217,70,239,0.05)] transition-all text-left">
                  <div className="text-fuchsia-600 group-hover:text-fuchsia-400 mb-6 transition-colors"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" className="w-10 h-10"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg></div>
                  <h4 className="text-white font-bold text-lg mb-3 leading-snug">No reemplaza el core,<br/>lo potencia</h4>
-                 <p className="text-zinc-500 group-hover:text-zinc-400 text-sm font-light leading-relaxed transition-colors">Despliega de manera inmediata herramientas frontales e integraciones que el sistema legacy tardaría años o millones en desarrollar.</p>
+                 <p className="text-zinc-500 group-hover:text-zinc-400 text-sm font-light leading-relaxed transition-colors">Despliega de manera inmediata herramientas de front-end e integraciones que el sistema legacy tardaría años o millones en desarrollar.</p>
                </div>
                
                {/* Card 2 */}
                <div className="group p-8 rounded-2xl border border-fuchsia-900/30 bg-[#0f0e11] hover:bg-[#16141a] hover:border-fuchsia-500/40 hover:shadow-[0_10px_40px_rgba(217,70,239,0.05)] transition-all text-left">
                  <div className="text-fuchsia-600 group-hover:text-fuchsia-400 mb-6 transition-colors"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" className="w-10 h-10"><rect x="2" y="2" width="20" height="20" rx="2"/><path d="M12 16v-4"/><path d="M12 8h.01"/></svg></div>
-                 <h4 className="text-white font-bold text-lg mb-3 leading-snug">Extiende la longevidad<br/>del legacy</h4>
-                 <p className="text-zinc-500 group-hover:text-zinc-400 text-sm font-light leading-relaxed transition-colors">Permite que el core actual continúe operando vitalmente mientras se incorporan nuevas capacidades digitales sin necesidad de reescritura.</p>
+                 <h4 className="text-white font-bold text-lg mb-3 leading-snug">Extiende la vida<br/>del core legacy</h4>
+                 <p className="text-zinc-500 group-hover:text-zinc-400 text-sm font-light leading-relaxed transition-colors">Tech Insurance extiende la vida útil del core de seguros mientras se incorporan nuevas capacidades digitales sin necesidad de reescritura.</p>
                </div>
 
                {/* Card 3 */}
                <div className="group p-8 rounded-2xl border border-fuchsia-900/30 bg-[#0f0e11] hover:bg-[#16141a] hover:border-fuchsia-500/40 hover:shadow-[0_10px_40px_rgba(217,70,239,0.05)] transition-all text-left">
                  <div className="text-fuchsia-600 group-hover:text-fuchsia-400 mb-6 transition-colors"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" className="w-10 h-10"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg></div>
-                 <h4 className="text-white font-bold text-lg mb-3 leading-snug">Rigor comercial,<br/>no operativo</h4>
+                 <h4 className="text-white font-bold text-lg mb-3 leading-snug">Valor comercial,<br/>menor riesgo operativo</h4>
                  <p className="text-zinc-500 group-hover:text-zinc-400 text-sm font-light leading-relaxed transition-colors">La transformación se concentra en generar nuevas utilidades de negocio al instante, evitando los riesgos técnicos del cambio.</p>
                </div>
             </div>
@@ -84,27 +84,37 @@ export default function PlataformaPage() {
           <h2 className="text-3xl md:text-4xl font-bold mb-10 text-white tracking-tight">
             El Concepto de <span className="text-transparent bg-clip-text bg-gradient-to-r from-fuchsia-400 to-pink-400">Urbanización</span>
           </h2>
-          <div className="p-10 rounded-2xl bg-[#0f0e11] border border-fuchsia-950 shadow-lg relative overflow-hidden">
-            <div className="absolute top-0 right-0 w-64 h-64 bg-fuchsia-600/5 rounded-full blur-[80px]" />
-            <h3 className="text-2xl font-bold mb-6 text-white relative z-10">Urbanizar no es reemplazar.</h3>
-            <p className="text-zinc-400 text-lg mb-8 relative z-10 font-light">
-              Es rodear el core con capas inteligentes que:
-            </p>
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-10 relative z-10">
-               <div className="flex gap-4 items-start p-6 bg-black/40 rounded-xl border border-white/5">
-                 <div className="text-fuchsia-500 mt-1"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" className="w-5 h-5"><polyline points="20 6 9 17 4 12"/></svg></div>
-                 <p className="text-zinc-300">Absorben el cambio constante del mercado</p>
-               </div>
-               <div className="flex gap-4 items-start p-6 bg-black/40 rounded-xl border border-white/5">
-                 <div className="text-fuchsia-500 mt-1"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" className="w-5 h-5"><polyline points="20 6 9 17 4 12"/></svg></div>
-                 <p className="text-zinc-300">Reducen drásticamente el riesgo</p>
-               </div>
-               <div className="flex gap-4 items-start p-6 bg-black/40 rounded-xl border border-white/5">
-                 <div className="text-fuchsia-500 mt-1"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" className="w-5 h-5"><polyline points="20 6 9 17 4 12"/></svg></div>
-                 <p className="text-zinc-300">Aceleran el entorno de negocio</p>
-               </div>
+          
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-stretch">
+            {/* Texto Original */}
+            <div className="p-10 rounded-2xl bg-[#0f0e11] border border-fuchsia-950 shadow-lg relative overflow-hidden h-full flex flex-col justify-center">
+              <div className="absolute top-0 right-0 w-64 h-64 bg-fuchsia-600/5 rounded-full blur-[80px]" />
+              <h3 className="text-2xl font-bold mb-6 text-white relative z-10">Urbanizar no es reemplazar.</h3>
+              <p className="text-zinc-400 text-lg mb-8 relative z-10 font-light">
+                Es rodear el core con capas inteligentes que:
+              </p>
+              <div className="grid grid-cols-1 gap-4 mb-10 relative z-10">
+                 <div className="flex gap-4 items-center p-4 bg-black/40 rounded-xl border border-white/5">
+                   <div className="text-fuchsia-500"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" className="w-5 h-5"><polyline points="20 6 9 17 4 12"/></svg></div>
+                   <p className="text-zinc-300">Absorben el cambio constante del mercado</p>
+                 </div>
+                 <div className="flex gap-4 items-center p-4 bg-black/40 rounded-xl border border-white/5">
+                   <div className="text-fuchsia-500"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" className="w-5 h-5"><polyline points="20 6 9 17 4 12"/></svg></div>
+                   <p className="text-zinc-300">Reducen drásticamente el riesgo</p>
+                 </div>
+                 <div className="flex gap-4 items-center p-4 bg-black/40 rounded-xl border border-white/5">
+                   <div className="text-fuchsia-500"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" className="w-5 h-5"><polyline points="20 6 9 17 4 12"/></svg></div>
+                   <p className="text-zinc-300">Aceleran el entorno de negocio</p>
+                 </div>
+              </div>
+              <p className="text-fuchsia-200 font-medium text-lg relative z-10 mt-auto">Este enfoque estratégico evita los proyectos de transformación largos, riesgosos y costosos.</p>
             </div>
-            <p className="text-fuchsia-200 font-medium text-lg relative z-10">Este enfoque estratégico evita los proyectos de transformación largos, riesgosos y costosos.</p>
+
+            {/* Imagen Conceptual */}
+            <div className="relative w-full min-h-[400px] h-full rounded-2xl overflow-hidden border border-fuchsia-900/20 shadow-[0_0_50px_rgba(217,70,239,0.05)] bg-[#0f0e11] group">
+               <div className="absolute inset-0 bg-gradient-to-tr from-[#200e23]/60 via-transparent to-transparent z-10 mix-blend-overlay opacity-60 group-hover:opacity-100 transition-opacity duration-700" />
+               <Image src="/tech-urbanization-core.png" alt="Concepto de Evolución del Core Tecnológico" fill className="object-cover transition-transform duration-1000 group-hover:scale-105 opacity-90 group-hover:opacity-100" />
+            </div>
           </div>
         </div>
       </section>
