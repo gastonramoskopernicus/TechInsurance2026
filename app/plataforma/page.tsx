@@ -357,33 +357,55 @@ export default function PlataformaPage() {
               </div>
             </div>
 
-            {/* LAYER 6 & 7: Governance and Payments */}
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
-               <div>
-                  <h3 className="text-2xl md:text-3xl font-bold text-white mb-6 border-b border-white/5 pb-4 flex items-center">
-                    <span className="text-zinc-600 mr-4 font-light text-xl">06</span> GRC <span className="text-transparent bg-clip-text bg-gradient-to-r from-fuchsia-400 to-pink-400 ml-2">Layer</span>
-                  </h3>
-                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                     <div className="p-6 border border-white/5 bg-black/40 rounded-xl"><p className="text-white font-medium text-sm">Gestión de Usuarios</p></div>
-                     <div className="p-6 border border-white/5 bg-black/40 rounded-xl"><p className="text-white font-medium text-sm">Roles y Permisos Granulares</p></div>
-                     <div className="p-6 border border-white/5 bg-black/40 rounded-xl"><p className="text-white font-medium text-sm">Auditoría y Trazabilidad Compliance</p></div>
-                  </div>
-               </div>
-               <div>
-                  <h3 className="text-2xl md:text-3xl font-bold text-white mb-6 border-b border-white/5 pb-4 flex items-center">
-                    <span className="text-zinc-600 mr-4 font-light text-xl">07</span> Payments <span className="text-transparent bg-clip-text bg-gradient-to-r from-fuchsia-400 to-pink-400 ml-2">Layer</span>
-                  </h3>
-                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                    <div className="p-6 border border-white/5 bg-[#130a16] border-fuchsia-900/20 rounded-xl h-full flex flex-col justify-center">
-                       <h4 className="text-lg font-bold text-white mb-2">Gestión de Primas</h4>
-                       <p className="text-sm text-zinc-500 font-light">Permite administrar cuotas, pagos y realizar conciliación de cobranzas, entre otras funcionalidades.</p>
-                    </div>
-                    <div className="p-6 border border-white/5 bg-[#130a16] border-fuchsia-900/20 rounded-xl h-full flex flex-col justify-center">
-                       <h4 className="text-lg font-bold text-white mb-2">Pasarelas Digitales</h4>
-                       <p className="text-sm text-zinc-500 font-light">Stripe, Mercadopago, Bambú, Wallets digitales y Open Banking integrations.</p>
-                    </div>
-                  </div>
-               </div>
+            {/* LAYER 6: Governance (GRC Layer) */}
+            <div className="mt-20">
+              <h3 className="text-2xl md:text-3xl font-bold text-white mb-8 border-b border-white/5 pb-4 flex items-center">
+                <span className="text-zinc-600 mr-4 font-light text-xl">06</span> GRC <span className="text-transparent bg-clip-text bg-gradient-to-r from-fuchsia-400 to-pink-400 ml-2">Layer</span>
+              </h3>
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                 
+                 <div className="group p-8 border border-white/5 bg-[#0f0e11] rounded-2xl hover:bg-[#16141a] hover:border-fuchsia-900/50 transition-all duration-300 flex flex-col">
+                    <div className="mb-6 text-zinc-600 group-hover:text-fuchsia-500 transition-colors duration-300"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1" className="w-12 h-12"><path d="M17 21v-2a4 4 0 0 0-4-4H5c-1.1 0-2 .9-2 2v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg></div>
+                    <h4 className="text-xl font-bold text-white mb-2">Gestión de Usuarios</h4>
+                    <p className="text-sm text-zinc-500 font-light group-hover:text-zinc-400 transition-colors">Permite administrar los usuarios de la plataforma, sus accesos y su vinculación con la operación del negocio.</p>
+                 </div>
+                 
+                 <div className="group p-8 border border-white/5 bg-[#0f0e11] rounded-2xl hover:bg-[#16141a] hover:border-fuchsia-900/50 transition-all duration-300 flex flex-col">
+                    <div className="mb-6 text-zinc-600 group-hover:text-fuchsia-500 transition-colors duration-300"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1" className="w-12 h-12"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg></div>
+                    <h4 className="text-xl font-bold text-white mb-2">Roles y Permisos Granulares</h4>
+                    <p className="text-sm text-zinc-500 font-light group-hover:text-zinc-400 transition-colors">Define niveles de acceso detallados por rol, permitiendo controlar qué puede ver y ejecutar cada usuario dentro del sistema.</p>
+                 </div>
+
+                 <div className="group p-8 border border-white/5 bg-[#0f0e11] rounded-2xl hover:bg-[#16141a] hover:border-fuchsia-900/50 transition-all duration-300 flex flex-col">
+                    <div className="mb-6 text-zinc-600 group-hover:text-fuchsia-500 transition-colors duration-300"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1" className="w-12 h-12"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><polyline points="11 8 11 11 14 14"/></svg></div>
+                    <h4 className="text-xl font-bold text-white mb-2">Auditoría y Trazabilidad</h4>
+                    <p className="text-sm text-zinc-500 font-light group-hover:text-zinc-400 transition-colors">Registra todas las acciones realizadas en la plataforma, garantizando visibilidad, control y seguimiento de la operación.</p>
+                 </div>
+
+                 <div className="group p-8 border border-white/5 bg-[#0f0e11] rounded-2xl hover:bg-[#16141a] hover:border-fuchsia-900/50 transition-all duration-300 flex flex-col">
+                    <div className="mb-6 text-zinc-600 group-hover:text-fuchsia-500 transition-colors duration-300"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1" className="w-12 h-12"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><polyline points="9 12 11 14 15 10"/></svg></div>
+                    <h4 className="text-xl font-bold text-white mb-2">Compliance</h4>
+                    <p className="text-sm text-zinc-500 font-light group-hover:text-zinc-400 transition-colors">Asegura el cumplimiento de normativas y políticas internas mediante controles integrados en la operación.</p>
+                 </div>
+
+              </div>
+            </div>
+
+            {/* LAYER 7: Payments Layer */}
+            <div className="mt-20">
+              <h3 className="text-2xl md:text-3xl font-bold text-white mb-8 border-b border-white/5 pb-4 flex items-center">
+                <span className="text-zinc-600 mr-4 font-light text-xl">07</span> Payments <span className="text-transparent bg-clip-text bg-gradient-to-r from-fuchsia-400 to-pink-400 ml-2">Layer</span>
+              </h3>
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div className="group p-8 border border-white/5 bg-[#0f0e11] rounded-2xl hover:bg-[#16141a] hover:border-fuchsia-900/50 transition-all duration-300 flex flex-col">
+                   <h4 className="text-xl font-bold text-white mb-2">Gestión de Primas</h4>
+                   <p className="text-sm text-zinc-500 font-light group-hover:text-zinc-400 transition-colors">Permite administrar cuotas, pagos y realizar conciliación de cobranzas, entre otras funcionalidades.</p>
+                </div>
+                <div className="group p-8 border border-white/5 bg-[#0f0e11] rounded-2xl hover:bg-[#16141a] hover:border-fuchsia-900/50 transition-all duration-300 flex flex-col">
+                   <h4 className="text-xl font-bold text-white mb-2">Pasarelas Digitales</h4>
+                   <p className="text-sm text-zinc-500 font-light group-hover:text-zinc-400 transition-colors">Stripe, Mercadopago, Bambú, Wallets digitales y Open Banking integrations.</p>
+                </div>
+              </div>
             </div>
 
           </div>
