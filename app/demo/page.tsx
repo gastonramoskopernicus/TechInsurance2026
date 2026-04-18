@@ -39,18 +39,20 @@ export default function DemoLogin() {
         
         <form onSubmit={handleLogin} className="space-y-4">
           <div>
+            <label className="block text-left text-sm font-bold text-zinc-400 tracking-wider mb-2">Usuario</label>
             <input 
               type="text" 
-              placeholder="Usuario" 
+              placeholder="Ingrese su usuario" 
               className="w-full bg-[#0a050b] border border-fuchsia-900/30 rounded-xl px-4 py-3 text-white placeholder-zinc-600 focus:outline-none focus:border-fuchsia-500/60 transition-colors"
               value={username}
               onChange={(e) => setUsername(e.target.value)}
             />
           </div>
           <div>
+            <label className="block text-left text-sm font-bold text-zinc-400 tracking-wider mb-2">Contraseña</label>
             <input 
               type="password" 
-              placeholder="Contraseña" 
+              placeholder="Ingrese su contraseña" 
               className="w-full bg-[#0a050b] border border-fuchsia-900/30 rounded-xl px-4 py-3 text-white placeholder-zinc-600 focus:outline-none focus:border-fuchsia-500/60 transition-colors"
               value={password}
               onChange={(e) => setPassword(e.target.value)}

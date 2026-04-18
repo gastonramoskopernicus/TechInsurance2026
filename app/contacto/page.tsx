@@ -111,22 +111,22 @@ export default function ContactoPage() {
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                     <div className="flex flex-col gap-2">
                       <label className="text-sm font-bold text-zinc-400 tracking-wider">Nombre Completo</label>
-                      <input required type="text" className="w-full bg-[#16141a] border border-white/5 p-4 rounded-xl text-white outline-none focus:border-fuchsia-500 focus:bg-[#1b081e] transition-all" placeholder="Juan Pérez" />
+                      <input required type="text" className="w-full bg-[#16141a] border border-white/5 p-4 rounded-xl text-white outline-none focus:border-fuchsia-500 focus:bg-[#1b081e] transition-all" placeholder="Ingrese su nombre completo" />
                     </div>
                     <div className="flex flex-col gap-2">
                       <label className="text-sm font-bold text-zinc-400 tracking-wider">Empresa / Institución</label>
-                      <input required type="text" className="w-full bg-[#16141a] border border-white/5 p-4 rounded-xl text-white outline-none focus:border-fuchsia-500 focus:bg-[#1b081e] transition-all" placeholder="Compañía Aseguradora S.A." />
+                      <input required type="text" className="w-full bg-[#16141a] border border-white/5 p-4 rounded-xl text-white outline-none focus:border-fuchsia-500 focus:bg-[#1b081e] transition-all" placeholder="Ingrese el nombre de su empresa" />
                     </div>
                   </div>
 
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                     <div className="flex flex-col gap-2">
                       <label className="text-sm font-bold text-zinc-400 tracking-wider">Email Corporativo</label>
-                      <input required type="email" className="w-full bg-[#16141a] border border-white/5 p-4 rounded-xl text-white outline-none focus:border-fuchsia-500 focus:bg-[#1b081e] transition-all" placeholder="nombre@empresa.com" />
+                      <input required type="email" className="w-full bg-[#16141a] border border-white/5 p-4 rounded-xl text-white outline-none focus:border-fuchsia-500 focus:bg-[#1b081e] transition-all" placeholder="Ingrese su email corporativo" />
                     </div>
                     <div className="flex flex-col gap-2">
                       <label className="text-sm font-bold text-zinc-400 tracking-wider">Teléfono (Opcional)</label>
-                      <input type="tel" className="w-full bg-[#16141a] border border-white/5 p-4 rounded-xl text-white outline-none focus:border-fuchsia-500 focus:bg-[#1b081e] transition-all" placeholder="+54 9 11 0000-0000" />
+                      <input type="tel" className="w-full bg-[#16141a] border border-white/5 p-4 rounded-xl text-white outline-none focus:border-fuchsia-500 focus:bg-[#1b081e] transition-all" placeholder="Ingrese su número de teléfono" />
                     </div>
                   </div>
 
