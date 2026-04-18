@@ -28,7 +28,7 @@ export default function Home() {
           <div className="relative flex justify-center items-center w-72 h-72 sm:w-[22rem] sm:h-[22rem] md:w-[28rem] md:h-[28rem] mb-6 z-20">
             <div className="animate-breath w-full h-full drop-shadow-[0_0_25px_rgba(217,70,239,0.2)]">
               <Image 
-                src="/TechInsurance.svg" 
+                src="/logo.svg" 
                 alt="Tech Insurance Official Geometric Logo" 
                 fill
                 className="object-contain"
