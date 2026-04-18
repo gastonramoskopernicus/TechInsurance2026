@@ -68,7 +68,7 @@ export default function EmpresaPage() {
             Consultora Especializada en <br className="hidden md:block"/> <span className="text-transparent bg-clip-text bg-gradient-to-r from-fuchsia-500 to-pink-400">Seguros y Servicios Financieros</span>
           </h2>
           <div className="max-w-4xl mx-auto p-12 bg-[#1b081e]/80 border border-fuchsia-800/40 backdrop-blur rounded-3xl shadow-2xl">
-            <h3 className="text-2xl font-bold text-white mb-6 uppercase tracking-widest text-fuchsia-300">No solo diseñamos soluciones. Las llevamos a producción.</h3>
+            <h3 className="text-2xl font-bold text-white mb-6 tracking-widest text-fuchsia-300">No solo desarrollamos o diseñamos soluciones, las llevamos más allá.</h3>
             <p className="text-zinc-300 text-lg font-light leading-relaxed mb-6">
               A diferencia de las agencias de marketing o las fábricas de software puras, en Kopernicus nacimos integrando a actuarios, ingenieros nativos de la nube y expertos en suscripción bajo un mismo techo. 
             </p>
@@ -92,10 +92,10 @@ export default function EmpresaPage() {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8 justify-center">
             {[
               { title: 'Consulting', desc: 'Estrategia, transformación, roadmap de sistemas y alineación tecnológica al cumplimiento de objetivos de negocio.', file: 'kps-it-digital-consulting.png' },
-              { title: 'Factory', desc: 'Desarrollo moderno de software y productos digitales nativos para el dinámico core operativo del seguro.', file: 'kps-digital-factory.png' },
+              { title: 'Software Factory', desc: 'Desarrollo moderno de software y productos digitales nativos para el dinámico core operativo del seguro.', file: 'kps-software-factory.png' },
               { title: 'Space Cloud', desc: 'Infraestructura, madurez cloud y operación tecnológica continua orientada a la altísima disponibilidad.', file: 'kps-cloud-arquitectura.png' },
               { title: 'Sourcing', desc: 'Provisión inmediata de talento especializado IT y células ágiles para acelerar el time-to-market crítico.', file: 'kps-it-sourcing.png' },
-              { title: 'Software Factory', desc: 'Protección de datos sensitivos, resguardo de privacidad y estricta ciberseguridad sobre la información financiera.', file: 'kps-software-factory.png' },
+              { title: 'Seguridad', desc: 'Servicios de seguridad informática especializados para compañías de seguros, orientados a proteger información, procesos críticos, integraciones y entornos digitales.', file: 'kps-digital-factory.png' },
               { title: 'RPA', desc: 'Automatización inteligente de procesos internos de backoffice e integración robótica al negocio.', file: 'kps-robotic-process-automation.png' }
             ].map((item, idx) => (
               <div key={idx} className="group p-8 md:p-10 border border-fuchsia-900/40 bg-[#0f0e11] rounded-[2rem] hover:bg-[#16141a] hover:border-fuchsia-500/70 hover:-translate-y-2 transition-all duration-300 shadow-[0_10px_30px_rgba(0,0,0,0.5)] flex flex-col items-start text-left relative overflow-hidden">
@@ -103,7 +103,7 @@ export default function EmpresaPage() {
                     <Image src={`/servicios/${item.file}`} alt={item.title} fill className="object-contain grayscale" />
                  </div>
                  <div className="mb-6 w-16 h-16 bg-[#160b18] border border-fuchsia-900/50 rounded-2xl flex items-center justify-center shadow-lg relative shrink-0">
-                    <Image src={`/servicios/${item.file}`} alt={item.title} width={36} height={36} className="object-contain" />
+                    <Image src={`/servicios/${item.file}`} alt={item.title} width={36} height={36} className="object-contain" style={{ filter: 'hue-rotate(300deg) saturate(1.5)' }} />
                  </div>
                  <h4 className="text-xl font-bold text-white leading-snug mb-3 relative z-10">{item.title}</h4>
                  <p className="text-zinc-500 font-light text-sm leading-relaxed relative z-10">{item.desc}</p>
