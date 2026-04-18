@@ -1,6 +1,11 @@
+"use client";
+import { useState } from "react";
 import Image from "next/image";
+import Link from "next/link";
 
 export default function EmpresaPage() {
+  const [showModal, setShowModal] = useState(false);
+
   return (
     <div className="flex flex-col w-full relative bg-[#020104]">
       {/* 1. HERO - Kopernicus */}
@@ -14,7 +19,8 @@ export default function EmpresaPage() {
         
         <div className="container mx-auto max-w-5xl relative z-10 text-center flex flex-col items-center">
           <div className="relative mx-auto mb-8 flex justify-center opacity-90 drop-shadow-[0_0_15px_rgba(255,255,255,0.1)]">
-             <Image src="/kopernicus-logo.png" alt="Kopernicus Logo" width={280} height={50} className="object-contain brightness-0 invert" />
+             {/* Logo Kopernicus 50% larger (original width was 280, 50% larger -> 420; height 50 -> 75) */}
+             <Image src="/kopernicus-logo.png" alt="Kopernicus Logo" width={420} height={75} className="object-contain brightness-0 invert" />
           </div>
           <h1 className="text-4xl md:text-5xl lg:text-7xl font-extrabold tracking-tight text-white mb-6">
             Experiencia real en <br className="hidden md:block"/> <span className="text-transparent bg-clip-text bg-gradient-to-r from-fuchsia-500 to-pink-400">transformación aseguradora</span>
@@ -22,7 +28,7 @@ export default function EmpresaPage() {
           
           <div className="border border-fuchsia-500/20 rounded-3xl p-10 lg:p-14 bg-black/50 backdrop-blur-md shadow-2xl mt-8">
             <p className="text-fuchsia-100/90 text-xl font-light leading-relaxed mb-6">
-              Más de 20 años de experiencia integrando estrategia, tecnología y ejecución en América Latina. Somos especialistas en seguros y servicios financieros, enfocados en la optimización operativa, la innovación de la experiencia del cliente y la competitividad.
+              No solo diseñamos soluciones, llevamos a las compañías aseguradoras más allá.
             </p>
             <p className="text-fuchsia-100/90 text-lg font-bold leading-relaxed">
               Combinamos un profundo conocimiento del negocio y la regulación del mercado asegurador con amplias capacidades de transformación digital.
@@ -85,19 +91,22 @@ export default function EmpresaPage() {
           
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8 justify-center">
             {[
-              { title: 'Consulting', desc: 'Estrategia, transformación, roadmap de sistemas y alineación tecnológica al cumplimiento de objetivos de negocio.', icon: '<path d="M22 12h-4l-3 9L9 3l-3 9H2"/>' },
-              { title: 'Factory', desc: 'Desarrollo moderno de software y productos digitales nativos para el dinámico core operativo del seguro.', icon: '<path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/>' },
-              { title: 'Space Cloud', desc: 'Infraestructura, madurez cloud y operación tecnológica continua orientada a la altísima disponibilidad.', icon: '<path d="M17.5 19H9a7 7 0 1 1 6.71-9h1.79a4.5 4.5 0 1 1 0 9Z"/>' },
-              { title: 'Sourcing', desc: 'Provisión inmediata de talento especializado IT y células ágiles para acelerar el time-to-market crítico.', icon: '<path d="M17 21v-2a4 4 0 0 0-4-4H5c-1.1 0-2 .9-2 2v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/>' },
-              { title: 'Seguridad', desc: 'Protección de datos sensitivos, resguardo de privacidad y estricta ciberseguridad sobre la información financiera.', icon: '<rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/>' },
-              { title: 'RPA', desc: 'Automatización inteligente de procesos internos de backoffice masivos e integración robótica al negocio.', icon: '<rect x="4" y="4" width="16" height="16" rx="2" ry="2"/><path d="M9 9h6v6H9z"/>' }
+              { title: 'Consulting', desc: 'Estrategia, transformación, roadmap de sistemas y alineación tecnológica al cumplimiento de objetivos de negocio.', file: 'kps-it-digital-consulting.png' },
+              { title: 'Factory', desc: 'Desarrollo moderno de software y productos digitales nativos para el dinámico core operativo del seguro.', file: 'kps-digital-factory.png' },
+              { title: 'Space Cloud', desc: 'Infraestructura, madurez cloud y operación tecnológica continua orientada a la altísima disponibilidad.', file: 'kps-cloud-arquitectura.png' },
+              { title: 'Sourcing', desc: 'Provisión inmediata de talento especializado IT y células ágiles para acelerar el time-to-market crítico.', file: 'kps-it-sourcing.png' },
+              { title: 'Software Factory', desc: 'Protección de datos sensitivos, resguardo de privacidad y estricta ciberseguridad sobre la información financiera.', file: 'kps-software-factory.png' },
+              { title: 'RPA', desc: 'Automatización inteligente de procesos internos de backoffice e integración robótica al negocio.', file: 'kps-robotic-process-automation.png' }
             ].map((item, idx) => (
-              <div key={idx} className="group p-8 md:p-10 border border-fuchsia-900/40 bg-[#0f0e11] rounded-[2rem] hover:bg-[#16141a] hover:border-fuchsia-500/70 hover:-translate-y-2 transition-all duration-300 shadow-[0_10px_30px_rgba(0,0,0,0.5)] flex flex-col items-start text-left">
-                 <div className="mb-6 text-fuchsia-600 group-hover:text-fuchsia-400 transition-colors duration-300 w-16 h-16 p-3 bg-fuchsia-950/30 rounded-2xl flex items-center justify-center">
-                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" className="w-10 h-10" dangerouslySetInnerHTML={{ __html: item.icon }}></svg>
+              <div key={idx} className="group p-8 md:p-10 border border-fuchsia-900/40 bg-[#0f0e11] rounded-[2rem] hover:bg-[#16141a] hover:border-fuchsia-500/70 hover:-translate-y-2 transition-all duration-300 shadow-[0_10px_30px_rgba(0,0,0,0.5)] flex flex-col items-start text-left relative overflow-hidden">
+                 <div className="absolute -bottom-6 -right-6 opacity-5 group-hover:opacity-10 transition-opacity duration-500 w-48 h-48 pointer-events-none">
+                    <Image src={`/servicios/${item.file}`} alt={item.title} fill className="object-contain grayscale" />
                  </div>
-                 <h4 className="text-xl font-bold text-white leading-snug mb-3">{item.title}</h4>
-                 <p className="text-zinc-500 font-light text-sm leading-relaxed">{item.desc}</p>
+                 <div className="mb-6 w-16 h-16 bg-[#160b18] border border-fuchsia-900/50 rounded-2xl flex items-center justify-center shadow-lg relative shrink-0">
+                    <Image src={`/servicios/${item.file}`} alt={item.title} width={36} height={36} className="object-contain" />
+                 </div>
+                 <h4 className="text-xl font-bold text-white leading-snug mb-3 relative z-10">{item.title}</h4>
+                 <p className="text-zinc-500 font-light text-sm leading-relaxed relative z-10">{item.desc}</p>
               </div>
             ))}
           </div>
@@ -109,9 +118,9 @@ export default function EmpresaPage() {
         <div className="container mx-auto max-w-6xl">
           <div className="grid grid-cols-1 md:grid-cols-12 gap-12 items-center">
             <div className="md:col-span-7">
-               <span className="text-fuchsia-500 font-semibold tracking-wider text-sm uppercase mb-3 block">Garantía Sistémica</span>
+               <span className="text-fuchsia-500 font-semibold tracking-wider text-sm uppercase mb-3 block">Garantía</span>
                <h2 className="text-3xl md:text-5xl font-bold text-white mb-6 tracking-tight">
-                 Experiencia Masiva en <span className="text-transparent bg-clip-text bg-gradient-to-r from-fuchsia-500 to-pink-400">Core Systems</span>
+                 Experiencia en <span className="text-transparent bg-clip-text bg-gradient-to-r from-fuchsia-500 to-pink-400">Core de seguros</span>
                </h2>
                <p className="text-zinc-400 font-light text-xl leading-relaxed mb-8">
                  No actuamos desde afuera. Kopernicus participa en todo el ciclo de vida del Core Legacy de manera end-to-end: orquestamos la evaluación, la selección, la implementación silenciosa y su subsecuente evolución integrando negocios con tecnología dura.
@@ -157,7 +166,7 @@ export default function EmpresaPage() {
             Presencia <span className="text-transparent bg-clip-text bg-gradient-to-r from-fuchsia-500 to-pink-400">Global</span>
           </h2>
           <p className="text-xl text-zinc-400 font-light max-w-3xl mx-auto mb-16">
-            Despliegue de operaciones e ingeniería de software sin fronteras: Desde el sur del mundo hacia Latinoamérica entera y Europa Central.
+            Contamos con oficinas y presencia en los siguientes países. Sin embargo, realizamos operaciones a nivel global, disponibilizando y desplegando equipos allí donde lo requieran nuestros clientes.
           </p>
           
           <div className="grid grid-cols-2 lg:grid-cols-4 gap-4">
@@ -214,30 +223,30 @@ export default function EmpresaPage() {
       </section>
 
       {/* EQUIPO */}
-      <section id="equipo" className="py-24 px-4 bg-[#050106] border-b border-fuchsia-900/30 scroll-mt-32">
-        <div className="container mx-auto max-w-6xl text-center">
+      <section id="equipo" className="py-24 px-4 bg-[#050106] border-b border-fuchsia-900/30 scroll-mt-32 relative">
+        <div className="container mx-auto max-w-6xl text-center relative z-10">
           <h2 className="text-3xl md:text-5xl font-bold text-white mb-6">
             Mentes <span className="text-transparent bg-clip-text bg-gradient-to-r from-fuchsia-500 to-pink-400">Ejecutoras</span>
           </h2>
-          <p className="text-xl text-zinc-400 font-light max-w-3xl mx-auto mb-16">
-            Un management board compuesto por expertos reales sin títulos adornados. Maestría comprobada en Core, Actuarial y Desarrollo Cloud.
+          <p className="text-xl text-zinc-400 font-light max-w-4xl mx-auto mb-16 leading-relaxed">
+            Kopernicus cuenta con cerca de 100 consultores especializados en seguros y servicios financieros, además de una red de partners y aliados estratégicos que nos permiten abordar proyectos de gran magnitud. Nuestro equipo combina convicción, cultura de ejecución y experiencia acumulada en múltiples países y contextos, lo que nos posiciona como una de las consultoras con mayor foco y expertise en esta industria a nivel global.
           </p>
           
           <div className="flex flex-col md:flex-row justify-center gap-8">
              <div className="bg-[#0f0e11] border border-white/5 p-10 rounded-3xl w-full md:w-1/3 hover:border-fuchsia-500/50 transition-colors">
                 <div className="w-12 h-12 mx-auto bg-[#1b081e] rounded-full border border-fuchsia-800 text-fuchsia-500 flex items-center justify-center mb-6"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" className="w-8 h-8"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg></div>
-                <h4 className="text-xl font-bold text-white mb-2">Arquitectura Core</h4>
-                <p className="text-zinc-500 font-light text-sm">Más de 20 años comandando rescates y migraciones AS400 e implementaciones críticas on-premise.</p>
+                <h4 className="text-xl font-bold text-white mb-2">Expertise sectorial</h4>
+                <p className="text-zinc-500 font-light text-sm">conocimiento profundo en seguros y servicios financieros</p>
              </div>
              <div className="bg-[#0f0e11] border border-white/5 p-10 rounded-3xl w-full md:w-1/3 hover:border-fuchsia-500/50 transition-colors">
                 <div className="w-12 h-12 mx-auto bg-[#1b081e] rounded-full border border-fuchsia-800 text-fuchsia-500 flex items-center justify-center mb-6"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" className="w-8 h-8"><polygon points="12 2 2 7 12 12 22 7 12 2"/><polyline points="2 17 12 22 22 17"/><polyline points="2 12 12 17 22 12"/></svg></div>
-                <h4 className="text-xl font-bold text-white mb-2">Visionarios Product Studio</h4>
-                <p className="text-zinc-500 font-light text-sm">Directores actuariales y gerentes de producto redefiniendo el motor de pricing y el desacople perimetral.</p>
+                <h4 className="text-xl font-bold text-white mb-2">20 años de experiencia</h4>
+                <p className="text-zinc-500 font-light text-sm">trayectoria en proyectos complejos y transformación del negocio</p>
              </div>
              <div className="bg-[#0f0e11] border border-white/5 p-10 rounded-3xl w-full md:w-1/3 hover:border-fuchsia-500/50 transition-colors">
                 <div className="w-12 h-12 mx-auto bg-[#1b081e] rounded-full border border-fuchsia-800 text-fuchsia-500 flex items-center justify-center mb-6"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" className="w-8 h-8"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"/><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"/></svg></div>
-                <h4 className="text-xl font-bold text-white mb-2">Ingeniería Cloud</h4>
-                <p className="text-zinc-500 font-light text-sm">Gurús del despliegue serverless operando bases relacionales multi-regionales de altísima concurrencia y seguridad.</p>
+                <h4 className="text-xl font-bold text-white mb-2">Casi 100 especialistas</h4>
+                <p className="text-zinc-500 font-light text-sm">capacidad propia de delivery y escala de ejecución</p>
              </div>
           </div>
         </div>
@@ -254,16 +263,55 @@ export default function EmpresaPage() {
             Hablemos hoy con un arquitecto comercial. Le demostraremos la flexibilidad absoluta de Tech Insurance mapeada a su propio Core.
           </p>
           <div className="flex flex-col sm:flex-row justify-center gap-6">
-             <a href="#" className="inline-flex items-center justify-center gap-3 px-10 py-5 bg-fuchsia-600 text-white font-bold rounded-2xl hover:bg-fuchsia-500 transition-all shadow-[0_0_40px_rgba(217,70,239,0.4)] hover:shadow-[0_0_60px_rgba(217,70,239,0.6)] text-lg">
-                Agendar Demostración Técnica <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" className="w-5 h-5"><polyline points="9 18 15 12 9 6"/></svg>
-             </a>
-             <a href="#" className="inline-flex items-center justify-center gap-3 px-10 py-5 bg-transparent border border-fuchsia-800 text-fuchsia-400 font-bold rounded-2xl hover:bg-fuchsia-900/30 transition-all text-lg">
-                Contactar a un Especialista
-             </a>
+             <Link href="https://www.kopernicus.com.ar/" target="_blank" className="inline-flex items-center justify-center gap-3 px-10 py-5 bg-fuchsia-600 text-white font-bold rounded-2xl hover:bg-fuchsia-500 transition-all shadow-[0_0_40px_rgba(217,70,239,0.4)] hover:shadow-[0_0_60px_rgba(217,70,239,0.6)] text-lg">
+                Contáctenos <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" className="w-5 h-5"><polyline points="9 18 15 12 9 6"/></svg>
+             </Link>
+             <button onClick={() => setShowModal(true)} className="inline-flex items-center justify-center gap-3 px-10 py-5 bg-transparent border border-fuchsia-800 text-fuchsia-400 font-bold rounded-2xl hover:bg-fuchsia-900/30 transition-all text-lg cursor-pointer">
+                Responsables Kopernicus
+             </button>
           </div>
         </div>
       </section>
 
+      {/* POPUP MODAL - Responsables */}
+      {showModal && (
+        <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/80 backdrop-blur-sm animate-fade-in">
+          <div className="bg-[#0d040e] border border-fuchsia-900/50 rounded-3xl max-w-xl w-full p-8 shadow-[0_0_50px_rgba(217,70,239,0.2)] relative flex flex-col">
+            <button aria-label="Close" onClick={() => setShowModal(false)} className="absolute top-6 right-6 text-zinc-500 hover:text-white transition-colors">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" className="w-6 h-6"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+            </button>
+            
+            <h3 className="text-2xl font-bold text-white mb-2">Responsables <span className="text-transparent bg-clip-text bg-gradient-to-r from-fuchsia-500 to-pink-400">Kopernicus</span></h3>
+            <p className="text-zinc-400 font-light mb-8">Conecte con nuestro equipo de liderazgo.</p>
+
+            <div className="space-y-4">
+              {/* Fernando */}
+              <div className="bg-[#160517] border border-white/5 rounded-2xl p-6 flex flex-col md:flex-row items-center justify-between gap-4 hover:border-fuchsia-900/40 transition-colors">
+                <div className="text-center md:text-left">
+                  <h4 className="text-xl font-bold text-white">Fernando Laurito</h4>
+                  <p className="text-fuchsia-500/80 font-medium text-sm">Consulting & Strategy</p>
+                </div>
+                <Link href="https://www.linkedin.com/in/fernandolaurito/" target="_blank" className="px-5 py-2.5 bg-zinc-900 hover:bg-zinc-800 border border-zinc-700 text-white rounded-xl text-sm font-semibold transition-all shadow-md shrink-0 flex items-center gap-2">
+                  <svg viewBox="0 0 24 24" fill="currentColor" className="w-4 h-4 text-[#0077b5]"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.225 0z"/></svg>
+                  Ver Perfil
+                </Link>
+              </div>
+
+              {/* Gaston */}
+              <div className="bg-[#160517] border border-white/5 rounded-2xl p-6 flex flex-col md:flex-row items-center justify-between gap-4 hover:border-fuchsia-900/40 transition-colors">
+                <div className="text-center md:text-left">
+                  <h4 className="text-xl font-bold text-white">Gastón Ramos</h4>
+                  <p className="text-fuchsia-500/80 font-medium text-sm">Insurance & Business Transformation</p>
+                </div>
+                <Link href="https://www.linkedin.com/in/ramosgaston/" target="_blank" className="px-5 py-2.5 bg-zinc-900 hover:bg-zinc-800 border border-zinc-700 text-white rounded-xl text-sm font-semibold transition-all shadow-md shrink-0 flex items-center gap-2">
+                  <svg viewBox="0 0 24 24" fill="currentColor" className="w-4 h-4 text-[#0077b5]"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.225 0z"/></svg>
+                  Ver Perfil
+                </Link>
+              </div>
+            </div>
+          </div>
+        </div>
+      )}
     </div>
   );
 }
