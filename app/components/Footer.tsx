@@ -42,16 +42,16 @@ export default function Footer() {
 
           {/* Nav: Plataforma & Soluciones */}
           <div className="col-span-1 md:col-span-1 lg:col-span-2">
-            <h4 className="font-semibold mb-5 text-white text-sm tracking-wider uppercase"><Link href="/plataforma" className="hover:text-fuchsia-400 transition-colors">Plataforma</Link></h4>
-            <ul className="space-y-3 text-sm text-zinc-400 font-light mb-8">
+            <h4 className="font-semibold mb-3 text-white text-sm tracking-wider uppercase"><Link href="/plataforma" className="hover:text-fuchsia-400 transition-colors">Plataforma</Link></h4>
+            <ul className="space-y-1.5 text-sm text-zinc-400 font-light mb-6">
               <li><Link href="/plataforma#que-es" className="hover:text-fuchsia-400 transition-colors">Qué es Tech Insurance</Link></li>
               <li><Link href="/plataforma#capacidades" className="hover:text-fuchsia-400 transition-colors">Capacidades</Link></li>
               <li><Link href="/plataforma#modulos" className="hover:text-fuchsia-400 transition-colors">Módulos</Link></li>
               <li><Link href="/plataforma#arquitectura" className="hover:text-fuchsia-400 transition-colors">Arquitectura</Link></li>
             </ul>
 
-            <h4 className="font-semibold mb-5 text-white text-sm tracking-wider uppercase"><Link href="/soluciones" className="hover:text-fuchsia-400 transition-colors">Soluciones</Link></h4>
-            <ul className="space-y-3 text-sm text-zinc-400 font-light">
+            <h4 className="font-semibold mb-3 text-white text-sm tracking-wider uppercase"><Link href="/soluciones" className="hover:text-fuchsia-400 transition-colors">Soluciones</Link></h4>
+            <ul className="space-y-1.5 text-sm text-zinc-400 font-light">
               <li><Link href="/soluciones#aseguradoras" className="hover:text-fuchsia-400 transition-colors">Aseguradoras</Link></li>
               <li><Link href="/soluciones#brokers" className="hover:text-fuchsia-400 transition-colors">Brokers / PAS</Link></li>
               <li><Link href="/soluciones#bancos" className="hover:text-fuchsia-400 transition-colors">Bancos / Fintech</Link></li>
@@ -63,8 +63,8 @@ export default function Footer() {
 
           {/* Nav: Product Studio */}
           <div className="col-span-1 md:col-span-1 lg:col-span-2">
-            <h4 className="font-semibold mb-5 text-white text-sm tracking-wider uppercase"><Link href="/product-studio" className="hover:text-fuchsia-400 transition-colors">Product Studio</Link></h4>
-            <ul className="space-y-3 text-sm text-zinc-400 font-light">
+            <h4 className="font-semibold mb-3 text-white text-sm tracking-wider uppercase"><Link href="/product-studio" className="hover:text-fuchsia-400 transition-colors">Product Studio</Link></h4>
+            <ul className="space-y-1.5 text-sm text-zinc-400 font-light">
               <li><Link href="/product-studio#que-es" className="hover:text-fuchsia-400 transition-colors">Qué es</Link></li>
               <li><Link href="/product-studio#como-funciona" className="hover:text-fuchsia-400 transition-colors">Cómo funciona</Link></li>
               <li><Link href="/product-studio#capacidades" className="hover:text-fuchsia-400 transition-colors">Capacidades</Link></li>
@@ -76,8 +76,8 @@ export default function Footer() {
 
           {/* Nav: Arquitectura */}
           <div className="col-span-1 md:col-span-1 lg:col-span-2">
-            <h4 className="font-semibold mb-5 text-white text-sm tracking-wider uppercase"><Link href="/arquitectura" className="hover:text-fuchsia-400 transition-colors">Arquitectura</Link></h4>
-            <ul className="space-y-3 text-sm text-zinc-400 font-light">
+            <h4 className="font-semibold mb-3 text-white text-sm tracking-wider uppercase"><Link href="/arquitectura" className="hover:text-fuchsia-400 transition-colors">Arquitectura</Link></h4>
+            <ul className="space-y-1.5 text-sm text-zinc-400 font-light">
               <li><Link href="/arquitectura#vision" className="hover:text-fuchsia-400 transition-colors">Visión</Link></li>
               <li><Link href="/arquitectura#principios" className="hover:text-fuchsia-400 transition-colors">Principios</Link></li>
               <li><Link href="/arquitectura#capas" className="hover:text-fuchsia-400 transition-colors">Capas</Link></li>
@@ -89,8 +89,8 @@ export default function Footer() {
 
           {/* Nav: Quick Links & Entidades */}
           <div className="col-span-1 md:col-span-1 lg:col-span-3">
-            <h4 className="font-semibold mb-5 text-white text-sm tracking-wider uppercase">Explorar</h4>
-            <ul className="space-y-3 text-sm text-zinc-400 font-light mb-8">
+            <h4 className="font-semibold mb-3 text-white text-sm tracking-wider uppercase">Explorar</h4>
+            <ul className="space-y-1.5 text-sm text-zinc-400 font-light mb-6">
               <li><Link href="/" className="hover:text-fuchsia-400 transition-colors">Home</Link></li>
               <li><Link href="/casos-de-uso" className="hover:text-fuchsia-400 transition-colors">Casos de Uso</Link></li>
               <li><Link href="/ecosistema" className="hover:text-fuchsia-400 transition-colors">Ecosistema</Link></li>

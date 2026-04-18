@@ -22,20 +22,20 @@ export default function Header() {
     <header className="sticky top-0 z-50 w-full border-b border-border/50 bg-background/80 backdrop-blur-md">
       <div className="container mx-auto px-4 lg:px-8 h-16 flex items-center justify-between">
         {/* Logo */}
-        <div className="flex-shrink-0">
-          <Link href="/" className="flex items-center gap-3 text-xl font-bold tracking-tight">
-            <img src="/logo-icon.png" alt="Tech Insurance Logo" className="h-8 w-auto" />
-            <span>TECH<span className="text-primary font-medium">INSURANCE</span></span>
+        <div className="flex-shrink-0 relative z-10 flex">
+          <Link href="/" className="flex items-center gap-3 text-xl font-bold tracking-tight px-2 py-1.5 -ml-2 rounded-xl hover:bg-fuchsia-500/10 hover:shadow-[0_0_20px_rgba(217,70,239,0.1)] transition-all duration-300 group">
+            <img src="/logo.svg" alt="Tech Insurance Logo" className="h-8 w-auto drop-shadow-md group-hover:scale-110 transition-transform duration-300" />
+            <span className="group-hover:text-fuchsia-50 transition-colors">TECH<span className="text-fuchsia-400 font-medium">INSURANCE</span></span>
           </Link>
         </div>
 
         {/* Main Navigation (Desktop) */}
-        <nav className="hidden xl:flex flex-1 items-center justify-center space-x-6 text-sm font-medium">
+        <nav className="hidden xl:flex flex-1 items-center justify-center space-x-1 sm:space-x-2 text-sm font-medium">
           {navItems.map((item) => (
             <Link
               key={item.label}
               href={item.href}
-              className="text-zinc-400 hover:text-fuchsia-400 transition-all duration-300 ease-in-out transform origin-center hover:scale-[1.05] tracking-wide inline-block"
+              className="text-zinc-400 hover:text-fuchsia-400 transition-all duration-300 ease-in-out transform origin-center hover:scale-[1.05] tracking-wide inline-block px-3 py-1.5 rounded-lg hover:bg-fuchsia-500/10 hover:shadow-[0_0_15px_rgba(217,70,239,0.15)]"
             >
               {item.label}
             </Link>
