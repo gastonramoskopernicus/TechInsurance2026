@@ -330,11 +330,11 @@ export default function Home() {
               <div key={arrayIndex} className="flex items-center gap-16 md:gap-32 px-8 md:px-16">
                  {[
                    { file: "assurant-logo.webp", filterClass: "grayscale brightness-0 invert" },
-                   { file: "hdi-seguros.png", filterClass: "grayscale drop-shadow-lg" },
+                   { file: "hdi-seguros.png", filterClass: "grayscale brightness-0 invert" },
                    { file: "Seguros_SURA_Logo.svg.png", filterClass: "grayscale brightness-0 invert" },
                    { file: "vida-security-logo.avif", filterClass: "grayscale brightness-[1.2]" },
                    { file: "Motorola_new_logo.svg", filterClass: "grayscale brightness-0 invert" },
-                   { file: "Volkswagen-Logo-PNG-High-Quality-Image.png", filterClass: "grayscale drop-shadow-lg" },
+                   { file: "Volkswagen-Logo-PNG-High-Quality-Image.png", filterClass: "grayscale brightness-0 invert" },
                    { file: "Logo_Banco_Galicia.svg.png", filterClass: "grayscale brightness-[1.4] contrast-125 mix-blend-screen" },
                    { file: "safer-logo.png", filterClass: "grayscale brightness-[1.3] contrast-125" }
                  ].map((logo, i) => (
