@@ -156,6 +156,91 @@ export default function DemoHome() {
                    <span className="text-xs text-fuchsia-500/50 group-hover:text-fuchsia-400 flex items-center gap-1 transition-colors font-medium">Acceder Portal <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" className="w-3 h-3"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg></span>
                 </div>
              </a>
+        </div>
+
+        {/* COOPERACIÓN BLOCK */}
+        <div className="mt-24 w-full relative z-10 max-w-6xl mx-auto border-t border-fuchsia-900/30 pt-16">
+          <div className="text-center mb-12 relative">
+             <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-48 h-32 bg-fuchsia-600/10 rounded-full blur-[60px] -z-10" />
+             <div className="inline-block px-4 py-1.5 rounded-full border border-fuchsia-500/30 bg-fuchsia-950/30 mb-4 shadow-[0_0_15px_rgba(217,70,239,0.15)]">
+                <span className="text-fuchsia-400 font-bold text-xs tracking-[0.2em] uppercase">Ecosistema Específico</span>
+             </div>
+             <h3 className="text-3xl md:text-5xl font-bold text-white mb-4 tracking-tight">
+               Cooperación
+             </h3>
+             <p className="text-zinc-400 font-light text-lg">Ecosistema modular de seguros patrimoniales implementado.</p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-4xl mx-auto">
+             {/* 1. Administración */}
+             <a href="https://ti-cooperacion.kopernicus.tech/security/login" target="_blank" rel="noopener noreferrer" className="group p-8 border border-white/5 bg-[#0f0e11]/80 backdrop-blur-md rounded-[2rem] hover:bg-[#16141a] hover:border-fuchsia-500/50 hover:-translate-y-2 transition-all duration-300 shadow-[0_10px_30px_rgba(0,0,0,0.5)] flex flex-col items-center text-center">
+                <div className="mb-6 text-fuchsia-500 group-hover:text-fuchsia-400 transition-colors duration-300 w-14 h-14 p-3 bg-fuchsia-950/30 rounded-2xl flex items-center justify-center">
+                   <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" className="w-8 h-8"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"/><line x1="3" y1="9" x2="21" y2="9"/><line x1="9" y1="21" x2="9" y2="9"/></svg>
+                </div>
+                <h4 className="text-xl font-bold text-white mb-2">Administración</h4>
+                <p className="text-zinc-500 font-light text-sm leading-relaxed mb-6 flex-1">Panel administrativo de la solución.</p>
+                <div className="w-full pt-4 border-t border-white/10 mt-auto">
+                   <div className="flex justify-between items-center text-xs text-zinc-400 max-w-[220px] mx-auto">
+                      <span>User: <strong className="text-fuchsia-300 font-medium">kps</strong></span>
+                      <span>Pass: <strong className="text-fuchsia-300 font-medium">123123123</strong></span>
+                   </div>
+                </div>
+             </a>
+
+             {/* 2. Flujo */}
+             <a href="https://cooperacion.kopernicus.tech/" target="_blank" rel="noopener noreferrer" className="group p-8 border border-white/5 bg-[#0f0e11]/80 backdrop-blur-md rounded-[2rem] hover:bg-[#16141a] hover:border-fuchsia-500/50 hover:-translate-y-2 transition-all duration-300 shadow-[0_10px_30px_rgba(0,0,0,0.5)] flex flex-col items-center text-center">
+                <div className="mb-6 text-fuchsia-500 group-hover:text-fuchsia-400 transition-colors duration-300 w-14 h-14 p-3 bg-fuchsia-950/30 rounded-2xl flex items-center justify-center">
+                   <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" className="w-8 h-8"><polygon points="12 2 2 22 22 22 12 2"/></svg>
+                </div>
+                <h4 className="text-xl font-bold text-white mb-2">Flujo</h4>
+                <p className="text-zinc-500 font-light text-sm leading-relaxed mb-6 flex-1">Experiencia comercial de la solución.</p>
+                <div className="w-full pt-4 border-t border-white/10 mt-auto flex justify-center">
+                   <span className="text-xs text-fuchsia-500/50 group-hover:text-fuchsia-400 flex items-center gap-1 transition-colors font-medium">Acceder Portal <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" className="w-3 h-3"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg></span>
+                </div>
+             </a>
+          </div>
+        </div>
+
+        {/* VIDA SECURITY BLOCK */}
+        <div className="mt-24 mb-16 w-full relative z-10 max-w-6xl mx-auto border-t border-fuchsia-900/30 pt-16">
+          <div className="text-center mb-12 relative">
+             <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-48 h-32 bg-fuchsia-600/10 rounded-full blur-[60px] -z-10" />
+             <div className="inline-block px-4 py-1.5 rounded-full border border-fuchsia-500/30 bg-fuchsia-950/30 mb-4 shadow-[0_0_15px_rgba(217,70,239,0.15)]">
+                <span className="text-fuchsia-400 font-bold text-xs tracking-[0.2em] uppercase">Ecosistema Específico</span>
+             </div>
+             <h3 className="text-3xl md:text-5xl font-bold text-white mb-4 tracking-tight">
+               Vida Security
+             </h3>
+             <p className="text-zinc-400 font-light text-lg">Ecosistema enfocado en soluciones de protección y salud.</p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-4xl mx-auto">
+             {/* 1. Administración */}
+             <a href="https://vidasecurity.kopernicus.tech/security/login" target="_blank" rel="noopener noreferrer" className="group p-8 border border-white/5 bg-[#0f0e11]/80 backdrop-blur-md rounded-[2rem] hover:bg-[#16141a] hover:border-fuchsia-500/50 hover:-translate-y-2 transition-all duration-300 shadow-[0_10px_30px_rgba(0,0,0,0.5)] flex flex-col items-center text-center">
+                <div className="mb-6 text-fuchsia-500 group-hover:text-fuchsia-400 transition-colors duration-300 w-14 h-14 p-3 bg-fuchsia-950/30 rounded-2xl flex items-center justify-center">
+                   <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" className="w-8 h-8"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"/><line x1="3" y1="9" x2="21" y2="9"/><line x1="9" y1="21" x2="9" y2="9"/></svg>
+                </div>
+                <h4 className="text-xl font-bold text-white mb-2">Administración</h4>
+                <p className="text-zinc-500 font-light text-sm leading-relaxed mb-6 flex-1">Panel administrativo de gestión.</p>
+                <div className="w-full pt-4 border-t border-white/10 mt-auto">
+                   <div className="flex justify-between items-center text-xs text-zinc-400 max-w-[220px] mx-auto">
+                      <span>User: <strong className="text-fuchsia-300 font-medium">salud</strong></span>
+                      <span>Pass: <strong className="text-fuchsia-300 font-medium">123123123</strong></span>
+                   </div>
+                </div>
+             </a>
+
+             {/* 2. Flujo */}
+             <a href="https://vidasecurity-seguro.kopernicus.tech/salud" target="_blank" rel="noopener noreferrer" className="group p-8 border border-white/5 bg-[#0f0e11]/80 backdrop-blur-md rounded-[2rem] hover:bg-[#16141a] hover:border-fuchsia-500/50 hover:-translate-y-2 transition-all duration-300 shadow-[0_10px_30px_rgba(0,0,0,0.5)] flex flex-col items-center text-center">
+                <div className="mb-6 text-fuchsia-500 group-hover:text-fuchsia-400 transition-colors duration-300 w-14 h-14 p-3 bg-fuchsia-950/30 rounded-2xl flex items-center justify-center">
+                   <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" className="w-8 h-8"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-2h2v2zm0-4h-2V7h2v6z"/></svg>
+                </div>
+                <h4 className="text-xl font-bold text-white mb-2">Flujo</h4>
+                <p className="text-zinc-500 font-light text-sm leading-relaxed mb-6 flex-1">Experiencia de producto desplegada.</p>
+                <div className="w-full pt-4 border-t border-white/10 mt-auto flex justify-center">
+                   <span className="text-xs text-fuchsia-500/50 group-hover:text-fuchsia-400 flex items-center gap-1 transition-colors font-medium">Acceder Portal <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" className="w-3 h-3"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg></span>
+                </div>
+             </a>
           </div>
         </div>
       </div>
