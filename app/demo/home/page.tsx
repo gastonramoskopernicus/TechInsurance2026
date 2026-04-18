@@ -88,6 +88,76 @@ export default function DemoHome() {
             </Link>
           ))}
         </div>
+
+        {/* ONE INSURANCE BLOCK */}
+        <div className="mt-28 w-full relative z-10 max-w-6xl mx-auto border-t border-fuchsia-900/30 pt-20">
+          <div className="text-center mb-12 relative">
+             <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-48 h-32 bg-fuchsia-600/10 rounded-full blur-[60px] -z-10" />
+             <div className="inline-block px-4 py-1.5 rounded-full border border-fuchsia-500/30 bg-fuchsia-950/30 mb-4 shadow-[0_0_15px_rgba(217,70,239,0.15)]">
+                <span className="text-fuchsia-400 font-bold text-xs tracking-[0.2em] uppercase">Ecosistema Específico</span>
+             </div>
+             <h3 className="text-3xl md:text-5xl font-bold text-white mb-4">
+               One <span className="text-transparent bg-clip-text bg-gradient-to-r from-fuchsia-500 to-pink-400">Insurance</span>
+             </h3>
+             <p className="text-zinc-400 font-light text-lg">Solución implementada y flujos de país con acceso directo a paneles de control.</p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+             {/* 1. Administración */}
+             <a href="https://oneinsurance.kopernicus.tech/security/login" target="_blank" rel="noopener noreferrer" className="group p-8 border border-white/5 bg-[#0f0e11]/80 backdrop-blur-md rounded-[2rem] hover:bg-[#16141a] hover:border-fuchsia-500/50 hover:-translate-y-2 transition-all duration-300 shadow-[0_10px_30px_rgba(0,0,0,0.5)] flex flex-col items-center text-center">
+                <div className="mb-6 text-fuchsia-500 group-hover:text-fuchsia-400 transition-colors duration-300 w-14 h-14 p-3 bg-fuchsia-950/30 rounded-2xl flex items-center justify-center">
+                   <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" className="w-8 h-8"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"/><line x1="3" y1="9" x2="21" y2="9"/><line x1="9" y1="21" x2="9" y2="9"/></svg>
+                </div>
+                <h4 className="text-xl font-bold text-white mb-2">Administración</h4>
+                <p className="text-zinc-500 font-light text-sm leading-relaxed mb-6 flex-1">Panel administrativo de gestión de la plataforma.</p>
+                <div className="w-full pt-4 border-t border-white/10 mt-auto">
+                   <div className="flex justify-between items-center text-xs text-zinc-400">
+                      <span>User: <strong className="text-fuchsia-300 font-medium">admin</strong></span>
+                      <span>Pass: <strong className="text-fuchsia-300 font-medium">123123123</strong></span>
+                   </div>
+                </div>
+             </a>
+
+             {/* 2. Usuario Dealer */}
+             <a href="https://oneinsurance.kopernicus.tech/security/login" target="_blank" rel="noopener noreferrer" className="group p-8 border border-white/5 bg-[#0f0e11]/80 backdrop-blur-md rounded-[2rem] hover:bg-[#16141a] hover:border-fuchsia-500/50 hover:-translate-y-2 transition-all duration-300 shadow-[0_10px_30px_rgba(0,0,0,0.5)] flex flex-col items-center text-center">
+                <div className="mb-6 text-fuchsia-500 group-hover:text-fuchsia-400 transition-colors duration-300 w-14 h-14 p-3 bg-fuchsia-950/30 rounded-2xl flex items-center justify-center">
+                   <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" className="w-8 h-8"><path d="M17 21v-2a4 4 0 0 0-4-4H5c-1.1 0-2 .9-2 2v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+                </div>
+                <h4 className="text-xl font-bold text-white mb-2 leading-tight">Dealer / Campañas</h4>
+                <p className="text-zinc-500 font-light text-sm leading-relaxed mb-6 flex-1">Panel de administración de campañas con visualización de métricas.</p>
+                <div className="w-full pt-4 border-t border-white/10 mt-auto">
+                   <div className="flex justify-between items-center text-xs text-zinc-400">
+                      <span>User: <strong className="text-fuchsia-300 font-medium">kps</strong></span>
+                      <span>Pass: <strong className="text-fuchsia-300 font-medium">123123123</strong></span>
+                   </div>
+                </div>
+             </a>
+
+             {/* 3. Flujo Chile */}
+             <a href="https://kps.kopernicus.tech/" target="_blank" rel="noopener noreferrer" className="group p-8 border border-white/5 bg-[#0f0e11]/80 backdrop-blur-md rounded-[2rem] hover:bg-[#16141a] hover:border-fuchsia-500/50 hover:-translate-y-2 transition-all duration-300 shadow-[0_10px_30px_rgba(0,0,0,0.5)] flex flex-col items-center text-center">
+                <div className="mb-6 text-fuchsia-500 group-hover:text-fuchsia-400 transition-colors duration-300 w-14 h-14 p-3 bg-fuchsia-950/30 rounded-2xl flex items-center justify-center">
+                   <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" className="w-8 h-8"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>
+                </div>
+                <h4 className="text-xl font-bold text-white mb-2">Flujo Chile</h4>
+                <p className="text-zinc-500 font-light text-sm leading-relaxed mb-6 flex-1">Experiencia comercial desplegada para el mercado chileno.</p>
+                <div className="w-full pt-4 border-t border-white/10 mt-auto flex justify-center">
+                   <span className="text-xs text-fuchsia-500/50 group-hover:text-fuchsia-400 flex items-center gap-1 transition-colors font-medium">Acceder Portal <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" className="w-3 h-3"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg></span>
+                </div>
+             </a>
+
+             {/* 4. Flujo Colombia */}
+             <a href="https://kps2.kopernicus.tech/" target="_blank" rel="noopener noreferrer" className="group p-8 border border-white/5 bg-[#0f0e11]/80 backdrop-blur-md rounded-[2rem] hover:bg-[#16141a] hover:border-fuchsia-500/50 hover:-translate-y-2 transition-all duration-300 shadow-[0_10px_30px_rgba(0,0,0,0.5)] flex flex-col items-center text-center">
+                <div className="mb-6 text-fuchsia-500 group-hover:text-fuchsia-400 transition-colors duration-300 w-14 h-14 p-3 bg-fuchsia-950/30 rounded-2xl flex items-center justify-center">
+                   <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" className="w-8 h-8"><circle cx="12" cy="12" r="10"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/><path d="M2.5 9h19M2.5 15h19"/></svg>
+                </div>
+                <h4 className="text-xl font-bold text-white mb-2">Flujo Colombia</h4>
+                <p className="text-zinc-500 font-light text-sm leading-relaxed mb-6 flex-1">Experiencia comercial desplegada para el mercado colombiano.</p>
+                <div className="w-full pt-4 border-t border-white/10 mt-auto flex justify-center">
+                   <span className="text-xs text-fuchsia-500/50 group-hover:text-fuchsia-400 flex items-center gap-1 transition-colors font-medium">Acceder Portal <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" className="w-3 h-3"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg></span>
+                </div>
+             </a>
+          </div>
+        </div>
       </div>
     </div>
   );
