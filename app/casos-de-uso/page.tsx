@@ -95,7 +95,7 @@ export default function CasosDeUsoPage() {
             </p>
             <div className="p-12 lg:p-16 border border-white/5 bg-[#08040a] rounded-[2.5rem] relative shadow-2xl">
               <p className="text-center text-zinc-400 font-light text-lg mb-20 max-w-4xl mx-auto">
-                Un banco regional incorporó Tech Insurance para modelar productos de cobertura como combinado familiar, hogar y vida. Dada la complejidad de operar en distintos países, donde las aseguradoras pueden variar según la regulación local, se requería una herramienta intermedia que permitiera desarrollar y gestionar productos de forma independiente de la compañía aseguradora en cada mercado.
+                Tech Insurance ha sido utilizado para desarrollar el canal de banca en múltiples países para una compañía aseguradora. Dado que los diferentes países pueden tener distintas estrategias comerciales o de relacionamiento con aseguradoras, Tech Insurance actúa como una capa intermedia que abstrae la compañía que provee la cobertura, permitiendo centralizar el desarrollo de productos y su distribución en cada mercado.
               </p>
               
               <div className="flex flex-col lg:flex-row items-center justify-between gap-10 lg:gap-6 relative">
@@ -113,6 +113,7 @@ export default function CasosDeUsoPage() {
                    </div>
                    <div className="text-center px-2 flex-1 flex flex-col justify-start w-full">
                      <p className="text-white font-bold text-xl mb-3">Compañía aseguradora variable según país</p>
+                     <p className="text-zinc-500 text-sm leading-relaxed">Se adapta a la regulación y estrategia local de la aseguradora en cada mercado.</p>
                    </div>
                  </div>
 
@@ -124,7 +125,7 @@ export default function CasosDeUsoPage() {
                    </div>
                    <div className="text-center px-2 flex-1 flex flex-col justify-start w-full">
                      <p className="text-fuchsia-300 font-bold text-xl mb-3">Tech Insurance</p>
-                     <p className="text-zinc-400 text-sm leading-relaxed">Tech Insurance actúa como hub intermedio, desacoplando el producto de la aseguradora.</p>
+                     <p className="text-zinc-400 text-sm leading-relaxed">Hub central que abstrae al proveedor, centralizando su infraestructura.</p>
                    </div>
                  </div>
 
@@ -138,7 +139,7 @@ export default function CasosDeUsoPage() {
                    </div>
                    <div className="text-center px-2 flex-1 flex flex-col justify-start w-full">
                      <p className="text-white font-bold text-xl mb-3">Distribución del producto</p>
-                     <p className="text-zinc-500 text-sm leading-relaxed">Distribución en múltiples países, adaptándose a cada contexto local.</p>
+                     <p className="text-zinc-500 text-sm leading-relaxed">Despliegue ágil totalmente unificado en todos los canales de país.</p>
                    </div>
                  </div>
               </div>
@@ -154,7 +155,10 @@ export default function CasosDeUsoPage() {
               Creación, configuración y despliegue de un producto completo en minutos
             </p>
             <div className="p-12 lg:p-16 border border-white/5 bg-[#08040a] rounded-[2.5rem] relative shadow-2xl">
-              <p className="text-center text-zinc-400 font-light text-lg mb-20 max-w-3xl mx-auto">
+              <p className="text-center text-zinc-400 font-light text-lg mb-6 max-w-3xl mx-auto">
+                Una de las principales compañías de seguros de garantía extendida de la región utiliza Tech Insurance para desarrollar productos simples y flexibles, logrando integraciones en minutos.
+              </p>
+              <p className="text-center text-zinc-500 font-light text-md mb-20 max-w-3xl mx-auto">
                 Tech Insurance permite orquestar de forma integral la creación de un seguro de garantía extendida, incluyendo su configuración técnica, lógica comercial, cotización, pago y emisión de póliza, todo dentro de un flujo continuo.
               </p>
               
@@ -208,8 +212,8 @@ export default function CasosDeUsoPage() {
               Articulación entre aseguradora, partner y cliente final
             </p>
             <div className="p-12 lg:p-16 border border-white/5 bg-[#08040a] rounded-[2.5rem] relative shadow-2xl">
-              <p className="text-center text-zinc-400 font-light text-lg mb-20 max-w-3xl mx-auto">
-                Una compañía aseguradora utiliza Tech Insurance para desarrollar y estructurar productos que luego son distribuidos a través de una red de partners, quienes los comercializan directamente al cliente final dentro de sus propias experiencias.
+              <p className="text-center text-zinc-400 font-light text-lg mb-20 max-w-4xl mx-auto">
+                Tech Insurance ha sido utilizado por un broker de gran escala como solución para integrarse con múltiples compañías de seguros, tomar sus productos, agregar una capa de mejora y desarrollar una solución white-label que luego es implementada a través de partners de su red.
               </p>
               
               <div className="flex flex-col lg:flex-row items-center justify-between gap-10 lg:gap-6 relative">

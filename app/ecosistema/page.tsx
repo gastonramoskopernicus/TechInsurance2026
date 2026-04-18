@@ -105,25 +105,42 @@ export default function EcosistemaPage() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div className="p-10 border border-fuchsia-900/30 bg-[#160517]/50 rounded-[2rem] relative shadow-2xl overflow-hidden min-h-[350px] flex items-center justify-center">
                <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,rgba(217,70,239,0.1),transparent)] pointer-events-none" />
-               <div className="flex gap-4 items-center">
+               <div className="flex gap-2 lg:gap-4 items-center">
                  {/* Visual Simple */}
-                 <div className="p-4 bg-zinc-900 rounded-xl border border-zinc-700 text-zinc-400 shadow-xl font-bold flex flex-col items-center">
-                   <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" className="w-8 h-8 mb-2"><path d="M4 22h14a2 2 0 0 0 2-2V7.5L14.5 2H6a2 2 0 0 0-2 2v4"/><polyline points="14 2 14 8 20 8"/><path d="M3 15h6"/><path d="M3 18h6"/></svg>
-                   CORE LEGACY
+                 <div className="p-3 lg:p-4 bg-zinc-900 rounded-xl border border-zinc-700 text-zinc-400 shadow-xl font-bold flex flex-col items-center text-[10px] lg:text-sm text-center">
+                   <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" className="w-6 h-6 lg:w-8 lg:h-8 mb-2"><path d="M4 22h14a2 2 0 0 0 2-2V7.5L14.5 2H6a2 2 0 0 0-2 2v4"/><polyline points="14 2 14 8 20 8"/><path d="M3 15h6"/><path d="M3 18h6"/></svg>
+                   CORE
                  </div>
-                 <div className="flex flex-col text-fuchsia-500 animate-pulse">
-                   <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" className="w-8 h-8"><polyline points="9 18 15 12 9 6"/></svg>
-                   <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" className="w-8 h-8 transform rotate-180"><polyline points="9 18 15 12 9 6"/></svg>
+                 <div className="flex flex-col text-fuchsia-500 animate-pulse scale-75 lg:scale-100">
+                   <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" className="w-5 h-5 lg:w-8 lg:h-8"><polyline points="9 18 15 12 9 6"/></svg>
+                   <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" className="w-5 h-5 lg:w-8 lg:h-8 transform rotate-180"><polyline points="9 18 15 12 9 6"/></svg>
                  </div>
-                 <div className="p-4 bg-fuchsia-950 border border-fuchsia-500 text-white rounded-xl shadow-[0_0_30px_rgba(217,70,239,0.3)] font-bold flex flex-col items-center">
-                   <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" className="w-8 h-8 mb-2"><polygon points="12 2 2 7 12 12 22 7 12 2"/><polyline points="2 17 12 22 22 17"/><polyline points="2 12 12 17 22 12"/></svg>
+                 <div className="p-3 lg:p-4 bg-fuchsia-950 border border-fuchsia-500 text-white rounded-xl shadow-[0_0_30px_rgba(217,70,239,0.3)] font-bold flex flex-col items-center z-10 text-[10px] lg:text-sm text-center">
+                   <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" className="w-6 h-6 lg:w-8 lg:h-8 mb-2"><polygon points="12 2 2 7 12 12 22 7 12 2"/><polyline points="2 17 12 22 22 17"/><polyline points="2 12 12 17 22 12"/></svg>
                    TECH INSURANCE
+                 </div>
+                 
+                 {/* DIVERGENCIA HUB */}
+                 <div className="flex flex-col gap-2 ml-1 lg:ml-2 text-fuchsia-500/50 animate-pulse h-full justify-center">
+                   <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" className="w-3 h-3 lg:w-5 lg:h-5 -mb-2 lg:-mb-1 transform -rotate-12"><polyline points="9 18 15 12 9 6"/></svg>
+                   <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" className="w-3 h-3 lg:w-5 lg:h-5 -mb-1 transform -rotate-6"><polyline points="9 18 15 12 9 6"/></svg>
+                   <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" className="w-3 h-3 lg:w-5 lg:h-5"><polyline points="9 18 15 12 9 6"/></svg>
+                   <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" className="w-3 h-3 lg:w-5 lg:h-5 -mt-1 transform rotate-6"><polyline points="9 18 15 12 9 6"/></svg>
+                   <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" className="w-3 h-3 lg:w-5 lg:h-5 -mt-2 lg:-mt-1 transform rotate-12"><polyline points="9 18 15 12 9 6"/></svg>
+                 </div>
+                 
+                 <div className="flex flex-col gap-1.5 lg:gap-2">
+                   {['Partners', 'Canales', 'Agregadores', 'Bancos', 'Otros sistemas'].map((nodo, i) => (
+                     <div key={i} className="px-2 lg:px-3 py-1 bg-[#110512] border border-fuchsia-900/30 text-zinc-300 rounded-lg shadow-[0_0_10px_rgba(217,70,239,0.05)] text-[9px] lg:text-xs font-semibold whitespace-nowrap flex items-center justify-center relative">
+                       {nodo}
+                     </div>
+                   ))}
                  </div>
                </div>
             </div>
             <div>
               <h2 className="text-3xl md:text-5xl font-bold text-white mb-6 tracking-tight">
-                Urbanizando <span className="text-transparent bg-clip-text bg-gradient-to-r from-fuchsia-500 to-pink-400">los sistemas core</span>
+                Urbanizando los sistemas core <span className="text-transparent bg-clip-text bg-gradient-to-r from-fuchsia-500 to-pink-400">para llegar más lejos</span>
               </h2>
               <p className="text-zinc-400 font-light text-xl leading-relaxed mb-8">
                 Incluso las plataformas troncales más herméticas y obsoletas son asimiladas. Tech Insurance no interfiere con los cálculos financieros profundos; simplemente los recubre, transformando cualquier respuesta legacy estática en un hub transaccional en tiempo real, urbanizándolos sin riesgo de reemplazo crudo.
