@@ -325,45 +325,23 @@ export default function Home() {
           <div className="absolute right-0 top-0 bottom-0 w-32 lg:w-64 bg-gradient-to-l from-[#040105] to-transparent z-20 pointer-events-none" />
           
           <div className="animate-infinite-scroll flex items-center">
-            {/* Duplicamos el array de logos para que el loop infinito sea fluido */}
+            {/* Loop continuo de logos reales */}
             {[...Array(2)].map((_, arrayIndex) => (
               <div key={arrayIndex} className="flex items-center gap-16 md:gap-32 px-8 md:px-16">
-                 {/* 1. ASSURANT */}
-                 <div className="flex-shrink-0 flex items-center justify-center opacity-40 hover:opacity-100 hover:text-fuchsia-400 transition-all duration-300 transform hover:scale-105 filter grayscale hover:grayscale-0">
-                    <svg viewBox="0 0 200 40" className="w-[180px] h-auto fill-current text-white"><text x="10" y="30" fontFamily="Arial, sans-serif" fontWeight="900" fontSize="28" letterSpacing="2">ASSURANT</text></svg>
-                 </div>
-                 {/* 2. BARBUSS */}
-                 <div className="flex-shrink-0 flex items-center justify-center opacity-40 hover:opacity-100 hover:text-fuchsia-400 transition-all duration-300 transform hover:scale-105 filter grayscale hover:grayscale-0">
-                    <svg viewBox="0 0 200 40" className="w-[180px] h-auto fill-current text-white"><text x="10" y="30" fontFamily="Verdana, sans-serif" fontWeight="800" fontSize="26" letterSpacing="1">BARBUSS</text></svg>
-                 </div>
-                 {/* 3. SURA */}
-                 <div className="flex-shrink-0 flex items-center justify-center opacity-40 hover:opacity-100 hover:text-fuchsia-400 transition-all duration-300 transform hover:scale-105 filter grayscale hover:grayscale-0">
-                    <svg viewBox="0 0 150 40" className="w-[140px] h-auto fill-current text-white"><text x="10" y="30" fontFamily="Helvetica, sans-serif" fontWeight="900" fontSize="30" fontStyle="italic" letterSpacing="1">sura</text></svg>
-                 </div>
-                 {/* 4. VIDA SECURITY */}
-                 <div className="flex-shrink-0 flex gap-2 items-center justify-center opacity-40 hover:opacity-100 hover:text-fuchsia-400 transition-all duration-300 transform hover:scale-105 filter grayscale hover:grayscale-0">
-                    <svg viewBox="0 0 30 30" className="w-8 h-8 stroke-current text-white" fill="none" strokeWidth="1.5"><circle cx="15" cy="15" r="10"/><path d="M12 18l4-6H10l4-6"/></svg>
-                    <svg viewBox="0 0 220 40" className="w-[190px] h-auto fill-current text-white"><text x="0" y="30" fontFamily="Arial, sans-serif" fontWeight="700" fontSize="22">VIDA SECURITY</text></svg>
-                 </div>
-                 {/* 5. MOTOROLA */}
-                 <div className="flex-shrink-0 flex items-center justify-center opacity-40 hover:opacity-100 hover:text-fuchsia-400 transition-all duration-300 transform hover:scale-105 filter grayscale hover:grayscale-0">
-                   <svg viewBox="0 0 220 40" className="w-[190px] h-auto fill-current text-white"><text x="10" y="30" fontFamily="Trebuchet MS, sans-serif" fontWeight="800" fontSize="26" letterSpacing="3">motorola</text></svg>
-                 </div>
-                 {/* 6. VOLKSWAGEN */}
-                 <div className="flex-shrink-0 flex gap-3 items-center justify-center opacity-40 hover:opacity-100 hover:text-fuchsia-400 transition-all duration-300 transform hover:scale-105 filter grayscale hover:grayscale-0">
-                    <svg viewBox="0 0 30 30" className="w-12 h-12 stroke-current text-white" fill="none" strokeWidth="1.5"><circle cx="15" cy="15" r="12"/><polyline points="5 9 10 20 15 11 20 20 25 9"/><polyline points="10 5 15 15 20 5"/></svg>
-                    <svg viewBox="0 0 220 40" className="w-[180px] h-auto fill-current text-white"><text x="0" y="30" fontFamily="Arial, sans-serif" fontWeight="600" fontSize="22">Volkswagen</text></svg>
-                 </div>
-                 {/* 7. BANCO GALICIA */}
-                 <div className="flex-shrink-0 flex gap-2 items-center justify-center opacity-40 hover:opacity-100 hover:text-fuchsia-400 transition-all duration-300 transform hover:scale-105 filter grayscale hover:grayscale-0">
-                    <svg viewBox="0 0 30 30" className="w-8 h-8 fill-current text-white"><polygon points="15,2 28,28 2,28"/></svg>
-                    <svg viewBox="0 0 220 40" className="w-[200px] h-auto fill-current text-white"><text x="0" y="30" fontFamily="Arial, sans-serif" fontWeight="800" fontSize="24">Banco Galicia</text></svg>
-                 </div>
-                 {/* 8. EUROP ASSISTANCE */}
-                 <div className="flex-shrink-0 flex gap-2 items-center justify-center opacity-40 hover:opacity-100 hover:text-fuchsia-400 transition-all duration-300 transform hover:scale-105 filter grayscale hover:grayscale-0">
-                    <svg viewBox="0 0 30 30" className="w-8 h-8 fill-current text-white"><rect x="5" y="5" width="20" height="20" rx="4"/></svg>
-                    <svg viewBox="0 0 250 40" className="w-[230px] h-auto fill-current text-white"><text x="0" y="30" fontFamily="Georgia, serif" fontWeight="700" fontSize="20" letterSpacing="1">EUROP ASSISTANCE</text></svg>
-                 </div>
+                 {[
+                   "assurant-logo.webp",
+                   "hdi-seguros.png",
+                   "Seguros_SURA_Logo.svg.png",
+                   "vida-security-logo.avif",
+                   "Motorola_new_logo.svg",
+                   "Volkswagen-Logo-PNG-High-Quality-Image.png",
+                   "Logo_Banco_Galicia.svg.png",
+                   "safer-logo.png"
+                 ].map((filename, i) => (
+                   <div key={i} className="flex-shrink-0 flex items-center justify-center p-2 h-16 w-32 md:h-20 md:w-40 opacity-60 hover:opacity-100 transition-all duration-500 hover:scale-105 filter grayscale brightness-0 invert hover:drop-shadow-[0_0_15px_rgba(255,255,255,0.4)]">
+                      <img src={`/empresas/${filename}`} alt={filename.split('.')[0]} className="w-full h-full object-contain" />
+                   </div>
+                 ))}
               </div>
             ))}
           </div>
