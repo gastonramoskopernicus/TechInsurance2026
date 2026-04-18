@@ -45,10 +45,10 @@ export default function Header() {
         {/* Right Actions & Mobile Toggle */}
         <div className="flex items-center space-x-4">
           <Link
-            href="/login"
+            href="/demo"
             className="hidden md:block text-sm font-medium text-muted-foreground hover:text-foreground transition-colors"
           >
-            Login
+            Demo
           </Link>
           <Link
             href="/contacto"
@@ -87,7 +87,7 @@ export default function Header() {
               </Link>
             ))}
             <div className="pt-6 flex flex-col gap-4 sm:hidden">
-              <Link href="/login" onClick={() => setIsMobileMenuOpen(false)} className="text-zinc-300 py-2">Login</Link>
+              <Link href="/demo" onClick={() => setIsMobileMenuOpen(false)} className="text-zinc-300 py-2">Demo</Link>
               <Link href="/contacto" onClick={() => setIsMobileMenuOpen(false)} className="bg-fuchsia-600 text-white py-3 px-4 rounded-xl text-center shadow-lg font-bold">Solicitar demo</Link>
             </div>
           </nav>
