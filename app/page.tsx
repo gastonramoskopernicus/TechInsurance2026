@@ -329,17 +329,17 @@ export default function Home() {
             {[...Array(2)].map((_, arrayIndex) => (
               <div key={arrayIndex} className="flex items-center gap-16 md:gap-32 px-8 md:px-16">
                  {[
-                   "assurant-logo.webp",
-                   "hdi-seguros.png",
-                   "Seguros_SURA_Logo.svg.png",
-                   "vida-security-logo.avif",
-                   "Motorola_new_logo.svg",
-                   "Volkswagen-Logo-PNG-High-Quality-Image.png",
-                   "Logo_Banco_Galicia.svg.png",
-                   "safer-logo.png"
-                 ].map((filename, i) => (
-                   <div key={i} className="flex-shrink-0 flex items-center justify-center p-2 h-16 w-32 md:h-20 md:w-40 opacity-60 hover:opacity-100 transition-all duration-500 hover:scale-105 filter grayscale brightness-0 invert hover:drop-shadow-[0_0_15px_rgba(255,255,255,0.4)]">
-                      <img src={`/empresas/${filename}`} alt={filename.split('.')[0]} className="w-full h-full object-contain" />
+                   { file: "assurant-logo.webp", filterClass: "grayscale brightness-0 invert" },
+                   { file: "hdi-seguros.png", filterClass: "grayscale brightness-[1.3] contrast-125" },
+                   { file: "Seguros_SURA_Logo.svg.png", filterClass: "grayscale brightness-0 invert" },
+                   { file: "vida-security-logo.avif", filterClass: "grayscale brightness-[1.2]" },
+                   { file: "Motorola_new_logo.svg", filterClass: "grayscale brightness-0 invert" },
+                   { file: "Volkswagen-Logo-PNG-High-Quality-Image.png", filterClass: "grayscale brightness-[1.5] contrast-150" },
+                   { file: "Logo_Banco_Galicia.svg.png", filterClass: "grayscale brightness-[1.4] contrast-125 mix-blend-screen" },
+                   { file: "safer-logo.png", filterClass: "grayscale brightness-[1.3] contrast-125" }
+                 ].map((logo, i) => (
+                   <div key={i} className={`flex-shrink-0 flex items-center justify-center p-2 h-16 w-32 md:h-20 md:w-40 opacity-60 hover:opacity-100 transition-all duration-500 hover:scale-105 hover:drop-shadow-[0_0_15px_rgba(255,255,255,0.3)] ${logo.filterClass}`}>
+                      <img src={`/empresas/${logo.file}`} alt={logo.file.split('.')[0]} className="w-full h-full object-contain" />
                    </div>
                  ))}
               </div>
