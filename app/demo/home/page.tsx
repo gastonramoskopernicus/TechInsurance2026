@@ -49,27 +49,59 @@ export default function DemoHome() {
           <p className="text-xl text-zinc-400 font-light">Ecosistema operativo desplegado. Seleccione un módulo a explorar.</p>
         </div>
 
-        {/* Central Component: ZeroClick (The Sun/Core of our system) */}
-        <div className="flex justify-center mb-16 relative mt-10">
-           <a 
-              href="https://ti-zeroclick.kopernicus.tech/security/login" 
-              className="group relative flex flex-col items-center justify-center p-12 md:p-16 bg-[#1b081e]/80 backdrop-blur-xl border border-fuchsia-500/50 rounded-[3.5rem] shadow-[0_0_80px_rgba(217,70,239,0.3)] hover:shadow-[0_0_120px_rgba(217,70,239,0.5)] hover:border-fuchsia-400 hover:scale-[1.03] hover:-translate-y-2 transition-all duration-500 z-20 w-full max-w-2xl text-center"
-           >
-              {/* Outer Core Glow */}
-              <div className="absolute inset-0 rounded-[3.5rem] bg-[radial-gradient(ellipse_at_center,rgba(217,70,239,0.2),transparent)] opacity-0 group-hover:opacity-100 transition-opacity pointer-events-none" />
-              
-              <div className="mb-6 text-fuchsia-100 group-hover:text-white transition-colors duration-300 w-24 h-24 bg-gradient-to-br from-fuchsia-600 to-fuchsia-900 rounded-full flex items-center justify-center shadow-[0_0_50px_rgba(217,70,239,0.7)] group-hover:shadow-[0_0_80px_rgba(217,70,239,0.9)] border border-fuchsia-400/50">
-                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" className="w-10 h-10"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>
-              </div>
-              <h2 className="text-3xl md:text-5xl font-black text-white mb-4 tracking-tight group-hover:text-fuchsia-50 transition-colors">
-                <span className="text-transparent bg-clip-text bg-gradient-to-r from-fuchsia-400 to-pink-300">ZeroClick</span> Experience
-              </h2>
-              <p className="text-fuchsia-200/80 font-light text-lg md:text-xl max-w-md">Experiencia de seguros embebidos sin fricción.</p>
-           </a>
-           
+        {/* Central Component: ZeroClick Ecosystem */}
+        <div className="w-full mb-20 relative mt-10 z-20">
            {/* Orbit lines behind ZeroClick */}
            <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[700px] h-[700px] border border-fuchsia-900/30 rounded-full z-0 pointer-events-none border-dashed animate-[spin_100s_linear_infinite]" />
            <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[900px] h-[900px] border border-fuchsia-900/10 rounded-full z-0 pointer-events-none border-dashed animate-[spin_150s_linear_infinite_reverse]" />
+
+           <div className="text-center mb-12 relative z-10">
+              <div className="mb-6 mx-auto w-24 h-24 bg-gradient-to-br from-fuchsia-600 to-fuchsia-900 rounded-full flex items-center justify-center shadow-[0_0_50px_rgba(217,70,239,0.7)] border border-fuchsia-400/50 text-white">
+                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" className="w-10 h-10"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>
+              </div>
+              <h2 className="text-4xl md:text-5xl font-black text-white mb-4 tracking-tight">
+                <span className="text-transparent bg-clip-text bg-gradient-to-r from-fuchsia-400 to-pink-300">ZeroClick</span> Experience
+              </h2>
+           </div>
+
+           {/* Cards Grid */}
+           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-6xl mx-auto relative z-10">
+              {/* 1. Administración */}
+              <a href="https://ti-zeroclick.kopernicus.tech/security/login" target="_blank" rel="noopener noreferrer" className="group p-8 border border-white/5 bg-[#1b081e]/80 backdrop-blur-xl rounded-[2rem] hover:bg-[#250b29] hover:border-fuchsia-400/50 hover:-translate-y-2 transition-all duration-300 shadow-[0_10px_40px_rgba(217,70,239,0.1)] flex flex-col items-center text-center">
+                 <div className="mb-5 text-fuchsia-500 group-hover:text-fuchsia-400 transition-colors w-12 h-12 p-2 bg-fuchsia-950/30 rounded-xl flex items-center justify-center">
+                     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" className="w-6 h-6"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"/><line x1="3" y1="9" x2="21" y2="9"/><line x1="9" y1="21" x2="9" y2="9"/></svg>
+                 </div>
+                 <h4 className="text-xl font-bold text-white mb-2">Administración</h4>
+                 <p className="text-zinc-400 font-light text-sm mb-6 flex-1">Acceso al dashboard de gestión y configuración</p>
+                 <div className="w-full pt-4 border-t border-fuchsia-500/20 mt-auto flex justify-center">
+                    <span className="text-xs text-fuchsia-400 font-medium bg-fuchsia-500/10 px-3 py-1 rounded-full border border-fuchsia-500/20">Acceder Portal</span>
+                 </div>
+              </a>
+
+              {/* 2. Flujo Oráculo */}
+              <a href="https://ti-zeroclick-oraculo.kopernicus.tech/" target="_blank" rel="noopener noreferrer" className="group p-8 border border-white/5 bg-[#1b081e]/80 backdrop-blur-xl rounded-[2rem] hover:bg-[#250b29] hover:border-fuchsia-400/50 hover:-translate-y-2 transition-all duration-300 shadow-[0_10px_40px_rgba(217,70,239,0.1)] flex flex-col items-center text-center">
+                 <div className="mb-5 text-fuchsia-500 group-hover:text-fuchsia-400 transition-colors w-12 h-12 p-2 bg-fuchsia-950/30 rounded-xl flex items-center justify-center">
+                     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" className="w-6 h-6"><polygon points="12 2 2 22 22 22 12 2"/></svg>
+                 </div>
+                 <h4 className="text-xl font-bold text-white mb-2">Flujo Oráculo</h4>
+                 <p className="text-zinc-400 font-light text-sm mb-6 flex-1">Simulación de validaciones y ejecución de flujos</p>
+                 <div className="w-full pt-4 border-t border-fuchsia-500/20 mt-auto flex justify-center">
+                    <span className="text-xs text-fuchsia-400 font-medium bg-fuchsia-500/10 px-3 py-1 rounded-full border border-fuchsia-500/20">Acceder Portal</span>
+                 </div>
+              </a>
+
+              {/* 3. Configuración Oráculo */}
+              <a href="https://ti-zeroclick-oraculo.kopernicus.tech/oraculo" target="_blank" rel="noopener noreferrer" className="group p-8 border border-white/5 bg-[#1b081e]/80 backdrop-blur-xl rounded-[2rem] hover:bg-[#250b29] hover:border-fuchsia-400/50 hover:-translate-y-2 transition-all duration-300 shadow-[0_10px_40px_rgba(217,70,239,0.1)] flex flex-col items-center text-center">
+                 <div className="mb-5 text-fuchsia-500 group-hover:text-fuchsia-400 transition-colors w-12 h-12 p-2 bg-fuchsia-950/30 rounded-xl flex items-center justify-center">
+                     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" className="w-6 h-6"><circle cx="12" cy="12" r="10"/><path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"/><path d="M2 12h20"/></svg>
+                 </div>
+                 <h4 className="text-xl font-bold text-white mb-2">Configuración Oráculo</h4>
+                 <p className="text-zinc-400 font-light text-sm mb-6 flex-1">Configuración de reglas y lógica del oráculo</p>
+                 <div className="w-full pt-4 border-t border-fuchsia-500/20 mt-auto flex justify-center">
+                    <span className="text-xs text-fuchsia-400 font-medium bg-fuchsia-500/10 px-3 py-1 rounded-full border border-fuchsia-500/20">Acceder Portal</span>
+                 </div>
+              </a>
+           </div>
         </div>
 
         {/* Orbiting Satellites (Other Modules) */}
