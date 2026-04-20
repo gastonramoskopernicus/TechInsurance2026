@@ -36,7 +36,7 @@ export default function RecursosPage() {
           {[
             { id: 'destacados', label: 'Destacados' },
             { id: 'whitepapers', label: 'Whitepapers' },
-            { id: 'videos', label: 'Videos y Masterclass' },
+            { id: 'videos', label: 'Videos' },
             { id: 'articulos', label: 'Artículos' },
             { id: 'brochures', label: 'Brochures' },
           ].map((item) => (
@@ -56,7 +56,7 @@ export default function RecursosPage() {
         <div className="container mx-auto max-w-7xl">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-5xl font-bold text-white mb-6 tracking-tight">
-              Curaduría <span className="text-transparent bg-clip-text bg-gradient-to-r from-fuchsia-500 to-pink-400">Destacada</span>
+              Material <span className="text-transparent bg-clip-text bg-gradient-to-r from-fuchsia-500 to-pink-400">Destacado</span>
             </h2>
             <p className="text-xl text-zinc-400 font-light max-w-2xl mx-auto">Selección editorial del material más influyente emitido por nuestros equipos y partners tecnológicos.</p>
           </div>
@@ -80,7 +80,7 @@ export default function RecursosPage() {
                   <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" className="w-32 h-32"><polygon points="5 3 19 12 5 21 5 3"/><path d="M19 12h-9"/></svg>
                </div>
                <div className="relative z-10 w-full md:w-3/4">
-                 <span className="inline-block px-3 py-1 bg-white/5 text-zinc-300 font-bold text-xs uppercase tracking-widest rounded-full border border-white/10 mb-6 group-hover:border-fuchsia-500/30 group-hover:text-fuchsia-300 transition-colors">Masterclass</span>
+                 <span className="inline-block px-3 py-1 bg-white/5 text-zinc-300 font-bold text-xs uppercase tracking-widest rounded-full border border-white/10 mb-6 group-hover:border-fuchsia-500/30 group-hover:text-fuchsia-300 transition-colors">Video</span>
                  <h3 className="text-3xl font-bold text-white mb-4 drop-shadow-md">Demostración Comercial (Product Studio)</h3>
                  <p className="text-zinc-500 font-light text-lg mb-8 leading-relaxed">Vea en tiempo real cómo nuestros ingenieros estructuran un seguro embebido de bicicletas en menos de 15 minutos.</p>
                  <span className="text-fuchsia-400 font-bold flex items-center gap-2 group-hover:translate-x-2 transition-transform">Ver en HD <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" className="w-5 h-5"><polygon points="5 3 19 12 5 21 5 3"/></svg></span>
@@ -106,7 +106,7 @@ export default function RecursosPage() {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {[
               { title: 'Aceleración Comercial API-First', desc: 'Análisis de mercado sobre cómo los bancos están devorando el pipeline asegurador utilizando protocolos abiertos.', icon: '<path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/>' },
-              { title: 'Manifiesto Embedded Insurance', desc: 'Casos de uso matemáticos sobre conversión B2B2C integrando seguros dentro de la caja de compra final.', icon: '<path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><circle cx="10" cy="12" r="2"/><line x1="14" y1="16" x2="16" y2="16"/>' },
+              { title: 'Embedded Insurance', desc: 'Casos de uso matemáticos sobre conversión B2B2C integrando seguros dentro de la caja de compra final.', icon: '<path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><circle cx="10" cy="12" r="2"/><line x1="14" y1="16" x2="16" y2="16"/>' },
               { title: 'Mitos y Verdades del No-Code', desc: 'Un paper escrito en colaboración con el líder global actuarial detallando la solidez matemática detrás del Product Studio.', icon: '<path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="8" y1="13" x2="16" y2="13"/><line x1="8" y1="17" x2="16" y2="17"/><polyline points="10 9 9 9 8 9"/>' }
             ].map((item, idx) => (
               <a href="#" key={idx} className="group p-8 border border-white/5 bg-[#0f0e11] rounded-3xl hover:bg-[#16141a] hover:border-fuchsia-900/50 transition-all duration-300 flex flex-col hover:-translate-y-2 shadow-[0_10px_30px_rgba(0,0,0,0.5)]">
@@ -128,11 +128,11 @@ export default function RecursosPage() {
       <section id="videos" className="py-24 px-4 bg-[#050106] border-b border-white/5 scroll-mt-32">
         <div className="container mx-auto max-w-7xl">
           <div className="text-center mb-16">
-            <span className="text-fuchsia-500 font-semibold tracking-wider text-sm uppercase mb-4 block">Ecosistema Audiovisual Kopernicus</span>
+            <span className="text-fuchsia-500 font-semibold tracking-wider text-sm uppercase mb-4 block">Tech Insurance</span>
             <h2 className="text-3xl md:text-5xl font-bold text-white mb-6 tracking-tight">
-              Masterclass y <span className="text-transparent bg-clip-text bg-gradient-to-r from-fuchsia-500 to-pink-400">Videos</span>
+              Videos y <span className="text-transparent bg-clip-text bg-gradient-to-r from-fuchsia-500 to-pink-400">Contenidos</span>
             </h2>
-            <p className="text-xl text-zinc-400 font-light max-w-2xl mx-auto">Material visual e intervenciones públicas definiendo la pauta global insurtech en los últimos foros de mercado.</p>
+            <p className="text-xl text-zinc-400 font-light max-w-2xl mx-auto">Sección de videos y contenidos relacionados con Tech Insurance definiendo la pauta global insurtech en los últimos foros de mercado.</p>
           </div>
           
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 mb-12">
