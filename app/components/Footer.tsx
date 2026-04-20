@@ -94,7 +94,7 @@ export default function Footer() {
               <li><Link href="/" className="hover:text-fuchsia-400 transition-colors">Home</Link></li>
               <li><Link href="/casos-de-uso" className="hover:text-fuchsia-400 transition-colors">Casos de Uso</Link></li>
               <li><Link href="/ecosistema" className="hover:text-fuchsia-400 transition-colors">Ecosistema</Link></li>
-              <li><Link href="/recursos" className="hover:text-fuchsia-400 transition-colors">Recursos</Link></li>
+              {/* <li><Link href="/recursos" className="hover:text-fuchsia-400 transition-colors">Recursos</Link></li> */}
               <li><Link href="/empresa" className="hover:text-fuchsia-400 transition-colors">Empresa</Link></li>
               <li><Link href="/contacto" className="hover:text-fuchsia-400 transition-colors">Contacto</Link></li>
             </ul>

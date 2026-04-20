@@ -6,6 +6,8 @@ import { useState } from "react";
 export default function ContactoPage() {
   const [tipoSeleccionado, setTipoSeleccionado] = useState('solucion');
   const [enviado, setEnviado] = useState(false);
+  const [cargando, setCargando] = useState(false);
+  const [errorEnvio, setErrorEnvio] = useState(false);
 
   const opcionesContacto = [
     { 
@@ -36,15 +38,50 @@ export default function ContactoPage() {
 
   const opcionActiva = opcionesContacto.find(opt => opt.id === tipoSeleccionado);
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    setEnviado(true);
-    // Simula una reconexión lógica al CRM
-    setTimeout(() => {
-      setEnviado(false);
-      setTipoSeleccionado('solucion');
-      // En un entorno real aquí se resetea todo el formulario (e.target.reset())
-    }, 5000);
+    setCargando(true);
+    setErrorEnvio(false);
+
+    const formData = new FormData(e.currentTarget);
+    
+    const data = {
+      _subject: `[Tech Insurance] Nuevo contacto - ${opcionActiva?.label}`,
+      "Tipo de contacto": opcionActiva?.label,
+      "Nombre": formData.get("nombre"),
+      "Empresa": formData.get("empresa"),
+      "Email": formData.get("email"),
+      "Teléfono": formData.get("telefono") || "No provisto",
+      "Mensaje": formData.get("mensaje"),
+      _template: "table",
+      _captcha: "false" // Desactivamos el captcha visible de formsubmit
+    };
+
+    try {
+      const response = await fetch("https://formsubmit.co/ajax/ramos.gaston@Kopernicus.tech", {
+        method: "POST",
+        headers: {
+          'Content-Type': 'application/json',
+          'Accept': 'application/json'
+        },
+        body: JSON.stringify(data)
+      });
+
+      if (response.ok) {
+        setEnviado(true);
+        e.currentTarget.reset();
+        setTimeout(() => {
+          setEnviado(false);
+          setTipoSeleccionado('solucion');
+        }, 8000);
+      } else {
+        setErrorEnvio(true);
+      }
+    } catch (error) {
+      setErrorEnvio(true);
+    } finally {
+      setCargando(false);
+    }
   };
 
   return (
@@ -111,22 +148,22 @@ export default function ContactoPage() {
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                     <div className="flex flex-col gap-2">
                       <label className="text-sm font-bold text-zinc-400 tracking-wider">Nombre Completo</label>
-                      <input required type="text" className="w-full bg-[#16141a] border border-white/5 p-4 rounded-xl text-white outline-none focus:border-fuchsia-500 focus:bg-[#1b081e] transition-all" placeholder="Ingrese su nombre completo" />
+                      <input name="nombre" required type="text" className="w-full bg-[#16141a] border border-white/5 p-4 rounded-xl text-white outline-none focus:border-fuchsia-500 focus:bg-[#1b081e] transition-all" placeholder="Ingrese su nombre completo" disabled={cargando} />
                     </div>
                     <div className="flex flex-col gap-2">
                       <label className="text-sm font-bold text-zinc-400 tracking-wider">Empresa / Institución</label>
-                      <input required type="text" className="w-full bg-[#16141a] border border-white/5 p-4 rounded-xl text-white outline-none focus:border-fuchsia-500 focus:bg-[#1b081e] transition-all" placeholder="Ingrese el nombre de su empresa" />
+                      <input name="empresa" required type="text" className="w-full bg-[#16141a] border border-white/5 p-4 rounded-xl text-white outline-none focus:border-fuchsia-500 focus:bg-[#1b081e] transition-all" placeholder="Ingrese el nombre de su empresa" disabled={cargando} />
                     </div>
                   </div>
 
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                     <div className="flex flex-col gap-2">
                       <label className="text-sm font-bold text-zinc-400 tracking-wider">Email Corporativo</label>
-                      <input required type="email" className="w-full bg-[#16141a] border border-white/5 p-4 rounded-xl text-white outline-none focus:border-fuchsia-500 focus:bg-[#1b081e] transition-all" placeholder="Ingrese su email corporativo" />
+                      <input name="email" required type="email" className="w-full bg-[#16141a] border border-white/5 p-4 rounded-xl text-white outline-none focus:border-fuchsia-500 focus:bg-[#1b081e] transition-all" placeholder="Ingrese su email corporativo" disabled={cargando} />
                     </div>
                     <div className="flex flex-col gap-2">
                       <label className="text-sm font-bold text-zinc-400 tracking-wider">Teléfono (Opcional)</label>
-                      <input type="tel" className="w-full bg-[#16141a] border border-white/5 p-4 rounded-xl text-white outline-none focus:border-fuchsia-500 focus:bg-[#1b081e] transition-all" placeholder="Ingrese su número de teléfono" />
+                      <input name="telefono" type="tel" className="w-full bg-[#16141a] border border-white/5 p-4 rounded-xl text-white outline-none focus:border-fuchsia-500 focus:bg-[#1b081e] transition-all" placeholder="Ingrese su número de teléfono" disabled={cargando} />
                     </div>
                   </div>
 
@@ -135,11 +172,20 @@ export default function ContactoPage() {
                       <span>Tu Mensaje</span>
                       <span className="text-xs text-fuchsia-500 border border-fuchsia-900/50 bg-fuchsia-950/30 px-3 py-1 rounded-full">Destino: {opcionActiva?.label}</span>
                     </label>
-                    <textarea required rows={5} className="w-full bg-[#16141a] border border-white/5 p-4 rounded-xl text-white outline-none focus:border-fuchsia-500 focus:bg-[#1b081e] transition-all resize-none" placeholder={opcionActiva?.placeholder}></textarea>
+                    <textarea name="mensaje" required rows={5} className="w-full bg-[#16141a] border border-white/5 p-4 rounded-xl text-white outline-none focus:border-fuchsia-500 focus:bg-[#1b081e] transition-all resize-none" placeholder={opcionActiva?.placeholder} disabled={cargando}></textarea>
                   </div>
 
-                  <button type="submit" className="mt-4 w-full md:w-auto self-end bg-fuchsia-600 hover:bg-fuchsia-500 text-white font-bold text-lg px-12 py-5 rounded-2xl transition-all shadow-[0_0_30px_rgba(217,70,239,0.3)] hover:shadow-[0_0_50px_rgba(217,70,239,0.5)] flex items-center gap-3">
-                    Enviar Consulta <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" className="w-5 h-5"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+                  {errorEnvio && (
+                    <div className="p-4 bg-red-950/50 border border-red-900/50 rounded-xl text-red-200 text-sm flex items-center gap-2">
+                      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" className="w-5 h-5 flex-shrink-0"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+                      <div>
+                        <strong>Error al enviar:</strong> No pudimos procesar tu consulta. Por favor, intentá nuevamente más tarde.
+                      </div>
+                    </div>
+                  )}
+
+                  <button type="submit" disabled={cargando} className={`mt-4 w-full md:w-auto self-end font-bold text-lg px-12 py-5 rounded-2xl transition-all flex items-center justify-center gap-3 ${cargando ? 'bg-fuchsia-900 text-fuchsia-300 cursor-not-allowed' : 'bg-fuchsia-600 hover:bg-fuchsia-500 text-white shadow-[0_0_30px_rgba(217,70,239,0.3)] hover:shadow-[0_0_50px_rgba(217,70,239,0.5)]'}`}>
+                    {cargando ? 'Enviando...' : 'Enviar Consulta'} {!cargando && <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" className="w-5 h-5"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>}
                   </button>
                 </form>
              )}
