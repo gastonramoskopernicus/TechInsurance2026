@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
+import HeroShowcase from "./components/HeroShowcase";
 
 export default function Home() {
   return (
@@ -26,17 +27,7 @@ export default function Home() {
         <div className="absolute bottom-0 right-0 w-[600px] h-[600px] bg-indigo-900/10 rounded-full blur-[150px] pointer-events-none z-0 mix-blend-screen" />
         
         <div className="container mx-auto max-w-6xl text-center relative z-10 flex flex-col items-center">
-          <div className="relative flex justify-center items-center w-72 h-72 sm:w-[22rem] sm:h-[22rem] md:w-[28rem] md:h-[28rem] mb-6 z-20">
-            <div className="animate-breath w-full h-full drop-shadow-[0_0_25px_rgba(217,70,239,0.2)]">
-              <Image 
-                src="/logo.svg" 
-                alt="Tech Insurance Official Geometric Logo" 
-                fill
-                className="object-contain"
-                priority
-              />
-            </div>
-          </div>
+          <HeroShowcase />
           <div className="space-y-6 max-w-3xl">
             <h1 className="text-4xl sm:text-5xl md:text-7xl font-extrabold tracking-tight text-white leading-[1.1]">
               Deje de depender <br />
