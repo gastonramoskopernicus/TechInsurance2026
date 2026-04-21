@@ -45,7 +45,7 @@ export default function Home() {
               </span>
             </h1>
             <p className="text-lg md:text-xl text-zinc-400 font-light max-w-2xl mx-auto">
-              Tech Insurance permite lanzar productos, integrar canales y escalar su negocio sin rediseñar sus sistemas existentes.
+              Diseñado para aseguradoras que operan en entornos complejos como Latinoamérica. Tech Insurance es una plataforma de seguros que permite lanzar productos, integrar canales y escalar su negocio acelerando su crecimiento comercial sin reemplazar el core.
             </p>
           </div>
 
@@ -71,7 +71,7 @@ export default function Home() {
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-fuchsia-500 to-pink-400">Es estructural.</span>
             </h2>
             <p className="text-xl text-zinc-400 max-w-2xl mx-auto font-light leading-relaxed">
-              Los sistemas core fueron diseñados para operar, no para innovar. Cada intento de forzar nuevas lógicas sobre ellos desencadena los mismos bloqueos:
+              Los sistemas core fueron diseñados para operar, no para innovar. Cada intento de forzar nuevas lógicas desencadena bloqueos. La plataforma está adaptada a la realidad de las aseguradoras de la región para superar:
             </p>
           </div>
           
@@ -123,8 +123,8 @@ export default function Home() {
       <section id="solucion" className="py-32 border-b border-white/5 relative overflow-hidden bg-[#0d040e]">
         <div className="container mx-auto px-4 lg:px-8 max-w-7xl relative z-10">
           <div className="text-center mb-24">
-            <span className="text-fuchsia-500 font-semibold tracking-widest text-xs uppercase mb-3 block">Nuestra Solución</span>
-            <h2 className="text-4xl md:text-5xl font-bold text-white tracking-tight">Tech Insurance desacopla <br className="hidden md:block"/><span className="text-transparent bg-clip-text bg-gradient-to-r from-fuchsia-500 to-pink-400">la innovación.</span></h2>
+            <span className="text-fuchsia-500 font-semibold tracking-widest text-xs uppercase mb-3 block">Software para Aseguradoras</span>
+            <h2 className="text-4xl md:text-5xl font-bold text-white tracking-tight">Aceleramos la <br className="hidden md:block"/><span className="text-transparent bg-clip-text bg-gradient-to-r from-fuchsia-500 to-pink-400">transformación digital.</span></h2>
           </div>
           
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-8">
@@ -153,7 +153,7 @@ export default function Home() {
                 <div className="mb-6 relative z-10 text-zinc-500 group-hover:text-fuchsia-400 group-hover:scale-110 transition-transform duration-500">
                   <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" className="w-12 h-12"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path><polyline points="3.27 6.96 12 12.01 20.73 6.96"></polyline><line x1="12" y1="22.08" x2="12" y2="12"></line></svg>
                 </div>
-                <h4 className="text-xl font-bold text-white leading-tight">Escalar sin <br/> reescribir sistemas</h4>
+                <h4 className="text-xl font-bold text-white leading-tight">Escalar en <br/> mercados complejos</h4>
              </div>
           </div>
         </div>
@@ -218,7 +218,7 @@ export default function Home() {
             <Image src="/TechInsurance.svg" alt="Tech Insurance Emblem" fill className="object-contain" priority />
           </div>
 
-          <span className="text-fuchsia-500 font-semibold tracking-wider text-sm uppercase mb-3 block">Innovation Hub</span>
+          <span className="text-fuchsia-500 font-semibold tracking-wider text-sm uppercase mb-3 block">Modernización del core asegurador</span>
           <h2 className="text-4xl md:text-5xl font-bold mb-8 text-white">Product Studio: <span className="text-transparent bg-clip-text bg-gradient-to-r from-fuchsia-500 to-pink-400">Autonomía Comercial</span></h2>
           <div className="max-w-4xl mx-auto border border-fuchsia-500/10 rounded-2xl p-10 lg:p-14 bg-black/50 backdrop-blur-md hover:border-fuchsia-500/20 transition-colors">
             <p className="text-zinc-300 text-xl font-light leading-relaxed">
@@ -234,7 +234,7 @@ export default function Home() {
           <span className="text-fuchsia-600 font-semibold tracking-wider text-sm uppercase mb-2 block">Infraestructura Constante</span>
           <h2 className="text-3xl md:text-4xl font-bold mb-6 text-white tracking-tight">Arquitectura API-First y <span className="text-transparent bg-clip-text bg-gradient-to-r from-fuchsia-500 to-pink-400">Cloud-Native</span></h2>
           <p className="text-zinc-400 text-lg max-w-3xl mx-auto font-light leading-relaxed">
-            Diseñada para escalar de manera predecible. Microservicios altamente disponibles, arquitectura event-driven y resiliencia corporativa que se integra naturalmente con ecosistemas guidewire, plataformas legacy y servicios web externos.
+            Diseñada para escalar de manera predecible en ecosistemas latinoamericanos. Soluciones altamente disponibles y arquitectura event-driven con perfecta integración con sistemas existentes, plataformas legacy y servicios web externos.
           </p>
         </div>
       </section>
@@ -247,7 +247,7 @@ export default function Home() {
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-8">
             <div className="group rounded-2xl bg-[#0f0e11] flex flex-col items-start p-10 text-left border border-white/5 hover:border-fuchsia-900/50 hover:bg-[#1a081c] transition-all duration-300">
               <h3 className="text-2xl font-bold text-white mb-3">Bancaseguros & Fintech</h3>
-              <p className="text-zinc-500 font-light leading-relaxed group-hover:text-zinc-400 transition-colors">Seguros integrados sutilmente en flujos transaccionales y de crédito. Experiencias embebidas que monetizan de forma transparente.</p>
+              <p className="text-zinc-500 font-light leading-relaxed group-hover:text-zinc-400 transition-colors">Implemente seguros embebidos en flujos transaccionales y de crédito. Experiencias que dominan la distribución digital de seguros y monetizan de forma transparente.</p>
             </div>
             <div className="group rounded-2xl bg-[#0f0e11] flex flex-col items-start p-10 text-left border border-white/5 hover:border-fuchsia-900/50 hover:bg-[#1a081c] transition-all duration-300">
               <h3 className="text-2xl font-bold text-white mb-3">Retail & Sponsors Masivos</h3>
@@ -261,7 +261,7 @@ export default function Home() {
       <section id="impacto" className="py-32 bg-[#050106] border-b border-white/5 relative">
         <div className="container mx-auto px-4 lg:px-8 text-center max-w-7xl relative z-10">
           <div className="mb-20">
-            <span className="text-fuchsia-500 font-semibold tracking-widest text-xs uppercase mb-3 block">Rendimiento Operativo</span>
+            <span className="text-fuchsia-500 font-semibold tracking-widest text-xs uppercase mb-3 block">Eficiencia Operativa</span>
             <h2 className="text-4xl md:text-5xl font-bold text-white tracking-tight">Resultados Claros y Medibles <span className="text-transparent bg-clip-text bg-gradient-to-r from-fuchsia-500 to-pink-400">(ROI)</span></h2>
           </div>
           
@@ -354,7 +354,7 @@ export default function Home() {
         <div className="absolute inset-0 z-0 bg-[radial-gradient(circle_at_bottom,rgba(217,70,239,0.1),transparent)] pointer-events-none" />
         <div className="container mx-auto px-4 z-10 relative max-w-3xl space-y-10">
           <h2 className="text-4xl md:text-5xl lg:text-6xl font-extrabold tracking-tight text-white leading-tight">Libere el potencial <br/><span className="text-transparent bg-clip-text bg-gradient-to-r from-fuchsia-500 to-pink-400">de su negocio</span></h2>
-          <p className="text-xl text-zinc-400 font-light max-w-2xl mx-auto">Escale canales, optimice operaciones y evite migraciones de core traumáticas. Agende una reunión para evaluar nuestra plataforma en su ecosistema.</p>
+          <p className="text-xl text-zinc-400 font-light max-w-2xl mx-auto">Escale canales, logre mayor eficiencia operativa y evite migraciones de core traumáticas. Agende una reunión para evaluar cómo modernizar su distribución digital.</p>
           <Link href="/contacto" className="inline-flex items-center justify-center h-14 px-10 rounded-xl bg-fuchsia-600 text-white font-bold text-lg hover:bg-fuchsia-500 transition-colors shadow-[0_0_30px_rgba(192,38,211,0.3)] hover:shadow-[0_0_40px_rgba(192,38,211,0.5)]">
             Agendar Discovery Call
           </Link>

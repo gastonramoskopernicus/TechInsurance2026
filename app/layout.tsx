@@ -16,8 +16,13 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Tech Insurance | Enterprise Platform",
-  description: "La plataforma enterprise definitiva para acelerar y transformar el mercado asegurador con tecnología de punta.",
+  title: "Plataforma para Aseguradoras en Latinoamérica | Tech Insurance",
+  description: "Tech Insurance es una plataforma para aseguradoras que permite lanzar productos, integrar partners y escalar canales digitales sin depender del core legacy.",
+  keywords: "software para aseguradoras, plataforma de seguros, transformación digital en seguros, seguros embebidos, distribución digital de seguros, modernización del core asegurador",
+  openGraph: {
+    title: "Plataforma para Aseguradoras en Latinoamérica | Tech Insurance",
+    description: "Tech Insurance es una plataforma para aseguradoras que permite lanzar productos, integrar partners y escalar canales digitales sin depender del core legacy.",
+  },
   icons: {
     icon: '/favicon.svg',
   },
