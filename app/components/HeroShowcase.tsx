@@ -3,6 +3,17 @@
 import { useEffect, useState, useRef } from "react";
 import Image from "next/image";
 
+const screens = [
+  "/pantallas/pantalla1.png",
+  "/pantallas/pantalla2.png",
+  "/pantallas/pantalla3.png",
+  "/pantallas/pantalla4.png",
+  "/pantallas/pantalla5.png",
+  "/pantallas/pantalla6.png",
+  "/pantallas/pantalla7.png",
+  "/pantallas/pantalla8.png"
+];
+
 export default function HeroShowcase() {
   const [phase, setPhase] = useState<'logo' | 'screens'>('logo');
   const [activeScreenIndex, setActiveScreenIndex] = useState(0);
@@ -11,7 +22,7 @@ export default function HeroShowcase() {
   
   const LOGO_DURATION = 3500;
   const SCREEN_CYCLE_DURATION = 4000;
-  const TOTAL_SCREENS = 8;
+  const TOTAL_SCREENS = screens.length;
 
   useEffect(() => {
     const observer = new IntersectionObserver(
@@ -64,7 +75,7 @@ export default function HeroShowcase() {
         className={`absolute inset-0 flex justify-center items-center transition-all duration-[1200ms] ease-in-out ${
           phase === 'logo' 
             ? 'opacity-100 scale-100 blur-0' 
-            : 'opacity-0 scale-[0.9] blur-md pointer-events-none'
+            : 'opacity-0 scale-[0.9] blur-sm pointer-events-none'
         }`}
       >
         <div className="w-full h-full relative animate-breath drop-shadow-[0_0_25px_rgba(217,70,239,0.2)]">
@@ -83,16 +94,16 @@ export default function HeroShowcase() {
         className={`absolute inset-0 flex justify-center items-center transition-all duration-[1200ms] ease-in-out ${
           phase === 'screens' 
             ? 'opacity-100 scale-100 blur-0' 
-            : 'opacity-0 scale-[1.05] blur-md pointer-events-none'
+            : 'opacity-0 scale-[1.05] blur-sm pointer-events-none'
         }`}
       >
          <div className="relative w-full h-full flex items-center justify-center translate-x-4">
-            {[1, 2, 3, 4, 5, 6, 7, 8].map((num, idx) => (
+            {screens.map((src, idx) => (
                 <ScreenImage
-                   key={num}
+                   key={idx}
                    index={idx}
                    activeIndex={activeScreenIndex}
-                   src={`/pantallas/pantalla${num}.png`}
+                   src={src}
                 />
             ))}
          </div>
@@ -101,7 +112,7 @@ export default function HeroShowcase() {
   );
 }
 
-// Subcomponente de Pantalla Imagen Glassmorphism
+// Subcomponente de Pantalla
 function ScreenImage({ index, activeIndex, src }: { index: number, activeIndex: number, src: string }) {
   const isActive = index === activeIndex;
   const isPast = index < activeIndex;
@@ -117,12 +128,12 @@ function ScreenImage({ index, activeIndex, src }: { index: number, activeIndex: 
   const getOpacity = () => {
     if (isActive) return 'opacity-100';
     if (isPast) return 'opacity-0';
-    return 'opacity-[0.85]';
+    return 'opacity-[0.85]'; // Futuras levemente opacas
   };
 
   return (
     <div 
-      className={`absolute w-[115%] sm:w-[130%] max-w-2xl aspect-[16/10] sm:aspect-[16/9] rounded-2xl bg-[#0a050f]/60 backdrop-blur-md border border-white/10 shadow-2xl overflow-hidden transition-all duration-[1200ms] ease-[cubic-bezier(0.23,1,0.32,1)] will-change-transform ${getOpacity()}`}
+      className={`absolute w-[115%] sm:w-[130%] max-w-2xl aspect-[16/10] sm:aspect-[16/9] rounded-2xl overflow-hidden shadow-2xl transition-all duration-[1200ms] ease-[cubic-bezier(0.23,1,0.32,1)] will-change-transform ${getOpacity()}`}
       style={{
         transform: getTransform(),
         zIndex: 20 - index,
@@ -130,13 +141,11 @@ function ScreenImage({ index, activeIndex, src }: { index: number, activeIndex: 
     >
       <Image 
          src={src} 
-         alt={`Tech Insurance Interface ${index + 1}`} 
+         alt={`Tech Insurance Flow ${index + 1}`} 
          fill 
-         className="object-cover object-top opacity-90 transition-opacity duration-500 hover:opacity-100" 
+         className="object-contain" 
          sizes="(max-width: 768px) 100vw, 50vw"
       />
-      {/* Glare effect suave para mantener el look premium */}
-      <div className="absolute inset-0 bg-gradient-to-tr from-white/0 via-white/5 to-white/0 pointer-events-none" />
     </div>
   );
 }
