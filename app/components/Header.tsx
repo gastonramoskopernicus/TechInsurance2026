@@ -14,6 +14,7 @@ export default function Header() {
     { label: "Casos de Uso", href: "/casos-de-uso" },
     { label: "Ecosistema", href: "/ecosistema" },
     // { label: "Recursos", href: "/recursos" }, // Oculto temporalmente
+    { label: "InspeXiona", href: "/inspexiona" },
     { label: "Empresa", href: "/empresa" },
     { label: "Contacto", href: "/contacto" },
   ];
