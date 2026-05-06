@@ -50,16 +50,16 @@ export default function InspexionaClient() {
     {
       title: "Cero Descargas",
       desc: "Web app accesible desde cualquier navegador móvil. Sin instalaciones engorrosas para el cliente.",
-      icon: <path strokeLinecap="round" strokeLinejoin="round" d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/>
+      icon: <><text x="12" y="16" dominantBaseline="middle" textAnchor="middle" fontSize="20" fontWeight="bold" fill="currentColor">0</text><circle cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="1.5" fill="none"/></>
     },
     {
       title: "Captura Guiada",
-      desc: "Flujo inteligente que indica exactamente qué fotografías tomar según el tipo de bien a inspeccionar.",
+      desc: "Flujo inteligente que indica exactamente qué fotografías y videos tomar según el tipo de bien a inspeccionar.",
       icon: <><path strokeLinecap="round" strokeLinejoin="round" d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"/><circle cx="12" cy="13" r="4"/></>
     },
     {
       title: "Geolocalización",
-      desc: "Sellado de coordenadas y tiempo real en cada fotografía para prevenir fraudes.",
+      desc: "Sellado de coordenadas y tiempo real en cada fotografía y video para prevenir fraudes.",
       icon: <><path strokeLinecap="round" strokeLinejoin="round" d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></>
     },
     {
@@ -82,7 +82,7 @@ export default function InspexionaClient() {
     },
     {
       title: "Hogar",
-      desc: "Verificación de condiciones de la propiedad y medidas de seguridad (rejas, alarmas) mediante registro fotográfico.",
+      desc: "Verificación de condiciones de la propiedad y medidas de seguridad (rejas, alarmas) mediante registro fotográfico y de video.",
       iconFile: "/iconos_inspexiona/Hogar.png"
     },
     {
@@ -121,7 +121,7 @@ export default function InspexionaClient() {
               <div className="inline-flex items-center justify-center mb-8">
                 {/* No usar alt tag con texto y usar path /inspexiona-logo.svg estricto */}
                 <img 
-                  src="/inspexiona-logo.svg" 
+                  src="/inspexiona-logo.png" 
                   alt="" 
                   className="h-16 md:h-20 w-auto object-contain drop-shadow-[0_0_15px_rgba(217,70,239,0.3)]"
                 />
@@ -134,7 +134,7 @@ export default function InspexionaClient() {
             </h1>
             
             <p className={`text-lg md:text-xl text-zinc-400 font-light max-w-3xl mx-auto leading-relaxed transition-all duration-1000 delay-200 transform ${mounted ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'}`}>
-              Plataforma AI y Módulo Nativo para gestionar inspecciones previas y siniestros con flujos guiados, evidencias irrefutables y trazabilidad total.
+              Plataforma nativa iOS / Android y Web para inspecciones previas y de siniestros.
             </p>
 
             {/* CARRUSEL DE SCREENSHOTS (Estilo Landing Principal Tech Insurance) */}
@@ -242,7 +242,7 @@ export default function InspexionaClient() {
                 <div key={idx} className="group relative p-8 md:p-10 rounded-[2rem] bg-[#0a050b] border border-white/5 flex flex-col justify-start hover:border-fuchsia-500/30 transition-colors">
                   <div className="flex items-center gap-4 mb-6">
                     {/* Icono de imagen con Mask en Magenta (#d946ef es fuchsia-500 de Tailwind) */}
-                    <div className="w-10 h-10 flex items-center justify-center bg-fuchsia-500 drop-shadow-[0_0_8px_rgba(217,70,239,0.5)]" 
+                    <div className="w-20 h-20 flex items-center justify-center bg-fuchsia-500 drop-shadow-[0_0_8px_rgba(217,70,239,0.5)] flex-shrink-0" 
                          style={{
                            WebkitMaskImage: `url('${useCase.iconFile}')`,
                            WebkitMaskSize: 'contain',
@@ -325,10 +325,10 @@ export default function InspexionaClient() {
         <section className="py-32 px-4 relative z-10 overflow-hidden">
           <div className="container mx-auto max-w-4xl text-center relative z-10">
             <h2 className="text-4xl md:text-5xl lg:text-6xl font-black mb-8 leading-tight">
-              La mejor plataforma de inspecciones para <span className="text-transparent bg-clip-text bg-gradient-to-r from-fuchsia-400 to-indigo-400">aseguradoras, intermediarios y clientes</span>
+              La plataforma de inspecciones para <span className="text-transparent bg-clip-text bg-gradient-to-r from-fuchsia-400 to-indigo-400">aseguradoras, intermediarios y clientes</span>
             </h2>
             <p className="text-lg md:text-xl text-zinc-400 mb-12">
-              Integra inspecciones semanales y transforma radicalmente tu operación técnica y pericial. Empieza a utilizar InspeXiona hoy.
+              Transformar radicalmente la operación técnica y pericial de la compañía. Empieza a utilizar InspeXiona hoy.
             </p>
             
             <div className="flex justify-center">
