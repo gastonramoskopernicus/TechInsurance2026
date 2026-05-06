@@ -1,4 +1,9 @@
-"use client";
+import os
+
+base_dir = "/Users/gastonramos/Documents/Antigravity/tech-insurance-2026"
+file_path = os.path.join(base_dir, "app/inspexiona/InspexionaClient.tsx")
+
+client_content = """\"use client\";
 
 import Image from "next/image";
 import Link from "next/link";
@@ -350,3 +355,9 @@ export default function InspexionaClient() {
     </main>
   );
 }
+"""
+
+with open(file_path, "w", encoding="utf-8") as f:
+    f.write(client_content)
+
+print("✅ Modificaciones finales de InspeXiona aplicadas estrictamente.")
