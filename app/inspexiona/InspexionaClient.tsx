@@ -123,7 +123,7 @@ export default function InspexionaClient() {
                 <img 
                   src="/inspexiona-logo.png" 
                   alt="" 
-                  className="h-16 md:h-20 w-auto object-contain drop-shadow-[0_0_15px_rgba(217,70,239,0.3)]"
+                  className="h-32 md:h-40 w-auto object-contain drop-shadow-[0_0_15px_rgba(217,70,239,0.3)]"
                 />
               </div>
             </div>
