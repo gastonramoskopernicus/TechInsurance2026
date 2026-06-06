@@ -224,7 +224,7 @@ export default function EepClient() {
       {/* Fondo General del Ecosistema */}
       <div className="absolute inset-0 z-0 overflow-hidden pointer-events-none">
         <div className="absolute top-0 left-1/4 w-[1000px] h-[1000px] bg-fuchsia-900/10 rounded-full blur-[180px] mix-blend-screen animate-breath" />
-        <div className="absolute bottom-0 right-1/4 w-[800px] h-[800px] bg-indigo-900/10 rounded-full blur-[150px] mix-blend-screen" />
+        <div className="absolute bottom-0 right-1/4 w-[800px] h-[800px] bg-purple-950/10 rounded-full blur-[150px] mix-blend-screen" />
         <div className="absolute inset-0 bg-[linear-gradient(rgba(255,255,255,0.015)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.015)_1px,transparent_1px)] bg-[size:60px_60px] [mask-image:radial-gradient(ellipse_75%_75%_at_50%_50%,#000_20%,transparent_100%)] opacity-20" />
       </div>
 
@@ -282,22 +282,83 @@ export default function EepClient() {
               <div className="absolute w-[50%] h-[50%] rounded-full bg-gradient-to-br from-fuchsia-600/5 to-indigo-600/5 blur-xl pointer-events-none" />
 
               {/* Centro de Inteligencia de Engagement */}
-              <div className="absolute z-10 w-24 h-24 rounded-3xl bg-[#08040d] border border-fuchsia-500/40 flex flex-col items-center justify-center shadow-[0_0_50px_rgba(217,70,239,0.3)] animate-breath">
+              <div className="absolute z-10 w-24 h-24 rounded-full bg-[#08040d] border border-fuchsia-500/50 flex flex-col items-center justify-center shadow-[0_0_60px_rgba(217,70,239,0.6)] animate-breath">
                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" className="w-10 h-10 text-fuchsia-400">
                   <path strokeLinecap="round" strokeLinejoin="round" d="M12 18a3.75 3.75 0 0 0 .495-7.467 5.99 5.99 0 0 0-1.925 3.546 5.974 5.974 0 0 1-2.133-1A3.75 3.75 0 0 0 12 18Z" />
                   <path strokeLinecap="round" strokeLinejoin="round" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l.707-.707m2.808 13.064a8.962 8.962 0 0 1-2.3-2.3" />
                 </svg>
-                <span className="text-[10px] uppercase tracking-wider text-fuchsia-300 font-bold mt-1">EEP Core</span>
+                <span className="text-[10px] uppercase tracking-wider text-fuchsia-400 font-extrabold mt-1">EEP Core</span>
               </div>
 
               {/* Nodos Periféricos (Eventos, Clientes, Comunidades, etc.) */}
               {[
-                { name: "Clientes", angle: 0, icon: "👤", color: "from-fuchsia-500 to-pink-500" },
-                { name: "Eventos", angle: 60, icon: "⚡", color: "from-amber-500 to-orange-500" },
-                { name: "Productores", angle: 120, icon: "💼", color: "from-blue-500 to-indigo-500" },
-                { name: "Comunidades", angle: 180, icon: "🌐", color: "from-teal-500 to-emerald-500" },
-                { name: "Dashboards", angle: 240, icon: "📊", color: "from-fuchsia-500 to-indigo-500" },
-                { name: "Perfiles Dinámicos", angle: 300, icon: "🧠", color: "from-purple-500 to-pink-500" }
+                {
+                  name: "Clientes",
+                  angle: 0,
+                  icon: (
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" className="w-5 h-5 text-fuchsia-400">
+                      <path strokeLinecap="round" strokeLinejoin="round" d="M15.75 6a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0ZM4.501 20.118a7.5 7.5 0 0 1 14.998 0A17.933 17.933 0 0 1 12 21.75c-2.676 0-5.216-.584-7.499-1.632Z" />
+                    </svg>
+                  )
+                },
+                {
+                  name: "Eventos",
+                  angle: 60,
+                  icon: (
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" className="w-5 h-5 text-fuchsia-400">
+                      <path strokeLinecap="round" strokeLinejoin="round" d="M3.75 13.5l10.5-11.25L12 10.5h8.25L9.75 21.75 12 13.5H3.75Z" />
+                    </svg>
+                  )
+                },
+                {
+                  name: "Productores",
+                  angle: 120,
+                  icon: (
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" className="w-5 h-5 text-fuchsia-400">
+                      <path strokeLinecap="round" strokeLinejoin="round" d="M18 18.72a9.094 9.094 0 0 0 3.741-.479 3 3 0 0 0-4.682-2.72m.94 3.198.001.031c0 .225-.012.447-.037.666A11.944 11.944 0 0 1 12 21c-2.17 0-4.207-.576-5.963-1.584A6.062 6.062 0 0 1 6 18.719m12 0a5.971 5.971 0 0 0-.941-3.197m0 0A5.995 5.995 0 0 0 12 12.75a5.995 5.995 0 0 0-5.058 2.772m0 0a3 3 0 0 0-4.681 2.72 8.986 8.986 0 0 0 3.74.477m.94-3.197a5.971 5.971 0 0 0-.94 3.197M15 6.75a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" />
+                    </svg>
+                  )
+                },
+                {
+                  name: "Comunidades",
+                  angle: 180,
+                  icon: (
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" className="w-5 h-5 text-fuchsia-400">
+                      <circle cx="12" cy="5" r="2.5" />
+                      <circle cx="5" cy="12" r="2.5" />
+                      <circle cx="19" cy="12" r="2.5" />
+                      <circle cx="12" cy="19" r="2.5" />
+                      <line x1="12" y1="7.5" x2="5" y2="12" />
+                      <line x1="12" y1="7.5" x2="19" y2="12" />
+                      <line x1="5" y1="12" x2="12" y2="16.5" />
+                      <line x1="19" y1="12" x2="12" y2="16.5" />
+                      <line x1="12" y1="7.5" x2="12" y2="16.5" />
+                    </svg>
+                  )
+                },
+                {
+                  name: "Dashboards",
+                  angle: 240,
+                  icon: (
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" className="w-5 h-5 text-fuchsia-400">
+                      <path strokeLinecap="round" strokeLinejoin="round" d="M3 13.125C3 12.504 3.504 12 4.125 12h2.25c.621 0 1.125.504 1.125 1.125v6.75C7.5 20.496 6.996 21 6.375 21h-2.25A1.125 1.125 0 0 1 3 19.875v-6.75ZM9.75 8.625c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125v11.25c0 .621-.504 1.125-1.125 1.125h-2.25a1.125 1.125 0 0 1-1.125-1.125V8.625ZM16.5 4.125c0-.621.504-1.125 1.125-1.125h2.25C20.496 3 21 3.504 21 4.125v15.75c0 .621-.504 1.125-1.125 1.125h-2.25a1.125 1.125 0 0 1-1.125-1.125V4.125Z" />
+                    </svg>
+                  )
+                },
+                {
+                  name: "Perfiles Dinámicos",
+                  angle: 300,
+                  icon: (
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" className="w-5 h-5 text-fuchsia-400">
+                      <circle cx="12" cy="8" r="4" />
+                      <path strokeLinecap="round" strokeLinejoin="round" d="M6 21v-2a4 4 0 0 1 4-4h4a4 4 0 0 1 4 4v2" />
+                      <circle cx="20" cy="12" r="1.5" />
+                      <circle cx="4" cy="12" r="1.5" />
+                      <line x1="8" y1="12" x2="4" y2="12" strokeDasharray="2 2" />
+                      <line x1="16" y1="12" x2="20" y2="12" strokeDasharray="2 2" />
+                    </svg>
+                  )
+                }
               ].map((node, idx) => {
                 const radius = 160; // Píxeles de distancia del centro
                 const angleRad = (node.angle * Math.PI) / 180;
@@ -319,8 +380,8 @@ export default function EepClient() {
                     />
                     
                     {/* Nodo */}
-                    <div className={`w-12 h-12 rounded-full bg-[#0d0914] border border-white/10 flex items-center justify-center text-lg shadow-lg group-hover:scale-110 hover:border-fuchsia-500/50 transition-all duration-300`}>
-                      <span>{node.icon}</span>
+                    <div className="w-12 h-12 rounded-full bg-[#0d0914] border border-fuchsia-500/20 flex items-center justify-center shadow-lg shadow-fuchsia-500/5 group-hover:scale-110 hover:border-fuchsia-500/50 transition-all duration-300">
+                      {node.icon}
                     </div>
 
                     <span className="text-[11px] font-semibold text-zinc-400 tracking-wide mt-2 bg-[#020104]/80 px-2 py-0.5 rounded border border-white/5 opacity-80 group-hover:opacity-100 group-hover:text-white transition-all">
@@ -625,9 +686,9 @@ export default function EepClient() {
               
               {/* EEP Centro */}
               <div className="absolute z-30">
-                <div className="w-28 h-28 rounded-full bg-[#050207] border border-fuchsia-500/30 shadow-[0_0_50px_rgba(217,70,239,0.25)] flex flex-col items-center justify-center relative">
-                  <div className="absolute inset-0 rounded-full bg-gradient-to-br from-fuchsia-500/10 to-indigo-500/10 animate-pulse" />
-                  <span className="text-3xl font-black text-transparent bg-clip-text bg-gradient-to-r from-fuchsia-400 to-indigo-400 z-10">EEP</span>
+                <div className="w-28 h-28 rounded-full bg-[#050207] border border-fuchsia-500/55 shadow-[0_0_60px_rgba(217,70,239,0.55)] flex flex-col items-center justify-center relative">
+                  <div className="absolute inset-0 rounded-full bg-gradient-to-br from-fuchsia-500/15 to-purple-500/15 animate-pulse" />
+                  <span className="text-3xl font-black text-fuchsia-400 z-10">EEP</span>
                 </div>
               </div>
 
