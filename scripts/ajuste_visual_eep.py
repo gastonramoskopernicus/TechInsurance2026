@@ -1,4 +1,49 @@
-"use client";
+#!/usr/bin/env python3
+import os
+
+def main():
+    print("Iniciando ajustes visuales de EEP...")
+
+    base_dir = "/Users/gastonramos/Documents/Antigravity/tech-insurance-2026"
+    logo_svg_path = os.path.join(base_dir, "public", "eep-logo.svg")
+    client_path = os.path.join(base_dir, "app", "eep", "EepClient.tsx")
+
+    # 1. Crear el logo oficial de EEP en public/eep-logo.svg
+    logo_svg_content = """<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 120" fill="none">
+  <defs>
+    <linearGradient id="eep-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#d946ef" />
+      <stop offset="100%" stop-color="#8b5cf6" />
+    </linearGradient>
+    <filter id="eep-glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="4" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+  <!-- Isotipo: 3 nodos conectados -->
+  <g transform="translate(10, 10)">
+    <circle cx="40" cy="50" r="16" fill="url(#eep-grad)" filter="url(#eep-glow)" opacity="0.85"/>
+    <circle cx="90" cy="30" r="12" fill="url(#eep-grad)" />
+    <circle cx="90" cy="70" r="12" fill="url(#eep-grad)" />
+    <line x1="40" y1="50" x2="90" y2="30" stroke="white" stroke-width="2" stroke-opacity="0.4" />
+    <line x1="40" y1="50" x2="90" y2="70" stroke="white" stroke-width="2" stroke-opacity="0.4" />
+    <line x1="90" y1="30" x2="90" y2="70" stroke="white" stroke-width="2" stroke-opacity="0.2" />
+    <circle cx="40" cy="50" r="6" fill="white" />
+    <circle cx="90" cy="30" r="4" fill="white" />
+    <circle cx="90" cy="70" r="4" fill="white" />
+  </g>
+  <!-- Texto -->
+  <text x="140" y="72" fill="white" font-family="system-ui, -apple-system, sans-serif" font-weight="900" font-size="44" letter-spacing="2">EEP</text>
+  <text x="140" y="94" fill="#a1a1aa" font-family="system-ui, -apple-system, sans-serif" font-weight="500" font-size="11" letter-spacing="4">ENGAGEMENT ECOSYSTEM</text>
+</svg>
+"""
+
+    with open(logo_svg_path, "w", encoding="utf-8") as f:
+        f.write(logo_svg_content)
+    print(f"Logo SVG de EEP creado en: {logo_svg_path}")
+
+    # 2. Reemplazar EepClient.tsx con la UI ajustada visualmente de forma premium
+    client_content = """"use client";
 
 import Link from "next/link";
 import { useEffect, useState } from "react";
@@ -833,3 +878,13 @@ export default function EepClient() {
     </main>
   );
 }
+"""
+
+    with open(client_path, "w", encoding="utf-8") as f:
+        f.write(client_content)
+    print(f"EepClient.tsx actualizado con los ajustes visuales y SVG premium en: {client_path}")
+
+    print("Ajustes visuales completados exitosamente.")
+
+if __name__ == "__main__":
+    main()
