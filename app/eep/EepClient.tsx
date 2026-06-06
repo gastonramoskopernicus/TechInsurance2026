@@ -291,11 +291,11 @@ export default function EepClient() {
 
               {/* Centro de Inteligencia de Engagement */}
               <div className="absolute z-10 w-24 h-24 rounded-full bg-[#08040d] border border-fuchsia-500/50 flex flex-col items-center justify-center shadow-[0_0_60px_rgba(217,70,239,0.6)] animate-breath">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" className="w-10 h-10 text-fuchsia-400">
-                  <path strokeLinecap="round" strokeLinejoin="round" d="M12 18a3.75 3.75 0 0 0 .495-7.467 5.99 5.99 0 0 0-1.925 3.546 5.974 5.974 0 0 1-2.133-1A3.75 3.75 0 0 0 12 18Z" />
-                  <path strokeLinecap="round" strokeLinejoin="round" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l.707-.707m2.808 13.064a8.962 8.962 0 0 1-2.3-2.3" />
-                </svg>
-                <span className="text-[10px] uppercase tracking-wider text-fuchsia-400 font-extrabold mt-1">EEP Core</span>
+                <img 
+                  src="/eep-logo.svg" 
+                  alt="EEP Core Logo" 
+                  className="w-14 h-14 object-contain filter drop-shadow-[0_0_15px_rgba(217,70,239,0.5)]" 
+                />
               </div>
 
               {/* Nodos Periféricos (Eventos, Clientes, Comunidades, etc.) */}
