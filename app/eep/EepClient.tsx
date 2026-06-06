@@ -236,6 +236,14 @@ export default function EepClient() {
             
             {/* Contenido Izquierda */}
             <div className="flex-1 text-left space-y-8 max-w-xl">
+              {/* Logo Oficial EEP */}
+              <div className="inline-block relative w-36 h-36 mb-2">
+                <img 
+                  src="/eep-logo.svg" 
+                  alt="EEP Logo" 
+                  className="w-full h-full object-contain filter drop-shadow-[0_0_20px_rgba(217,70,239,0.45)]" 
+                />
+              </div>
               <span className="text-fuchsia-400 font-bold tracking-widest uppercase text-sm block">Engagement Ecosystem Platform</span>
               <h1 className={`text-4xl md:text-5xl lg:text-6xl font-black tracking-tight leading-none transition-all duration-1000 transform ${mounted ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'}`}>
                 Convierta datos en crecimiento.<br/>
@@ -688,7 +696,11 @@ export default function EepClient() {
               <div className="absolute z-30">
                 <div className="w-28 h-28 rounded-full bg-[#050207] border border-fuchsia-500/55 shadow-[0_0_60px_rgba(217,70,239,0.55)] flex flex-col items-center justify-center relative">
                   <div className="absolute inset-0 rounded-full bg-gradient-to-br from-fuchsia-500/15 to-purple-500/15 animate-pulse" />
-                  <span className="text-3xl font-black text-fuchsia-400 z-10">EEP</span>
+                  <img 
+                    src="/eep-logo.svg" 
+                    alt="EEP Core Logo" 
+                    className="w-16 h-16 object-contain z-10 filter drop-shadow-[0_0_15px_rgba(217,70,239,0.5)]" 
+                  />
                 </div>
               </div>
 
@@ -737,6 +749,15 @@ export default function EepClient() {
         {/* 9. CTA FINAL */}
         <section className="py-32 px-4 relative z-10 overflow-hidden border-t border-white/5 bg-gradient-to-b from-[#050208] to-[#020104]">
           <div className="container mx-auto max-w-4xl text-center relative z-10">
+            {/* Logo Oficial EEP */}
+            <div className="flex justify-center mb-8">
+              <img 
+                src="/eep-logo.svg" 
+                alt="EEP Logo" 
+                className="h-24 w-auto filter drop-shadow-[0_0_20px_rgba(217,70,239,0.4)]" 
+              />
+            </div>
+            
             <h2 className="text-4xl md:text-5xl lg:text-6xl font-black mb-8 leading-tight">
               Los datos cuentan historias.<br/>
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-fuchsia-400 to-indigo-400">

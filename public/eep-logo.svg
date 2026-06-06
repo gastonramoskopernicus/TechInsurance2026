@@ -1,0 +1,128 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" fill="none">
+  <defs>
+    <!-- Colores base:
+      Celeste: #51b4d3
+      Rosa/Magenta: #d93d82
+      Amarillo: #eed035
+      Violeta: #76479f
+    -->
+    <linearGradient id="g-sup-supder" x1="100" y1="20" x2="169.28" y2="60" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#51b4d3" />
+      <stop offset="100%" stop-color="#d93d82" />
+    </linearGradient>
+    <linearGradient id="g-supder-infder" x1="169.28" y1="60" x2="169.28" y2="140" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#d93d82" />
+      <stop offset="100%" stop-color="#51b4d3" />
+    </linearGradient>
+    <linearGradient id="g-infder-inf" x1="169.28" y1="140" x2="100" y2="180" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#51b4d3" />
+      <stop offset="100%" stop-color="#eed035" />
+    </linearGradient>
+    <linearGradient id="g-inf-infizq" x1="100" y1="180" x2="30.72" y2="140" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#eed035" />
+      <stop offset="100%" stop-color="#d93d82" />
+    </linearGradient>
+    <linearGradient id="g-infizq-supizq" x1="30.72" y1="140" x2="30.72" y2="60" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#d93d82" />
+      <stop offset="100%" stop-color="#76479f" />
+    </linearGradient>
+    <linearGradient id="g-supizq-sup" x1="30.72" y1="60" x2="100" y2="20" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#76479f" />
+      <stop offset="100%" stop-color="#51b4d3" />
+    </linearGradient>
+    
+    <!-- Gradientes de la estrella -->
+    <linearGradient id="g-supizq-supder" x1="30.72" y1="60" x2="169.28" y2="60" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#76479f" />
+      <stop offset="100%" stop-color="#d93d82" />
+    </linearGradient>
+    <linearGradient id="g-supder-inf" x1="169.28" y1="60" x2="100" y2="180" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#d93d82" />
+      <stop offset="100%" stop-color="#eed035" />
+    </linearGradient>
+    <linearGradient id="g-inf-supizq" x1="100" y1="180" x2="30.72" y2="60" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#eed035" />
+      <stop offset="100%" stop-color="#76479f" />
+    </linearGradient>
+
+    <linearGradient id="g-infizq-infder" x1="30.72" y1="140" x2="169.28" y2="140" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#d93d82" />
+      <stop offset="100%" stop-color="#51b4d3" />
+    </linearGradient>
+    <linearGradient id="g-infder-sup" x1="169.28" y1="140" x2="100" y2="20" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#51b4d3" />
+      <stop offset="100%" stop-color="#51b4d3" />
+    </linearGradient>
+    <linearGradient id="g-sup-infizq" x1="100" y1="20" x2="30.72" y2="140" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#51b4d3" />
+      <stop offset="100%" stop-color="#d93d82" />
+    </linearGradient>
+
+    <!-- Gradientes hacia el centro -->
+    <linearGradient id="g-sup-c" x1="100" y1="20" x2="100" y2="100" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#51b4d3" />
+      <stop offset="100%" stop-color="#d93d82" />
+    </linearGradient>
+    <linearGradient id="g-supder-c" x1="169.28" y1="60" x2="100" y2="100" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#d93d82" />
+      <stop offset="100%" stop-color="#d93d82" />
+    </linearGradient>
+    <linearGradient id="g-infder-c" x1="169.28" y1="140" x2="100" y2="100" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#51b4d3" />
+      <stop offset="100%" stop-color="#d93d82" />
+    </linearGradient>
+    <linearGradient id="g-inf-c" x1="100" y1="180" x2="100" y2="100" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#eed035" />
+      <stop offset="100%" stop-color="#d93d82" />
+    </linearGradient>
+    <linearGradient id="g-infizq-c" x1="30.72" y1="140" x2="100" y2="100" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#d93d82" />
+      <stop offset="100%" stop-color="#d93d82" />
+    </linearGradient>
+    <linearGradient id="g-supizq-c" x1="30.72" y1="60" x2="100" y2="100" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#76479f" />
+      <stop offset="100%" stop-color="#d93d82" />
+    </linearGradient>
+
+    <!-- Glow suave para los nodos -->
+    <filter id="node-glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="2.5" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+
+  <!-- LÍNEAS CONECTIVAS EXTERIORES (Hexágono) -->
+  <line x1="100" y1="20" x2="169.28" y2="60" stroke="url(#g-sup-supder)" stroke-width="3" stroke-linecap="round" />
+  <line x1="169.28" y1="60" x2="169.28" y2="140" stroke="url(#g-supder-infder)" stroke-width="3" stroke-linecap="round" />
+  <line x1="169.28" y1="140" x2="100" y2="180" stroke="url(#g-infder-inf)" stroke-width="3" stroke-linecap="round" />
+  <line x1="100" y1="180" x2="30.72" y2="140" stroke="url(#g-inf-infizq)" stroke-width="3" stroke-linecap="round" />
+  <line x1="30.72" y1="140" x2="30.72" y2="60" stroke="url(#g-infizq-supizq)" stroke-width="3" stroke-linecap="round" />
+  <line x1="30.72" y1="60" x2="100" y2="20" stroke="url(#g-supizq-sup)" stroke-width="3" stroke-linecap="round" />
+
+  <!-- LÍNEAS CONECTIVAS INTERNAS (Estrella de David) -->
+  <line x1="30.72" y1="60" x2="169.28" y2="60" stroke="url(#g-supizq-supder)" stroke-width="3" stroke-linecap="round" />
+  <line x1="169.28" y1="60" x2="100" y2="180" stroke="url(#g-supder-inf)" stroke-width="3" stroke-linecap="round" />
+  <line x1="100" y1="180" x2="30.72" y2="60" stroke="url(#g-inf-supizq)" stroke-width="3" stroke-linecap="round" />
+
+  <line x1="30.72" y1="140" x2="169.28" y2="140" stroke="url(#g-infizq-infder)" stroke-width="3" stroke-linecap="round" />
+  <line x1="169.28" y1="140" x2="100" y2="20" stroke="url(#g-infder-sup)" stroke-width="3" stroke-linecap="round" />
+  <line x1="100" y1="20" x2="30.72" y2="140" stroke="url(#g-sup-infizq)" stroke-width="3" stroke-linecap="round" />
+
+  <!-- LÍNEAS RADIALES HACIA EL CENTRO -->
+  <line x1="100" y1="20" x2="100" y2="100" stroke="url(#g-sup-c)" stroke-width="3" stroke-linecap="round" />
+  <line x1="169.28" y1="60" x2="100" y2="100" stroke="url(#g-supder-c)" stroke-width="3" stroke-linecap="round" />
+  <line x1="169.28" y1="140" x2="100" y2="100" stroke="url(#g-infder-c)" stroke-width="3" stroke-linecap="round" />
+  <line x1="100" y1="180" x2="100" y2="100" stroke="url(#g-inf-c)" stroke-width="3" stroke-linecap="round" />
+  <line x1="30.72" y1="140" x2="100" y2="100" stroke="url(#g-infizq-c)" stroke-width="3" stroke-linecap="round" />
+  <line x1="30.72" y1="60" x2="100" y2="100" stroke="url(#g-supizq-c)" stroke-width="3" stroke-linecap="round" />
+
+  <!-- NODOS (Vértices) -->
+  <circle cx="100" cy="20" r="9" fill="#51b4d3" filter="url(#node-glow)" />
+  <circle cx="169.28" cy="60" r="9" fill="#d93d82" filter="url(#node-glow)" />
+  <circle cx="169.28" cy="140" r="9" fill="#51b4d3" filter="url(#node-glow)" />
+  <circle cx="100" cy="180" r="9" fill="#eed035" filter="url(#node-glow)" />
+  <circle cx="30.72" cy="140" r="9" fill="#d93d82" filter="url(#node-glow)" />
+  <circle cx="30.72" cy="60" r="9" fill="#76479f" filter="url(#node-glow)" />
+  
+  <circle cx="100" cy="100" r="10" fill="#d93d82" filter="url(#node-glow)" />
+</svg>
