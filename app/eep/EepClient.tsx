@@ -463,19 +463,19 @@ export default function EepClient() {
                   <p className="font-semibold text-zinc-300">Como consecuencia directa:</p>
                   <ul className="grid grid-cols-1 sm:grid-cols-2 gap-3 text-sm pt-2">
                     <li className="flex items-center gap-2 text-zinc-400">
-                      <span className="w-1.5 h-1.5 rounded-full bg-red-500" /> Se pierden oportunidades comerciales.
+                      <span className="w-1.5 h-1.5 rounded-full bg-indigo-400" /> Se pierden oportunidades comerciales.
                     </li>
                     <li className="flex items-center gap-2 text-zinc-400">
-                      <span className="w-1.5 h-1.5 rounded-full bg-red-500" /> Aumenta la tasa de cancelación.
+                      <span className="w-1.5 h-1.5 rounded-full bg-indigo-400" /> Aumenta la tasa de cancelación.
                     </li>
                     <li className="flex items-center gap-2 text-zinc-400">
-                      <span className="w-1.5 h-1.5 rounded-full bg-red-500" /> Se dificulta anticipar comportamientos.
+                      <span className="w-1.5 h-1.5 rounded-full bg-indigo-400" /> Se dificulta anticipar comportamientos.
                     </li>
                     <li className="flex items-center gap-2 text-zinc-400">
-                      <span className="w-1.5 h-1.5 rounded-full bg-red-500" /> Se reduce la efectividad comercial.
+                      <span className="w-1.5 h-1.5 rounded-full bg-indigo-400" /> Se reduce la efectividad comercial.
                     </li>
                     <li className="flex items-center gap-2 text-zinc-400 sm:col-span-2">
-                      <span className="w-1.5 h-1.5 rounded-full bg-red-500" /> Se desaprovecha el conocimiento generado por los datos.
+                      <span className="w-1.5 h-1.5 rounded-full bg-indigo-400" /> Se desaprovecha el conocimiento generado por los datos.
                     </li>
                   </ul>
                   <p className="text-white font-medium pt-4 border-t border-white/5">
@@ -661,7 +661,7 @@ export default function EepClient() {
               {premiumCapabilities.map((cap, idx) => (
                 <div key={idx} className="group relative p-8 rounded-[2rem] bg-gradient-to-br from-[#0c0813] to-[#040207] border border-white/5 hover:border-fuchsia-500/20 transition-all duration-300">
                   <div className="absolute top-4 right-4 text-xs font-mono text-fuchsia-500/30 font-bold group-hover:text-fuchsia-500/60 transition-colors">
-                    CAP // {idx + 1}
+                    CAP#{idx + 1}
                   </div>
                   <h3 className="text-xl font-bold text-white mb-3 pt-2 group-hover:text-fuchsia-300 transition-colors">{cap.title}</h3>
                   <p className="text-zinc-400 text-sm leading-relaxed">{cap.desc}</p>
