@@ -5,18 +5,31 @@ import { useState } from "react";
 
 export default function Header() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const [isMobileSolutionsOpen, setIsMobileSolutionsOpen] = useState(false);
 
-  const navItems = [
+  interface NavItem {
+    label: string;
+    href?: string;
+    isDropdown?: boolean;
+    items?: { label: string; href: string }[];
+  }
+
+  const navItems: NavItem[] = [
     { label: "Plataforma", href: "/plataforma" },
-    { label: "Product Studio", href: "/product-studio" },
+    {
+      label: "Soluciones",
+      isDropdown: true,
+      items: [
+        { label: "Product Studio", href: "/product-studio" },
+        { label: "InspeXiona", href: "/inspexiona" },
+        { label: "EEP", href: "/eep" },
+      ]
+    },
     { label: "Arquitectura", href: "/arquitectura" },
-    { label: "Soluciones", href: "/soluciones" },
     { label: "Casos de Uso", href: "/casos-de-uso" },
     { label: "Ecosistema", href: "/ecosistema" },
-    // { label: "Recursos", href: "/recursos" }, // Oculto temporalmente
-    { label: "InspeXiona", href: "/inspexiona" },
-    { label: "EEP", href: "/eep" },
     { label: "Empresa", href: "/empresa" },
+    { label: "Demo", href: "/demo" },
     { label: "Contacto", href: "/contacto" },
   ];
 
@@ -33,25 +46,47 @@ export default function Header() {
 
         {/* Main Navigation (Desktop) */}
         <nav className="hidden xl:flex flex-1 items-center justify-center space-x-1 sm:space-x-2 text-sm font-medium">
-          {navItems.map((item) => (
-            <Link
-              key={item.label}
-              href={item.href}
-              className="text-zinc-400 hover:text-fuchsia-400 transition-all duration-300 ease-in-out transform origin-center hover:scale-[1.05] tracking-wide inline-block px-3 py-1.5 rounded-lg hover:bg-fuchsia-500/10 hover:shadow-[0_0_15px_rgba(217,70,239,0.15)]"
-            >
-              {item.label}
-            </Link>
-          ))}
+          {navItems.map((item) => {
+            if (item.isDropdown) {
+              return (
+                <div key={item.label} className="relative group/solutions">
+                  <button className="text-zinc-400 hover:text-fuchsia-400 transition-all duration-300 ease-in-out transform origin-center hover:scale-[1.05] tracking-wide inline-flex items-center gap-1 px-3 py-1.5 rounded-lg hover:bg-fuchsia-500/10 hover:shadow-[0_0_15px_rgba(217,70,239,0.15)] cursor-pointer">
+                    {item.label}
+                    <svg className="w-4 h-4 text-zinc-500 group-hover/solutions:text-fuchsia-400 group-hover/solutions:rotate-180 transition-transform duration-300" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" d="M19 9l-7 7-7-7" />
+                    </svg>
+                  </button>
+                  
+                  {/* Dropdown Menu */}
+                  <div className="absolute top-full left-1/2 -translate-x-1/2 mt-2 w-48 rounded-xl bg-[#0a050b]/95 border border-fuchsia-500/20 shadow-[0_10px_40px_rgba(217,70,239,0.15)] backdrop-blur-md opacity-0 invisible group-hover/solutions:opacity-100 group-hover/solutions:visible transition-all duration-300 z-50 p-2 space-y-1">
+                    {item.items?.map((subItem) => (
+                      <Link
+                        key={subItem.label}
+                        href={subItem.href}
+                        className="block px-4 py-2.5 rounded-lg text-sm text-zinc-400 hover:text-white hover:bg-fuchsia-500/10 transition-colors"
+                      >
+                        {subItem.label}
+                      </Link>
+                    ))}
+                  </div>
+                </div>
+              );
+            }
+
+            return (
+              <Link
+                key={item.label}
+                href={item.href || "#"}
+                className="text-zinc-400 hover:text-fuchsia-400 transition-all duration-300 ease-in-out transform origin-center hover:scale-[1.05] tracking-wide inline-block px-3 py-1.5 rounded-lg hover:bg-fuchsia-500/10 hover:shadow-[0_0_15px_rgba(217,70,239,0.15)]"
+              >
+                {item.label}
+              </Link>
+            );
+          })}
         </nav>
 
         {/* Right Actions & Mobile Toggle */}
         <div className="flex items-center space-x-4">
-          <Link
-            href="/demo"
-            className="hidden md:block text-sm font-medium text-muted-foreground hover:text-foreground transition-colors"
-          >
-            Demo
-          </Link>
           <Link
             href="/contacto"
             className="hidden sm:inline-flex h-9 items-center justify-center rounded-md bg-primary px-4 py-2 text-sm font-medium text-primary-foreground shadow transition-colors hover:bg-primary/90 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring"
@@ -76,20 +111,51 @@ export default function Header() {
       
       {/* Mobile Nav */}
       {isMobileMenuOpen && (
-        <div className="xl:hidden bg-[#0d040e]/95 backdrop-blur-lg border-t border-fuchsia-900/30 absolute w-full shadow-2xl">
-          <nav className="flex flex-col space-y-2 px-6 py-8 text-lg font-medium">
-            {navItems.map((item) => (
-              <Link
-                key={item.label}
-                href={item.href}
-                onClick={() => setIsMobileMenuOpen(false)}
-                className="text-zinc-300 hover:text-fuchsia-500 block py-3 border-b border-white/5 transition-colors"
-              >
-                {item.label}
-              </Link>
-            ))}
+        <div className="xl:hidden bg-[#0d040e]/95 backdrop-blur-lg border-t border-fuchsia-900/30 absolute w-full shadow-2xl z-50">
+          <nav className="flex flex-col space-y-2 px-6 py-8 text-lg font-medium max-h-[80vh] overflow-y-auto">
+            {navItems.map((item) => {
+              if (item.isDropdown) {
+                return (
+                  <div key={item.label} className="border-b border-white/5 py-1">
+                    <button 
+                      onClick={() => setIsMobileSolutionsOpen(!isMobileSolutionsOpen)}
+                      className="w-full text-left text-zinc-300 hover:text-fuchsia-500 flex items-center justify-between py-3 transition-colors cursor-pointer"
+                    >
+                      <span>{item.label}</span>
+                      <svg className={`w-4 h-4 text-zinc-500 transition-transform duration-300 ${isMobileSolutionsOpen ? 'rotate-180' : ''}`} fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" d="M19 9l-7 7-7-7" />
+                      </svg>
+                    </button>
+                    {isMobileSolutionsOpen && (
+                      <div className="pl-4 pb-3 pt-1 space-y-3">
+                        {item.items?.map((subItem) => (
+                          <Link
+                            key={subItem.label}
+                            href={subItem.href}
+                            onClick={() => setIsMobileMenuOpen(false)}
+                            className="text-zinc-400 hover:text-fuchsia-400 block py-1.5 transition-colors"
+                          >
+                            {subItem.label}
+                          </Link>
+                        ))}
+                      </div>
+                    )}
+                  </div>
+                );
+              }
+
+              return (
+                <Link
+                  key={item.label}
+                  href={item.href || "#"}
+                  onClick={() => setIsMobileMenuOpen(false)}
+                  className="text-zinc-300 hover:text-fuchsia-500 block py-3 border-b border-white/5 transition-colors"
+                >
+                  {item.label}
+                </Link>
+              );
+            })}
             <div className="pt-6 flex flex-col gap-4 sm:hidden">
-              <Link href="/demo" onClick={() => setIsMobileMenuOpen(false)} className="text-zinc-300 py-2">Demo</Link>
               <Link href="/contacto" onClick={() => setIsMobileMenuOpen(false)} className="bg-fuchsia-600 text-white py-3 px-4 rounded-xl text-center shadow-lg font-bold">Solicitar demo</Link>
             </div>
           </nav>

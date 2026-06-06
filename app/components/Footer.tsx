@@ -40,70 +40,55 @@ export default function Footer() {
             </div>
           </div>
 
-          {/* Nav: Plataforma & Soluciones */}
+          {/* Nav: Tech Insurance */}
           <div className="col-span-1 md:col-span-1 lg:col-span-2">
-            <h4 className="font-semibold mb-3 text-white text-sm tracking-wider uppercase"><Link href="/plataforma" className="hover:text-fuchsia-400 transition-colors">Plataforma</Link></h4>
-            <ul className="space-y-1.5 text-sm text-zinc-400 font-light mb-6">
-              <li><Link href="/plataforma#que-es" className="hover:text-fuchsia-400 transition-colors">Qué es Tech Insurance</Link></li>
-              <li><Link href="/plataforma#capacidades" className="hover:text-fuchsia-400 transition-colors">Capacidades</Link></li>
-              <li><Link href="/plataforma#modulos" className="hover:text-fuchsia-400 transition-colors">Módulos</Link></li>
-              <li><Link href="/plataforma#arquitectura" className="hover:text-fuchsia-400 transition-colors">Arquitectura</Link></li>
-            </ul>
-
-            <h4 className="font-semibold mb-3 text-white text-sm tracking-wider uppercase"><Link href="/soluciones" className="hover:text-fuchsia-400 transition-colors">Soluciones</Link></h4>
-            <ul className="space-y-1.5 text-sm text-zinc-400 font-light">
-              <li><Link href="/soluciones#aseguradoras" className="hover:text-fuchsia-400 transition-colors">Aseguradoras</Link></li>
-              <li><Link href="/soluciones#brokers" className="hover:text-fuchsia-400 transition-colors">Brokers / PAS</Link></li>
-              <li><Link href="/soluciones#bancos" className="hover:text-fuchsia-400 transition-colors">Bancos / Fintech</Link></li>
-              <li><Link href="/soluciones#partners" className="hover:text-fuchsia-400 transition-colors">Partners</Link></li>
-              <li><Link href="/soluciones#embedded" className="hover:text-fuchsia-400 transition-colors">Embedded Insurance</Link></li>
-              <li><Link href="/soluciones#canales" className="hover:text-fuchsia-400 transition-colors">Canales Digitales</Link></li>
-            </ul>
-          </div>
-
-          {/* Nav: Product Studio */}
-          <div className="col-span-1 md:col-span-1 lg:col-span-2">
-            <h4 className="font-semibold mb-3 text-white text-sm tracking-wider uppercase"><Link href="/product-studio" className="hover:text-fuchsia-400 transition-colors">Product Studio</Link></h4>
-            <ul className="space-y-1.5 text-sm text-zinc-400 font-light">
-              <li><Link href="/product-studio#que-es" className="hover:text-fuchsia-400 transition-colors">Qué es</Link></li>
-              <li><Link href="/product-studio#como-funciona" className="hover:text-fuchsia-400 transition-colors">Cómo funciona</Link></li>
-              <li><Link href="/product-studio#capacidades" className="hover:text-fuchsia-400 transition-colors">Capacidades</Link></li>
-              <li><Link href="/product-studio#modelo" className="hover:text-fuchsia-400 transition-colors">Modelo de construcción</Link></li>
-              <li><Link href="/product-studio#ejemplo" className="hover:text-fuchsia-400 transition-colors">Ejemplo</Link></li>
-              <li><Link href="/product-studio#impacto" className="hover:text-fuchsia-400 transition-colors">Impacto</Link></li>
-            </ul>
-          </div>
-
-          {/* Nav: Arquitectura */}
-          <div className="col-span-1 md:col-span-1 lg:col-span-2">
-            <h4 className="font-semibold mb-3 text-white text-sm tracking-wider uppercase"><Link href="/arquitectura" className="hover:text-fuchsia-400 transition-colors">Arquitectura</Link></h4>
-            <ul className="space-y-1.5 text-sm text-zinc-400 font-light">
-              <li><Link href="/arquitectura#vision" className="hover:text-fuchsia-400 transition-colors">Visión</Link></li>
-              <li><Link href="/arquitectura#principios" className="hover:text-fuchsia-400 transition-colors">Principios</Link></li>
-              <li><Link href="/arquitectura#capas" className="hover:text-fuchsia-400 transition-colors">Capas</Link></li>
-              <li><Link href="/arquitectura#integracion" className="hover:text-fuchsia-400 transition-colors">Integración</Link></li>
-              <li><Link href="/arquitectura#escalabilidad" className="hover:text-fuchsia-400 transition-colors">Escalabilidad</Link></li>
-              <li><Link href="/arquitectura#seguridad" className="hover:text-fuchsia-400 transition-colors">Seguridad</Link></li>
-            </ul>
-          </div>
-
-          {/* Nav: Quick Links & Entidades */}
-          <div className="col-span-1 md:col-span-1 lg:col-span-3">
-            <h4 className="font-semibold mb-3 text-white text-sm tracking-wider uppercase">Explorar</h4>
-            <ul className="space-y-1.5 text-sm text-zinc-400 font-light mb-6">
-              <li><Link href="/" className="hover:text-fuchsia-400 transition-colors">Home</Link></li>
+            <h4 className="font-semibold mb-4 text-white text-sm tracking-wider uppercase">Tech Insurance</h4>
+            <ul className="space-y-3 text-sm text-zinc-400 font-light">
+              <li><Link href="/plataforma" className="hover:text-fuchsia-400 transition-colors">Plataforma</Link></li>
+              <li><Link href="/arquitectura" className="hover:text-fuchsia-400 transition-colors">Arquitectura</Link></li>
               <li><Link href="/casos-de-uso" className="hover:text-fuchsia-400 transition-colors">Casos de Uso</Link></li>
               <li><Link href="/ecosistema" className="hover:text-fuchsia-400 transition-colors">Ecosistema</Link></li>
-              {/* <li><Link href="/recursos" className="hover:text-fuchsia-400 transition-colors">Recursos</Link></li> */}
+            </ul>
+          </div>
+
+          {/* Nav: Soluciones */}
+          <div className="col-span-1 md:col-span-1 lg:col-span-2">
+            <h4 className="font-semibold mb-4 text-white text-sm tracking-wider uppercase">Soluciones</h4>
+            <ul className="space-y-3 text-sm text-zinc-400 font-light">
+              <li><Link href="/product-studio" className="hover:text-fuchsia-400 transition-colors">Product Studio</Link></li>
+              <li><Link href="/inspexiona" className="hover:text-fuchsia-400 transition-colors">InspeXiona</Link></li>
+              <li><Link href="/eep" className="hover:text-fuchsia-400 transition-colors">EEP</Link></li>
+            </ul>
+          </div>
+
+          {/* Nav: Empresa */}
+          <div className="col-span-1 md:col-span-1 lg:col-span-2">
+            <h4 className="font-semibold mb-4 text-white text-sm tracking-wider uppercase">Empresa</h4>
+            <ul className="space-y-3 text-sm text-zinc-400 font-light mb-6">
               <li><Link href="/empresa" className="hover:text-fuchsia-400 transition-colors">Empresa</Link></li>
               <li><Link href="/contacto" className="hover:text-fuchsia-400 transition-colors">Contacto</Link></li>
+              <li><Link href="/demo" className="hover:text-fuchsia-400 transition-colors">Demo</Link></li>
             </ul>
 
-            <h4 className="font-semibold mb-5 text-white text-sm tracking-wider uppercase">Legal</h4>
-            <ul className="space-y-3 text-sm text-zinc-400 font-light">
-              <li><Link href="/legal/politica-de-privacidad" className="hover:text-fuchsia-400 transition-colors">Política de Privacidad</Link></li>
-              <li><Link href="/legal/terminos-y-condiciones" className="hover:text-fuchsia-400 transition-colors">Términos y Condiciones</Link></li>
+            <h4 className="font-semibold mb-3 text-white text-xs tracking-wider uppercase">Legal</h4>
+            <ul className="space-y-2 text-xs text-zinc-500 font-light">
+              <li><Link href="/legal/politica-de-privacidad" className="hover:text-fuchsia-400 transition-colors">Privacidad</Link></li>
+              <li><Link href="/legal/terminos-y-condiciones" className="hover:text-fuchsia-400 transition-colors">Términos</Link></li>
             </ul>
+          </div>
+
+          {/* CTA */}
+          <div className="col-span-2 md:col-span-1 lg:col-span-3 flex flex-col items-start">
+            <h4 className="font-semibold mb-4 text-white text-sm tracking-wider uppercase">CTA</h4>
+            <p className="text-sm text-zinc-500 font-light mb-4">
+              Experimente el futuro de los seguros hoy mismo con soluciones a la medida de su negocio.
+            </p>
+            <Link
+              href="/contacto"
+              className="inline-flex h-10 items-center justify-center rounded-xl bg-fuchsia-600 hover:bg-fuchsia-500 px-6 py-2.5 text-sm font-bold text-white shadow-lg shadow-fuchsia-500/20 hover:shadow-fuchsia-500/40 hover:scale-[1.02] active:scale-[0.98] transition-all duration-300"
+            >
+              Solicitar Demo
+            </Link>
           </div>
 
         </div>
