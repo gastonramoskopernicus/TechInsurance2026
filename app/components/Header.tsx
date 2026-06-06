@@ -68,17 +68,19 @@ export default function Header() {
                   
                   {/* Dropdown Menu */}
                   {isSolutionsOpen && (
-                    <div className="absolute top-full left-1/2 -translate-x-1/2 mt-2 w-48 rounded-xl bg-[#0a050b]/95 border border-fuchsia-500/20 shadow-[0_10px_40px_rgba(217,70,239,0.15)] backdrop-blur-md z-50 p-2 space-y-1">
-                      {item.items?.map((subItem) => (
-                        <Link
-                          key={subItem.label}
-                          href={subItem.href}
-                          onClick={() => setIsSolutionsOpen(false)}
-                          className="block px-4 py-2.5 rounded-lg text-sm text-zinc-400 hover:text-white hover:bg-fuchsia-500/10 transition-colors"
-                        >
-                          {subItem.label}
-                        </Link>
-                      ))}
+                    <div className="absolute top-full left-1/2 -translate-x-1/2 pt-2 w-48 z-50">
+                      <div className="rounded-xl bg-[#0a050b]/95 border border-fuchsia-500/20 shadow-[0_10px_40px_rgba(217,70,239,0.15)] backdrop-blur-md p-2 space-y-1">
+                        {item.items?.map((subItem) => (
+                          <Link
+                            key={subItem.label}
+                            href={subItem.href}
+                            onClick={() => setIsSolutionsOpen(false)}
+                            className="block px-4 py-2.5 rounded-lg text-sm text-zinc-400 hover:text-white hover:bg-fuchsia-500/10 transition-colors"
+                          >
+                            {subItem.label}
+                          </Link>
+                        ))}
+                      </div>
                     </div>
                   )}
                 </div>
