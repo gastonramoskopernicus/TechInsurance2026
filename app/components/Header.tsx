@@ -6,6 +6,7 @@ import { useState } from "react";
 export default function Header() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [isMobileSolutionsOpen, setIsMobileSolutionsOpen] = useState(false);
+  const [isSolutionsOpen, setIsSolutionsOpen] = useState(false);
 
   interface NavItem {
     label: string;
@@ -49,26 +50,37 @@ export default function Header() {
           {navItems.map((item) => {
             if (item.isDropdown) {
               return (
-                <div key={item.label} className="relative group/solutions">
-                  <button className="text-zinc-400 hover:text-fuchsia-400 transition-all duration-300 ease-in-out transform origin-center hover:scale-[1.05] tracking-wide inline-flex items-center gap-1 px-3 py-1.5 rounded-lg hover:bg-fuchsia-500/10 hover:shadow-[0_0_15px_rgba(217,70,239,0.15)] cursor-pointer">
+                <div 
+                  key={item.label} 
+                  className="relative"
+                  onMouseEnter={() => setIsSolutionsOpen(true)}
+                  onMouseLeave={() => setIsSolutionsOpen(false)}
+                >
+                  <button 
+                    onClick={() => setIsSolutionsOpen(!isSolutionsOpen)}
+                    className="text-zinc-400 hover:text-fuchsia-400 transition-all duration-300 ease-in-out transform origin-center hover:scale-[1.05] tracking-wide inline-flex items-center gap-1 px-3 py-1.5 rounded-lg hover:bg-fuchsia-500/10 hover:shadow-[0_0_15px_rgba(217,70,239,0.15)] cursor-pointer"
+                  >
                     {item.label}
-                    <svg className="w-4 h-4 text-zinc-500 group-hover/solutions:text-fuchsia-400 group-hover/solutions:rotate-180 transition-transform duration-300" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
+                    <svg className={`w-4 h-4 text-zinc-500 transition-transform duration-300 ${isSolutionsOpen ? 'rotate-180 text-fuchsia-400' : ''}`} fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" d="M19 9l-7 7-7-7" />
                     </svg>
                   </button>
                   
                   {/* Dropdown Menu */}
-                  <div className="absolute top-full left-1/2 -translate-x-1/2 mt-2 w-48 rounded-xl bg-[#0a050b]/95 border border-fuchsia-500/20 shadow-[0_10px_40px_rgba(217,70,239,0.15)] backdrop-blur-md opacity-0 invisible group-hover/solutions:opacity-100 group-hover/solutions:visible transition-all duration-300 z-50 p-2 space-y-1">
-                    {item.items?.map((subItem) => (
-                      <Link
-                        key={subItem.label}
-                        href={subItem.href}
-                        className="block px-4 py-2.5 rounded-lg text-sm text-zinc-400 hover:text-white hover:bg-fuchsia-500/10 transition-colors"
-                      >
-                        {subItem.label}
-                      </Link>
-                    ))}
-                  </div>
+                  {isSolutionsOpen && (
+                    <div className="absolute top-full left-1/2 -translate-x-1/2 mt-2 w-48 rounded-xl bg-[#0a050b]/95 border border-fuchsia-500/20 shadow-[0_10px_40px_rgba(217,70,239,0.15)] backdrop-blur-md z-50 p-2 space-y-1">
+                      {item.items?.map((subItem) => (
+                        <Link
+                          key={subItem.label}
+                          href={subItem.href}
+                          onClick={() => setIsSolutionsOpen(false)}
+                          className="block px-4 py-2.5 rounded-lg text-sm text-zinc-400 hover:text-white hover:bg-fuchsia-500/10 transition-colors"
+                        >
+                          {subItem.label}
+                        </Link>
+                      ))}
+                    </div>
+                  )}
                 </div>
               );
             }
