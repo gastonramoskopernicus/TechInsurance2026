@@ -112,34 +112,89 @@ export default function InspexionaClient() {
       </div>
 
       <div className="relative z-10">
-        {/* HERO SECTION */}
-        <section className="pt-32 pb-10 px-4">
-          <div className="container mx-auto max-w-6xl text-center">
+        {/* 1. HERO SECTION */}
+        <section className="pt-36 pb-20 px-4 relative min-h-[90vh] flex items-center justify-center border-b border-white/5">
+          <div className="container mx-auto max-w-6xl flex flex-col lg:flex-row items-center justify-between gap-16">
             
-            {/* Logo InspeXiona Oficial */}
-            <div className={`transition-all duration-1000 transform ${mounted ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'}`}>
-              <div className="inline-flex items-center justify-center mb-8">
-                {/* No usar alt tag con texto y usar path /inspexiona-logo.svg estricto */}
+            {/* Contenido Izquierda */}
+            <div className="flex-1 text-left space-y-8 max-w-xl">
+              {/* Logo InspeXiona */}
+              <div className={`inline-block relative w-36 h-36 mb-2 transition-all duration-1000 transform ${mounted ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'}`}>
                 <img 
                   src="/inspexiona-logo.png" 
                   alt="" 
-                  className="h-32 md:h-40 w-auto object-contain drop-shadow-[0_0_15px_rgba(217,70,239,0.3)]"
+                  className="w-full h-full object-contain filter drop-shadow-[0_0_20px_rgba(217,70,239,0.4)]" 
                 />
+              </div>
+              
+              <span className="text-fuchsia-400 font-bold tracking-widest uppercase text-sm block">Inspección Inteligente</span>
+              
+              <h1 className={`text-4xl md:text-5xl lg:text-6xl font-black tracking-tight leading-none transition-all duration-1000 transform ${mounted ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'}`}>
+                Los ojos de las aseguradoras en las manos de <br/>
+                <span className="text-transparent bg-clip-text bg-gradient-to-r from-fuchsia-400 to-indigo-400">
+                  clientes o intermediarios.
+                </span>
+              </h1>
+              
+              <div className={`text-zinc-400 font-light leading-relaxed space-y-4 text-base md:text-lg transition-all duration-1000 delay-100 transform ${mounted ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'}`}>
+                <p>
+                  Plataforma nativa iOS / Android y Web para inspecciones previas y de siniestros.
+                </p>
+                <p>
+                  Permite ejecutar flujos guiados para capturar datos e imágenes confiables en tiempo real, previniendo el fraude y acelerando la emisión y liquidación de siniestros.
+                </p>
+              </div>
+
+              {/* Botones de acción */}
+              <div className={`flex flex-wrap gap-4 pt-4 transition-all duration-1000 delay-200 transform ${mounted ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'}`}>
+                <Link href="/contacto" className="group relative inline-flex items-center justify-center">
+                  <div className="absolute -inset-1 rounded-xl bg-gradient-to-r from-fuchsia-600 to-indigo-600 opacity-40 blur-md group-hover:opacity-75 transition-opacity" />
+                  <div className="relative flex items-center gap-2 px-8 py-4 bg-[#0a050b] border border-white/10 rounded-xl text-white font-bold text-sm hover:bg-white/5 transition-colors">
+                    Solicitar Demo
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" className="w-4 h-4 transform group-hover:translate-x-1 transition-transform">
+                      <line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/>
+                    </svg>
+                  </div>
+                </Link>
+                <a href="#screenshots" className="inline-flex items-center justify-center px-8 py-4 bg-white/5 border border-white/10 rounded-xl text-zinc-300 font-bold text-sm hover:bg-white/10 hover:text-white transition-all">
+                  Ver Interfaz
+                </a>
               </div>
             </div>
 
-            {/* Eslogan Ajustado */}
-            <h1 className={`text-4xl md:text-5xl lg:text-6xl font-black tracking-tight mb-8 transition-all duration-1000 delay-100 transform max-w-5xl mx-auto ${mounted ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'}`}>
-              Los ojos de las aseguradoras en las manos de <span className="text-transparent bg-clip-text bg-gradient-to-r from-fuchsia-400 to-indigo-400">clientes o intermediarios</span>
-            </h1>
-            
-            <p className={`text-lg md:text-xl text-zinc-400 font-light max-w-3xl mx-auto leading-relaxed transition-all duration-1000 delay-200 transform ${mounted ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'}`}>
-              Plataforma nativa iOS / Android y Web para inspecciones previas y de siniestros.
+            {/* Visual Derecha - Celular Premium Mockup */}
+            <div className={`flex-1 relative w-full max-w-sm aspect-[9/16] flex items-center justify-center transition-all duration-1000 delay-300 transform ${mounted ? 'scale-100 opacity-100' : 'scale-90 opacity-0'}`}>
+              <div className="absolute -inset-4 rounded-[3rem] bg-gradient-to-tr from-fuchsia-600/20 to-indigo-600/20 blur-2xl pointer-events-none opacity-60" />
+              
+              {/* Contenedor del Teléfono */}
+              <div className="relative w-[85%] h-[90%] rounded-[2.5rem] bg-[#0c0914] border-4 border-zinc-800 shadow-[0_0_50px_rgba(217,70,239,0.3)] overflow-hidden flex flex-col">
+                <div className="absolute top-0 inset-x-0 h-6 bg-zinc-950 flex items-center justify-center z-30">
+                  <div className="w-20 h-4 rounded-full bg-zinc-900 border border-white/5" />
+                </div>
+                <div className="relative flex-1 mt-6">
+                  <img 
+                    src="/pantallas_inspexiona/screen-4.png" 
+                    alt="InspeXiona App" 
+                    className="w-full h-full object-cover" 
+                  />
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </section>
+
+        {/* 2. SECCIÓN SCREENSHOTS DE LA APP */}
+        <section id="screenshots" className="py-24 px-4 bg-[#050208] border-b border-white/5 relative overflow-hidden scroll-mt-24">
+          <div className="absolute top-1/2 left-0 w-full h-[1px] bg-gradient-to-r from-transparent via-fuchsia-900/10 to-transparent pointer-events-none" />
+          <div className="container mx-auto max-w-6xl text-center relative z-10">
+            <span className="text-fuchsia-500 font-bold tracking-widest uppercase text-sm mb-4 block">Capturas de Pantalla</span>
+            <h2 className="text-3xl md:text-5xl font-bold mb-6 text-white tracking-tight">Explore la Interfaz de InspeXiona</h2>
+            <p className="text-zinc-400 font-light max-w-2xl mx-auto mb-16">
+              Wizard guiado interactivo que reduce los tiempos de inspección de horas a minutos.
             </p>
 
-            {/* CARRUSEL DE SCREENSHOTS (Estilo Landing Principal Tech Insurance) */}
-            <div className={`mt-24 mb-16 relative w-full flex justify-center items-center transition-all duration-1000 delay-300 transform ${mounted ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'}`}>
-              
+            <div className={`relative w-full flex justify-center items-center transition-all duration-1000 delay-100 transform ${mounted ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'}`}>
               <div 
                 ref={containerRef}
                 className="relative flex justify-center items-center w-80 h-48 sm:w-[32rem] sm:h-[20rem] md:w-[48rem] md:h-[28rem] z-20 group perspective-[1200px]"
@@ -151,19 +206,18 @@ export default function InspexionaClient() {
                     const isActive = idx === activeScreenIndex;
                     const isPast = idx < activeScreenIndex;
                     let offset = idx - activeScreenIndex;
-                    if (offset < 0) offset += TOTAL_SCREENS; // Carrusel infinito visual
+                    if (offset < 0) offset += TOTAL_SCREENS;
                     
                     const getTransform = () => {
                       if (isActive) return 'translateZ(0px) translateX(0px) scale(1) rotateY(0deg)';
-                      if (isPast && idx === activeScreenIndex - 1) return 'translateZ(-300px) translateX(-100px) scale(0.8) rotateY(-15deg)'; // Se fue a la izq
-                      // Futuras a la derecha
+                      if (isPast && idx === activeScreenIndex - 1) return 'translateZ(-300px) translateX(-100px) scale(0.8) rotateY(-15deg)';
                       return `translateZ(-${offset * 120}px) translateX(${offset * 60}px) scale(${1 - offset * 0.05}) rotateY(${offset * 8}deg)`;
                     };
 
                     const getOpacity = () => {
                       if (isActive) return 'opacity-100';
-                      if (isPast && idx === activeScreenIndex - 1) return 'opacity-0'; // Desaparece rápido
-                      if (offset > 3) return 'opacity-0'; // Mostrar hasta 3 pantallas futuras
+                      if (isPast && idx === activeScreenIndex - 1) return 'opacity-0';
+                      if (offset > 3) return 'opacity-0';
                       return 'opacity-[0.95]'; 
                     };
 
@@ -193,7 +247,6 @@ export default function InspexionaClient() {
                   })}
                 </div>
               </div>
-
             </div>
           </div>
         </section>

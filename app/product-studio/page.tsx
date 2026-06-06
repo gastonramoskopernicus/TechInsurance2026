@@ -1,11 +1,20 @@
+"use client";
+
 import Image from "next/image";
 import Link from "next/link";
+import { useEffect, useState } from "react";
 
 export default function ProductStudioPage() {
+  const [mounted, setMounted] = useState(false);
+
+  useEffect(() => {
+    setMounted(true);
+  }, []);
+
   return (
     <div className="flex flex-col w-full relative bg-[#020104]">
       {/* 1. HERO - Product Studio */}
-      <section id="que-es" className="relative pt-32 pb-16 border-b border-white/5 px-4 overflow-hidden scroll-mt-32">
+      <section id="que-es" className="relative pt-36 pb-20 border-b border-white/5 px-4 overflow-hidden scroll-mt-32 min-h-[90vh] flex items-center justify-center">
         {/* Background Atmosphere */}
         <div className="absolute inset-0 z-0 bg-[#020104]" />
         <div className="absolute inset-0 z-0 opacity-10 mix-blend-screen bg-[radial-gradient(ellipse_at_center,rgba(217,70,239,0.05),transparent)]">
@@ -13,32 +22,79 @@ export default function ProductStudioPage() {
         </div>
         <div className="absolute right-0 top-0 w-[400px] h-[400px] bg-fuchsia-900/10 rounded-full blur-[120px] pointer-events-none z-0 mix-blend-screen" />
         
-        <div className="container mx-auto max-w-5xl relative z-10 text-center flex flex-col items-center">
-          <div className="relative w-32 h-32 mx-auto mb-10 animate-breath opacity-90 drop-shadow-[0_0_20px_rgba(217,70,239,0.2)]">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1" className="w-full h-full text-fuchsia-500">
-              <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path><polyline points="3.27 6.96 12 12.01 20.73 6.96"></polyline><line x1="12" y1="22.08" x2="12" y2="12"></line>
-            </svg>
-          </div>
+        <div className="container mx-auto max-w-6xl relative z-10 flex flex-col lg:flex-row items-center justify-between gap-16">
+          
+          {/* Contenido Izquierda */}
+          <div className="flex-1 text-left space-y-8 max-w-xl">
+            {/* Logo Product Studio */}
+            <div className={`inline-block relative w-28 h-28 mb-2 transition-all duration-1000 transform ${mounted ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'}`}>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1" className="w-full h-full text-fuchsia-500 drop-shadow-[0_0_15px_rgba(217,70,239,0.3)]">
+                <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z" strokeLinejoin="round"></path>
+                <polyline points="3.27 6.96 12 12.01 20.73 6.96" strokeLinejoin="round"></polyline>
+                <line x1="12" y1="22.08" x2="12" y2="12"></line>
+              </svg>
+            </div>
 
-          <h1 className="text-4xl md:text-5xl lg:text-7xl font-extrabold tracking-tight text-white mb-6">
-            Product <span className="text-transparent bg-clip-text bg-gradient-to-r from-fuchsia-500 to-pink-400">Studio</span>
-          </h1>
-          <p className="text-2xl text-fuchsia-400 font-light mb-8">El corazón de la innovación aseguradora.</p>
+            <span className="text-fuchsia-400 font-bold tracking-widest uppercase text-sm block">Core Engine</span>
 
-          <div className="border border-fuchsia-500/20 rounded-3xl p-10 lg:p-14 bg-black/50 backdrop-blur-md shadow-2xl text-left max-w-4xl mx-auto">
-            <p className="text-white text-xl font-bold leading-relaxed mb-6">
-              Product Studio es el corazón de Tech Insurance y su principal diferencial frente a soluciones del mercado.
-            </p>
-            <p className="text-fuchsia-100/80 text-lg font-light leading-relaxed mb-8">
-              A diferencia de los productos tradicionales —mayormente estáticos, poco reutilizables y con baja integración—, Product Studio permite la <span className="text-white font-medium">reutilización de lógica, integración extendida y el modelado dinámico</span> de negocios.
-            </p>
-            <div className="p-6 border border-white/10 bg-zinc-900/50 rounded-xl inline-flex shadow-inner w-full">
-               <p className="text-zinc-300 font-medium text-lg leading-relaxed text-center w-full">
-                  Fomentamos la autonomía comercial para perfiles no técnicos.<br/>
-                  <span className="text-fuchsia-400 font-bold">Sin depender de tiempos de desarrollo ni cuellos de botella de IT.</span>
-               </p>
+            <h1 className={`text-4xl md:text-5xl lg:text-6xl font-black tracking-tight leading-none transition-all duration-1000 transform ${mounted ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'}`}>
+              Product <span className="text-transparent bg-clip-text bg-gradient-to-r from-fuchsia-400 to-indigo-400">Studio.</span>
+            </h1>
+
+            <div className={`text-zinc-400 font-light leading-relaxed space-y-4 text-base md:text-lg transition-all duration-1000 delay-100 transform ${mounted ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'}`}>
+              <p>
+                Product Studio es el corazón de Tech Insurance y su principal diferencial frente a soluciones tradicionales del mercado.
+              </p>
+              <p>
+                A diferencia de los esquemas legacy estáticos y costosos, permite la reutilización de lógica, integración extendida y el modelado dinámico de seguros de forma ágil y estructurada.
+              </p>
+              <p className="font-medium text-white/80">
+                Fomenta la autonomía comercial para perfiles no técnicos, sin depender de IT.
+              </p>
+            </div>
+
+            {/* Botones de acción */}
+            <div className={`flex flex-wrap gap-4 pt-4 transition-all duration-1000 delay-200 transform ${mounted ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'}`}>
+              <Link href="/contacto" className="group relative inline-flex items-center justify-center">
+                <div className="absolute -inset-1 rounded-xl bg-gradient-to-r from-fuchsia-600 to-indigo-600 opacity-40 blur-md group-hover:opacity-75 transition-opacity" />
+                <div className="relative flex items-center gap-2 px-8 py-4 bg-[#0a050b] border border-white/10 rounded-xl text-white font-bold text-sm hover:bg-white/5 transition-colors">
+                  Solicitar Demo
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" className="w-4 h-4 transform group-hover:translate-x-1 transition-transform">
+                    <line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/>
+                  </svg>
+                </div>
+              </Link>
+              <a href="#como-funciona" className="inline-flex items-center justify-center px-8 py-4 bg-white/5 border border-white/10 rounded-xl text-zinc-300 font-bold text-sm hover:bg-white/10 hover:text-white transition-all">
+                Ver Funcionamiento
+              </a>
             </div>
           </div>
+
+          {/* Visual Derecha - Composición Orbital del Core */}
+          <div className={`flex-1 relative w-full max-w-lg aspect-square flex items-center justify-center transition-all duration-1000 delay-300 transform ${mounted ? 'scale-100 opacity-100' : 'scale-90 opacity-0'}`}>
+            <div className="absolute -inset-4 rounded-full bg-gradient-to-tr from-fuchsia-600/10 to-indigo-600/10 blur-3xl pointer-events-none opacity-60" />
+            
+            {/* Círculos e irradiaciones orbitales */}
+            <div className="absolute w-[90%] h-[90%] rounded-full border border-fuchsia-500/10 border-dashed animate-[spin_120s_linear_infinite]" />
+            <div className="absolute w-[70%] h-[70%] rounded-full border border-indigo-500/20 animate-[spin_80s_linear_infinite_reverse]" />
+            <div className="absolute w-[50%] h-[50%] rounded-full bg-gradient-to-br from-fuchsia-600/5 to-indigo-600/5 blur-xl pointer-events-none" />
+
+            {/* Cubo 3D / Box Central */}
+            <div className="absolute z-10 w-36 h-36 rounded-3xl bg-[#08040d] border border-fuchsia-500/50 flex items-center justify-center shadow-[0_0_60px_rgba(217,70,239,0.5)] animate-breath">
+              <svg viewBox="0 0 24 24" fill="none" stroke="url(#ps-hero-grad)" strokeWidth="1" className="w-20 h-20 text-fuchsia-400">
+                <defs>
+                  <linearGradient id="ps-hero-grad" x1="0" y1="0" x2="24" y2="24" gradientUnits="userSpaceOnUse">
+                    <stop offset="0%" stopColor="#f472b6" />
+                    <stop offset="100%" stopColor="#6366f1" />
+                  </linearGradient>
+                </defs>
+                <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z" strokeLinejoin="round"></path>
+                <polyline points="3.27 6.96 12 12.01 20.73 6.96" strokeLinejoin="round"></polyline>
+                <line x1="12" y1="22.08" x2="12" y2="12"></line>
+              </svg>
+            </div>
+          </div>
+
         </div>
       </section>
 
