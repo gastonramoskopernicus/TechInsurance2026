@@ -204,13 +204,6 @@ def main():
                 );
               })}
 
-              {/* Etiqueta / Subtítulo explicativo en el fondo */}
-              <div className="absolute bottom-1 left-1/2 transform -translate-x-1/2 text-center z-20 pointer-events-none">
-                <p className="text-zinc-500 text-[10px] font-bold tracking-widest uppercase bg-[#050209]/95 border border-fuchsia-900/30 backdrop-blur-md px-4 py-1.5 rounded-full shadow-[0_5px_15px_rgba(0,0,0,0.5)] whitespace-nowrap">
-                  Motor de diseño y parametrización de productos aseguradores
-                </p>
-              </div>
-
             </div>
           </div>"""
 
