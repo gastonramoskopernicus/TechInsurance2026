@@ -13,10 +13,8 @@ export default function PlataformaPage() {
         <div className="absolute right-0 top-0 w-[400px] h-[400px] bg-fuchsia-900/10 rounded-full blur-[120px] pointer-events-none z-0 mix-blend-screen" />
         
         <div className="container mx-auto max-w-5xl relative z-10 text-center flex flex-col items-center">
-          <div className="relative w-32 h-32 mx-auto mb-10 animate-breath opacity-90 drop-shadow-[0_0_20px_rgba(217,70,239,0.2)]">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1" className="w-full h-full text-fuchsia-500">
-               <polygon points="12 2 2 7 12 12 22 7 12 2"/><polyline points="2 17 12 22 22 17"/><polyline points="2 12 12 17 22 12"/>
-            </svg>
+          <div className="relative w-48 h-48 mx-auto mb-10 animate-breath opacity-90 drop-shadow-[0_0_25px_rgba(217,70,239,0.25)]">
+            <Image src="/TechInsurance.svg" alt="Tech Insurance Cube" fill className="object-contain" priority />
           </div>
 
           <h1 className="text-4xl md:text-5xl lg:text-7xl font-extrabold tracking-tight text-white mb-6">
