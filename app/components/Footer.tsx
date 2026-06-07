@@ -70,8 +70,8 @@ export default function Footer() {
               <li><Link href="/demo" className="hover:text-fuchsia-400 transition-colors">Demo</Link></li>
             </ul>
 
-            <h4 className="font-semibold mb-3 text-white text-xs tracking-wider uppercase">Legal</h4>
-            <ul className="space-y-2 text-xs text-zinc-500 font-light">
+            <h4 className="font-semibold mb-4 text-white text-sm tracking-wider uppercase">Legal</h4>
+            <ul className="space-y-3 text-sm text-zinc-400 font-light">
               <li><Link href="/legal/politica-de-privacidad" className="hover:text-fuchsia-400 transition-colors">Privacidad</Link></li>
               <li><Link href="/legal/terminos-y-condiciones" className="hover:text-fuchsia-400 transition-colors">Términos</Link></li>
             </ul>
@@ -79,7 +79,7 @@ export default function Footer() {
 
           {/* CTA */}
           <div className="col-span-2 md:col-span-1 lg:col-span-3 flex flex-col items-start">
-            <h4 className="font-semibold mb-4 text-white text-sm tracking-wider uppercase">CTA</h4>
+            <h4 className="font-semibold mb-4 text-white text-sm tracking-wider uppercase">CONTACTO</h4>
             <p className="text-sm text-zinc-500 font-light mb-4">
               Experimente el futuro de los seguros hoy mismo con soluciones a la medida de su negocio.
             </p>
